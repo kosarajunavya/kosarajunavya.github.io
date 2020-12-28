@@ -119,10 +119,6 @@
         height: 40px;
     }
 
-    @page {
-        size: 21cm 29.7cm;
-        margin: 30mm 45mm 30mm 45mm;
-    }
 
     .resume {
         display: -webkit-flex;
@@ -136,4 +132,25 @@
         padding: 0px;
         -webkit-flex: 1 100%;
         flex: 1 100%;
+    }
+
+    @media all and (min-width: 768px) {
+        .resume {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding: 0;
+        }
+
+        .page {
+            size: 21cm 29.7cm;
+            margin: 30mm 45mm 30mm 45mm;
+        }
+    }
 </style>
