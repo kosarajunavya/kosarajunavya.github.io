@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="This is one of the registration form model of a student" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+    <div class="form">
+        <header>
+            <h1>Registration form</h1>
+        </header>
+
+        <form>
+
+            <label>Enter your full name</label><br>
+            <input type="text" name="name" required><br>
+            <label>Enter your email</label><br>
+            <input type="email" name="email"><br>
+            <label>Enter your password</label><br>
+            <input type="password" name="pass"><br>
+            <label>confirm your password</label><br>
+            <input type="password" name="pass"><br>
+            <br><label>Enter your gender</label><br>
+            <input type="radio" id="gender" name="gender" value="male" />Male <br>
+            <input type="radio" id="gender" name="gender" value="female" />Female <br />
+            <input type="radio" id="gender" name="gender" value="others" />others <br />
+            <br>Enter your Address:<br>
+            <textarea></textarea><br>
+            <input type="submit" value="sign-up">
+        </form>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
+<style>
+    .form {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+
+    .form>* {
+        padding: 25px;
+        -webkit-flex: 1 100%;
+        flex: 1 100%;
+    }
+
+    .input {
+        margin-left: justify;
+
+
+    }
+
+
+    header {
+        background: rgb(9, 9, 138);
+        color: white;
+    }
+
+    footer {
+        background: rgb(9, 9, 138);
+        color: white;
+    }
+
+    input.invalid {
+        border-color: #900;
+        background-color: #FDD;
+    }
+
+    input:focus.invalid {
+        outline: none;
+    }
+
+
+    @media all and (min-width: 600px) {
+        input {
+            margin-left: 0rem;
+            margin-right: 0px;
+
+        }
+
+        header {
+            background: rgb(9, 9, 138);
+            color: white;
+        }
+
+        footer {
+            -webkit-order: 3;
+            order: 3;
+        }
+    }
+</style>
