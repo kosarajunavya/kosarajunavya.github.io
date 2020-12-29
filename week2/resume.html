@@ -6,6 +6,76 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Resume</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 40px;
+        }
+
+
+        .resume {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            text-align: justify;
+
+        }
+
+        .resume>* {
+            padding: 0px;
+            -webkit-flex: 1 100%;
+            flex: 1 100%;
+        }
+
+        h1 {
+            line-height: 0px;
+            font-style: italic;
+
+        }
+
+        h2 {
+            line-height: 0px;
+            font-style: italic;
+
+        }
+
+        h3 {
+            text-align: right;
+        }
+
+        li {
+            line-height: 25px;
+            font-style: italic;
+        }
+
+        p {
+            line-height: 25px;
+            font-style: italic;
+        }
+
+        @media all and (min-width: 768px) {
+            .resume {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+                text-align: justify;
+                margin-top: 2px;
+                margin-left: 10px;
+                margin-right: 4px;
+                margin-bottom: 2px;
+            }
+
+            ul {
+                list-style-type: circle;
+                padding: 0px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -106,74 +176,3 @@
 </body>
 
 </html>
-
-<style type="css">
-    table,
-    th,
-    td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        height: 40px;
-    }
-
-
-    .resume {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        flex-flow: row wrap;
-        text-align: justify;
-
-    }
-
-    .resume>* {
-        padding: 0px;
-        -webkit-flex: 1 100%;
-        flex: 1 100%;
-    }
-
-    h1 {
-        line-height: 0px;
-        font-style: italic;
-
-    }
-
-    h2 {
-        line-height: 0px;
-        font-style: italic;
-
-    }
-
-    h3 {
-        text-align: right;
-    }
-
-    li {
-        line-height: 25px;
-        font-style: italic;
-    }
-
-    p {
-        line-height: 25px;
-        font-style: italic;
-    }
-
-    @media all and (min-width: 768px) {
-        .resume {
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
-            text-align: justify;
-            margin-top: 2px;
-            margin-left: 10px;
-            margin-right: 4px;
-            margin-bottom: 2px;
-        }
-
-        ul {
-            list-style-type: circle;
-            padding: 0px;
-        }
-    }
-</style>
