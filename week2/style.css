@@ -1,0 +1,15 @@
+        @media all and (min-width: 768px) {
+
+            body {
+                height: 100%;
+                margin: 0;
+                background-image: url("https://www.bergerpaints.com/colour-magazine/Upload/Posting/Image/colour-story-bnr-july-18.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+
+            }
+            
+          h1{
+                text-align: center;
+            }
+        }
