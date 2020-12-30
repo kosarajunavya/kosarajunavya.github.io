@@ -1,0 +1,27 @@
+div {
+padding: 60px;
+margin: 20px;
+border: 6px ridge red;
+width: 450px;
+float: left;
+height: 150px;
+    }
+p{
+font-size: 25px;
+ }
+#left {
+border-top-left-radius: 200px;
+background: lightgreen;
+}
+#right{
+border-top-right-radius: 200px;
+background: orange;
+}
+#three {
+border-bottom-left-radius: 200px;
+background: cyan;
+}
+#last{
+border-bottom-right-radius: 200px;
+background: lightskyblue;
+}
