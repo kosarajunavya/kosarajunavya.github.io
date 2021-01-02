@@ -1,8 +1,12 @@
 body {
     text-align: left;
-    background-attachment: fixed;
-    background-image: url(https://www.bergerpaints.com/colour-magazine/Upload/Posting/Image/colour-story-bnr-july-18.jpg);
+    background-image: url("https://i.pinimg.com/originals/29/ba/61/29ba61d0f04dfc1a09d6ea41165cf8f6.jpg");
     background-repeat: no-repeat;
+    padding: 60px
+}
+.overlay{
+    margin-top: 50rem;
+    text-align: end;
 }
 
 * {
@@ -24,7 +28,7 @@ body {
 .overlay {
     position: absolute;
     bottom: 0;
-    background: lightskyblue;
+    background: skyblue;
     width: 100%;
     opacity: 0;
     transition: .9s ease;
