@@ -5,7 +5,7 @@ body {
     padding: 20px
 }
 .overlay{
-    margin-top: 30rem;
+    margin-top: 0rem;
     text-align: end;
 }
 
@@ -32,8 +32,8 @@ body {
     width: 100%;
     opacity: 0;
     transition: .9s ease;
-    font-size: 35px;
-    padding: 25px;
+    font-size: 20px;
+    padding: 20px;
 }
 
 .container:hover .overlay {

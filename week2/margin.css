@@ -1,0 +1,9 @@
+  p {  
+    background-color: skyblue;  
+}  
+p.ex {  
+    margin-top: 50px;  
+    margin-bottom: 50px;  
+    margin-right: 100px;  
+    margin-left: 100px;  
+}  
