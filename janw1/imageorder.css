@@ -1,0 +1,7 @@
+
+.order{
+  list-style: lower-alpha inside url(img.jpg); 	   
+}
+.unorder{
+  list-style: disc outside	   
+}
