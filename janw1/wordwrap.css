@@ -1,0 +1,7 @@
+p.test {  
+    width: 11em;  
+    background-color: skyblue;   
+    border: 1px solid black;  
+    padding:10px;  
+    word-wrap: break-word;  
+}

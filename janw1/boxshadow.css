@@ -1,0 +1,29 @@
+div {
+border: 1px solid;
+padding: 10px;
+}
+#hvb {
+/* box-shadow: h-offset v-offset blur */
+box-shadow: 5px 10px 10px;
+}
+
+#spr {
+/* box-shadow: h-offset v-offset blur spread */
+box-shadow: 5px 10px 10px 10px;
+}
+#col {
+/* box-shadow: h-offset v-offset blur spread color */
+box-shadow: 5px 10px 10px 10px orange;
+}
+#ins {
+/* box-shadow: h-offset v-offset blur spread color inset */
+box-shadow: 5px 10px 10px 10px orange inset;
+}
+#init {
+/* box-shadow: initial */
+box-shadow: initial;
+}
+#non {
+/* box-shadow: none */
+box-shadow: none;
+}
