@@ -1,0 +1,28 @@
+body{  
+text-align:center;
+size: auto;  
+}  
+#img1 {   
+filter: invert(60);   
+}   
+#img2{
+    filter:saturate(50);
+}
+#img3{
+    filter:drop-shadow(20px 30px 40px black);
+}
+#img4{
+    filter: contrast(50%);
+}
+#img5{
+    filter:opacity(40%);
+}
+#img6{
+    filter: hue-rotate(90deg);
+}
+#img7{
+    filter:grayscale(70%);
+}
+#img8{
+    filter: sepia(90%);
+}
