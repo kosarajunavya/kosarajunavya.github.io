@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    font-size: 30px;
+    color: slateblue;
+    background-color: turquoise;
+}
+#sky11{
+    background-color: black;
+}
+div#sky1{
+background-color: tomato;
+}
+div[id=sky1]{
+    background-color: violet;
+}
