@@ -1,8 +1,12 @@
 body {
-    text-align: left;
+    text-align: initial;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
     background-image: url("https://i.pinimg.com/originals/29/ba/61/29ba61d0f04dfc1a09d6ea41165cf8f6.jpg");
+    max-width: 100%;
+    height: auto;
     background-repeat: no-repeat;
-    padding: 20px
 }
 .overlay{
     margin-top: 0rem;
