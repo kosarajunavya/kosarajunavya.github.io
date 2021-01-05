@@ -1,0 +1,25 @@
+.container img {
+width: 300px;
+height: 300px;
+}
+.container {
+position: relative;
+width: 25%;
+height: auto;
+}
+.container:hover .overlay {
+opacity: 1;
+height: 400px;
+}
+.overlay {
+position: absolute;
+transition: 0.7s ease;
+opacity: 0;
+width: 300px;
+height: 0;
+top: 0;/* the difference between top:0 and bottom:0 is for top:0 the slide moves from top to bottom as well for bottom:0 the slide moves from bottom to top
+* to move slide from left to right then the css element is LEFT: 20PX as well for slide moving from right to left then LEFT:20PX*/
+right: 20px;
+background-image: url("https://www.dictionary.com/e/wp-content/uploads/2018/08/fearful-face-emoji.png");
+background-repeat: no-repeat;
+}
