@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+.abc{
+    color: white;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: red; 
+}
+.xyz{
+    color: white;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: skyblue; 
+}
