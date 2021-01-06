@@ -18,3 +18,21 @@ div{
     width: 100px;
     margin: 20px;
 }
+.container1{
+    display: flex;
+    background-color: rgb(23, 60, 226);
+    height: 150px;
+    width: auto
+
+}
+.list {  
+    list-style-type: none;
+    padding: 5px;  
+    width: 100px;  
+    height: 100px;  
+    margin: 5px;  
+    line-height: 100px;  
+    color: black;  
+    font-size: 30px;  
+    text-align: center;  
+    }  
