@@ -1,0 +1,114 @@
+#div1 img{
+width: 300px;
+height: 300px;
+}
+#image{ 
+  width: 950px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+  url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+  background-blend-mode: multiply; 
+}
+#image1{ 
+    width: 950px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: screen; 
+  }
+  #image2{ 
+    width: 950px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: difference; 
+  }
+  #image3{ 
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: color-dodge; 
+  }
+  #image4{ 
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: darken; 
+  } #image5{ 
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: lighten; 
+  } #image6{ 
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: saturation; 
+  } #image7{ 
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: luminosity; 
+  } #image8{ 
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: overlay; 
+  } #image9{ 
+    width: 1000px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: hard-light; 
+  } #image10{ 
+    width: 950px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: soft-light; 
+  } #image11{ 
+    width: 950px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: exclusion; 
+  } #image12{ 
+    width: 950px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: hue; 
+  } #image13{ 
+    width: 950px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: color-burn; 
+  } #image14{ 
+    width: 9500px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image:url("https://www.mwallpapers.com/photos/celebrities/mahesh-babu/mahesh-babuhd-wallpapers-desktop-background-android-iphone-1080p-4k-6hdc4.jpg?v=1577237592"),
+    url("https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-6.jpg");
+    background-blend-mode: color; 
+  }
