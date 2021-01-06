@@ -1,0 +1,16 @@
+.break{   
+    width: 150px;    
+    border: 2px solid black;   
+    word-break: break-all;    
+    text-align: left;   
+    font-size: 25px;   
+color: blue;  
+}   
+.keep{   
+    width: 156px;    
+    border: 2px solid black;   
+    word-break: keep-all;    
+    text-align: left;   
+    font-size: 25px;  
+color: blue;  
+}
