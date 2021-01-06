@@ -1,0 +1,16 @@
+#super{
+vertical-align:super;
+font-size: medium;
+}
+p{
+font-weight: bold;
+font-size: 20px;
+}
+#sub{
+    vertical-align: sub;
+    font-size: medium;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
