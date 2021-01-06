@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+.container{
+    display: flex;
+    background-color: cyan;
+    height: 150px;
+    width: auto;
+    flex-wrap: wrap;
+}
+div{
+    background-color: whitesmoke;
+    line-height: 40px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    width: 100px;
+    margin: 20px;
+}
