@@ -1,12 +1,69 @@
-ul{
-    list-style-type: none;
-    margin-top: 0;
-    padding: 0px;
-    overflow: hidden;
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    font-family: 'Josefin Sans', sans-serif;
 }
-li{
+header{
+    background-color: white;
+    display: inline;
+}
+.logo1{
+    color: white;
     display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.navbar{
     float: right;
-    margin-right: 2px;
+    word-spacing: 25px;
+    padding: 10px 10px 0px 0px;
+    margin-right: 5px;
+}
+.btn{
+    float:right;
+    display: block;
+    border-width: 0px;
+    margin-bottom: 10px;
+    background-color: limegreen;
+    font-size: 1em;
+    margin-left: 15px;
+}
+.agri{
+margin-top: 0%;
+height: 1000px;
+width: 1265px;
+background-image: url("./Assets/h1_hero2.png");
+background-repeat: no-repeat;
+padding: 10px;
+}
+.first{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    padding-top: 270px;
+}
+.high{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    width: 50%;
+    margin: 0 auto;
+}
+.agri a{
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+.container{
+    margin: 0 auto;
+}
+.image2{
+    float: left;
+    display: block;
+    padding: 10px;
+}
+.hd1{
+    
+}
+.pg1{
+    text-align: center;
 }
