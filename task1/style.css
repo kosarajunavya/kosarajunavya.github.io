@@ -106,7 +106,7 @@ padding: 10px;
     line-height: 35px;
     width: 25%; 
     margin: 10px;
-    background-color: rgb(209, 252, 248);
+    background-color: #F3FFF2;
     color: darkgreen;
     text-align: left;
 }
@@ -119,7 +119,7 @@ padding: 10px;
     line-height: 35px;
     width: 25%; 
     margin: 10px;
-    background-color: rgb(209, 252, 248);
+    background-color: #F3FFF2;
     color: darkgreen;
     text-align: left;
 }
@@ -140,7 +140,7 @@ padding: 10px;
     margin: 10px;
     margin-top: 40px;
     color:white;
-    background-color: limegreen;
+    background-color:limegreen;
 }
 .btn4{
     font-size: 20px;
@@ -179,4 +179,71 @@ padding: 10px;
     color: blue;
     width: 25%;
     margin: 20px;
+}
+.flex-container4 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.info3{
+    list-style-type: square;
+    font-size: 19px;
+    line-height: 30px;
+    width: 50%; 
+    margin: 10px;
+    color: darkgreen;
+    text-align: left;
+}
+.flex-container5 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.video img{
+    width: 100%;
+    margin-left: 10px;
+}
+.flex-container6 {
+    background-color: #F3FFF2;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image6{
+    width: 50%;
+    margin: 10px;
+}
+.info4{
+    font-size: 20px;
+    line-height: 35px;
+    width: 50%; 
+    margin: 10px;
+    color: darkgreen;
+    text-align: left;
+}
+.flex-container7 {
+    background-color: #F3FFF2;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image7{
+    width: 50%;
+    margin: 10px;
+}
+.info5{
+    font-size: 20px;
+    line-height: 35px;
+    width: 50%; 
+    color: darkgreen;
+    text-align: left;
+}
+.btn5{
+    font-size: 20px;
+    width: 200px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10px;
+    color:white;
+    background-color: #329D23
 }
