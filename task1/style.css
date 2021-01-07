@@ -30,7 +30,7 @@ header{
 .agri{
 margin-top: 0%;
 height: 1000px;
-width: 1265px;
+width: 1260px;
 background-image: url("./Assets/h1_hero2.png");
 background-repeat: no-repeat;
 padding: 10px;
@@ -53,17 +53,130 @@ padding: 10px;
     color: white;
     font-size: 1em;
 }
-.container{
-    margin: 0 auto;
-}
-.image2{
-    float: left;
-    display: block;
-    padding: 10px;
-}
-.hd1{
-    
-}
-.pg1{
+.btn1{
     text-align: center;
+    font-size: 20px;
+    color: black;
+    width: 250pxpx;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 80px;
+    background-color: inherit;
+    border-radius: 10px 10px 10px;
+}
+.flex-container1 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image2 {
+    color: darkgreen;
+    width: 50%;
+    margin: 10px;
+}
+.content{
+    margin-left: 100px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    color: darkgreen;
+    width: 25%;
+    margin: 10px;
+}
+.btn2{
+    font-size: 20px;
+    width: 200px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10px;
+    color:white;
+    background-color: limegreen;
+}
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image3{
+    width: 25%;
+    margin: 10px;
+}
+.info1{
+    font-size: 20px;
+    line-height: 35px;
+    width: 25%; 
+    margin: 10px;
+    background-color: rgb(209, 252, 248);
+    color: darkgreen;
+    text-align: left;
+}
+.image4{
+    width: 25%;
+    margin: 10px;
+}
+.info2{
+    font-size: 20px;
+    line-height: 35px;
+    width: 25%; 
+    margin: 10px;
+    background-color: rgb(209, 252, 248);
+    color: darkgreen;
+    text-align: left;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+}
+.flex-item {
+    width: 50%;
+    margin: 10px;
+}
+.btn3{
+    font-size: 20px;
+    width: 200px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 40px;
+    color:white;
+    background-color: limegreen;
+}
+.btn4{
+    font-size: 20px;
+    width: 200px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10px;
+    color:white;
+    background-color: limegreen;
+}
+.flex-container3 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.list1{
+    text-align: left;
+    color: blue;
+    width: 25%;
+    margin: 20px;
+}
+.list2{
+    text-align: left;
+    color: blue;
+    width: 25%;
+    margin: 20px;
+}
+.list3{
+    text-align: left;
+    color: blue;
+    width: 25%;
+    margin: 20px;
+}
+.list4{
+    text-align: left;
+    color: blue;
+    width: 25%;
+    margin: 20px;
 }
