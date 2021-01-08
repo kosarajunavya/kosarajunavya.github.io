@@ -113,15 +113,6 @@ body{
     color: darkgreen;
     text-align: left;
 }
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    width: 400px;
-}
-.flex-item {
-    width: 50%;
-    margin: 10px;
-}
 .btn3{
     font-size: 20px;
     width: 200px;
@@ -225,7 +216,7 @@ body{
 }
 .btn5{
     font-size: 20px;
-    width: ;
+    width: 30%;
     border-radius: 10px 10px 10px 10px;
     text-align: center;
     margin: 10px;
@@ -238,7 +229,6 @@ body{
     width: 100%;
 }
 .image8{
-    width: 50%;
     margin: 10px;
 }
 .info6{
@@ -287,4 +277,7 @@ body{
 .cpy{
     text-align: center;
     background-color:#F3FFF2; 
+}
+.img{
+    max-width: 50%;
 }
