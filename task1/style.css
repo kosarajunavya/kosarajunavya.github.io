@@ -191,11 +191,9 @@ body{
     background-color: #F3FFF2;
     display: -webkit-flex;
     display: flex;
-    height: 100%;
     width: 80%;
 }
 .image6{
-    width: 50%;
     margin: 10px;
 }
 .info4{
@@ -209,11 +207,9 @@ body{
     background-color: #F3FFF2;
     display: -webkit-flex;
     display: flex;
-    height: 100%;
     width: 80%;
 }
-.image7{
-    width: 50%;
+.image7{  
     margin: 10px;
 }
 .info5{
@@ -223,10 +219,36 @@ body{
 }
 .btn5{
     font-size: 20px;
-    width: 200px;
+    width: ;
     border-radius: 10px 10px 10px 10px;
     text-align: center;
     margin: 10px;
     color:white;
     background-color: #329D23
+}
+.flex-container8 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image8{
+    width: 40%;
+    margin: 10px;
+}
+.info6{
+    margin-top: 5rem;
+    margin-left: 30px;
+    width: 45%;
+    line-height: 30px;
+    color: darkgreen;
+    text-align: left;
+}
+.btn6{
+    font-size: 20px;
+    width: 25%;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10px;
+    color: black;
+    background-color: white
 }
