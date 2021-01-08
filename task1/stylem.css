@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.logo1{
+    color: white;
+    width: 50%;
+    margin: 10px;
+}
+.navbar{
+    width: 30%;
+    margin: 20px;
+    word-spacing: 25px;
+    
+}
+.btn{
+    width: 20%;
+    margin: 5px;
+    background-color: #329D23;
+    border-radius: 10px 10px 10px 10px;
+}
+.image1{
+    max-width: 100%;
+}
+.info{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn1{ /*explore our services button*/
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: inherit;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 1px;
+}
+.flex-container1 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image2 {
+    color: darkgreen;
+}
+.content{/* second image information*/
+    width: 20%;
+    line-height: 30px;
+    color: darkgreen;
+    text-align: left;
+    margin-left: 150px;
+}
+.btn2{/* more about us button*/
+    font-size: 20px;
+    width: 200px;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 0px;
+    text-align: center;
+    color: green;
+    background-color: white;
+}
+.flex-container2 {
+    background-color: #F3FFF2;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image3{
+    width: 25%;
+}
+.info1{
+    font-size: 15px;
+    line-height: 25px;
+    width: 25%; 
+    color: darkgreen;
+    text-align: left;
+}
+.image4{
+    width: 25%;
+}
+.info2{
+    font-size: 15px;
+    line-height: 25px;
+    width: 25%;
+    background-color: #F3FFF2;
+    color: darkgreen;
+    text-align: left;
+}
+.btn3{/* get the service button1*/
+    font-size: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    border-width: 0px;
+    margin-top: 40px;
+    color:green;
+    background-color: white;
+}
+.btn4{/* get the service button2*/
+    font-size: 15px;
+    height: 40px;
+    width: 200px;
+    border-width: 0px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    margin: 10px;
+    color: green;
+    background-color: white;
+}
+.flex-container3 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.list1{
+    text-align: left;
+    color: blue;
+    width: 25%;
+    margin: 20px;
+}
+.list2{
+    text-align: left;
+    color: blue;
+    width: 25%;
+    margin: 20px;
+}
+.list3{
+    text-align: left;
+    color: blue;
+    width: 25%;
+    margin: 20px;
+}
+.list4{
+    text-align: left;
+    color: blue;
+    width: 25%;
+    margin: 20px;
+}
+.flex-container4 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.info3{
+    list-style-type: square;
+    font-size: 19px;
+    line-height: 30px;
+    width: 50%; 
+    margin: 10px;
+    color: darkgreen;
+    text-align: left;
+}
+.flex-container5 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.video img{
+    width: 100%;
+}
+.flex-container6 {
+    background-color: #F3FFF2;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image6{
+    margin-top: 10px; 
+    width: 40%;
+}
+.info4{
+    width: 50%;
+    line-height: 35px;
+    color: darkgreen;
+    text-align: left;
+}
+.flex-container7 {
+    background-color: #F3FFF2;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image7{ 
+    margin-top: 10px; 
+    width: 40%;
+}
+.info5{
+    width: 50%;
+    line-height: 35px;
+    color: darkgreen;
+    text-align: left;
+}
+.btn5{ /* more tips button*/
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-width: 1px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10px;
+    color green;
+    background-color:white;
+}
+.flex-container8 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.image8{
+    margin: 10px;
+}
+.info6{
+    background-color: white;
+    margin-top: 5rem;
+    margin-left: 30px;
+    width: 25%;
+    line-height: 30px;
+    color: darkgreen;
+    text-align: left;
+}
+.btn6{/* drop your message button*/
+    font-size: 20px;
+    width: 200px;
+    border-width: 0px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    border-width: 0px;
+    color:green;
+    background-color: white
+}
+.flex-container9 {
+    background-color: #F3FFF2;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.info7{
+    line-height: 30px;
+    color: darkgreen;
+    text-align: left;
+    width: 50%;
+    margin: 10px;
+}
+
+.info8{
+    text-align: left;
+    color: darkgreen;
+    width: 25%;
+    margin: 10px;
+}
+.info9{
+    text-align: left;
+    color: darkgreen;
+    width: 25%;
+    margin: 10px;
+}
+.cpy{
+    text-align: center;
+    background-color:#F3FFF2; 
+}
+img {
+    max-width: 100%;
+}
