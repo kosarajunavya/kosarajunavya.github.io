@@ -20,7 +20,6 @@ body{
     display: -webkit-flex;
     display: flex;
     width: 100%;
-    margin: 10px;
 }
 .logo1{
     color: white;
@@ -43,94 +42,99 @@ body{
     max-width: 100%;
 }
 .info{
-    color:black;
-    text-align: center;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.btn1{
-    width: 15%;
-    height: 50%;
-    margin: 5px;
+.btn1{ /*explore our services button*/
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
     background-color: inherit;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 1px;
 }
 .flex-container1 {
     display: -webkit-flex;
     display: flex;
     width: 100%;
-    margin: 50px;
 }
 .image2 {
     color: darkgreen;
-    width: 50%;
-    margin: 10px;
 }
-.content{
+.content{/* second image information*/
+    width: 20%;
     line-height: 30px;
     color: darkgreen;
-    text-align: center;
-    width: 20%;
-    margin: 10px;
+    text-align: left;
+    margin-left: 150px;
 }
-.btn2{
+.btn2{/* more about us button*/
     font-size: 20px;
     width: 200px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 0px;
     text-align: center;
-    margin: 10px;
-    color:white;
-    background-color: #329D23;
+    color: green;
+    background-color: white;
 }
 .flex-container2 {
+    background-color: #F3FFF2;
     display: -webkit-flex;
     display: flex;
     width: 100%;
 }
 .image3{
     width: 25%;
-    margin: 10px;
 }
 .info1{
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 25px;
     width: 25%; 
-    padding: 15px;
-    margin: 10px;
-    background-color: #F3FFF2;
     color: darkgreen;
     text-align: left;
 }
 .image4{
     width: 25%;
-    margin: 10px;
 }
 .info2{
-    font-size: 20px;
-    line-height: 35px;
-    width: 25%; 
-    margin: 10px;
-    padding: 15px;
+    font-size: 15px;
+    line-height: 25px;
+    width: 25%;
     background-color: #F3FFF2;
     color: darkgreen;
     text-align: left;
 }
-.btn3{
-    font-size: 20px;
+.btn3{/* get the service button1*/
+    font-size: 15px;
     width: 200px;
-    border-radius: 10px 10px 10px 10px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
     text-align: center;
-    margin: 10px;
+    border-width: 0px;
     margin-top: 40px;
-    color:white;
-    background-color: #329D23;
+    color:green;
+    background-color: white;
 }
-.btn4{
-    font-size: 20px;
+.btn4{/* get the service button2*/
+    font-size: 15px;
+    height: 40px;
     width: 200px;
-    border-radius: 10px 10px 10px 10px;
+    border-width: 0px;
+    border-radius: 20px 20px 20px 20px;
     text-align: center;
     margin: 10px;
-    color:white;
-    background-color: #329D23;
+    color: green;
+    background-color: white;
 }
 .flex-container3 {
     display: -webkit-flex;
@@ -182,21 +186,20 @@ body{
 }
 .video img{
     width: 100%;
-    margin-left: 10px;
 }
 .flex-container6 {
     background-color: #F3FFF2;
     display: -webkit-flex;
     display: flex;
-    width: 80%;
+    width: 100%;
 }
 .image6{
-    margin: 10px;
+    margin-top: 10px; 
+    width: 40%;
 }
 .info4{
+    width: 50%;
     line-height: 35px;
-    margin: 10px;
-    word-break: keep-all;
     color: darkgreen;
     text-align: left;
 }
@@ -204,24 +207,28 @@ body{
     background-color: #F3FFF2;
     display: -webkit-flex;
     display: flex;
-    width: 80%;
+    width: 100%;
 }
-.image7{  
-    margin: 10px;
+.image7{ 
+    margin-top: 10px; 
+    width: 40%;
 }
 .info5{
+    width: 50%;
     line-height: 35px;
     color: darkgreen;
     text-align: left;
 }
-.btn5{
+.btn5{ /* more tips button*/
     font-size: 20px;
-    width: 30%;
+    width: 200px;
+    height: 50px;
+    border-width: 1px;
     border-radius: 10px 10px 10px 10px;
     text-align: center;
     margin: 10px;
-    color:white;
-    background-color: #329D23
+    color green;
+    background-color:white;
 }
 .flex-container8 {
     display: -webkit-flex;
@@ -240,13 +247,14 @@ body{
     color: darkgreen;
     text-align: left;
 }
-.btn6{
+.btn6{/* drop your message button*/
     font-size: 20px;
-    width: 25%;
-    border-radius: 10px 10px 10px 10px;
+    width: 200px;
+    border-width: 0px;
+    border-radius: 20px 20px 20px 20px;
     text-align: center;
-    margin: 10px;
-    color: black;
+    border-width: 0px;
+    color:green;
     background-color: white
 }
 .flex-container9 {
@@ -256,6 +264,7 @@ body{
     width: 100%;
 }
 .info7{
+    line-height: 30px;
     color: darkgreen;
     text-align: left;
     width: 50%;
@@ -278,6 +287,6 @@ body{
     text-align: center;
     background-color:#F3FFF2; 
 }
-.img{
-    max-width: 50%;
+img {
+    max-width: 100%;
 }
