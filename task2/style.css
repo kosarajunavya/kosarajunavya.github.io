@@ -1,0 +1,114 @@
+@import url('./fonts/font-awesome.min.css');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+body {
+    margin: 10px;
+    background-color: white;
+  }
+  #navbar {
+    display: grid;
+    height: 80px;
+    grid-auto-flow: column;
+    background-color:black;
+    grid-gap: 2em;
+    padding: 0 100px;
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+    box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  }
+  
+  #logo {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+  }
+  #links {
+    display: grid;
+    justify-content: right;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color:white;
+  }
+.container1{ 
+    display: grid;
+    background-image: url("./images/banner.jpg");
+    background-repeat: no-repeat;
+}
+.text1{
+    padding: 10rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: white;
+}
+.button{
+    width: 100px;
+}
+.grid-container2{
+    display: grid;
+}
+.row1{
+
+}
+.btn{
+
+}
+.grid-container3{
+    display: grid;
+}
+.grid1{
+
+}
+.grid2{
+
+}
+.grid-container4{
+display: grid;
+}
+.grid3{
+
+}
+.button1{
+
+}
+.grid4{
+
+}
+.button2{
+
+}
+.grid5{
+
+}
+.button3{
+
+}
+.grid-container5{
+
+}
+.he{
+
+}
+.grid6{
+
+}
+.grid7{
+
+}
+.grid8{
+
+}
+.button4{
+
+}
+.cpy{
+
+}
