@@ -139,45 +139,55 @@ img{
 }
 .grid-container4{
   display: grid;
+  grid-gap: 8rem;
   grid-auto-flow: column;
   padding: 0 100px;
 }
 .grid3{
-
+  margin-top: 7rem ;
+  line-height: 2rem;
 }
-.button1{
-
+.head3{
+  color: #e5474b;
+}
+.btn1{
+  width: 8rem;
+  height: 3rem;
+  color: #e5474b;
+  background-color: inherit;
+  border: 2px solid #e5474b;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 .grid4{
-
+  margin-top: 7rem ;
+  line-height: 2rem;
 }
-.button2{
-
+.head4{
+  color: #e5474b;
+}
+.btn2{
+  width: 8rem;
+  height: 3rem;
+  color: #e5474b;
+  background-color: inherit;
+  border: 2px solid #e5474b;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 .grid5{
-
+  margin-top: 7rem ;
+  line-height: 2rem;
 }
-.button3{
-
+.head5{
+  color: #e5474b;
 }
-.grid-container5{
-
-}
-.he{
-
-}
-.grid6{
-
-}
-.grid7{
-
-}
-.grid8{
-
-}
-.button4{
-
-}
-.cpy{
-
+.btn3{
+  width: 8rem;
+  height: 3rem;
+  color: #e5474b;
+  background-color: inherit;
+  border: 2px solid #e5474b;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
