@@ -105,14 +105,14 @@ img{
   margin-bottom: 5rem;
 }
 .grid-container3{
-  background-color: rgba(247, 242, 242, 0.952);
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 10em;
   padding: 0 100px;
+  background-color: #f3f3f3;
 }
 .grid1{
-  
+  padding-right: 6rem;
+  grid-gap: 10rem;
 }
 .head1{
   margin-top: 7rem;
@@ -124,8 +124,10 @@ img{
     vertical-align: baseline;
 }
 .grid2{
-
-}
+  padding-right: 5rem;
+  padding-left: 5rem;
+  background-color: #f7f7f7;
+  }
 .head2{
   margin-top: 7rem;
   color: #e5474b;
@@ -136,7 +138,9 @@ img{
     vertical-align: baseline;
 }
 .grid-container4{
-display: grid;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 0 100px;
 }
 .grid3{
 
