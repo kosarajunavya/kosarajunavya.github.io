@@ -1,10 +1,11 @@
 @import url('./fonts/font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 body {
+  font-family: "Lato", sans-serif;
     margin: 10px;
     background-color: white;
   }
-  #navbar {
+#navbar {
     display: grid;
     height: 80px;
     grid-auto-flow: column;
@@ -16,16 +17,16 @@ body {
     box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
   }
   
-  #logo {
+#logo {
     display: grid;
     justify-content: start;
     align-content: center;
-    font-family: cursive;
+    font-family: "Lato", cursive;
     font-size: 30px;
     font-weight: 700;
-    color: red;
+    color:#e5474b;;
   }
-  #links {
+#links {
     display: grid;
     justify-content: right;
     align-content: center;
@@ -34,7 +35,7 @@ body {
     font-family: "Open Sans", sans-serif;
   }
   
-  a {
+a {
     text-decoration: none;
     color:white;
   }
@@ -42,33 +43,97 @@ body {
     display: grid;
     background-image: url("./images/banner.jpg");
     background-repeat: no-repeat;
+    background-size: 79rem;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
+.container .inner{
+  max-width: 70em;
+  width: calc(100% - 6em);
+  margin: 0 auto;
+  position: relative;
+  z-index: 9000;
+  line-height: 1.5;
+}
+
 .text1{
-    padding: 10rem;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    color: white;
+  word-spacing: 1rem;
+  padding: 10rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  vertical-align: baseline;
 }
 .button{
-    width: 100px;
+  width: 9rem;
+  height: 3rem;
+  background-color: inherit;
+  border: 2px solid white;
+  color: white;
+  text-indent: 0px;
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 .grid-container2{
     display: grid;
 }
 .row1{
-
+  display: grid;
+  grid-gap: 2em;
+  padding: 0 100px;
+  background-color: white;
+}
+.head{
+  color: #e5474b;
+  margin-top: 6rem;
+  margin-bottom: -1rem;
+  font-size: 1.75em;
+}
+.para1{
+  line-height: 2rem;
+  vertical-align: baseline;
 }
 .btn{
-
+  width: 8rem;
+  height: 3rem;
+  color: #e5474b;
+  background-color: inherit;
+  border: 2px solid #e5474b;
+  margin-top: -1rem;
+  margin-bottom: 5rem;
 }
 .grid-container3{
-    display: grid;
+  background-color: rgba(247, 242, 242, 0.952);
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10em;
+  padding: 0 100px;
 }
 .grid1{
-
+  
+}
+.head1{
+  margin-top: 7rem;
+  color: #e5474b;
+  font-size: 1.35em;
+}
+.para2{
+    line-height: 2rem;
+    vertical-align: baseline;
 }
 .grid2{
 
+}
+.head2{
+  margin-top: 7rem;
+  color: #e5474b;
+  font-size: 1.35em;
+}
+.para3{
+    line-height: 2rem;
+    vertical-align: baseline;
 }
 .grid-container4{
 display: grid;
