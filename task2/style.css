@@ -111,27 +111,32 @@ img{
   background-color: #f3f3f3;
 }
 .grid1{
-  padding-right: 6rem;
-  margin-left: 8rem;
+  padding: 1rem 5rem;
 }
 .head1{
-  margin-top: 7rem;
+  margin-top: 6rem;
   color: #e5474b;
-  font-size: 1.35em;
+  font-size: 1.5em;
+  margin-bottom: 2rem;
 }
 .para2{
     line-height: 2rem;
     vertical-align: baseline;
 }
+.img1{
+  width: 31rem;
+}
 .grid2{
   padding-right: 5rem;
   padding-left: 5rem;
+  padding-bottom: 3rem;
   background-color: #f7f7f7;
   }
 .head2{
-  margin-top: 7rem;
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
   color: #e5474b;
-  font-size: 1.35em;
+  font-size: 1.5em;
 }
 .para3{
     line-height: 2rem;
