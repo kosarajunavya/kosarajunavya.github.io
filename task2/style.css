@@ -43,7 +43,7 @@ a {
     display: grid;
     background-image: url("./images/banner.jpg");
     background-repeat: no-repeat;
-    background-size: 79rem;
+    background-size: 1264px 723px;
 }
 img{
   max-width: 100%;
@@ -60,7 +60,7 @@ img{
 
 .text1{
   word-spacing: 1rem;
-  padding: 10rem;
+  padding: 9rem;
   font-size: 2rem;
   line-height: 3rem;
   color: white;
@@ -196,7 +196,7 @@ img{
 }
 .grid-container5{
   color: white;
-  padding: 4rem;
+  padding: 3rem;
   background-color: #e5474b;
 }
 * {
@@ -209,6 +209,7 @@ h3 {
 input,
 textarea
 {
+  margin-top: 1rem;
   color: #e5474b;
   width: 100%;
   border: 1px solid white;
@@ -234,6 +235,8 @@ form p {
 }
 input,
 textarea {
+  border: 2px solid rgb(250, 246, 246);
+  background-color: #e5474b;
   padding: 1em;
 }
 .btn4{
