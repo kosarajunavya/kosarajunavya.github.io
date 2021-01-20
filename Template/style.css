@@ -11,12 +11,29 @@
     background-color: #f3f3f3;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 100px;
+    padding-right: 100x;
+  }
+  .lsp-grid1{
+    margin-left: 1rem;
+  }
+  .lsp-text{
+    position: absolute;
   }
   .lsp-grid2{
     margin-left: 1rem;
     padding-top: 12rem;
+    padding-left: 25px;
+    padding-right: 0;
+    position: relative;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 3rem;
+  }
+  .lsp-grid3{
+    padding-top: 3rem;
+    padding-right: 0;
+    position: relative;
   }
   .lsp-head{
     color: #c8102e;
@@ -32,7 +49,7 @@
     font-size: 18px;
     font-size: 14px;
     letter-spacing: 0.2px;
-    line-height: 2.4rem;
+    line-height: 25px;
   }
   a{
       text-decoration: none;
@@ -53,4 +70,7 @@
     -webkit-transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
     -o-transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
     transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  }
+  .lsp-icon{
+  margin: 0;
   }
