@@ -1,0 +1,56 @@
+.body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+}
+.lsp-grid-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #f3f3f3;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .lsp-grid2{
+    margin-left: 1rem;
+    padding-top: 12rem;
+  }
+  .lsp-head{
+    color: #c8102e;
+    font: normal normal 300 1.5rem/2rem "proxima-nova", sans-serif;
+    font-size: 30px;
+    font-size: 3rem;
+    letter-spacing: 0.3px;
+    line-height: 2.6rem;
+  }
+  .lsp-para{
+    color: #000;
+    font: normal normal 300 1.5rem/2rem "proxima-nova", sans-serif;
+    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 2.4rem;
+  }
+  a{
+      text-decoration: none;
+      color: #000;
+  }
+  a:hover,
+  a:active{
+      color: #6dccb7;
+  }
+  .lsp-color{
+    position: relative;
+    border-bottom: 1px solid #6dccb7;
+    -webkit-box-shadow: inset 0 -3px 0 #6dccb7;
+    box-shadow: inset 0 -3px 0 #6dccb7;
+    line-height: 28px;
+    display: inline;
+    white-space: normal;
+    -webkit-transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+    -o-transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+    transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  }
