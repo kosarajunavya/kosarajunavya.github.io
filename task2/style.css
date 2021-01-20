@@ -67,7 +67,7 @@ img{
   vertical-align: baseline;
 }
 .button{
-  width: 9rem;
+  width: 10rem;
   height: 3rem;
   background-color: inherit;
   border: 2px solid white;
@@ -81,7 +81,7 @@ img{
 }
 .row1{
   display: grid;
-  grid-gap: 2em;
+  grid-gap: 1em;
   padding: 0 100px;
   background-color: white;
 }
@@ -91,7 +91,7 @@ img{
   margin-bottom: -1rem;
   font-size: 1.75em;
 }
-.para1{
+.long-copy{
   line-height: 2rem;
   vertical-align: baseline;
 }
@@ -101,7 +101,7 @@ img{
   color: #e5474b;
   background-color: inherit;
   border: 2px solid #e5474b;
-  margin-top: -1rem;
+  margin-top: 1rem;
   margin-bottom: 5rem;
 }
 .grid-container3{
@@ -109,9 +109,10 @@ img{
   grid-auto-flow: column;
   padding: 0rem 0rem;
   background-color: #f3f3f3;
+  line-height: 2rem;
 }
 .grid1{
-  padding: 1rem 5rem;
+  padding: 1rem 3rem;
 }
 .head1{
   margin-top: 6rem;
@@ -119,17 +120,15 @@ img{
   font-size: 1.5em;
   margin-bottom: 2rem;
 }
-.para2{
-    line-height: 2rem;
-    vertical-align: baseline;
-}
 .img1{
   width: 31rem;
 }
+.img{
+    height: 1rem;
+}
 .grid2{
-  padding-right: 5rem;
+  padding-right: 3rem;
   padding-left: 5rem;
-  padding-bottom: 3rem;
   background-color: #f7f7f7;
   }
 .head2{
@@ -137,10 +136,6 @@ img{
   margin-bottom: 1.5rem;
   color: #e5474b;
   font-size: 1.5em;
-}
-.para3{
-    line-height: 2rem;
-    vertical-align: baseline;
 }
 .grid-container4{
   display: grid;
@@ -155,49 +150,6 @@ img{
 .head3{
   font-size: 1.5rem;
   color: #e5474b;
-}
-.btn1{
-  width: 8rem;
-  height: 3rem;
-  color: #e5474b;
-  background-color: inherit;
-  border: 2px solid #e5474b;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-}
-.grid4{
-  margin-top: 7rem ;
-  line-height: 2rem;
-}
-.head4{
-  font-size: 1.5rem;
-  color: #e5474b;
-}
-.btn2{
-  width: 8rem;
-  height: 3rem;
-  color: #e5474b;
-  background-color: inherit;
-  border: 2px solid #e5474b;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-}
-.grid5{
-  margin-top: 7rem ;
-  line-height: 2rem;
-}
-.head5{
-  font-size: 1.5rem;
-  color: #e5474b;
-}
-.btn3{
-  width: 8rem;
-  height: 3rem;
-  color: #e5474b;
-  background-color: inherit;
-  border: 2px solid #e5474b;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
 }
 .grid-container5{
   color: white;
@@ -244,13 +196,4 @@ textarea {
   background-color: #e5474b;
   padding: 1em;
 }
-.btn4{
-  width: 9rem;
-  height: 3rem;
-  background-color: inherit;
-  border: 2px solid white;
-  color:white;
-  text-indent: 0px;
-  font-size: 1rem;
-  margin-top: 2rem;
-}
+
