@@ -15,9 +15,12 @@ body {
 .lsp-section1{
   background-color: #f3f3f3;
 }
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
+.lsp-grid-container{
+  display: grid;
+  grid-auto-flow: row;
+  padding: 0rem 0rem;
+  background-color: #f3f3f3;
+  line-height: 1.48rem;
 }
 .lsp-heading{
   color: #c8102e;
@@ -55,10 +58,19 @@ a:active {
 .lsp-learn{
   margin-left: 5rem;
 }
+
 .lsp-row1{
   margin-left: 5rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+.col1{
+  width: 50%;
+}
+.col2{
+  float: right;
+  width: 50%;
+  margin-top: -14rem;
 }
 hr{
   width: 50%;
@@ -66,12 +78,13 @@ hr{
 }
 .vl {
   border-left: 1px solid grey;
-  height: 15rem;
+  height: 10rem;
   position: absolute;
   left: 50%;
   margin-left: 10px;
   top: 7rem;
 }
+
 .lsp-row2{
   margin-top: 1em;
   margin-bottom: 1rem;
@@ -82,13 +95,14 @@ margin-bottom: 2rem;
 margin-left: 5rem;
 }
 cite{
-font-size: 90%;
-margin-top: 25px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 100%;
+margin-top: 2rem;
 display: block;
 }
 
 cite img {
-height: 45px;
-margin-right: 10px;
+height: 3rem;
+margin-right: 1rem;
 vertical-align: middle;
 }
