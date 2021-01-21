@@ -5,13 +5,15 @@
 }
 html,
 body {
-  background-color: #f3f3f3;
   color: #333333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   line-height: 1.48rem;
+}
+.lsp-section1{
+  background-color: #f3f3f3;
 }
 .row {
   max-width: 1140px;
@@ -25,6 +27,7 @@ body {
   letter-spacing: 0.3px;
   line-height: 2.6rem;
   margin-top: 2rem;
+  margin-left: 5rem;
 }
 a:link,
 a:visited {
@@ -37,26 +40,55 @@ a:visited {
 }
 a:hover,
 a:active {
+  box-sizing: border-box;
   color: #6dccb7;
-  border-bottom: 4px solid transparent;
+  border-bottom: 1px solid transparent;
 }
-.lsp-long-copy{
+.lsp-long-copy{ 
+  margin-left: 5rem;
   margin-bottom: 1rem;
+  margin-right: 20rem;
 }
 .lsp-long-copy1{
   margin-bottom: 2rem;
 }
+.lsp-learn{
+  margin-left: 5rem;
+}
 .lsp-row1{
-  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
+hr{
+  width: 50%;
+  margin-left: 5rem;
+}
+.vl {
+  border-left: 1px solid grey;
+  height: 15rem;
+  position: absolute;
+  left: 52%;
+  margin-left: 10px;
+  top: 7rem;
+}
 .lsp-row2{
-  margin-top: 2rem;
+  margin-top: 1em;
   margin-bottom: 1rem;
+  margin-left: 5rem;
 }
-.lsp-pdf{
-  position: relative;
+.lsp-para{
+margin-bottom: 2rem;
+margin-left: 5rem;
 }
-.lsp-link{
-  margin-top: 1rem;
+cite{
+font-size: 90%;
+margin-top: 25px;
+display: block;
+}
+
+cite img {
+height: 45px;
+margin-right: 10px;
+vertical-align: middle;
 }
