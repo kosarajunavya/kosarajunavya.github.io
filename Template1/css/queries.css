@@ -1,0 +1,123 @@
+@media only screen and (max-width: 2560px) {
+.vl{left: 22%;}
+.rx-grid-container{
+    width: 1140px;
+}
+.rx-image1{
+    padding-top: 1rem;
+    margin-left: 7rem;
+  }
+.rx-info1{
+    width: 45%;
+    }
+.rx-image2{
+    padding-top: 1rem;
+    margin-left: -5rem;
+    }
+.rx-info2{
+    width: 60%;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .vl{left: 38rem;}
+    .rx-grid-container{
+        width: 1140px;
+    }
+    .rx-image1{
+        padding-top: 1rem;
+        margin-left: 7rem;
+      }
+    .rx-info1{
+        width: 45%;
+        }
+    .rx-image2{
+        padding-top: 1rem;
+        margin-left: -5rem;
+        }
+    .rx-info2{
+        width: 60%;
+        }
+    }
+@media only screen and (max-width: 1200px) {
+    .rx-grid-container{
+        width: 1140px;
+    }
+    .rx-image1{
+        padding-top: 1rem;
+        margin-left: 7rem;
+      }
+    .rx-info1{
+        width: 45%;
+        }
+    .rx-image2{
+        padding-top: 1rem;
+        margin-left: -5rem;
+        }
+    .rx-info2{
+        width: 60%;
+        }
+}
+@media only screen and (max-width: 1023px) {
+    .vl{left: 38rem;}
+    .rx-grid-container{
+        width: 1140px;
+    }
+    .rx-image1{
+        padding-top: 1rem;
+        margin-left: 7rem;
+      }
+    .rx-info1{
+        width: 45%;
+        }
+    .rx-image2{
+        padding-top: 1rem;
+        margin-left: -5rem;
+        }
+    .rx-info2{
+        width: 60%;
+        }
+}
+@media only screen and (max-width: 768px) {
+    .vl{left: 24rem;}
+    .rx-grid-container{
+        width: 768px;
+    }
+    .rx-image1{
+        padding-top: 1rem;
+        margin-left: 2rem;
+      }
+    .rx-info1{
+        margin-left: 1rem;
+        }
+    .rx-image2{
+        padding-top: 1rem;
+        margin-left: -10rem;
+        }
+    .rx-info2{
+        margin-left: -3rem;
+        }
+}
+@media only screen and (max-width: 320px) {
+    .vl{left: 24rem;}
+    .rx-grid-container{
+        width: 320px;
+    }
+    .rx-image1{
+        padding-top: 1rem;
+        margin-left: 2rem;
+      }
+    .rx-info1{
+        width: 14rem;
+        }
+    .rx-image2{
+        padding-top: 13rem;
+        margin-left: -21rem;
+        }
+    .rx-info2{
+        margin-left: -14rem;
+        width: 13rem;
+        margin-top: 12rem;
+}
+}
+        }
+}
