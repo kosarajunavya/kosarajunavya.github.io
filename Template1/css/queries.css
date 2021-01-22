@@ -97,10 +97,12 @@
         margin-left: -3rem;
         }
 }
-@media only screen and (max-width: 320px) {
-    .vl{left: 24rem;}
+@media only screen and (max-width: 425px) {
+    .vl{left: 0rem;
+        height: 0;
+    }
     .rx-grid-container{
-        width: 320px;
+        width: 425px;
     }
     .rx-image1{
         padding-top: 1rem;
@@ -111,13 +113,11 @@
         }
     .rx-image2{
         padding-top: 13rem;
-        margin-left: -21rem;
+        margin-left: -25rem;
         }
     .rx-info2{
-        margin-left: -14rem;
+        margin-left: -18rem;
         width: 13rem;
         margin-top: 12rem;
 }
-}
-        }
 }
