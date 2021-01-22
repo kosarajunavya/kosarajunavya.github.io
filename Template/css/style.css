@@ -12,97 +12,58 @@ body {
   overflow-x: hidden;
   line-height: 1.48rem;
 }
-.lsp-section1{
-  background-color: #f3f3f3;
+.lsp1{
+  background-color:  #f3f3f3;
+}
+.lsp-para{
+  margin-left: 0rem;
+  margin-bottom: 1rem;
 }
 .lsp-grid-container{
   display: grid;
-  grid-auto-flow: row;
-  padding: 0rem 0rem;
-  background-color: #f3f3f3;
-  line-height: 1.48rem;
+  width: 100%;
+  grid-auto-flow: column;
+  grid-template-columns: 35% 50%;
+  background-color:  #f3f3f3;
+}
+.col1{
+  width: 40rem;
+}
+.lsp-grid1{
+  margin-bottom: 2rem;
+  margin-left: 8rem;
+}
+.lsp-grid2{
+  margin-left: 4rem;
+  margin-top: 8rem;
 }
 .lsp-heading{
   color: #c8102e;
   font: normal normal 300 1.5rem/2rem "proxima-nova", sans-serif;
-  font-size: 30px;
-  font-size: 3rem;
-  letter-spacing: 0.3px;
-  line-height: 2.6rem;
-  margin-top: 2rem;
-  margin-left: 5rem;
 }
-a:link,
-a:visited {
-  color: black;
-  text-decoration: none;
-  padding-bottom: 1px;
-  border-bottom: 3px solid #6dccb7;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
-  transition: border-bottom 0.2s, color 0.2s;
+.lsp-para1{
+word-break: keep-all;
+margin-bottom: 2rem;
 }
-a:hover,
-a:active {
-  box-sizing: border-box;
-  color: #6dccb7;
-  border-bottom: 1px solid transparent;
-}
-.lsp-long-copy{ 
-  margin-left: 5rem;
-  margin-bottom: 1rem;
-  margin-right: 20rem;
-}
-.lsp-long-copy1{
+cite {
+  font-size: 100%;
+  margin-top: 25px;
+  display: block;
   margin-bottom: 2rem;
 }
-.lsp-learn{
-  margin-left: 5rem;
-}
-
-.lsp-row1{
-  margin-left: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-.col1{
-  width: 50%;
-}
-.col2{
-  float: right;
-  width: 50%;
-  margin-top: -14rem;
+cite img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 hr{
-  width: 50%;
-  margin-left: 5rem;
+  width: 20rem;
 }
-.vl {
+.lsp-vl {
   border-left: 1px solid grey;
-  height: 10rem;
+  height: 12rem;
   position: absolute;
-  left: 50%;
-  margin-left: 10px;
-  top: 7rem;
-}
-
-.lsp-row2{
-  margin-top: 1em;
-  margin-bottom: 1rem;
-  margin-left: 5rem;
-}
-.lsp-para{
-margin-bottom: 2rem;
-margin-left: 5rem;
-}
-cite{
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-size: 100%;
-margin-top: 2rem;
-display: block;
-}
-
-cite img {
-height: 3rem;
-margin-right: 1rem;
-vertical-align: middle;
+  left: 38rem;
+  top: 10rem;
 }
