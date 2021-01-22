@@ -1,54 +1,74 @@
-@media only screen and (max-width: 1200px) {
-    .row { padding: 0 2%;}
-}
-@media only screen and (max-width: 1023px) {
-    .row { padding: 0 2%;}
-    .col2{  
-        width: 50%;
-        margin-top: -20rem;
-      }
-    .lsp-long-copy {
-        width: 80%;
-        margin-left: 10%;
+@media only screen and (max-width: 2560px) {
+    .lsp-grid-container{ width: 2560px;}
+    .lsp-para{
+        margin-left: 0rem;
+        margin-bottom: 1rem;
     }
-    hr{
-        width: 50%;
-        margin-left: 5rem;
-      }
-    .vl {
-        height: 15rem;
-        left: 52%;
-        margin-left: 10px;
-        top: 7rem;
-    }
-    cite{
-        font-size: 90%;
-        margin-top: 25px;
-    }
-    cite img {
-        height: 45px;
-        margin-right: 10px;
-    }
-}
-@media only screen and (max-width: 767px) {
-    hr {
-        width: 50%;
+    .lsp-grid1{
+        margin-bottom: 2rem;
         margin-left: 8rem;
     }
+    .lsp-grid2{
+        margin-left: 4rem;
+        margin-top: 4rem;
+    }
+    .lsp-vl {
+        height: 12rem;
+        left: 65rem;
+        top: 5rem;
+    }
 }
-@media only screen and (max-width: 480px) {
-    .lsp-long-copy {
-        width: 80%;
-        margin-left: 20%;
+@media only screen and (max-width: 1440px) {
+    .lsp-grid-container{ width: 1440px;}
+    .lsp-grid2{
+        margin-left: 4rem;
+        margin-top: 5rem;
     }
-    .vl {
+    .lsp-vl {
+        height: 12rem;
+        left: 38rem;
+        top: 7rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .lsp-grid-container{ width: 1024px;}
+    .lsp-vl {
+        height: 20rem;
+        left: 27rem;
+        top: 7rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .lsp-grid-container{ width: 768px;}
+    .lsp-vl {
+        height: 30rem;
+        left: 21rem;
+        top: 8rem;
+    }
+    .lsp-grid2{
+        margin-left: 4rem;
+        margin-top: 10rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .lsp-grid-container{ width: 425px;}
+    .lsp-vl {
         height: 0rem;
+        left: 21rem;
+        top: 8rem;
     }
-    cite {
-        font-size: 100%;
-        margin-top: 22px;
-        width: 70%;
+    .lsp-para{
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+        width: 20rem;
     }
-    
-    
+    .lsp-grid1{
+        margin-bottom: 2rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+    .lsp-grid2{
+        margin-left: -10rem;
+        margin-top: 34rem;
+    }
 }
