@@ -1,0 +1,32 @@
+.lsp-financial{
+    padding-top: 1rem;
+    background-color:  #f3f3f3;
+}
+.lsp-oval-grid-container{
+    display: grid;
+    grid-auto-flow: column;
+    width: 1140px;
+    line-height: 1.48rem;
+    grid-template-columns: 22% 78%;
+}
+.lsp-support{
+color: #c8102e;
+margin-left: 5rem;
+}
+.fin-wrapper{
+    width: 70%;
+}
+.lsp-grid-oval{
+    margin-left: 5rem;
+}
+.lsp-treat{
+    margin-left: 5rem;
+}
+.lsp-fin{
+    width: 10rem;
+    margin-top: 1rem;
+}
+.lsp-tc{
+    margin-left: 1rem;
+    width: 50%;
+}
