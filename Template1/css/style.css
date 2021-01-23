@@ -1,22 +1,19 @@
-html,
-body {
+
+.rx-para{
   color: #333333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
   line-height: 1.48rem;
 }
 
 .rx-grid-container{
     display: grid;
     grid-auto-flow: column;
-    line-height: 1.48;
     width: 1140px;
   }
   .rx-image1{
     position: relative;
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin-left: 7rem;
   }
   .rx-head1{
@@ -24,29 +21,23 @@ body {
     font: normal normal 300 1.5rem/2rem "proxima-nova", sans-serif;
     margin-bottom: -1rem;
     }
-  .rx-info1{
-    width: 45%;
-  }
+    .rx-info1{
+      border-right: solid 1px black;
+      width: 16rem;
+      margin-left: -5rem;
+    }
+    .rx-info2{
+      width: 14rem;
+    }
+  
   .rx-image2{
-    padding-top: 1rem;
     position: relative;
-    margin-left: -5rem;
+    margin-top: 2rem;
+    margin-right: -5rem;
   }
   .rx-head2{
     color: #c8102e;
     font: normal normal 300 1.5rem/2rem "proxima-nova", sans-serif;
     margin-bottom: -1rem;
     }
-  .rx-info2{
-    width: 60%;
-  }
-  .rx-link{
-      margin-bottom: 0rem;
-  }
-  .vl {
-    border-left: 1px solid grey;
-    height: 9rem;
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-  }
+ 
