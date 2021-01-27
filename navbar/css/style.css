@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.container{
+display: grid;
+height: 126px;
+background-color: rgb(92, 208, 253);
+background: linear-gradient(to right bottom, rgba(99, 167, 194, 0.8) rgba(240, 242, 243, 0.685));
+
+}
+.logo{
+width: 12rem;
+padding: 5px;
+border-radius: 0 35px;
+
+}
+#navbar{
+    display: grid;
+    height: 80px;
+    grid-auto-flow: column;
+}
+ a{
+text-decoration: none;
+color: black;
+flex-flow: column;
+}
+#links{
+    display: grid;
+    justify-content: right;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    padding: 50px;
+}
+    
