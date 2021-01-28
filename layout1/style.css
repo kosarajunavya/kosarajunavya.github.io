@@ -1,0 +1,41 @@
+body{
+    width: 1140px;
+}
+.head{
+background-color: blueviolet; 
+padding: 1px 0px;
+text-align: center; 
+color: wheat;
+}
+.main{
+display: flex;
+}
+.main1{
+width: 15%;
+padding: 10px 0px;
+}
+nav a{
+background-color: rgb(68, 189, 236); 
+padding: 15px 60px;
+text-decoration: none;
+display: table-caption;
+}
+.main2{
+padding: 0px 140px;
+text-align: center;
+}
+.aside{
+background-color:rgb(44, 180, 235);
+margin: 10px 2px; 
+padding: 0px 15px;
+color: white;
+}
+aside a{
+text-decoration: none;
+color: white;
+}
+footer{
+background-color: rgb(10, 165, 226);
+text-align: center;
+padding: 10px 1px;
+}
