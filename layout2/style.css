@@ -26,6 +26,9 @@ nav a{
     text-decoration: none;
     color:black;
 }
+nav ul{
+    list-style: none;
+}
 nav li{
     display: inline;
     margin-right: 5rem;
