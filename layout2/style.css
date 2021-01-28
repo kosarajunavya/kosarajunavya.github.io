@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bird-wrapper{
+    background-color: grey;
+}
+header{
+    background-color: rgba(52, 201, 52, 0.986);
+    padding: 1px 22px; 
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    margin-left: 28rem;
+}
+header img{
+    width: 4rem;
+}
+#links{
+    background-color: rgba(52, 201, 52, 0.986);
+    display: grid;
+    grid-auto-flow: column;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+}
+nav li{
+    display: inline;
+    margin-right: 5rem;
+}
+.navbar{
+    background-color: rgb(56, 238, 11);
+    box-sizing: border-box;
+    margin: 1rem;
+    text-align: center;
+}
+main{
+    margin-top: 1rem;
+    display: flex;
+    background-color: rgba(52, 201, 52, 0.986);
+}
+article{
+    margin: 10px;
+    background-color: rgb(56, 238, 11);
+}
+article h2{
+    text-align: center;
+}
+article p{
+    margin: 1rem;
+}
+aside{
+    background-color: rgb(56, 238, 11);
+    margin: 10px;
+}
+aside h2{
+    text-align: center;
+}
+aside img{
+   width: 9rem;
+}
+footer{
+    background-color: rgba(52, 201, 52, 0.986);
+    padding: 10px 1px;
+    margin-top: 10px;
+}
+footer p{
+    margin: 10px;
+}
