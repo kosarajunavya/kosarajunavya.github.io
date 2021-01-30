@@ -1,0 +1,92 @@
+.form-wrapper{
+    box-sizing: border-box;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+}
+.icon{
+    width: 1.4rem;
+    vertical-align: text-bottom;
+
+}
+main{
+    margin-top: 1rem;
+}
+.name{
+    width: 44%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: #f5f6f7;
+}
+.mail{
+    margin-top: 14px;
+    width: 94%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: #f5f6f7;
+}
+.dob{
+    margin-bottom: 1px;
+}
+.date{
+    width: 32%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+}
+.month{
+    width: 33%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+}
+.year{
+    width: 33%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+}
+header h1{
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+header p{
+    margin-top: 4px;
+    font-size: 20px;
+}
+.gen{
+    margin-bottom: 1px;
+}
+form button{
+    width: 32%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid grey;
+}
+.box{
+    width: 34%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid grey;
+}
+input[type="radio" i] {
+    vertical-align: middle;
+    float: right;
+}
+footer button{
+    height: 45px;
+    width: 60%;
+    margin-left: 92px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: white;
+    background-color: #51a51b;
+    font-weight: bold;
+    font-size: 22px;
+}
