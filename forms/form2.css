@@ -1,0 +1,35 @@
+body{
+    width: 1140px;
+}
+.form-wrapper{
+    text-align: center;
+    padding: 2rem 0rem;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: 6rem;
+    border-radius: 0.5rem;
+}
+.img{
+    width: 10rem;
+    margin-bottom: -1rem;
+}
+main h1{
+    margin-top: 0rem;
+}
+footer ul{
+    list-style-type: none;
+}
+.country{
+    display: flex;
+}
+select{
+    height: 1rem;
+    height: 2rem;
+    border: 1px solid white;
+    background-color: white;
+}
