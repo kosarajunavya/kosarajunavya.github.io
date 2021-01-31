@@ -1,0 +1,90 @@
+body{
+    width: 1140px;
+}
+.form-wrapper{
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    width: 400px;
+    height: 410px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 65px;
+    border-radius: 5px;
+}
+main{
+    height: 400px;
+}
+.img{
+    width: 10rem;
+    margin-bottom: -1rem;
+}
+main h1{
+    margin-top: 0rem;
+    font-size: 23px;
+}
+main h2{
+    margin-top: -8px;
+    font-size: 20px;
+}
+footer ul{
+    list-style-type: none;
+}
+.country{
+    display: flex;
+    font-size: 11px;
+}
+select{
+    height: 1rem;
+    height: 2rem;
+    border: 1px solid white;
+    background-color: white;
+}
+.mail{
+    width: 80%;
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.forgot{
+    float: left;
+    padding: 6px 22px;
+    font-size: 14px;
+}
+.learn{
+    float: left;
+    font-size: 14px;
+}
+.btn{
+    margin-left: 200px;
+    padding: 6px 17px;
+    background-color: rgb(25, 25, 250);
+    color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.next{
+    float: left;
+    font-size: 14px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(25, 25, 250);
+
+}
+.private{
+    float: left;
+    font-size: 14px;
+    padding: 18px 23px;
+}
+footer{
+    padding: 10px 0px;
+    margin-left: -5px;
+}
+#links{
+    float: right;
+    margin-top: -25px;
+}
