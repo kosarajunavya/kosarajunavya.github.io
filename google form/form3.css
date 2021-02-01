@@ -1,0 +1,108 @@
+body{
+    width: 1140px;
+}
+.form-wrapper{
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    width: 660px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -330px;
+    margin-top: 65px;
+    border-radius: 5px;
+}
+main{
+    display: flex;
+}
+.google{
+    width: 50%;
+    padding: 0px 25px;
+}
+.img{
+    width: 35%;
+    margin-top: 25px;
+    margin-left: -21px;
+}
+main h1{
+    font-size: 21px;
+    margin-top: -14px;
+    margin-bottom: 30px;
+}
+.name{
+    padding: 7px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    width: 42%;
+}
+.mail{
+    padding: 7px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    width: 90%;
+    margin-top: 10px;
+}
+.letters{
+    padding: 0px 8px;
+    margin-top: 5px;
+    font-size: 12px;
+    color:gray;
+}
+select{
+    height: 30px;
+    font-size: 11px;
+    border: 1px solid white;
+    background-color: white;
+}
+.address{
+    font-size: 15px;
+}
+ a{
+    text-decoration: none;
+    color: rgb(25, 25, 250);
+}
+.password{
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 42%;
+    margin-top: 30px;
+}
+.char{
+    margin-top: 2px;
+    font-size: 12px;
+    color: gray;
+}
+aside img{
+    width: 200px;
+    margin-top: 103px;
+}
+aside p{
+    width: 65%;
+    text-align: center;
+}
+.block{
+    margin-left: 20px;
+}
+footer{
+    margin-top: 5px;
+    margin-left: -5px;
+    border: 1px solid white;
+}
+#links{
+    float: right;
+    margin-top: 5px;
+}
+.next{
+    font-size: 14px;
+    padding: 45px 0px;
+}
+.btn{
+    margin-left: 160px;
+    padding: 6px 17px;
+    background-color: rgb(25, 25, 250);
+    color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-weight: 800;
+}
