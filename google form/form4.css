@@ -1,0 +1,93 @@
+body{
+    background-color:#f4f4f4 ;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper-form{
+    background-color: white;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    box-shadow:0 0 5px  #888888;
+    padding: 1px 30px;
+}
+header h1{
+    padding: 0px 40px;
+}
+.title{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.specific{
+    margin: 5px 0px;
+    color: rgb(61, 59, 59);
+    font-size: 15px;
+}
+.img{
+    float: right;
+    width: 11px;
+    margin-right: 5px;
+}
+form :placeholder-shown{
+    font-size: 11px;
+}
+.container{
+    display: grid;
+    grid-auto-flow: column;
+}
+footer button{
+    background-color: #0177c0;
+}
+.drupal{
+    width: 99%;
+    padding: 6px;
+    border: 1px solid lightgrey;
+}
+.guest{
+    font-size: 30px;
+}
+.guest a{
+    text-decoration: none;
+    color: #1a73e8;
+}
+.box{
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 92%;
+}
+.box a{
+    text-decoration: none;
+    color: grey;
+}
+.face{
+    width: 18px;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+.post{
+    margin-right: -2px;
+}
+.input{
+    width: 98%;
+    border: 1px solid lightgray;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+.shown{
+    margin: 0px;
+}
+footer button{
+    padding: 10px 12px;
+    margin-left: 40px;
+    border: 1px;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+a:active{
+background-color: #395697;
+}
