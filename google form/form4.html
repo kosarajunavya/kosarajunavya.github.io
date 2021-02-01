@@ -2,19 +2,65 @@
 <html lang="en">
     <head>
         <title> Feedback form</title>
+        <meta charset="utf-8">
         <meta name="description" content="Feedback  form">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="form4.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.ckeditor.com/ckeditor5/25.0.0/classic/ckeditor.js"></script>
+
     </head>
     <body>
         <header>
-            <h1></h1>
+            <h1>Ask a public question</h1>
         </header>
-        <main>
-            <h2></h2>
-            <p></p>
-            <input type="text">
-            
-        </main>
+            <main class="wrapper-form">
+                <h2 class="title"> Title</h2>
+                <p class="specific">Be specific and imagine you're asking a question to another person</p>
+                <form action="#">
+                    <input type="text" placeholder="What's your Drupal question? Be specific" class="drupal">
+                </form>
+                <h2 class="title">Body</h2>
+                <p class="specific">Include all the information someone would need to answer your question</p>
+                <div class="ck-editor">
+                        <div id="editor">
+                            <p>This is some sample content.</p>
+                        </div>
+                        <script>
+                            ClassicEditor
+                                .create( document.querySelector( '#editor' ) )
+                                .catch( error => {
+                                    console.error( error );
+                                } );
+                        </script>
+                </div>
+                <h2 class="title">Tags</h2>
+                <p class="specific">Add up to 5 tags to describe what your question is about <img src="./question.png" alt="question mark" class="img"></p>
+                <form action="#">
+                    <input type="text" placeholder="e.g.(entities drush 6)" class="drupal">
+                </form>
+                <div class="container">
+                    <div class="signup">
+                        <h1 class="guest">Sign up or <a href="#">log in</a></h1>
+                        <p class="box"><a href="#"> <img src="./search.png" alt="google icon" class="face">Sign up uing google</a><br></p>
+                        <p class="box"><a href="#"> <img src="./facebook.png" alt="facebook icon" class="face">Sign up uing facebook</a><br></p>
+                        <p class="box"><a href="#"> <img src="./icon.png" alt="loading icon" class="face">Sign up uing Email and Password</a><br></p>
+                    </div>
+                    <div class="post">
+                        <form action="#">
+                            <h1 class="guest">Post as a guest</h1>
+                            <label for="name" class="name">Name</label><br>
+                            <input type="text" class="input"><br>
+                            <label for="email" class="name">Email</label><br>
+                            <p class="shown">Required, but never shown</p>
+                            <input type="email" name="email"class="input" required> <br>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <button>Review your question</button>
+            </footer>
     </body>
 </html>
