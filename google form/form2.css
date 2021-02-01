@@ -59,7 +59,7 @@ select{
 .btn{
     margin-left: 200px;
     padding: 6px 17px;
-    background-color: rgb(25, 25, 250);
+    background-color:  #1a73e8;
     color: white;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -72,7 +72,7 @@ select{
 }
 a{
     text-decoration: none;
-    color: rgb(25, 25, 250);
+    color:  #1a73e8;
 
 }
 .private{
