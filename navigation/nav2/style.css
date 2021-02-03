@@ -1,0 +1,86 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+.web{
+    padding: 1px 1px;
+}
+.write{
+    float: right;
+    padding: 10px 67px;
+    font-size: 13px;
+}
+.write a{
+    margin-right: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: gray;
+}
+.api{
+   margin-top: 35px;
+   margin-left: 80px;
+   margin-bottom: 25px;
+}
+form{
+    float: right;
+    margin-right: 65px;
+}
+.logo{
+    vertical-align: middle;
+}
+.text{
+    font-size: 30px;
+    margin-right: 150px;
+}
+.directory{
+    padding: 5px 5px;
+    font-size: 18px;
+    border: none;
+    background-color: inherit;
+}
+.news{
+    margin-left: 15px;
+    padding: 5px 5px;
+    font-size: 18px;
+    border: none;
+    background-color: inherit;
+}
+.input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.btn{
+    border: none;
+    position: absolute;
+    top: 50px;
+    background-color: inherit;
+    right: 90px;
+}
+.learn img{
+    width: 18px;
+    padding-top: 9px;
+    height: 18px;
+    margin-left: -18px;
+}
+.learn{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 101px;
+    padding-right: 65px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.learn a{
+    font-size: 13px;
+    padding: 13px 13px;
+    border-left: 1px solid lightgrey;
+}
+.more{
+    color: white;
+    border: none;
+    width: 160px;
+    padding: 10px;
+    background-color: #1a97ce;
+}
