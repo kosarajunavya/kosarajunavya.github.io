@@ -74,12 +74,13 @@ form{
 }
 .about{
     font-size: 13px;
-    padding: 13px 13px;
+    padding-top: 10px;
+    padding-left: 13px;
     border-left: 1px solid lightgrey;
 }
 .virus{
     font-size: 13px;
-    padding-top: 13px;
+    padding-top: 10px;
     padding-left: 13px;
     padding-right: 100px;
     color: red;
