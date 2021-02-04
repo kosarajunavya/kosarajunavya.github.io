@@ -1,0 +1,49 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: black;
+}
+.soft{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+.links{
+    margin-top: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+.logo{
+    margin-top: 4px;
+    margin-left: 10px;
+}
+form{
+    float: right;
+    margin-top: -3px;
+}
+.latest{
+    padding: 5px 200px;
+}
+.input{
+    width: 250px;
+    height: 19px;
+}
+.about{
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+.btn{
+    border: none;
+    position: absolute;
+    top: 141px;
+    background-color: skyblue;
+    right: 201px;
+}
