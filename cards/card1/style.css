@@ -99,7 +99,7 @@ header h1{
     margin-top: 2px;
 }
 .checked {
-    padding-top: 30px;
+    padding-top: 15px;
     color: orange;
 }
 .ratings{
@@ -113,6 +113,7 @@ main{
 main h2{
     font-size: 14px;
     margin-bottom: 8px;
+    line-height: 20px;
 }
 .time{
     width: 15px;
