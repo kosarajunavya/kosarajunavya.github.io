@@ -6,7 +6,25 @@ header{
     padding-bottom: 60px;
 }
 
+.row1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px;
+}
+.btn{
+    height: 40px;
+    margin-top: 10px;
+}
+.p1{
+    margin-top: -15px;
+}
+.p2{
+    margin-top: 23px;
+}
 .circle{
-   
-    
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.p3{
+    width: 45%;
 }
