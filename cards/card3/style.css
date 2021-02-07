@@ -62,6 +62,14 @@ cite{
     font-size: 15px;
     color: aquamarine;
 }
+.red{
+    font-size: 15px;
+    color: red;
+}
+.purple{
+    font-size: 15px;
+    color: mediumpurple;
+}
 .modern{
     font-size: 22px;
 }
