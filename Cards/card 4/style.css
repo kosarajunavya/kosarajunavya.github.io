@@ -1,0 +1,43 @@
+body{
+background-color: aliceblue;
+font-family: 'Roboto', sans-serif;
+}
+header{
+    text-align: center;
+}
+main{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: white;
+    width: 96%;
+    margin-left: 2%;
+}
+.cart{
+    margin-left: 40px;
+    margin-top: 70px;
+    width: 31%;
+}
+.cart1{
+    margin-left: 40px;
+    margin-top: 28px;
+    width: 31%;
+}
+main h1{
+    color: lightgray;
+    font-size: 125px;
+    margin-left: 25px;
+    width: 50%;
+}
+main p{
+    color: gray;
+}
+.one{
+    width: 100%;
+    display: flex;
+}
+.two{
+    width: 100%;
+    display: flex;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+}

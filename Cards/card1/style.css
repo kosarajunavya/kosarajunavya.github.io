@@ -1,0 +1,143 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#f4f4f4 ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 125px;
+}
+header h1{
+    font-size: 24px;
+}
+.btn{
+    width: 64px;
+    height: 30px;
+    margin-top: 13px;
+    border: 1px solid mediumpurple;
+    color: mediumpurple;
+}
+.text{
+    position: absolute;
+    top: 70px;
+    color: white;
+    left: 93px;
+}
+.text1{
+    position: absolute;
+    top: 70px;
+    color: black;
+    left: 84px;
+}
+.text3{
+    position: absolute;
+    top: 70px;
+    color: white;
+    left: 102px;
+}
+.text4{
+    position: absolute;
+    top: 70px;
+    color: white;
+    left: 86px;
+}
+.img{
+    border-radius: 50%;
+    width: 45px;
+    position: absolute;
+    top: 37px;
+    left: 94px;
+}
+.flex1{
+    width: 23%;
+}
+.flex2{
+    width: 23%;
+}
+.flex3{
+    width: 23%;
+}
+.flex4{
+    width: 23%;
+}
+.Gats{
+    position: relative;
+    height: 130px;
+    background-color: mediumpurple;
+    background: linear-gradient(to bottom left, rgb(140, 90, 234), rgb(119, 1, 146));
+    border-radius: 10px 10px 0px 0px;
+}
+.js{
+    position: relative;
+    height: 130px;
+    background-color: yellow;
+    background: linear-gradient(to bottom left, rgb(252, 252, 52), rgb(243, 163, 15));
+    border-radius: 10px 10px 0px 0px;
+}
+.css{
+    position: relative;
+    height: 130px;
+    background-color: darkblue;
+    background: linear-gradient(to bottom left,rgb(90, 46, 143), rgb(11, 33, 180));
+    border-radius: 10px 10px 0px 0px;
+}
+.word{
+    position: relative;
+    height: 130px;
+    background-color: #0b94dde1;
+    background: linear-gradient(to bottom left,#3cb3f3e1, #0b94dde1);
+
+    border-radius: 10px 10px 0px 0px;
+}
+.blog{
+    background-color: white;
+    height: 200px;
+    padding: 6px 22px;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 13px;
+    margin-top: 2px;
+}
+.checked {
+    padding-top: 15px;
+    color: orange;
+}
+.ratings{
+    color: orange;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 122px;
+}
+main h2{
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 20px;
+}
+.time{
+    width: 15px;
+    vertical-align: bottom;
+}
+.graph{
+    width: 15px;
+    padding: 0px 10px;
+}
+cite img{
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.book{
+    width: 14px;
+    float: right;
+    margin-top: 8px;
+}
+.hr{
+    width: 232px;
+    margin-left: -22px;
+    border-color: #f4f4f4;
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
