@@ -1,9 +1,14 @@
 body{
     font-family: 'Roboto', sans-serif;
-    width: 1140px;
+   
 }
 body p{
     color: grey;
+}
+main{
+    width: 1140px;
+    left: 50%;
+    margin-left: 335px;
 }
 header{
     text-align: center;

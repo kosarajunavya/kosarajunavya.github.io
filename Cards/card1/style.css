@@ -1,16 +1,17 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color:#f4f4f4 ;
-    width: 1264px;
+   
 }
-
 header{
     display: flex;
     justify-content: space-between;
     padding: 0px 125px;
+    width: 1013px;
 }
 header h1{
     font-size: 24px;
+    
 }
 .btn{
     width: 64px;
@@ -110,6 +111,7 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 0px 122px;
+    width: 1020px;
 }
 main h2{
     font-size: 14px;

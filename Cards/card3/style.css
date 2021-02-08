@@ -1,6 +1,5 @@
 body{
     font-family: 'Roboto', sans-serif;
-    width: 1140px;
 }
 .courses{
     display: flex;
@@ -9,10 +8,13 @@ body{
 }
 main{
     padding: 30px 80px;
+    width: 980px;
+    left: 50%;
+    margin-left: 339px;
 }
 .img{
-    width: 734px;
-    margin-right: 29px;
+    width: 75%;
+    margin-right: 13px;
     border-radius: 5px 0px 0px 5px;
 }
 .get{
@@ -24,10 +26,10 @@ main{
     line-height: 19px;
     padding-bottom: 35px;
     padding-top: 8px;
-    font-size: 11px;
+    font-size: 12px;
 }
 .lorem{
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 20px;
 }
 cite img{
