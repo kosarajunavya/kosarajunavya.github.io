@@ -1,0 +1,44 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    width: 1500px;
+    display: flex;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+.brain{
+    width: 40%;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.icons{
+    width: 20%;
+}
+.media{
+    display: grid;
+    margin-left: 265px;
+    grid-gap: 20px;
+    margin-top: 60px;
+}
+.brain p{
+    font-size: 30px;
+}
+.brain h1{
+    margin: 0;
+    font-size: 60px;
+}
+.btn{
+    padding: 20px 45px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 56px;
+    margin-bottom: 155px;
+}
