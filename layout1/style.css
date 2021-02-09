@@ -1,11 +1,24 @@
 body{
     width: 1140px;
 }
+@font-face{
+    font-family: "bold";
+    src: url("./fonts/Roboto-Bold.ttf");
+}
+@font-face{
+    font-family: "bold-italic";
+    src: url("./fonts/Roboto-BoldItalic.ttf");
+}
+@font-face{
+    font-family: "black-italic";
+    src: url("./fonts/Roboto-BlackItalic.ttf");
+}
 .head{
 background-color: blueviolet; 
 padding: 1px 0px;
 text-align: center; 
 color: wheat;
+font-family: "bold", sans-serif;
 }
 .main{
 display: flex;
@@ -13,6 +26,7 @@ display: flex;
 .main1{
 width: 15%;
 padding: 10px 0px;
+font-family: "bold-italic", sans-serif;
 }
 nav a{
 background-color: rgb(68, 189, 236); 
@@ -23,6 +37,7 @@ display: table-caption;
 .main2{
 padding: 0px 140px;
 text-align: center;
+font-family: "black-italic",sans-serif;
 }
 .aside{
 background-color:rgb(44, 180, 235);
