@@ -6,8 +6,7 @@ header{
     text-align: center;
 }
 main{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     background-color: white;
     width: 96%;
     margin-left: 2%;
