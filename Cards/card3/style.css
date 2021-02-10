@@ -3,8 +3,8 @@ body{
 }
 .courses{
     display: flex;
-    border-radius: 5px 2px 3px 10px;
-    box-shadow: 0 0 2px #888887;
+    border-radius: 5px 9px 5px 10px;
+    box-shadow: 0 0 11px lightgrey;
 }
 main{
     padding: 30px 80px;
@@ -13,24 +13,28 @@ main{
     margin-left: 339px;
 }
 .img{
-    width: 75%;
+    width: 66%;
     margin-right: 13px;
     border-radius: 5px 0px 0px 5px;
 }
+.App{
+    margin: 0px 9px;
+}
 .get{
-    font-size: 23px;
+    font-size: 30px;
     line-height: 34px;
     padding-top: 8px;
 }
 .our{
-    line-height: 19px;
+    line-height: 21px;
     padding-bottom: 35px;
     padding-top: 8px;
-    font-size: 12px;
+    font-size: 15px;
 }
 .lorem{
-    font-size: 12px;
+    line-height: 21px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 cite img{
     width: 30px;
@@ -60,7 +64,7 @@ cite{
 .stack{
     width: 33%;
     border-radius: 5px 5px 9px 9px;
-    box-shadow: 0px 0px 2px rgb(100 100 100);   
+    box-shadow: 0px 0px 10px lightgrey;
 }
 .img1{
     width: 308px;
@@ -91,5 +95,5 @@ cite{
     margin-left: 28px;
     margin-right: 28px;
     border-radius: 5px 5px 9px 9px;
-    box-shadow: 0px 0px 2px rgb(100 100 100);   
+    box-shadow: 0px 0px 10px lightgrey;
 }
