@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto',Arial,sans-serif;
+}
+header{
+    display: flex;
+    background: #333230;
+    padding: 0px 240px;
+    grid-gap: 15px;
+}
+.tech{
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+}
+.site{
+    padding-top: 10px;
+    width: 200px;
+}
+.logo{
+    display: flex;
+}
+.tech li{
+    padding: 35px 25px 25px 25px;
+}
+.tech li:hover{
+    background-color: #e6e3e3;
+}
+a{
+    text-decoration: none;
+}
+.tech li a{
+    color: white;
+}
+.tech a:hover{
+    color: black;
+}
+.login{
+    padding: 24px 20px;
+    margin-left: 360px;
+}
+.login a{
+    vertical-align: top;
+    color: white;
+}
+.login:hover{
+    background-color: white;
+}
+.login a:hover{
+    color: #333230;
+}
+.hero-banner{
+    background-image:  url("./img/background.png"), url("./img/lines.png"), url("./img/background-colour.jpg");
+    background-repeat: no-repeat,no-repeat,repeat;
+    background-position: right;
+}
+.host{
+    text-align: center;
+    color: white;
+    width: 47%;
+    margin: auto;
+    padding: 90px;
+}
+.host h1{
+    font-size: 55px;
+}
+.host p{
+    line-height: 30px;
+    padding: 40px 0px;
+    font-size: 20px;
+}
+.join-now{
+    margin: auto;
+    padding-top: 25px;
+}
+.join-now a{
+    margin: auto;
+    background-color: white;
+    padding: 15px 27px;
+    width: 15%;
+    border-radius: 3px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.now :hover{
+    background-color: #fff;;
+}
