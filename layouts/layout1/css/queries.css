@@ -1,46 +1,133 @@
-@media only screen and (max-width: 1400px){
-    body{
-        width: 1400px;
-    }
+@media only screen and (max-width: 1800px){
+    
     header{
-        padding: 0px 88px;
+        width: 100%;
         grid-gap: 15px;
     }
-    .site{
-        margin: 10px;
-        width: 200px;
-    }
-    .tech li{
-        margin-top: 34px;
+    .logo{
+        margin-left: 300px;
     }
     .tech li a{
-        padding: 22px;
+        padding: 12px;
         padding-top: 34px;
-        padding-bottom: 14px;
+        padding-bottom: 15px;
     }
     .login{
-        padding: 24px 20px;
-        margin-left: 360px;
+        margin-left: 235px;
+        padding-top: 35px;
+        padding-bottom: 13px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .host{
-        width: 47%;
-        margin: auto;
+        text-align: center;
+        color: white;
+        width: 44%;
+        margin-left: 280px;
         padding: 90px;
     }
+}
+@media only screen and (max-width: 1500px){
+    
+    header{
+        width: 100%;
+        grid-gap: 15px;
+    }
+    .logo{
+        margin-left: 80px;
+    }
+    .tech li a{
+        padding: 12px;
+        padding-top: 34px;
+        padding-bottom: 18px;
+    }
+    .login{
+        margin-left: 235px;
+        padding-top: 35px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .host{
+        width: 48%;
+        margin-left: 400px;
+        padding: 70px 10px;
+    }
     .host h1{
-        font-size: 55px;
+        font-size: 48px;
     }
     .host p{
-        line-height: 30px;
-        padding: 40px 0px;
-        font-size: 20px;
+        font-size: 18px;
     }
-    .join-now{
-        margin: auto;
-        padding-top: 25px;
+}
+@media only screen and (max-width: 1400px){
+    
+    header{
+        width: 100%;
+        grid-gap: 15px;
     }
-    .join-now a{
-        padding: 15px 27px;
-        width: 15%;
+    .logo{
+        margin-left: 10px;
+    }
+    .tech li a{
+        padding: 12px;
+        padding-top: 34px;
+        padding-bottom: 15px;
+    }
+    .login{
+        margin-left: 50px;
+        padding-top: 35px;
+        padding-bottom: 11px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .host{
+        width: 67%;
+        margin-left: 210px;
+        padding: 70px 10px;
+    }
+    .host h1{
+        font-size: 48px;
+    }
+    .host p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 800px){
+    header{
+        width: 100%;
+        grid-gap: 15px;
+    }
+    .logo{
+        margin-left: 1px;
+    }
+    .host{
+        width: 100%;
+        margin-left: 0px;
+        padding: 70px 1px;
+    }
+    .login{
+        margin-left: 300px;
+        padding-top: 35px;
+        padding-bottom: 11px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .tech{
+       display: none;
+    }
+}
+@media only screen and (max-width: 500px){
+    
+    .host{
+        width: 81%;
+        margin-left: 33px;
+        padding: 70px 1px;
+    }
+    .host h1{
+        font-size: 46px;
+    }
+    .host p{
+        font-size: 18px;
     }
 }

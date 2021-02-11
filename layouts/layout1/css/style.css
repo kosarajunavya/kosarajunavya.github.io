@@ -6,8 +6,9 @@ body{
 }
 header{
     display: flex;
+    justify-content: space-around;
     background: #333230;
-    padding: 0px 240px;
+    width: 100%;
     grid-gap: 15px;
 }
 .tech{
@@ -22,8 +23,11 @@ header{
 .logo{
     display: flex;
 }
+.nav{
+    width: 75%;
+}
 .tech li{
-    margin-top: 34px;
+    margin-top: 35px;
 }
 .tech li a:hover{
     background-color: #e6e3e3;
@@ -35,14 +39,16 @@ a{
     color: white;
     padding: 22px;
     padding-top: 34px;
-    padding-bottom: 14px;
+    padding-bottom: 22px;
 }
 .tech a:hover{
     color: black;
 }
 .login{
-    padding: 24px 20px;
-    margin-left: 360px;
+    padding-top: 35px;
+    padding-bottom: 21px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .login a{
     vertical-align: top;
@@ -88,6 +94,35 @@ a{
     font-size: 16px;
     font-weight: 600;
 }
-.now :hover{
-    background-color: #fff;;
+.join-now a:hover{
+    background-color:rgb(247, 243, 235);;
+}
+.refer-image img{
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 1520px) {
+    .host{
+        width: 53%;
+    }
+}
+@media only screen and (max-width: 1329px) {
+    .host{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .host{
+        width: 96%;
+        padding: 90px 0px;
+    }
+    .nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .login a{
+        display: none;
+    }
 }
