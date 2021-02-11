@@ -117,6 +117,16 @@ a{
         width: 96%;
         padding: 90px 0px;
     }
+   
+    .nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .host{
+        width: 90%;
+    }
+   
     .nav{
         display: none;
     }
