@@ -16,16 +16,16 @@ header{
     margin: 0 auto;
 }
 .site{
-    padding-top: 10px;
+    margin: 10px;
     width: 200px;
 }
 .logo{
     display: flex;
 }
 .tech li{
-    padding: 35px 25px 25px 25px;
+    margin-top: 34px;
 }
-.tech li:hover{
+.tech li a:hover{
     background-color: #e6e3e3;
 }
 a{
@@ -33,6 +33,9 @@ a{
 }
 .tech li a{
     color: white;
+    padding: 22px;
+    padding-top: 34px;
+    padding-bottom: 14px;
 }
 .tech a:hover{
     color: black;

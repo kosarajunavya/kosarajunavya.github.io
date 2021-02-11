@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1400px){
+    body{
+        width: 1400px;
+    }
+    header{
+        padding: 0px 88px;
+        grid-gap: 15px;
+    }
+    .site{
+        margin: 10px;
+        width: 200px;
+    }
+    .tech li{
+        margin-top: 34px;
+    }
+    .tech li a{
+        padding: 22px;
+        padding-top: 34px;
+        padding-bottom: 14px;
+    }
+    .login{
+        padding: 24px 20px;
+        margin-left: 360px;
+    }
+    .host{
+        width: 47%;
+        margin: auto;
+        padding: 90px;
+    }
+    .host h1{
+        font-size: 55px;
+    }
+    .host p{
+        line-height: 30px;
+        padding: 40px 0px;
+        font-size: 20px;
+    }
+    .join-now{
+        margin: auto;
+        padding-top: 25px;
+    }
+    .join-now a{
+        padding: 15px 27px;
+        width: 15%;
+    }
+}
