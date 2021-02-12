@@ -56,10 +56,9 @@ a{
     color: #333230;
 }
 .hero-banner{
-    background-image:  url("./img/background.png"), url("./img/lines.png"), url("./img/background-colour.jpg");
+    background-image:  url("./img/background.png"), url("./img/lin.png"), url("./img/background-colour.jpg");
     background-repeat: no-repeat,no-repeat,repeat;
-    background-position: right;
-    background-position: bottom;
+    background-position: bottom right;
 }
 .host{
     text-align: center;
@@ -194,8 +193,126 @@ a{
     font-size: 20px;
     margin: 30px 0;
 }
+footer{
+    background: #333230;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 55px 190px;
+}
+h3{
+    color: #a4a4a4;
+    font-size: 15px;
+}
+.info li a{
+    color: #ddd;
+    font-size: 14px;
+}
+.info li a:hover{
+    text-decoration: underline;
+}
+.info ul{
+    padding: 15px 0;
+}
+.info li{
+    padding: 2px 0;
+    list-style-type: none;
+}
+.recent-blog{
+    width: 20%;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+}
+.clock{
+    font-size: 13px;
+    color: #666;
+}
+.comments a{
+    font-size: 13px;
+    color: #666;
+}
+.hr{
+    width: 100px;
+}
+.region{
+    display: flex;
+    width: 70%;
+    border-bottom: 1px solid grey;
+    margin: 10px 0 15px 312px;
+}
+.region p{
+    font-size: 10px;
+    color: #ddd;
+    padding: 21px 8px 0;
+}
+#world{
+   background: inherit;
+    border: none;
+    color: #a4a4a4;
+    width: 53px;
+    font-size: 14px;
+    padding: 16px 0;
+}
+.region-world{
+    display: flex;
+}
+.region-accept{
+    display: flex;
+}
+select{
+    display: block;
+}
+.cards{
+    width: 160px;
+    height: 32px;
+    margin: 10px 0;
+}
+.terms{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 280px;
+    font-size: 10px;
+}
+.terms li{
+    list-style-type: none;
+}
+.terms li a{
+    color: #ddd;
+}
+.all{
+    margin: 5px 0 0;
+    color: #a4a4a4;
+}
+.social-media a{
+    color: white;
+}
+.social-media a i{
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    margin: 0 2px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.social-media a:hover{
+    color: lightgray;
+}
 
 /* media queries */
+@media only screen and (max-width: 1520px){
+    .region {
+        margin: 10px 0 15px 232px;
+    }
+
+    .terms {
+        padding: 10px 192px;
+    }
+}
 @media only screen and (max-width: 1199px) {
     .host{
         width: 75%;
@@ -212,6 +329,18 @@ a{
      .refer-client{
          padding: 60px 0;
      }
+     .info {
+        padding: 55px 0px;
+    }
+
+    .region {
+        width: 93%;
+        margin: 10px 0 15px 39px;
+    }
+    .terms {
+        padding: 10px 0px;
+        font-size: 8px;
+    }
 
 }
 @media only screen and (max-width: 1023px) {
@@ -258,10 +387,42 @@ a{
     .join{
         padding-bottom: 40px;
     }
+
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 30px 15px;
+    }
+    .recent-blog {
+        width: 92%;
+    }
+
+    .region {
+        margin: 10px 0 15px 7px;
+        width: 97%;
+    }
+
+    .terms {
+        padding: 0 25px 1px 0px;
+    }
+
+    .rules-list{
+        margin-left: -25px;
+    }
+
+    .social-media a i{
+        padding: 3px 3px;
+    }
+    footer{
+        padding: 20px 0px;
+    }
 }
 @media only screen and (max-width: 767px){
     .login a{
         display: none;
+    }
+    .hero-banner{
+        background-position: bottom;
     }
     
     .host h1{
@@ -269,7 +430,7 @@ a{
     }
 
     .host p{
-        padding: 5px 14px;
+        padding: 30px 14px;
         font-size: 18px;
     }
 
@@ -322,5 +483,41 @@ a{
     
     .join p {
         font-size: 16px;
+    }
+
+    .info{
+        display: flex;
+        flex-flow: column;
+    }
+    .region{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .terms{
+        display: block;
+        text-align: center;
+    }
+
+    .social-media a i{
+        padding: 2px 2px;
+        margin: 10px 2px;
+    }
+    
+    .region-accept {
+        margin: 10px;
+    }
+    .cards {
+        margin: 0px 0 60px 10px;
+        width: 100px;
+        height: 24px;
+    }
+    .region p {
+        padding: 5px 0 0;
+    }
+    #world {
+        padding: 0;
     }
 }
