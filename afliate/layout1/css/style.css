@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto',Arial,sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background: #333230;
+    width: 100%;
+    grid-gap: 15px;
+}
+.tech{
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+}
+.site{
+    width: 144px;
+    margin: 21px 0 20px;
+}
+.logo{
+    display: flex;
+}
+.nav{
+    width: 80%;
+}
+.tech li{
+    margin-top: 34px;
+}
+.tech li a:hover{
+    background-color: #e6e3e3;
+}
+a{
+    text-decoration: none;
+}
+.tech li a{
+    color: white;
+    padding: 34px 22px 23px;
+}
+.tech a:hover{
+    color: black;
+}
+.login{
+    padding: 35px 20px 4px;
+}
+.login a{
+    vertical-align: top;
+    color: white;
+}
+.login:hover{
+    background-color: white;
+}
+.login a:hover{
+    color: #333230;
+}
+.hero-banner{
+    background-image:  url("./img/background.png"), url("./img/lines.png"), url("./img/background-colour.jpg");
+    background-repeat: no-repeat,no-repeat,repeat;
+    background-position: right;
+    background-position: bottom;
+}
+.host{
+    text-align: center;
+    color: white;
+    width: 47%;
+    margin: auto;
+    padding: 90px;
+}
+.host h1{
+    font-size: 55px;
+}
+.host p{
+    line-height: 30px;
+    padding: 40px 0;
+    font-size: 20px;
+}
+.join-now{
+    margin: auto;
+    padding-top: 25px;
+}
+.join-now a{
+    margin: auto;
+    background-color: white;
+    padding: 15px 27px;
+    width: 15%;
+    border-radius: 3px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.join-now a:hover{
+    background-color: rgb(247, 243, 235);
+}
+.weekly-payouts{
+    padding: 50px 40px;
+}
+.refer-payouts{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 200px;
+}
+.vl{
+    width: 140px;
+    height: 4px;
+    background: #cdaa72;
+}
+.commission{
+    width: 46%;
+}
+.high h2{
+    font-size: 35px;
+    line-height: 45px;
+    margin: 20px 0;
+}
+.commission p{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 40px 0;
+    color: #363636;
+}
+.high a{
+    border: 1px solid #6c6d6d;
+    color: #2e2d2d;
+    padding: 10px 45px;
+    font-size: 15px;
+}
+.weekly-payouts-list{
+    width: 45%;
+}
+.weekly-payouts-list li{
+    padding: 25px 25px;
+    list-style-type: none;
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+}
+.sales1{
+    background-color: #e5b22a;
+    width: 55%;
+}
+.sales2{
+    background-color: #ee9629;
+    width: 65%;
+}
+.sales3{
+    width: 75%;
+    background-color: #f47b44;
+}
+.sales4{
+    width: 85%;
+    background-color: #b35227;
+}
+.refer-client{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 200px;
+}
+.refer img{
+   max-width: 100%;
+}
+.easy-ways{
+    padding: 0 90px;
+}
+.easy-ways p{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 40px 0px;
+    color: #363636;
+}
+.easy h2{
+    font-size: 35px;
+    line-height: 45px;
+    margin: 20px 0;
+}
+.easy a{
+    border: 1px solid #6c6d6d;
+    color: #2e2d2d;
+    padding: 10px 45px;
+    font-size: 15px;
+}
+.join{
+    background-image: url("./img/orange.jpg");
+    padding: 65px 10px;
+    text-align: center;
+    color: white;
+}
+.join h2{
+    margin: 30px 0;
+    font-size: 54px;
+}
+.join p{
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+/* media queries */
+@media only screen and (max-width: 1199px) {
+    .host{
+        width: 75%;
+    }
+
+    .refer-payouts{
+        padding: 0;
+    }
+
+    .refer img{
+        max-width: 100%;
+     }
+
+     .refer-client{
+         padding: 60px 0;
+     }
+
+}
+@media only screen and (max-width: 1023px) {
+    .host{
+        width: 96%;
+        padding: 90px 0;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .weekly-payouts-list li{
+        font-size: 15px;
+    }
+
+    .weekly-payouts {
+        padding: 60px 1px 0;
+    }
+
+    .refer-payouts{
+        padding: 0;
+    }
+
+    .refer img{
+        max-width: 100%;
+     }
+
+     .refer-client{
+        padding: 90px 0;
+        display: flex;
+        flex-flow: column;
+        flex-direction: column-reverse;
+    }
+
+     .high h2{
+        font-size: 32px;
+    }
+
+    .easy-ways{
+        padding: 0 17px;
+    }
+
+    .join{
+        padding-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .login a{
+        display: none;
+    }
+    
+    .host h1{
+        font-size: 40px;
+    }
+
+    .host p{
+        padding: 5px 14px;
+        font-size: 18px;
+    }
+
+    .host {
+        padding: 70px 0;
+    }
+
+    .refer-payouts{
+        padding: 0px 15px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .join-now{
+        padding-top: 25px;
+    }
+
+    .refer img{
+        padding: 35px 0;
+    }
+
+    .commission{
+        width: 100%;
+    }
+
+    .refer-client {
+        padding: 0px 0px;
+    }
+
+    .weekly-payouts {
+        padding: 60px 1px 0;
+    }
+
+    .weekly-payouts-list{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .weekly-payouts-list li{
+        font-size: 15px;
+    }
+
+    .join{
+        padding-bottom: 50px;
+    }  
+
+    .join h2 {
+        font-size: 35px;
+    }
+    
+    .join p {
+        font-size: 16px;
+    }
+}

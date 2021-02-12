@@ -1,0 +1,133 @@
+@media only screen and (max-width: 1800px){
+    
+    header{
+        width: 100%;
+        grid-gap: 15px;
+    }
+    .logo{
+        margin-left: 300px;
+    }
+    .tech li a{
+        padding: 12px;
+        padding-top: 34px;
+        padding-bottom: 15px;
+    }
+    .login{
+        margin-left: 235px;
+        padding-top: 35px;
+        padding-bottom: 13px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .host{
+        text-align: center;
+        color: white;
+        width: 44%;
+        margin-left: 280px;
+        padding: 90px;
+    }
+}
+@media only screen and (max-width: 1500px){
+    
+    header{
+        width: 100%;
+        grid-gap: 15px;
+    }
+    .logo{
+        margin-left: 80px;
+    }
+    .tech li a{
+        padding: 12px;
+        padding-top: 34px;
+        padding-bottom: 18px;
+    }
+    .login{
+        margin-left: 235px;
+        padding-top: 35px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .host{
+        width: 48%;
+        margin-left: 400px;
+        padding: 70px 10px;
+    }
+    .host h1{
+        font-size: 48px;
+    }
+    .host p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1400px){
+    
+    header{
+        width: 100%;
+        grid-gap: 15px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .tech li a{
+        padding: 12px;
+        padding-top: 34px;
+        padding-bottom: 15px;
+    }
+    .login{
+        margin-left: 50px;
+        padding-top: 35px;
+        padding-bottom: 11px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .host{
+        width: 67%;
+        margin-left: 210px;
+        padding: 70px 10px;
+    }
+    .host h1{
+        font-size: 48px;
+    }
+    .host p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 800px){
+    header{
+        width: 100%;
+        grid-gap: 15px;
+    }
+    .logo{
+        margin-left: 1px;
+    }
+    .host{
+        width: 100%;
+        margin-left: 0px;
+        padding: 70px 1px;
+    }
+    .login{
+        margin-left: 300px;
+        padding-top: 35px;
+        padding-bottom: 11px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .tech{
+       display: none;
+    }
+}
+@media only screen and (max-width: 500px){
+    
+    .host{
+        width: 81%;
+        margin-left: 33px;
+        padding: 70px 1px;
+    }
+    .host h1{
+        font-size: 46px;
+    }
+    .host p{
+        font-size: 18px;
+    }
+}
