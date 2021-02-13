@@ -1,4 +1,6 @@
-
+*{
+    margin: 0;
+}
 .cert{
     background-image: url("./img/certificado-final.png");
     background-repeat: no-repeat;
@@ -12,4 +14,14 @@
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 12px;
+    width: 45%;
+}
+h1, h2{
+    margin: 10px 0 0px;
+    color: #5BB4D8;
+}
+p{
+    margin: 5px 0 26px;
+    font-size: 20px;
+    color: #9D9D9C;
 }
