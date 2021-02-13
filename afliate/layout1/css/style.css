@@ -43,11 +43,18 @@ a{
     color: black;
 }
 .login{
-    padding: 35px 20px 4px;
+    padding: 22px 20px 4px;
 }
 .login a{
     vertical-align: top;
     color: white;
+}
+.menus{
+    display: none;
+}
+.bar{
+    display: flex;
+    align-items: center;
 }
 .login:hover{
     background-color: white;
@@ -195,6 +202,7 @@ a{
 }
 footer{
     background: #333230;
+    padding: 0 0 30px;
 }
 .info{
     display: flex;
@@ -413,12 +421,10 @@ select{
     .social-media a i{
         padding: 3px 3px;
     }
-    footer{
-        padding: 20px 0px;
-    }
+   
 }
 @media only screen and (max-width: 767px){
-    .login a{
+    .use{
         display: none;
     }
     .hero-banner{
@@ -519,5 +525,13 @@ select{
     }
     #world {
         padding: 0;
+    }
+
+    .menus {
+        display: inline-block;
+        margin: 0 3px 0;
+    }
+    .login {
+        padding: 9px 18px 4px;
     }
 }
