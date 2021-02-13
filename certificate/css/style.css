@@ -1,0 +1,15 @@
+
+.cert{
+    background-image: url("./img/certificado-final.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 12px;
+}
