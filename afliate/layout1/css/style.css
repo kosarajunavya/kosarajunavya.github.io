@@ -306,10 +306,10 @@ select{
     margin: 5px 0 0;
     color: #a4a4a4;
 }
-.social-media a{
+.social-media span{
     color: white;
 }
-.social-media a i{
+.social-media span i{
     font-size: 20px;
     padding: 5px 5px;
     border-radius: 50%;
