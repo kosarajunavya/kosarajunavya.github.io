@@ -45,12 +45,10 @@ a{
 .login{
     padding: 22px 20px 4px;
 }
-.login a{
+.login span{
+    display: none;
     vertical-align: top;
     color: white;
-}
-.menus{
-    display: none;
 }
 .bar{
     display: flex;
@@ -539,7 +537,7 @@ select{
         padding: 0;
     }
 
-    .menus {
+    .login span {
         display: inline-block;
         margin: 0 3px 0;
     }
