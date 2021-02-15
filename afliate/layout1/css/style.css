@@ -321,8 +321,29 @@ select{
     height: 20px;
     text-align: center;
 }
-.social-media a:hover{
+span a:hover{
     color: lightgray;
+}
+span a{
+    color: white;
+}
+.social-media span .fa-facebook {
+    font-size: 0;
+}
+.social-media span .fa-facebook:before {
+    font-size: 20px;
+}
+.social-media span .fa-twitter {
+    font-size: 0;
+}
+.social-media span .fa-twitter:before {
+    font-size: 20px;
+}
+.social-media span .fa-instagram {
+    font-size: 0;
+}
+.social-media span .fa-instagram:before {
+    font-size: 20px;
 }
 
 /* media queries */
