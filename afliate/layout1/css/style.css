@@ -10,6 +10,7 @@ header{
     background: #333230;
     width: 100%;
     grid-gap: 15px;
+    align-items: center;
 }
 .tech{
     display: flex;
@@ -43,7 +44,7 @@ a{
     color: black;
 }
 .login{
-    padding: 22px 20px 4px;
+    padding: 32px 18px 22px;
 }
 .login a{
     vertical-align: top;
@@ -53,6 +54,12 @@ a{
     display: none;
     vertical-align: top;
     color: white;
+}
+.login span .fa-bars {
+    font-size: 0;
+}
+.login span .fa-bars:before {
+    font-size: 20px;
 }
 .bar{
     display: flex;
