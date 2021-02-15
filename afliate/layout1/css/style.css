@@ -135,7 +135,7 @@ a{
 .weekly-payouts-list{
     width: 45%;
 }
-.weekly-payouts-list li{
+.weekly-payouts-list p{
     padding: 25px 25px;
     list-style-type: none;
     margin: 10px 0;
@@ -230,9 +230,18 @@ h3{
 .recent-blog{
     width: 20%;
 }
+.recent-blog a{
+    color: #ddd;
+    font-size: 14px;
+   
+}
+.force{
+    padding: 15px 0;
+}
 .comments{
     display: flex;
     justify-content: space-between;
+    margin: 2px 0;
 }
 .clock{
     font-size: 13px;
