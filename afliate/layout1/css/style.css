@@ -75,14 +75,12 @@ a{
     padding: 90px;
 }
 .host h1{
-    font-size: 55px;
-    font-weight: bold;
+    font-size: 60px;
 }
 .host p{
     line-height: 30px;
     padding: 40px 0;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
 }
 .join-now{
     margin: auto;
