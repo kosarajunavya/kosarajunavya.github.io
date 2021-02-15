@@ -265,7 +265,9 @@ h3{
     color: #ddd;
     padding: 21px 8px 0;
 }
+
 #world{
+   
    background: inherit;
     border: none;
     color: #a4a4a4;
@@ -281,6 +283,7 @@ h3{
 }
 select{
     display: block;
+    background-image: url("./img/flags.png");
 }
 .cards{
     width: 160px;
