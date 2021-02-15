@@ -45,6 +45,10 @@ a{
 .login{
     padding: 22px 20px 4px;
 }
+.login a{
+    vertical-align: top;
+    color: white;
+}
 .login span{
     display: none;
     vertical-align: top;
