@@ -3,7 +3,11 @@
 }
 @font-face{
     font-family: "regular";
-    src: url("./fonts/NunitoSans-Regular");
+    src: url("../fonts/NunitoSans-Regular.ttf");
+}
+@font-face{
+    font-family: "bold";
+    src: url("../fonts/NunitoSans-Bold.ttf");
 }
 body{
     background-color: #F1F3F6;
@@ -26,7 +30,7 @@ body{
 .shop ul{
     display: flex;
     list-style-type: none;
-    padding: 1.2rem;
+    padding: 1rem;
 }
 .in1{
     padding: 0.7rem 25rem 0.7rem 0.8rem;
@@ -43,21 +47,21 @@ body{
     display: none;
 }
 .fa-angle-up:hover {
-    display: block;
+    display: inline;
 }
 .shop a{
     color: white;
     text-decoration: none;
 }
 .shop li{
-    padding: 0 20px;
+    padding: 0 1.2rem;
 }
 .shop{
-    padding-left: 70px;
+    padding-left: 5rem;
 }
 .navigation{
-    border-bottom: 1px solid lightgray;
-    box-shadow: 0 0 5px lightgrey;
+    border-bottom: 1px solid #dbdbdb;
+    box-shadow: 0 0 1rem #dbdbdb;
     background-color: #FFFFFF;
 }
 .menu{
@@ -189,11 +193,30 @@ i.fa.fa-share {
     font-size: 0.8rem;
     color: #FFFFFF;
 }
+.green p{
+    padding: 0 0 0 0.8rem;
+}
 .white{
     background-color: #FFFFFF;
     color: rgba(0,0,0,0.56);
     padding: 0rem;
     font-size: 0.8rem;
+}
+.white p{
+    padding: 0 0.5rem 0 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.white p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    position: absolute;
+    right: -10px;
+    top: 0;
 }
 .box{
     padding: 0.8rem 0;
@@ -233,11 +256,112 @@ i.fa.fa-share {
     padding: 0.8rem 1rem 0 1rem;
     color: #268846;
 }
-
-
-
-
-
-.color img{
+.icon{
+    padding: 0.8rem 0 0 0;
+}
+.icon a{
+    color: #c6c6c6;
+}
+.hurry{
+    color: #ff4343;
+    padding: 0 0 0.8rem;
+}
+.fa-tag{
+    color: #19a37b;
+}
+.fa-calendar-check-o{
+    color: #19a37b;
+}
+.limit{
+    padding: 0 0.4rem;
+}
+.bank p{
+    padding: 0 0 0.8rem;
+}
+.bank a{
+    text-decoration: none;
+    color: #ff4343;
+}
+.delivery{
+    display: flex;
+    padding: 1rem 0;
+}
+.use{
+    padding: 0 4rem;
+}
+.border{
+    border-bottom: 1px solid;
+    padding: 0 0 0.6rem 0;
+}
+input{
+    outline: none;
+    border: none;
+}
+.pin{
+    padding: 0.6rem 0 0.2rem;
+}
+.pin p{
+    font-size: 0.9rem;
+}
+.pin1{
+    font-family: "bold",sans-serif;
+}
+.fa-question-circle-o{
+    color: #c6c6c6;
+}
+.enter{
+    text-decoration: none;
+    color: #000;
+    font-family: 'bold';
+    padding: 0 0 0 4rem;
+}
+.fa-angle-right{
+    padding: 0 0.5rem;
+}
+.phn{
+    padding: 0 5rem;
+}
+.phn img{
     width: 5rem;
+    padding: 0 1rem 0;
+}
+.phn img:hover{
+    border: 1px solid #ff4343;
+    box-shadow: 0 0 1rem #dbdbdb;
+    background-color: #FFFFFF;
+}
+.like{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1{
+    border: 1px dotted black;
+    padding: 0.3rem;
+    margin: 0.2rem;
+}
+.box1:hover{
+    cursor: pointer;
+    border: 1px solid #ff4343;
+}
+.grade{
+    padding: 0.3rem;
+}
+.more p{
+    padding: 0 0 0.5rem;
+}
+.more a{
+    color: #ff4343;
+    text-decoration: none;
+}
+.atm1{
+    width: 40%;
+    font-size: 0.9rem;
+}
+.atm2{
+    width: 15%;
+    font-size: 0.9rem;
+}
+.atm3{
+    width: 45%;
+    font-size: 0.9rem;
 }
