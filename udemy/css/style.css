@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.logo img{
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+}
+.motive{
+    text-align: center;
+    background-color: #1A273A;
+    color: #fff;
+    padding: 4rem;
+}
+.motive a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #EC5252;
+    padding: 0.8rem 2rem;
+    border-radius: 0.2rem;
+}
+.motive p{
+    padding: 2rem 0;
+}
+.teacher img{
+    width: 45rem;
+}
+.check{
+    background-color: #EDECE6;
+}
+.container{
+    display: flex;
+    font-size: 0.7rem;
+}
+.img{
+    width: 30%;
+    margin: 1rem;
+    background-color: #fff;
+}
+footer{
+    background-color: #1A273A;
+    color: #fff;
+}
+.dev{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #B2AFAA;
+}
