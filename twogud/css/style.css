@@ -25,6 +25,7 @@
 body{
     background-color: #F1F3F6;
     font-family: 'NunitoSans-Regular';
+    width: 1825px;
 }
 
 .info1{
@@ -87,10 +88,11 @@ body{
 .content {
     display: inline-block;
     padding: 0.7rem;
+    margin: 0 2rem;
 }
 .nav{
     display: flex;
-    padding: 0 10rem;
+    padding: 0 13rem;
 }
 .dropdown{
     display: none;
@@ -101,11 +103,17 @@ body{
     padding: 12px 16px;
     z-index: 1;
     padding-left: 0;
+    margin-top: 0.8rem;
 }
 .dropdown ul {
     padding: 0;
 }
-  
+.fa{
+    transition: 0.25s all ease;
+}  
+.fa-angle-down:hover{
+    transform: rotate(180deg);
+}
 .content:hover .dropdown {
     display: flex;
     line-height: 2rem;
@@ -114,6 +122,9 @@ body{
     padding-left: 1rem;
     padding-right: 1.5rem;
     list-style-type: none;
+}
+.content a:hover{
+    color: #FA5A68;
 }
 .price{
     display: flex;
@@ -133,7 +144,7 @@ main{
 }
 .side img{
     width: 4rem;
-    padding: 0.2rem;
+    border: 1px solid #FFFFFF;
 }
 .display{
     display: flex;
