@@ -95,10 +95,15 @@ body{
     width:65%;
     margin: 0 auto;
 }
+.block1 p{
+    font-family: 'NunitoSans-Bold';
+    font-size: 1.5rem;
+}
 .pic{
     background-image: url('./img/Group\ 10@1X.png'), url('./img/download.png'), url('./img/Ellipse\ 2@1X.png');
     background-repeat: no-repeat;
     background-size: 34rem;
+    padding: 5rem 0;
 }
 .block1{
     display: flex;
@@ -187,27 +192,35 @@ form input{
     border: 0;
     border-bottom: 1px solid #80808063;
     background: inherit;
-    padding: 0.5rem;
-    margin: 1rem 2rem 0 1rem;
-    width: 80%;
+    padding: 0.5rem 7rem 0.5rem 0.5rem;
+    margin: 1rem 0rem 0 1rem;
 }
-/* #box{
-    width: 5%;
-    margin: 1rem 0;
-} */
 .account{
     background-image: url("./img/download.png"), url("./img/Abgerundetes\ Rechteck\ 5@1X.png");
     background-repeat: no-repeat;
     background-position-x: inherit;
     background-size: 42rem;
     background-position-y: bottom;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
+    border: 1px solid #8080804d;
+    box-shadow: 0.1rem 0.1rem 1rem #8888889c;
+    width: 22rem;
+}
+.account h3{
+    text-align: center;
+    padding: 1.5rem 0 0 0; 
 }
 .call{
     display: flex;
+    justify-content: space-around;
 }
-.call a{
+.call a, .call1 a{
     text-decoration: none;
     color: #000;
+}
+.call1 a{
+    padding: 1rem 1rem;
 }
 .call div{
     padding: 0 0 0 3rem;
@@ -244,13 +257,14 @@ form input{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding: 3rem 0 0 0;
+    grid-gap: 4rem;
 }
 .container2 h3{
     font-family: 'NunitoSans-Bold';
     font-size: 2rem;
 }
 .child{
-    width: 82%;
+    width: 90%;
 }
 .container2 div p{
     padding: 0.5rem 0;
@@ -285,6 +299,10 @@ footer a{
 .edu{
     display: flex;
     padding: 5rem 0;
+}
+.edu h3{
+    padding: 1rem 0;
+    color: #FFFFFF;
 }
 .edu nav ul{
     list-style-type: none;
@@ -337,6 +355,8 @@ footer a{
 }
 .color{
     background-color: #1D232E;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
 .copy{
     display: block;
