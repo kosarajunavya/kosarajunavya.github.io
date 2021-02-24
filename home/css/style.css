@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.log{
+    display: none;
+}
+@font-face {
+	font-family: 'NunitoSans-Regular';
+	src: url('../fonts/Nuitosans-regular/NunitoSans-Regular.eot');
+	src: local('☺'), url('../fonts/Nuitosans-regular/NunitoSans-Regular.woff') format('woff'), url('../fonts/Nuitosans-regular/NunitoSans-Regular.ttf') format('truetype'), url('../fonts/Nuitosans-regular/NunitoSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NunitoSans-Light';
+	src: url('../fonts/Nuitosans-light/NunitoSans-Light.eot');
+	src: local('☺'), url('../fonts/Nuitosans-light/NunitoSans-Light.woff') format('woff'), url('../fonts/Nuitosans-light/NunitoSans-Light.ttf') format('truetype'), url('../fonts/Nuitosans-light/NunitoSans-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NunitoSans-Bold';
+	src: url('../fonts/Nuitosans-bold/NunitoSans-Bold.eot');
+	src: local('☺'), url('../fonts/Nuitosans-bold/NunitoSans-Bold.woff') format('woff'), url('../fonts/Nuitosans-bold/NunitoSans-Bold.ttf') format('truetype'), url('../fonts/Nuitosans-bold/NunitoSans-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+    font-family: 'NunitoSans-Regular';
+    background-color: #FFFFFF;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar li{
+    padding: 1.5rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: #000;
+}
+.apply a{
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5rem lightgrey;
+    color: #43CB83;
+}
+.container{
+    display: flex;
+    padding: 8rem 0 8rem 0;
+    background-image: url(./img/download.png), url(./img/Abgerundetes\ Rechteck\ 5@1X.png);
+    background-repeat: no-repeat;
+    background-size: 40rem;
+    background-size: 51rem;
+    background-position: right;
+}
+.image1 img{
+    width: 35rem;
+}
+.content{
+    padding: 5rem 0 0 5rem;
+}
+.image2 img{
+    width: 37.5rem;
+    padding: 5rem 14rem 0 0;
+}
+/* .image2{
+     background-image:  url('./img/download.png'), url('./img/Abgerundetes\ Rechteck\ 5@1X.png');
+} */
+.content h1{
+    color: #43CB83;
+    font-size: 2.5rem;
+}
+.content p{
+    padding: 1rem 14rem 2rem 0;
+}
+.content a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 2rem;
+    background-color: #43CB83;
+    color: #fff;
+}
+.blocks{
+    display:block;
+    width:65%;
+    margin: 0 auto;
+}
+.pic{
+    background-image: url('./img/Group\ 10@1X.png'), url('./img/download.png'), url('./img/Ellipse\ 2@1X.png');
+    background-repeat: no-repeat;
+    background-size: 34rem;
+}
+.block1{
+    display: flex;
+    justify-content: center;
+}
+.block1 div{
+    text-align: center;
+    padding: 5rem 5rem;
+    margin: 0 1rem 1rem 0;
+    width: 32%;
+    border-radius: 0.4rem;
+}
+.pink{
+    background-color: #F1E3FC;
+}
+.green{
+    background-color: #E3FCFA;
+}
+.orange{
+    background-color: #FCF0E3;
+}
+.orangel{
+    background-color: #FCEEE3;
+}
+.yellow{
+    background-color: #F3FCE3
+}
+.blue{
+    background-color: #E3F3FC;
+}
+.university img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+}
+.college{
+    display: flex;
+    padding: 5rem 0;
+}
+.more{
+    padding: 0 0 0 4rem;
+}
+.more h2{
+    color: #43CB83;
+    font-size: 2.5rem;
+    padding: 1rem 8rem 0 0;
+}
+.more p{
+    padding: 1rem 0;
+}
+.count{
+    display: flex;
+    justify-content: space-between;
+}
+.count h3{
+    font-family: 'NunitoSans-Bold';
+    font-size: 2rem;
+}
+.count p{
+    padding: 0;
+}
+.four{
+    color: #FFBA00;
+}
+.two{
+    color: #FF5F72;
+}
+.five{
+    color: #43CB83;
+}
+.fast{
+    background-color: #F1E3FC;
+}
+.work{
+    display: flex;
+    justify-content: space-around;
+}
+.work1{
+    display: flex;
+}
+.start2{
+    padding: 8rem 0 0 5rem;
+}
+form input{
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #80808063;
+    background: inherit;
+    padding: 0.5rem;
+    margin: 1rem 2rem 0 1rem;
+    width: 80%;
+}
+/* #box{
+    width: 5%;
+    margin: 1rem 0;
+} */
+.account{
+    background-image: url("./img/download.png"), url("./img/Abgerundetes\ Rechteck\ 5@1X.png");
+    background-repeat: no-repeat;
+    background-position-x: inherit;
+    background-size: 42rem;
+    background-position-y: bottom;
+}
+.call{
+    display: flex;
+}
+.call a{
+    text-decoration: none;
+    color: #000;
+}
+.call div{
+    padding: 0 0 0 3rem;
+}
+.container1{
+    display: flex;
+    padding: 0 0 4rem 0;
+    border-bottom: 1px solid #8080801f;
+}
+.news{
+    width: 55%;
+}
+.news1{
+    width: 45%;
+    padding: 4rem 0 0 20rem;
+}
+.news1 a{
+    text-decoration: none;
+    padding: 0.5rem 1.7rem;
+    border-radius: 2rem;
+    background-color: #43CB83;
+    border: inherit;
+    color: #fff;
+}
+.news h3{
+    color: #43CB83;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+}
+.post{
+    padding: 10rem 0;
+}
+.container2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem 0 0 0;
+}
+.container2 h3{
+    font-family: 'NunitoSans-Bold';
+    font-size: 2rem;
+}
+.child{
+    width: 82%;
+}
+.container2 div p{
+    padding: 0.5rem 0;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.icon1{
+    padding: 0.5rem 0;
+}
+.icons a{
+    text-decoration: none;
+    color: #5A6E79;
+    padding: 0 0.5rem 0 0;
+}
+footer{
+    background-color: #252C3A;
+    color: #969595;
+}
+footer a{
+    text-decoration: none;
+    color: #969595;
+}
+.color nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.color nav ul li{
+    padding: 0 1rem;
+}
+.edu{
+    display: flex;
+    padding: 5rem 0;
+}
+.edu nav ul{
+    list-style-type: none;
+}
+.edu nav ul li{
+    padding: 1rem 0 0 0;
+}
+.web{
+    width: 27%;
+    padding: 0 0.5rem 0 0;
+}
+.web p{
+    padding: 1rem 0;
+}
+.web a{
+    padding: 0 0.3rem;
+}
+.web1{
+    width: 27%;
+    padding: 0 1rem 0 0;
+}
+.web2{
+    width: 17%;
+    padding: 0 0 0 1rem;
+}
+.web3{
+    width: 29%;
+    padding: 0 0 0 1rem;
+}
+.web3 input{
+    background-color: #FFFFFF;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+.web3 a{
+    margin-left: -4.9rem;
+    border: 1px solid #43CB83;
+    background-color: #43CB83;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.22rem 0.5rem 0.31rem 0.5rem;
+    font-size: 0.9rem;
+}
+.web3 p{
+    padding: 1rem 0;
+}
+.web3 input{
+    background-color: #FFFFFF;
+}
+.color{
+    background-color: #1D232E;
+}
+.copy{
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* media queriws */
+@media (min-width: 320px) and (max-width: 768px){
+    .logo{
+        width: 0%;
+        display: block;
+        margin: 0 auto;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .log{
+        display: inherit;
+    }
+    .log a{
+        font-size: 3rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    .container{
+        display: inline;
+    }
+    .blocks{
+        display: block;
+        margin: 1rem;
+    }
+    .block1{
+        display: inline;
+    }
+    .college{
+        display: inline;
+    }
+    .block1 div {
+        width: 20rem;
+    }
+    .work{
+        display: inherit;
+    }
+    .university img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+    }
+    .pic{
+        background: none;
+    }
+    .image1 img {
+        width: 20rem;
+    }
+    .work1{
+        display: inherit;
+    }
+    .start2{
+        padding: 0;
+    }
+    .container1{
+        display: inherit;
+    }
+    .news1{
+        width: 100%;
+        padding: 0;
+    }
+    .post{
+        padding: 0;
+    }
+    .container2{
+        display: inherit;
+    }
+    .edu{
+        display: inherit;
+    }
+    .copy{
+        width: 0;
+    }
+    .copyright{
+        display: inherit;
+    }
+    .color nav ul{
+        display: inherit;
+    }
+    .color nav ul li {
+        width: 10rem;
+    }
+} 
