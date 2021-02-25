@@ -412,6 +412,9 @@ footer a{
         margin: 0.5rem;
         width: 100%;
     }
+    .image1 img{
+        width: 100%;
+    }
     .block1{
         display: inline;
     }
@@ -440,9 +443,6 @@ footer a{
     }
     .more h2{
         padding: 0;
-    }
-    .image1 img {
-        width: 20rem;
     }
     .work1{
         display: inherit;
