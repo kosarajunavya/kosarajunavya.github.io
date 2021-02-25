@@ -63,14 +63,14 @@ body{
     background-position: right;
 }
 .image1 img{
-    width: 35rem;
+    width: 80%;
 }
 .content{
     padding: 5rem 0 0 5rem;
+    width: 48%;
 }
 .image2 img{
-    width: 37.5rem;
-    padding: 5rem 14rem 0 0;
+    width: 100%;
 }
 /* .image2{
      background-image:  url('./img/download.png'), url('./img/Abgerundetes\ Rechteck\ 5@1X.png');
@@ -78,6 +78,7 @@ body{
 .content h1{
     color: #43CB83;
     font-size: 2.5rem;
+    padding: 0 11rem 0 0;
 }
 .content p{
     padding: 1rem 14rem 2rem 0;
@@ -409,16 +410,18 @@ footer a{
     }
     .blocks{
         display: block;
-        margin: 1rem;
+        margin: 0.5rem;
+        width: 100%;
     }
     .block1{
         display: inline;
     }
     .college{
         display: inline;
+        padding: 0;
     }
     .block1 div {
-        width: 20rem;
+        width: 100%;
     }
     .work{
         display: inherit;
@@ -430,6 +433,14 @@ footer a{
     }
     .pic{
         background: none;
+        padding: 0;
+    }
+    .more{
+        padding: 0;
+        width: 100%;
+    }
+    .more h2{
+        padding: 0;
     }
     .image1 img {
         width: 20rem;
@@ -438,14 +449,22 @@ footer a{
         display: inherit;
     }
     .start2{
-        padding: 0;
+        padding: 2rem;
     }
     .container1{
         display: inherit;
+        padding: 0;
+    }
+    .news{
+        width: 100%;
     }
     .news1{
         width: 100%;
-        padding: 0;
+        padding: 2rem 0;
+    }
+    .account{
+        margin: 0;
+        width: 100%;
     }
     .post{
         padding: 0;
@@ -456,8 +475,13 @@ footer a{
     .edu{
         display: inherit;
     }
+    .edu div{
+        width: 100%;
+        padding: 0;
+    }
     .copy{
-        width: 0;
+        width: 100%;
+        padding: 1rem;
     }
     .copyright{
         display: inherit;
@@ -466,6 +490,18 @@ footer a{
         display: inherit;
     }
     .color nav ul li {
-        width: 10rem;
+        width: 100%;
+        padding: 0;
+    }
+    .content{
+        width: 100%;
+        margin: 1rem;
+        padding: 0;
+    }
+    .content p {
+        padding: 1rem 0 2rem 0;
+    }
+    .content h1{
+        padding: 0;
     }
 } 
