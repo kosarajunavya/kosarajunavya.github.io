@@ -58,23 +58,25 @@ body{
     padding: 8rem 0 8rem 0;
     background-image: url(./img/download.png), url(./img/Abgerundetes\ Rechteck\ 5@1X.png);
     background-repeat: no-repeat;
-    background-size: 40rem;
     background-size: 51rem;
     background-position: right;
+}
+.image1{
+    width: 30%;
 }
 .image1 img{
     width: 80%;
 }
 .content{
-    padding: 5rem 0 0 5rem;
-    width: 48%;
+    padding: 5rem 0 0 0;
+    width: 37%;
+}
+.image2{
+    width: 33%;
 }
 .image2 img{
-    width: 100%;
+    width: 59%;
 }
-/* .image2{
-     background-image:  url('./img/download.png'), url('./img/Abgerundetes\ Rechteck\ 5@1X.png');
-} */
 .content h1{
     color: #43CB83;
     font-size: 2.5rem;
@@ -93,7 +95,7 @@ body{
 }
 .blocks{
     display:block;
-    width:65%;
+    width:50%;
     margin: 0 auto;
 }
 .block1 p{
@@ -103,8 +105,6 @@ body{
 .pic{
     background-image: url('./img/Group\ 10@1X.png'), url('./img/download.png'), url('./img/Ellipse\ 2@1X.png');
     background-repeat: no-repeat;
-    background-size: 34rem;
-    padding: 5rem 0;
 }
 .block1{
     display: flex;
@@ -113,31 +113,39 @@ body{
 .block1 div{
     text-align: center;
     padding: 5rem 5rem;
-    margin: 0 1rem 1rem 0;
-    width: 32%;
+    width: 35%;
     border-radius: 0.4rem;
 }
 .pink{
     background-color: #F1E3FC;
+    margin-bottom: 1rem;
 }
 .green{
     background-color: #E3FCFA;
+    margin: 0 1rem 1rem 1rem;
 }
 .orange{
     background-color: #FCF0E3;
+    margin-bottom: 1rem;
 }
 .orangel{
     background-color: #FCEEE3;
+    margin-bottom: 1rem;
 }
 .yellow{
-    background-color: #F3FCE3
+    background-color: #F3FCE3;
+    margin: 0 1rem 1rem 1rem;
 }
 .blue{
     background-color: #E3F3FC;
+    margin-bottom: 1rem;
+}
+.university{
+    width: 30%;
 }
 .university img{
-    width: 30rem;
-    height: 30rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
 }
 .college{
@@ -145,7 +153,7 @@ body{
     padding: 5rem 0;
 }
 .more{
-    padding: 0 0 0 4rem;
+   width: 70%;
 }
 .more h2{
     color: #43CB83;
@@ -158,6 +166,7 @@ body{
 .count{
     display: flex;
     justify-content: space-between;
+    width: 90%;
 }
 .count h3{
     font-family: 'NunitoSans-Bold';
@@ -412,6 +421,9 @@ footer a{
         margin: 0.5rem;
         width: 100%;
     }
+    .image1 {
+        width: 90%;
+    }
     .image1 img{
         width: 100%;
     }
@@ -424,14 +436,10 @@ footer a{
     }
     .block1 div {
         width: 100%;
+        margin: 1rem 0;
     }
     .work{
         display: inherit;
-    }
-    .university img {
-        width: 20rem;
-        height: 20rem;
-        border-radius: 50%;
     }
     .pic{
         background: none;
@@ -439,10 +447,11 @@ footer a{
     }
     .more{
         padding: 0;
-        width: 100%;
+        width: 85%;
     }
     .more h2{
         padding: 0;
+        font-size: 2rem;
     }
     .work1{
         display: inherit;
@@ -482,6 +491,12 @@ footer a{
         width: 100%;
         padding: 1rem;
     }
+    .image2 {
+        width: 100%;
+    }
+    .image2 img {
+        width: 100%;
+    }
     .copyright{
         display: inherit;
     }
@@ -503,4 +518,21 @@ footer a{
     .content h1{
         padding: 0;
     }
-} 
+}
+@media (min-width: 1024px) and (max-width: 1440px){
+    .container{
+        background-size: 22rem;
+        padding: 2rem 0 3rem 0;
+    }
+    .content{
+        width: 38%;
+        padding: 0;
+    }
+    .content p {
+        padding: 1rem 0 2rem 0;
+    }
+    .content h1 {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+}
