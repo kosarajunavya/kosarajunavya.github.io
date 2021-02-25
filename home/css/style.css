@@ -202,7 +202,7 @@ form input{
     background-size: 42rem;
     background-position-y: bottom;
     margin-top: -3rem;
-    margin-bottom: -3rem;
+    margin-bottom: -5rem;
     border: 1px solid #8080804d;
     box-shadow: 0.1rem 0.1rem 1rem #8888889c;
     width: 22rem;
@@ -211,19 +211,35 @@ form input{
     text-align: center;
     padding: 1.5rem 0 0 0; 
 }
+form label{
+    color: #87959C;
+}
 .call{
     display: flex;
     justify-content: space-around;
 }
-.call a, .call1 a{
+.call1{
     text-decoration: none;
-    color: #000;
+    border: 1px solid #43CB83;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    background: #43CB83;
+    color: #FFFFFF;
 }
-.call1 a{
+.call2 a{
+    margin: 1rem;
+    color: #87959C;
     padding: 1rem 1rem;
 }
+.number{
+    text-decoration: none;
+    color: #5A6E79;
+    font-family: 'NunitoSans-Bold';
+    font-size: 1.2rem;
+}
 .call div{
-    padding: 0 0 0 3rem;
+    padding: 1rem 0;
 }
 .container1{
     display: flex;
