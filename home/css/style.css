@@ -261,7 +261,7 @@ form label{
 }
 .news1{
     width: 45%;
-    padding: 4rem 0 0 20rem;
+    padding: 4rem 0 0 15rem;
 }
 .news1 a{
     text-decoration: none;
@@ -365,12 +365,12 @@ footer a{
     outline: none;
 }
 .web3 a{
-    margin-left: -4.9rem;
+    margin-left: -4.96rem;
     border: 1px solid #43CB83;
     background-color: #43CB83;
     color: #FFFFFF;
     text-align: center;
-    padding: 0.22rem 0.5rem 0.31rem 0.5rem;
+    padding: 0.24rem 0.5rem 0.31rem 0.5rem;
     font-size: 0.9rem;
 }
 .web3 p{
@@ -534,5 +534,12 @@ footer a{
     .content h1 {
         font-size: 1.5rem;
         padding: 0;
+    }
+    .blocks {
+        width: auto;
+        margin: 1rem;
+    }
+    .block1 div {
+        width: 45%;
     }
 }
