@@ -56,9 +56,9 @@ body{
 .container{
     display: flex;
     padding: 8rem 0 8rem 0;
-    background-image: url('./img/bg\ shape@1X\ \(1\).png');
+    background-image: url('./img/download.png');
     background-repeat: no-repeat;
-    background-size: 51rem;
+    background-size: 65rem;
     background-position: right;
 }
 .image1{
