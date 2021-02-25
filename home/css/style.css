@@ -542,4 +542,7 @@ footer a{
     .block1 div {
         width: 45%;
     }
+    .copy{
+        width: auto;
+    }
 }
