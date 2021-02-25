@@ -390,9 +390,8 @@ footer a{
 /* media queriws */
 @media (min-width: 320px) and (max-width: 768px){
     .logo{
-        width: 0%;
-        display: block;
-        margin: 0 auto;
+        width: 100%;
+        padding: 0 1rem;
     }
     .navbar ul {
         display: none;
@@ -401,8 +400,8 @@ footer a{
         display: inherit;
     }
     .log a{
-        font-size: 3rem;
-        padding: 0.5rem;
+        font-size: 2rem;
+        padding: 1.5rem 0;
         margin: 0.5rem;
     }
     .container{
