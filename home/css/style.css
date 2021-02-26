@@ -555,4 +555,7 @@ footer a{
     .copy{
         width: auto;
     }
+    .web1 {
+        width: 32%;
+    }
 }
