@@ -189,7 +189,7 @@ body{
 .count{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
 }
 .count h3{
     font-family: 'NunitoSans-Bold';
@@ -232,8 +232,7 @@ form input{
     background-image: url("./img/download.png"), url("./img/Abgerundetes\ Rechteck\ 5@1X.png");
     background-repeat: no-repeat;
     background-position-x: inherit;
-    background-size: 42rem;
-    background-position-y: bottom;
+    background-size: 100%;
     margin-top: -3rem;
     margin-bottom: -5rem;
     border: 1px solid #8080804d;
@@ -422,6 +421,9 @@ footer a{
         width: 100%;
         padding: 0 1rem;
     }
+    .wrapper {
+        display: block;
+    }
     .navbar ul {
         display: none;
     }
@@ -434,7 +436,9 @@ footer a{
         margin: 0.5rem;
     }
     .container{
-        display: inline;
+        display: block;
+        background: none;
+        padding: 0;
     }
     .blocks{
         display: block;
@@ -447,6 +451,10 @@ footer a{
     .image1 img{
         width: 100%;
     }
+    .image2 {
+        width: 100%;
+        margin: 0;
+    }
     .block1{
         display: inline;
     }
@@ -458,6 +466,15 @@ footer a{
         width: 100%;
         margin: 1rem 0;
     }
+    .grid {
+        display: block;
+        padding: 0;
+        width: 95%;
+    }
+    .blocku {
+        display: block;
+        width: 90%;
+    }
     .work{
         display: inherit;
     }
@@ -467,7 +484,7 @@ footer a{
     }
     .more{
         padding: 0;
-        width: 85%;
+        width: 100%;
     }
     .more h2{
         padding: 0;
@@ -494,6 +511,9 @@ footer a{
         margin: 0;
         width: 100%;
     }
+    form input{
+        margin: 0.2rem 0rem 0 1rem;
+    }
     .post{
         padding: 0;
     }
@@ -511,19 +531,12 @@ footer a{
         width: 100%;
         padding: 1rem;
     }
-    .image2 {
-        width: 100%;
-    }
     .image2 img {
         width: 100%;
     }
     .university img{
-        width: 15rem;
-        height: 15rem;
-        border-radius: 50%;
-        border: 1px solid #FFFFFF;
-        box-shadow: 0 0 0.5rem #d3d3d3;
-        padding: 1rem;
+        width: 18rem;
+        height: 18rem;
     }
     .copyright{
         display: inherit;
@@ -545,6 +558,7 @@ footer a{
     }
     .content h1{
         padding: 0;
+        font-size: 1.6rem;
     }
 }
 @media (min-width: 1024px) and (max-width: 1440px){
