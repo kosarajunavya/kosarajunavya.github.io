@@ -234,7 +234,7 @@ form input{
     background-position-x: inherit;
     background-size: 100%;
     margin-top: -3rem;
-    margin-bottom: -5rem;
+    margin-bottom: -3rem;
     border: 1px solid #8080804d;
     box-shadow: 0.1rem 0.1rem 1rem #8888889c;
     width: 22rem;
@@ -424,6 +424,9 @@ footer a{
     .wrapper {
         display: block;
     }
+    .blocku-wrapper{
+        background: none;
+    }
     .navbar ul {
         display: none;
     }
@@ -561,14 +564,25 @@ footer a{
         font-size: 1.6rem;
     }
 }
-@media (min-width: 1024px) and (max-width: 1440px){
+@media (min-width: 1024px) and (max-width: 1349px){
     .container{
-        background-size: 22rem;
-        padding: 2rem 0 3rem 0;
+        background-size: 48%;
+        background-position: top -0.2rem right -8rem;
+    }
+    .image1{
+        width: 40%;
+    }
+    .image2 {
+        width: 21%;
+        margin: 0;
+    }
+    .image2 img {
+        width: 100%;
+        margin: 1rem 0rem 0 3rem;
     }
     .content{
-        width: 38%;
-        padding: 0;
+        width: 30%;
+        padding: 5rem 0 0 0;
     }
     .content p {
         padding: 1rem 0 2rem 0;
@@ -586,6 +600,43 @@ footer a{
     }
     .copy{
         width: auto;
+    }
+    .web1 {
+        width: 32%;
+    }
+    .grid {
+        width: 90%;
+        padding: 4rem 0 0 0;
+    }
+    .blocku {
+        width: 90%;
+    }
+    .blocku-wrapper {
+        background-size: 20%;
+        background-position: top 7rem left 7rem;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1920px){
+    .container {
+        background-size: 44%;
+        background-position: top 0rem right -9rem;
+    }
+    .image2 img {
+        width: 100%;
+    }
+    .content {
+        padding: 5rem 0 0 0;
+        width: 68%;
+    }
+    .grid {
+        width: 50%;
+        padding: 6rem 0 0 0;
+    }
+    .blocku {
+        width: 50%;
+    }
+    .blocks {
+        width: 70%;
     }
     .web1 {
         width: 32%;
