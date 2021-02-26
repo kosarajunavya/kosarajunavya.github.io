@@ -48,34 +48,35 @@ body{
 }
 .apply a{
     padding: 0.5rem 1.5rem;
-    border: 1px solid #000;
+    border: 1px solid #FFFFFF;
     border-radius: 2rem;
-    box-shadow: 0 0 0.5rem #d3d3d3;
+    box-shadow: 0 0 1rem #d3d3d3;
     color: #43CB83;
+    background-color: #FFFFFF;
 }
 .container{
-    display: flex;
-    padding: 8rem 0 8rem 0;
+    padding: 8rem 0 0 0;
     background-image: url('./img/download.png');
     background-repeat: no-repeat;
-    background-size: 65rem;
-    background-position: right;
+    background-size: 40%;
+    background-position: top 0rem right 0rem;
 }
-.image1{
-    width: 30%;
+.wrapper{
+    display: flex;
 }
 .image1 img{
-    width: 80%;
+    width: 73%;
 }
 .content{
     padding: 5rem 0 0 0;
     width: 37%;
 }
 .image2{
-    width: 33%;
+    width: 22%;
+    margin: 6rem 8rem 0 0;
 }
 .image2 img{
-    width: 59%;
+    width: 82%;
 }
 .content h1{
     color: #43CB83;
@@ -93,9 +94,26 @@ body{
     background-color: #43CB83;
     color: #fff;
 }
-.blocks{
+.grid{
     display:block;
     width:50%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+.blocku{
+    display:block;
+    width:50%;
+    margin: 0 auto;
+}
+.blocku-wrapper{
+    background-size: 13%;
+    background-image: url(./img/Group\ 10@1X.png);
+    background-repeat: no-repeat;
+    background-position: top 7rem left 22rem;
+}
+.blocks{
+    display:block;
+    width:65%;
     margin: 0 auto;
 }
 .block1 p{
@@ -103,10 +121,10 @@ body{
     font-size: 1.5rem;
 }
 .pic{
-    background-image: url('./img/Group\ 10@1X.png'), url('./img/download.png');
+    background-image: url('./img/download.png');
     background-repeat: no-repeat;
-    background-position: left -1rem top -4rem;
-    background-size: 44rem;
+    background-position: bottom -2rem left -19rem;
+    background-size: 55%;
 }
 .block1{
     display: flex;
@@ -155,7 +173,7 @@ body{
 }
 .college{
     display: flex;
-    padding: 5rem 0;
+    padding: 5rem 0 10rem 0;
 }
 .more{
    width: 50%;
@@ -163,7 +181,7 @@ body{
 .more h2{
     color: #43CB83;
     font-size: 2.5rem;
-    padding: 1rem 8rem 0 0;
+    padding: 1rem 0 0 0;
 }
 .more p{
     padding: 1rem 0;
