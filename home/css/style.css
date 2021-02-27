@@ -366,7 +366,7 @@ footer a{
 /* media queriws */
 
 
-@media (min-width: 768px){
+@media (min-width: 769px){
     .logo{
         width: auto;
         padding: 0;
@@ -389,7 +389,7 @@ footer a{
         width: 37%;
     }
     .content h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .content p{
         padding: 1rem 6rem 2rem 0;
@@ -411,7 +411,7 @@ footer a{
     }
     .grid{
         display:block;
-        width:50%;
+        width:65%;
         margin: 0 auto;
         padding: 5rem 0;
     }
@@ -432,21 +432,21 @@ footer a{
     }
     .blocku{
         display:block;
-        width:50%;
+        width:65%;
         margin: 0 auto;
     }
     .blocku-wrapper {
         background-size: 13%;
         background-image: url(./img/Group\ 10@1X.png);
         background-repeat: no-repeat;
-        background-position: top 7rem left 24rem;
+        background-position: top 7rem left 16rem;
     }
     .university{
         width: 50%;
         background-image: url('./img/Ellipse\ 2@1X.png');
         background-repeat: no-repeat;
         background-position: top 1rem left 1rem;
-        background-size: 88%;
+        background-size: 67%;    
     }
     .university img {
         width: 25rem;
@@ -454,6 +454,7 @@ footer a{
         border-radius: 50%;
         border: 1rem solid #DDF1FB;
         padding: 1rem;
+
     }
     .more {
         width: 50%;
@@ -489,7 +490,7 @@ footer a{
         }
     .blocks {
         display: block;
-        width: 50%;
+        width: 65%;
         margin: 0 auto;
     }
     .post{
@@ -555,16 +556,210 @@ footer a{
     }
     .copy{
         display: block;
-        width: 50%;
+        width: 65%;
         margin: 0 auto;
     }
 }
 @media (min-width: 1024px){
+
     .content h1{
-        padding: 0 11rem 0 0;
+        padding: 0;
+    }
+    .content p{
+        padding: 1rem 0 2rem 0;
     }
     .navbar ul{
         display: flex;
         list-style-type: none;
+    }
+    .content{
+        width: 40%;
+        padding: 0;
+    }
+    .image1{
+        width: 30%;
+    }
+    .image2{
+        width: 18%;
+    }
+    .grid{
+        width: 80%;
+    }
+    .block1 div {
+        text-align: center;
+        padding: 2rem 2rem;
+        width: 30%;
+        border-radius: 0.4rem;
+        margin: 0 0 1rem 1rem;
+    }
+    .navbar li {
+        padding: 0.9rem;
+        margin: 2rem 0 0 0;
+    }
+    .blocku{
+        width: 80%;
+    }
+    .blocku-wrapper {
+        background-position: top 11rem left -1rem;
+    }
+    .blocks{
+        width: 95%;
+    }
+    .copy{
+        width: 95%;
+    }
+    .pic{
+        background: none;
+    }
+    .university{
+        background: none;
+    }
+    .blocku-wrapper{
+        background: none;
+    }
+    .college{
+        display: block;
+    }
+    .university{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .more {
+        width: 100%;
+        padding: 0 0 5rem 0;
+    }
+    .work {
+        display: block;
+    }
+    .work1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .start2 {
+        padding: 8rem 7rem 0 0;
+    }
+    .account {
+        margin-top: 0rem;
+        margin-bottom: -1rem;
+        border: 1px solid #8080804d;
+        width: 50%;
+    }
+    .post {
+        padding: 5rem 0;
+    }
+    .news1 {
+        padding: 4rem 0 0 10rem;
+    }
+}
+@media (min-width: 1440px){
+    .content h1{
+        font-size: 2rem;
+        padding: 9rem 0 0 1rem;
+    }
+    .content p{
+        padding: 1rem 10rem 2rem 1rem;
+    }
+    .our{
+        padding: 0 1rem;
+    }
+    .grid{
+        display:block;
+        width:65%;
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+    .block1 div{
+        text-align: center;
+        padding: 5rem 5rem;
+        width: 35%;
+        border-radius: 0.4rem;
+        margin: 0 0 1rem 1rem;
+    }
+    .college {
+        display: flex;
+        padding: 5rem 0 10rem 0;
+    }
+    .blocku{
+        display:block;
+        width:65%;
+        margin: 0 auto;
+    }
+    .blocku-wrapper {
+        background-size: 13%;
+        background-image: url(./img/Group\ 10@1X.png);
+        background-repeat: no-repeat;
+        background-position: top 7rem left 16rem;
+    }
+    .university{
+        width: 50%;
+        background-image: url('./img/Ellipse\ 2@1X.png');
+        background-repeat: no-repeat;
+        background-position: top 1rem left 1rem;
+        background-size: 67%;    
+    }
+    .university img {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        border: 1rem solid #DDF1FB;
+        padding: 1rem;
+
+    }
+    .more {
+        width: 50%;
+        padding: 0 0 10rem 0;
+    }
+    .more h2 {
+        font-size: 1.6rem;
+    }
+    .college {
+        display: flex;
+        padding: 1rem;
+    }
+    .work {
+        display: flex;
+        justify-content: space-around;
+    }
+    .work1 {
+        display: flex;
+    }
+    .start2 {
+        padding: 8rem 0 0 5rem;
+    }
+    .account {
+        background-image: url(./img/download.png), url(./img/Abgerundetes\ Rechteck\ 5@1X.png);
+        background-repeat: no-repeat;
+        background-position-x: inherit;
+        background-size: 100%;
+        margin-top: -3rem;
+        margin-bottom: -3rem;
+        border: 1px solid #8080804d;
+        box-shadow: 0.1rem 0.1rem 1rem #8888889c;
+        width: 100%;
+        }
+    .blocks {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+    }
+    .post{
+        padding: 10rem 0;
+    }
+    .container1{
+        display: flex;
+        padding: 0 0 4rem 0;
+        border-bottom: 1px solid #8080801f;
+    }
+    .news{
+        width: 50%;
+    }
+    .news1{
+        width: 50%;
+        padding: 4rem 0 0 15rem;
+    }
+    .copy{
+        display: block;
+        width: 65%;
+        margin: 0 auto;
     }
 }
