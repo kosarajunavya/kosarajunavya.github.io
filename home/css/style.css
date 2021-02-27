@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.log{
-    display: none;
+.log {
+    display: flex;
+    padding: 2rem 0;
+}
+.log a{
+    font-size: 1.5rem;
+    padding: 0 1rem 0.5rem 0;
 }
 @font-face {
 	font-family: 'NunitoSans-Regular';
@@ -54,22 +59,18 @@ body{
     background-color: #FFFFFF;
 }
 .container{
-    padding: 8rem 0 0 0;
-    background-image: url('./img/download.png');
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: top 0rem right 0rem;
+    display: block;
 }
 .content{
     padding: 1rem;
-
 }
-.image2{
-    width: 22%;
-    margin: 6rem 8rem 0 0;
-}
+.image2 {
+    width: 100%;
+    margin: 0;
+} 
 .image2 img{
-    width: 82%;
+    width: 100%;
+    margin: 0;
 }
 .content h1{
     color: #43CB83;
@@ -88,25 +89,11 @@ body{
 }
 .grid{
     display:block;
-    width:50%;
-    margin: 0 auto;
-    padding: 5rem 0;
-}
-.blocku{
-    display:block;
-    width:50%;
-    margin: 0 auto;
-}
-.blocku-wrapper{
-    background-size: 13%;
-    background-image: url(./img/Group\ 10@1X.png);
-    background-repeat: no-repeat;
-    background-position: top 7rem left 21rem;
+    width:100%;
+    padding: 1rem;
 }
 .blocks{
-    display:block;
-    width:65%;
-    margin: 0 auto;
+    width:100%;
 }
 .block1 p{
     font-family: 'NunitoSans-Bold';
@@ -119,14 +106,15 @@ body{
     background-size: 55%;
 }
 .block1{
-    display: flex;
-    justify-content: center;
+    display: block;
+    width: 100%;
 }
 .block1 div{
     text-align: center;
-    padding: 5rem 5rem;
-    width: 35%;
-    border-radius: 0.4rem;
+    padding: 3rem 3rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    margin: 1rem 0;
 }
 .pink{
     background-color: #F1E3FC;
@@ -134,48 +122,40 @@ body{
 }
 .green{
     background-color: #E3FCFA;
-    margin: 0 1rem 1rem 1rem;
 }
 .orange{
     background-color: #FCF0E3;
-    margin-bottom: 1rem;
 }
 .orangel{
     background-color: #FCEEE3;
-    margin-bottom: 1rem;
 }
 .yellow{
     background-color: #F3FCE3;
-    margin: 0 1rem 1rem 1rem;
 }
 .blue{
     background-color: #E3F3FC;
-    margin-bottom: 1rem;
 }
 .university{
-    width: 50%;
-    background-image: url('./img/Ellipse\ 2@1X.png');
-    background-repeat: no-repeat;
-    background-position: top left 1rem;
-    background-size: 88%;
+    width: 100%;
+    padding: 1rem;
 }
-.university img{
-    width: 25rem;
-    height: 25rem;
+.university img {
+    width: 18rem;
+    height: 18rem;
     border-radius: 50%;
     border: 1rem solid #DDF1FB;
     padding: 1rem;
 }
 .college{
-    display: flex;
-    padding: 5rem 0 10rem 0;
+    display: block;
 }
-.more{
-   width: 50%;
+.more {
+    width: 100%;
+    padding: 1rem;
 }
 .more h2{
     color: #43CB83;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     padding: 1rem 0 0 0;
 }
 .more p{
@@ -188,7 +168,7 @@ body{
 }
 .count h3{
     font-family: 'NunitoSans-Bold';
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .count p{
     padding: 0;
@@ -206,14 +186,11 @@ body{
     background-color: #F1E3FC;
 }
 .work{
-    display: flex;
-    justify-content: space-around;
-}
-.work1{
-    display: flex;
+    display: block;
+    padding: 1rem 0;
 }
 .start2{
-    padding: 8rem 0 0 5rem;
+    padding: 1rem ;
 }
 form input{
     outline: none;
@@ -224,15 +201,10 @@ form input{
     margin: 1rem 0rem 0 1rem;
 }
 .account{
-    background-image: url("./img/download.png"), url("./img/Abgerundetes\ Rechteck\ 5@1X.png");
+    background-image: url(./img/download.png), url(./img/Abgerundetes\ Rechteck\ 5@1X.png);
     background-repeat: no-repeat;
-    background-position-x: inherit;
     background-size: 100%;
-    margin-top: -3rem;
-    margin-bottom: -3rem;
-    border: 1px solid #8080804d;
-    box-shadow: 0.1rem 0.1rem 1rem #8888889c;
-    width: 22rem;
+    width: 100%;
 }
 .account h3{
     text-align: center;
@@ -245,40 +217,35 @@ form label{
     display: flex;
     justify-content: space-around;
 }
-.call1{
+
+.call1 {
     text-decoration: none;
     border: 1px solid #43CB83;
-    padding: 0.6rem 1.5rem;
+    padding: 0.2rem 1rem;
     border-radius: 2rem;
-    margin: 1rem;
+    margin: 0.4rem;
     background: #43CB83;
     color: #FFFFFF;
 }
 .call2 a{
-    margin: 1rem;
     color: #87959C;
-    padding: 1rem 1rem;
+    padding: 0 1rem;
 }
 .number{
     text-decoration: none;
     color: #5A6E79;
     font-family: 'NunitoSans-Bold';
-    font-size: 1.2rem;
-}
-.call div{
-    padding: 1rem 0;
+    font-size: 1rem;
 }
 .container1{
-    display: flex;
-    padding: 0 0 4rem 0;
-    border-bottom: 1px solid #8080801f;
+    padding: 1rem;
 }
 .news{
-    width: 50%;
+    width: 100%;
 }
 .news1{
-    width: 50%;
-    padding: 4rem 0 0 15rem;
+    width: 100%;
+    padding: 2rem 0;
 }
 .news1 a{
     text-decoration: none;
@@ -291,20 +258,14 @@ form label{
 .news h3{
     color: #43CB83;
     padding: 1rem 0;
-    font-size: 2.5rem;
-}
-.post{
-    padding: 10rem 0;
+    font-size: 1.6rem;
 }
 .container2{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: 3rem 0 0 0;
-    grid-gap: 4rem;
+    padding: 1rem;
 }
 .container2 h3{
     font-family: 'NunitoSans-Bold';
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .child{
     width: 90%;
@@ -334,14 +295,10 @@ footer a{
 }
 .color nav ul{
     list-style-type: none;
-    display: flex;
-}
-.color nav ul li{
-    padding: 0 1rem;
+    display: block;
 }
 .edu{
-    display: flex;
-    padding: 5rem 0;
+    padding: 1rem;
 }
 .edu h3{
     padding: 1rem 0;
@@ -354,8 +311,16 @@ footer a{
     padding: 1rem 0 0 0;
 }
 .web{
-    width: 25%;
-    padding: 0 0.5rem 0 0;
+    width: 100%;
+}
+.web1{
+    width: 100%;
+}
+.web2{
+    width: 100%;
+}
+.web3{
+    width: 100%;
 }
 .web p{
     padding: 1rem 0;
@@ -363,17 +328,7 @@ footer a{
 .web a{
     padding: 0 0.3rem;
 }
-.web1{
-    width: 25%;
-}
-.web2{
-    width: 20%;
-    padding: 0 0 0 1rem;
-}
-.web3{
-    width: 25%;
-    padding: 0 0 0 1rem;
-}
+
 .web3 input{
     background-color: #FFFFFF;
     padding: 0.5rem;
@@ -400,13 +355,6 @@ footer a{
     padding: 1rem;
     font-size: 0.9rem;
 }
-.copy{
-    display: block;
-    width: 65%;
-    margin: 0 auto;
-}
-
-
 .logo{
     width: 100%;
     padding: 0 1rem;
@@ -415,129 +363,15 @@ footer a{
     width: 100%;
 }
 /* media queriws */
-@media (min-width: 320px) and (max-width: 768px){
-    .blocku-wrapper{
-        background: none;
-    }
-    .log{
-        display: inherit;
-    }
-    .log a{
-        font-size: 2rem;
-        padding: 1.5rem 0;
-        margin: 0.5rem;
-    }
-    .container{
-        display: block;
-        background: none;
-        padding: 0;
-    }
-    .blocks{
-        display: block;
-        margin: 0.5rem;
-        width: 100%;
-    }
-    .image2 {
-        width: 100%;
-        margin: 0;
-    }
-    .block1{
-        display: inline;
-    }
-    .college{
-        display: inline;
-        padding: 0;
-    }
-    .block1 div {
-        width: 100%;
-        margin: 1rem 0;
-    }
-    .grid {
-        display: block;
-        padding: 0;
-        width: 95%;
-    }
-    .blocku {
-        display: block;
-        width: 90%;
-    }
-    .work{
-        display: inherit;
-    }
-    .pic{
-        background: none;
-        padding: 0;
-    }
-    .more{
-        padding: 0;
-        width: 100%;
-    }
-    .more h2{
-        padding: 0;
-        font-size: 2rem;
-    }
-    .work1{
-        display: inherit;
-    }
-    .start2{
-        padding: 2rem;
-    }
-    .container1{
-        display: inherit;
-        padding: 0;
-    }
-    .news{
-        width: 100%;
-    }
-    .news1{
-        width: 100%;
-        padding: 2rem 0;
-    }
-    .account{
-        margin: 0;
-        width: 100%;
-    }
-    form input{
-        margin: 0.2rem 0rem 0 1rem;
-    }
-    .post{
-        padding: 0;
-    }
-    .container2{
-        display: inherit;
-    }
-    .edu{
-        display: inherit;
-    }
-    .edu div{
-        width: 100%;
-        padding: 0;
-    }
-    .copy{
-        width: 100%;
-        padding: 1rem;
-    }
-    .image2 img {
-        width: 100%;
-    }
-    .university img{
-        width: 18rem;
-        height: 18rem;
-    }
-    .color nav ul{
-        display: inherit;
-    }
-    .color nav ul li {
-        width: 100%;
-        padding: 0;
-    }
-    
-}
+
 
 @media (min-width: 768px){
     .logo{
         width: auto;
         padding: 0;
+    }
+    .log{
+        display: none;
     }
     .navbar ul{
         display: none;
@@ -559,6 +393,170 @@ footer a{
     .content p{
         padding: 1rem 6rem 2rem 0;
     }
+    .container {
+        background-size: 50%;
+        background-position: top 0rem right -12rem;
+        padding: 8rem 0 0 0;
+        background-image: url(./img/download.png);
+        background-repeat: no-repeat;
+    }
+    .image2 {
+        width: 33%;
+        margin: 0 7rem 0 0;
+    }
+    .image2 img {
+        width: 80%;
+        margin: 6rem 0 0 9rem;
+    }
+    .grid{
+        display:block;
+        width:50%;
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+    .block1 {
+        display: flex;
+        justify-content: center;
+    }
+    .block1 div{
+        text-align: center;
+        padding: 5rem 5rem;
+        width: 35%;
+        border-radius: 0.4rem;
+        margin: 0 0 1rem 1rem;
+    }
+    .college {
+        display: flex;
+        padding: 5rem 0 10rem 0;
+    }
+    .blocku{
+        display:block;
+        width:50%;
+        margin: 0 auto;
+    }
+    .blocku-wrapper {
+        background-size: 13%;
+        background-image: url(./img/Group\ 10@1X.png);
+        background-repeat: no-repeat;
+        background-position: top 7rem left 24rem;
+    }
+    .university{
+        width: 50%;
+        background-image: url('./img/Ellipse\ 2@1X.png');
+        background-repeat: no-repeat;
+        background-position: top 1rem left 1rem;
+        background-size: 88%;
+    }
+    .university img {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        border: 1rem solid #DDF1FB;
+        padding: 1rem;
+    }
+    .more {
+        width: 50%;
+        padding: 0 0 10rem 0;
+    }
+    .more h2 {
+        font-size: 2.5rem;
+    }
+    .college {
+        display: flex;
+        padding: 1rem;
+    }
+    .work {
+        display: flex;
+        justify-content: space-around;
+    }
+    .work1 {
+        display: flex;
+    }
+    .start2 {
+        padding: 8rem 0 0 5rem;
+    }
+    .account {
+        background-image: url(./img/download.png), url(./img/Abgerundetes\ Rechteck\ 5@1X.png);
+        background-repeat: no-repeat;
+        background-position-x: inherit;
+        background-size: 100%;
+        margin-top: -3rem;
+        margin-bottom: -3rem;
+        border: 1px solid #8080804d;
+        box-shadow: 0.1rem 0.1rem 1rem #8888889c;
+        width: 100%;
+        }
+    .blocks {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .post{
+        padding: 10rem 0;
+    }
+    .container1{
+        display: flex;
+        padding: 0 0 4rem 0;
+        border-bottom: 1px solid #8080801f;
+    }
+    .news{
+        width: 50%;
+    }
+    .news1{
+        width: 50%;
+        padding: 4rem 0 0 15rem;
+    }
+    .news h3 {
+        font-size: 2.5rem;
+    }
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 3rem 0 0 0;
+        grid-gap: 4rem;
+    }
+    .container2 h3{
+        font-size: 2rem;
+    }
+    .edu{
+        display: flex;
+        padding: 5rem 0;
+    }
+    .web{
+        width: 25%;
+        padding: 0 0.5rem 0 0;
+    }
+    .web1{
+        width: 30%;
+    }
+    .web2{
+        width: 20%;
+        padding: 0 0 0 1rem;
+    }
+    .web3{
+        width: 25%;
+        padding: 0 0 0 1rem;
+    }
+    footer a {
+        text-decoration: none;
+        color: #969595;
+        font-size: 0.8rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+    .color nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    .color nav ul li{
+        padding: 0 1rem;
+    }
+    .copy{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 @media (min-width: 1024px){
     .content h1{
@@ -569,126 +567,3 @@ footer a{
         list-style-type: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (min-width: 1024px) and (max-width: 1349px){
-    .container{
-        background-size: 48%;
-        background-position: top -0.2rem right -8rem;
-    }
-    .image1{
-        width: 40%;
-    }
-    .image2 {
-        width: 21%;
-        margin: 0;
-    }
-    .image2 img {
-        width: 100%;
-        margin: 1rem 0rem 0 3rem;
-    }
-    .content{
-        width: 30%;
-        padding: 5rem 0 0 0;
-    }
-    .content p {
-        padding: 1rem 0 2rem 0;
-    }
-    .content h1 {
-        font-size: 1.5rem;
-        padding: 0;
-    }
-    .blocks {
-        width: auto;
-        margin: 1rem;
-    }
-    .block1 div {
-        width: 45%;
-    }
-    .copy{
-        width: auto;
-    }
-    .web1 {
-        width: 32%;
-    }
-    .grid {
-        width: 90%;
-        padding: 4rem 0 0 0;
-    }
-    .blocku {
-        width: 90%;
-    }
-    .blocku-wrapper {
-        background-size: 20%;
-        background-position: top 7rem left 7rem;
-    }
-}
-
-
-
-@media (min-width: 1440px) and (max-width: 1920px){
-    .container {
-        background-size: 44%;
-        background-position: top 0rem right -9rem;
-    }
-    .image2 img {
-        width: 100%;
-    }
-    .content {
-        padding: 5rem 0 0 0;
-        width: 68%;
-    }
-    .grid {
-        width: 50%;
-        padding: 6rem 0 0 0;
-    }
-    .blocku {
-        width: 50%;
-    }
-    .blocks {
-        width: 70%;
-    }
-    .web1 {
-        width: 32%;
-    }
-} */
