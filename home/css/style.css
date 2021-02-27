@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -459,7 +460,7 @@ footer a{
         padding: 0 0 10rem 0;
     }
     .more h2 {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
     }
     .college {
         display: flex;
@@ -507,7 +508,7 @@ footer a{
         padding: 4rem 0 0 15rem;
     }
     .news h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .container2{
         display: grid;
@@ -516,7 +517,7 @@ footer a{
         grid-gap: 4rem;
     }
     .container2 h3{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .edu{
         display: flex;
