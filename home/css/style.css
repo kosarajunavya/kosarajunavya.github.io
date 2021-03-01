@@ -366,13 +366,13 @@ footer a{
 /* media queriws */
 
 
-@media (min-width: 769px){
+@media (min-width: 768px){
     .logo{
         width: auto;
         padding: 0;
     }
     .log{
-        display: none;
+        display: block;
     }
     .navbar ul{
         display: none;
@@ -381,76 +381,62 @@ footer a{
         display: flex;
         justify-content: space-between;
     }
+    .container{
+        padding: 1rem;
+    }
+    .image1{
+        width: 25%;
+        padding: 1rem 0 0;
+    }
     .wrapper{
         display: flex;
     }
     .content{
-        padding: 5rem 0 0 0;
-        width: 37%;
+        width: 50%;
     }
     .content h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
+        padding: 0rem 0 0 1rem;
     }
     .content p{
-        padding: 1rem 6rem 2rem 0;
+        padding: 0 0 1rem 1rem;
     }
-    .container {
-        background-size: 50%;
-        background-position: top 0rem right -12rem;
-        padding: 8rem 0 0 0;
-        background-image: url(./img/download.png);
-        background-repeat: no-repeat;
+    .image2{
+        width: 25%;
     }
-    .image2 {
-        width: 33%;
-        margin: 0 7rem 0 0;
-    }
-    .image2 img {
-        width: 80%;
-        margin: 6rem 0 0 9rem;
+    .our{
+        padding: 0 1rem;
     }
     .grid{
         display:block;
-        width:65%;
+        width:100%;
         margin: 0 auto;
         padding: 5rem 0;
     }
-    .block1 {
+    .block1{
         display: flex;
-        justify-content: center;
     }
     .block1 div{
         text-align: center;
-        padding: 5rem 5rem;
+        padding: 3rem 3rem;
         width: 35%;
         border-radius: 0.4rem;
         margin: 0 0 1rem 1rem;
     }
-    .college {
-        display: flex;
-        padding: 5rem 0 10rem 0;
-    }
     .blocku{
         display:block;
-        width:65%;
+        width:100%;
         margin: 0 auto;
     }
-    .blocku-wrapper {
-        background-size: 13%;
-        background-image: url(./img/Group\ 10@1X.png);
-        background-repeat: no-repeat;
-        background-position: top 7rem left 16rem;
+    .pic{
+        background: none;
     }
     .university{
         width: 50%;
-        background-image: url('./img/Ellipse\ 2@1X.png');
-        background-repeat: no-repeat;
-        background-position: top 1rem left 1rem;
-        background-size: 67%;    
     }
     .university img {
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: 20rem;
         border-radius: 50%;
         border: 1rem solid #DDF1FB;
         padding: 1rem;
@@ -458,7 +444,7 @@ footer a{
     }
     .more {
         width: 50%;
-        padding: 0 0 10rem 0;
+        padding: 0 0 5rem 0;
     }
     .more h2 {
         font-size: 1.6rem;
@@ -468,11 +454,12 @@ footer a{
         padding: 1rem;
     }
     .work {
-        display: flex;
-        justify-content: space-around;
+        display: block;
     }
     .work1 {
         display: flex;
+        justify-content: space-between;
+        padding: 0 2rem 0;
     }
     .start2 {
         padding: 8rem 0 0 5rem;
@@ -482,23 +469,23 @@ footer a{
         background-repeat: no-repeat;
         background-position-x: inherit;
         background-size: 100%;
-        margin-top: -3rem;
+        margin-top: -1rem;
         margin-bottom: -3rem;
         border: 1px solid #8080804d;
         box-shadow: 0.1rem 0.1rem 1rem #8888889c;
-        width: 100%;
+        width: 45%;
         }
     .blocks {
         display: block;
-        width: 65%;
+        width: 100%;
         margin: 0 auto;
     }
     .post{
-        padding: 10rem 0;
+        padding: 5rem 1rem;
     }
     .container1{
         display: flex;
-        padding: 0 0 4rem 0;
+        padding: 0 1rem 4rem 1rem;
         border-bottom: 1px solid #8080801f;
     }
     .news{
@@ -506,88 +493,51 @@ footer a{
     }
     .news1{
         width: 50%;
-        padding: 4rem 0 0 15rem;
+        padding: 4rem 0 0 10rem;
     }
-    .news h3 {
-        font-size: 2rem;
-    }
-    .container2{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        padding: 3rem 0 0 0;
-        grid-gap: 4rem;
-    }
-    .container2 h3{
-        font-size: 1.6rem;
-    }
-    .edu{
-        display: flex;
-        padding: 5rem 0;
-    }
-    .web{
-        width: 25%;
-        padding: 0 0.5rem 0 0;
-    }
-    .web1{
-        width: 30%;
-    }
-    .web2{
-        width: 20%;
-        padding: 0 0 0 1rem;
-    }
-    .web3{
-        width: 25%;
-        padding: 0 0 0 1rem;
-    }
-    footer a {
-        text-decoration: none;
-        color: #969595;
-        font-size: 0.8rem;
-    }
-    footer p{
-        font-size: 0.8rem;
-    }
-    .color nav ul {
-        list-style-type: none;
-        display: flex;
-    }
-    .color nav ul li{
-        padding: 0 1rem;
-    }
-    .copy{
+    .copyright{
         display: block;
-        width: 65%;
-        margin: 0 auto;
     }
 }
 @media (min-width: 1024px){
-
+    .log{
+        display: none;
+    }
+    .container {
+        background-size: 50%;
+        background-position: top 0rem right -12rem;
+        padding: 5rem 0 0 0;
+        background-image: url(./img/download.png);
+        background-repeat: no-repeat;
+    }
     .content h1{
-        padding: 0;
+        font-size: 2rem;
+        padding: 2rem 0 0 1rem;
     }
     .content p{
-        padding: 1rem 0 2rem 0;
+        padding: 1rem;
     }
     .navbar ul{
         display: flex;
         list-style-type: none;
     }
     .content{
-        width: 40%;
+        width: 50%;
         padding: 0;
     }
     .image1{
-        width: 30%;
+        width: 28%;
     }
     .image2{
         width: 18%;
+        margin: 4rem 0 0 0;
     }
     .grid{
         width: 80%;
     }
     .block1 div {
         text-align: center;
-        padding: 2rem 2rem;
+        padding: 4rem 2rem;
         width: 30%;
         border-radius: 0.4rem;
         margin: 0 0 1rem 1rem;
@@ -596,40 +546,32 @@ footer a{
         padding: 0.9rem;
         margin: 2rem 0 0 0;
     }
+    .pic{
+        background-size: 57%;
+        background-position: bottom -1rem left -13rem;
+        padding: 8rem 0 0 0;
+        background-image: url(./img/download.png);
+        background-repeat: no-repeat;
+    }   
+     .blocku-wrapper {
+        background-size: 20%;
+        background-image: url(./img/Group\ 10@1X.png);
+        background-repeat: no-repeat;
+        background-position: top 6rem left 2rem;
+    }
+    .university{
+        width: 50%;
+        background-image: url('./img/Ellipse\ 2@1X.png');
+        background-repeat: no-repeat;
+        background-position: top 2rem left 1rem;
+        background-size: 86%;
+    }
     .blocku{
         width: 80%;
-    }
-    .blocku-wrapper {
-        background-position: top 11rem left -1rem;
-    }
-    .blocks{
-        width: 95%;
-    }
-    .copy{
-        width: 95%;
-    }
-    .pic{
-        background: none;
-    }
-    .university{
-        background: none;
-    }
-    .blocku-wrapper{
-        background: none;
-    }
-    .college{
-        display: block;
-    }
-    .university{
-        width: 75%;
-        margin: 0 auto;
     }
     .more {
         width: 100%;
         padding: 0 0 5rem 0;
-    }
-    .work {
-        display: block;
     }
     .work1 {
         display: flex;
@@ -640,126 +582,116 @@ footer a{
     }
     .account {
         margin-top: 0rem;
-        margin-bottom: -1rem;
         border: 1px solid #8080804d;
-        width: 50%;
+        width: 35%;
     }
-    .post {
-        padding: 5rem 0;
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 3rem 0 0 0;
+        grid-gap: 4rem;
+    }
+    .container1 {
+        padding: 0 0 4rem 0;
     }
     .news1 {
         padding: 4rem 0 0 10rem;
     }
+    .edu{
+        display: flex;
+        font-size: 0.7rem;
+    }
+    .copyright{
+        display: flex;
+    }
+    .copy nav ul{
+        display: flex;
+        padding: 0 0 0 1rem;
+    }
+    .copy nav ul li{
+        padding: 0 0 0 2rem;
+    }
+    .web3 a {
+        margin-left: -4rem;
+    }
 }
 @media (min-width: 1440px){
-    .content h1{
-        font-size: 2rem;
-        padding: 9rem 0 0 1rem;
+   .log{
+       display: none;
+   }
+   .content h1 {
+    font-size: 2.5rem;
+    padding: 7rem 0 0 1rem;
     }
-    .content p{
+    .content p {
         padding: 1rem 10rem 2rem 1rem;
     }
-    .our{
-        padding: 0 1rem;
+    .image2 {
+        width: 18%;
+        margin: 7rem 0 0 0;
     }
-    .grid{
-        display:block;
-        width:65%;
-        margin: 0 auto;
-        padding: 5rem 0;
+    .grid {
+        width: 65%;
     }
-    .block1 div{
-        text-align: center;
+    .block1 div {
         padding: 5rem 5rem;
-        width: 35%;
         border-radius: 0.4rem;
-        margin: 0 0 1rem 1rem;
     }
-    .college {
-        display: flex;
-        padding: 5rem 0 10rem 0;
+    .blocku {
+        width: 65%;
     }
-    .blocku{
-        display:block;
-        width:65%;
-        margin: 0 auto;
+    .pic {
+        background-size: 51%;
+        background-position: bottom -6rem left -13rem;
     }
     .blocku-wrapper {
-        background-size: 13%;
-        background-image: url(./img/Group\ 10@1X.png);
-        background-repeat: no-repeat;
-        background-position: top 7rem left 16rem;
-    }
-    .university{
-        width: 50%;
-        background-image: url('./img/Ellipse\ 2@1X.png');
-        background-repeat: no-repeat;
-        background-position: top 1rem left 1rem;
-        background-size: 67%;    
-    }
-    .university img {
-        width: 25rem;
-        height: 25rem;
-        border-radius: 50%;
-        border: 1rem solid #DDF1FB;
-        padding: 1rem;
-
-    }
-    .more {
-        width: 50%;
-        padding: 0 0 10rem 0;
-    }
-    .more h2 {
-        font-size: 1.6rem;
-    }
-    .college {
-        display: flex;
-        padding: 1rem;
+        background-size: 18%;
+        background-position: top 3rem left 10rem;
     }
     .work {
         display: flex;
-        justify-content: space-around;
     }
-    .work1 {
-        display: flex;
+    .start2{
+        padding: 8rem 3rem;
     }
-    .start2 {
-        padding: 8rem 0 0 5rem;
-    }
-    .account {
-        background-image: url(./img/download.png), url(./img/Abgerundetes\ Rechteck\ 5@1X.png);
-        background-repeat: no-repeat;
-        background-position-x: inherit;
-        background-size: 100%;
-        margin-top: -3rem;
-        margin-bottom: -3rem;
-        border: 1px solid #8080804d;
-        box-shadow: 0.1rem 0.1rem 1rem #8888889c;
-        width: 100%;
-        }
-    .blocks {
-        display: block;
+    .blocks{
         width: 65%;
-        margin: 0 auto;
-    }
-    .post{
-        padding: 10rem 0;
-    }
-    .container1{
-        display: flex;
-        padding: 0 0 4rem 0;
-        border-bottom: 1px solid #8080801f;
-    }
-    .news{
-        width: 50%;
-    }
-    .news1{
-        width: 50%;
-        padding: 4rem 0 0 15rem;
     }
     .copy{
-        display: block;
         width: 65%;
         margin: 0 auto;
+    }
+    .account {
+        margin-top: -2rem;
+        margin-bottom: -3rem;
+        width: 60%;
+    }
+    .man{
+        padding: 0 0 0 15rem;
+    }
+}
+@media (min-width: 1800px){
+    .content h1 {
+        font-size: 3.5rem;
+    }
+    .content p{
+        font-size: 1.6rem;
+    }
+    .block1 div {
+        padding: 6rem 6rem;
+    }
+    .pic {
+        background-size: 37%;
+        background-position: bottom -6rem left -6rem;
+    }
+    .university {
+        background-size: 77%;
+    }
+    .work {
+        justify-content: center;
+    }
+    .blocku-wrapper {
+        background-size: 18%;
+        background-position: top 0rem left 14rem;
     }
 }
