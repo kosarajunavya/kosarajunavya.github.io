@@ -39,7 +39,7 @@ body{
 }
 .navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .navbar ul{
     display: none;
@@ -389,6 +389,11 @@ footer a{
     text-decoration: none;
     display: block;
   }
+  .menu-list li:hover li{
+    left:auto;
+    right:0;
+    margin-right:-10px;
+}
 /* media queriws */
 
 
@@ -399,6 +404,10 @@ footer a{
     }
     .log{
         display: block;
+    }
+    .navbar{
+        padding: 0 0 0 3rem;
+
     }
     .navbar ul{
         display: none;
