@@ -495,8 +495,16 @@ footer a{
         width: 50%;
         padding: 4rem 0 0 10rem;
     }
-    .copyright{
-        display: block;
+    .edu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .color nav ul{
+        display: flex;
+        padding: 0 0 0 1rem;
+    }
+    .color nav ul li{
+        padding: 0 0 0 2rem;
     }
 }
 @media (min-width: 1024px){
@@ -603,13 +611,6 @@ footer a{
     }
     .copyright{
         display: flex;
-    }
-    .copy nav ul{
-        display: flex;
-        padding: 0 0 0 1rem;
-    }
-    .copy nav ul li{
-        padding: 0 0 0 2rem;
     }
     .web3 a {
         margin-left: -4rem;
