@@ -363,6 +363,32 @@ footer a{
 .image1 img{
     width: 100%;
 }
+.menu:hover .menu-list {
+    display: block;
+}
+.menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-list {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .menu-list li{
+      padding: 1px;
+      list-style-type: none;
+  }
+  .menu-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
 /* media queriws */
 
 
