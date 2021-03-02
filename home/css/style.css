@@ -369,9 +369,9 @@ footer a{
 }
 .menu {
     display: inline-block;
-  }
+}
   
-  .menu-list {
+.menu-list {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -380,18 +380,18 @@ footer a{
     z-index: 1;
     left: 0;
     width: 100%;
-  }
-  .menu-list li{
+}
+.menu-list li{
       padding: 1px;
       list-style-type: none;
-  }
-  .menu-list a {
+}
+.menu-list a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  .menu-list li:hover li{
+}
+.menu-list li:hover li{
     left:auto;
     right:0;
     margin-right:-10px;
