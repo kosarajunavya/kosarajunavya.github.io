@@ -382,8 +382,8 @@ footer a{
     width: 100%;
 }
 .menu-list li{
-      padding: 1px;
-      list-style-type: none;
+    padding: 1px;
+    list-style-type: none;
 }
 .menu-list a {
     color: black;
@@ -601,13 +601,13 @@ footer a{
     }   
      .blocku-wrapper {
         background-size: 20%;
-        background-image: url(./img/Group\ 10@1X.png);
+        background-image: url('./img/g.png');
         background-repeat: no-repeat;
         background-position: top 6rem left 2rem;
     }
     .university{
         width: 50%;
-        background-image: url('./img/Ellipse\ 2@1X.png');
+        background-image: url('./img/e.png');
         background-repeat: no-repeat;
         background-position: top 2rem left 1rem;
         background-size: 86%;
