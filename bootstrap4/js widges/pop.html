@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>popover</title>
+</head>
+<body>
+    <button class="btn btn-danger" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.
+    Toggle popover">
+      Toggle Popover
+    </button>
+
+    <button class="btn btn-primary" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.
+    Toggle popover">
+      Toggle popover
+    </button>
+
+    <button class="btn btn-warning" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.
+    Toggle popover">
+      Toggle popover
+    </button>
+
+    <button class="btn btn-info" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.
+    Toggle popover">
+      Toggle popover
+    </button>
+
+    <br>
+    <br>
+
+    <!-- DISMISSIBLE POPOVER -->
+    <button id="hello" class="btn btn-primary" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.
+    Toggle popover" data-trigger="focus">
+      Toggle popover
+    </button>
+
+    <hr>
+
+    <!-- CONTROL WITH JS -->
+    <button class="btn btn-secondary" onclick="showPopover()">Show Popover</button>
+    <button class="btn btn-secondary" onclick="hidePopover()">Hide Popover</button>
+    <button class="btn btn-secondary" onclick="togglePopover()">Toggle Popover</button>
+  </div>
+
+  <div style="margin-top:500px;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script>
+    // Init Popover
+    $('[data-toggle="popover"]').popover();
+
+    function showPopover() {
+      $('#hello').popover('show');
+    }
+
+    function hidePopover() {
+      $('#hello').popover('hide');
+    }
+
+    function togglePopover() {
+      $('#hello').popover('toggle');
+    }
+
+    // Popover events
+    $('#hello').on('show.bs.popover', function () {
+      console.log('Popover show');
+    });
+
+    $('#hello').on('shown.bs.popover', function () {
+      console.log('Popover shown');
+    });
+
+    $('#hello').on('hide.bs.popover', function () {
+      console.log('Popover hide');
+    });
+
+    $('#hello').on('hidden.bs.popover', function () {
+      console.log('Popover hidden');
+    });
+  </script>
+</body>
+</html>
