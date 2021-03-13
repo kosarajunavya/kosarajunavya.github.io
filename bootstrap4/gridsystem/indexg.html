@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>css grid system</title>
+<!-- this styling is only for flex box classes -->
+    <style>
+        .row-hl {
+          background: #f4f4f4;
+          height: 250px;
+        }
+    
+        .item-hl {
+          border: 1px solid #333;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+    <!-- responsive grid -->
+        <div class="row">
+          <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10" style="border:1px solid #333">
+            <ul>
+              <li>6 column on small screens</li>
+              <li>8 column on medium screen</li>
+              <li>9 column on large screen</li>
+              <li>10 column on xlarge screen</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" style="border:1px solid #333">
+            <ul>
+              <li>6 column on small screens</li>
+              <li>4 column on medium screen</li>
+              <li>3 column on large screen</li>
+              <li>2 column on xlarge screen</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- EQUAL WIDTH -->
+        <div class="row">
+          <div class="col" style="border:1px solid #333">Equal Width</div>
+          <div class="col" style="border:1px solid #333">Equal Width</div>
+          <div class="col" style="border:1px solid #333">Equal Width</div>
+          <div class="col" style="border:1px solid #333">Equal Width</div>
+        </div>
+    
+        <!-- EQUAL WIDTH MULTI ROW -->
+        <div class="row">
+          <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+          <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+          <div class="w-100" style="border:1px solid #333"></div>
+          <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+          <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+        </div>
+    
+        <!-- auto layout -->
+        <div class="row">
+          <div class="col" style="border:1px solid #333">Auto Layout</div>
+          <div class="col-6" style="border:1px solid #333">Auto Layout</div>
+          <div class="col-4" style="border:1px solid #333">Auto Layout</div>
+        </div>
+    
+        <!-- eqaual width and also with stack(aligining the grids one by one) -->
+        <div class="row">
+          <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
+          <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
+          <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
+        </div>
+    
+        <!-- ordering -->
+        <div class="row">
+          <div class="col order-3" style="border:1px solid #333">
+            First
+          </div>
+          <div class="col order-2" style="border:1px solid #333">
+            Second
+          </div>
+          <div class="col order-1" style="border:1px solid #333">
+            Third
+          </div>
+        </div>
+    
+        <!-- offsetting grids -->
+        <div class="row">
+          <!-- 6 column div offset by 3 -->
+          <div class="col-md-6 offset-md-3" style="border:1px solid #333">.col-md-6 .offset-md-3</div>
+        </div>
+        <div class="row">
+          <!-- 2 4 column divs, the second offset by 4 -->
+          <div class="col-md-4" style="border:1px solid #333">.col-md-4</div>
+          <div class="col-md-4 offset-md-4" style="border:1px solid #333">.col-md-4 .offset-md-4</div>
+        </div>
+    
+        <div class="row">
+          <!-- 2 3 column divs, both offset by 3 -->
+          <div class="col-md-3 offset-md-3" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+          <div class="col-md-3 offset-md-3" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+        </div>
+    
+        <!-- nesting grids -->
+        <div class="row">
+          <div class="col-sm-9" style="border:1px solid blue">
+            Level 1: .col-sm-9
+            <div class="row">
+              <div class="col-8 col-sm-6" style="border:1px solid red">
+                Level 2: .col-8 .col-sm-6
+              </div>
+              <div class="col-4 col-sm-6" style="border:1px solid red">
+                Level 2: .col-4 .col-sm-6
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- grid alignment -->
+
+        
+        <div class="container">
+          <div class="row align-items-start" style="height:200px;border:1px #333 solid">
+              <div class="col">
+                  Top Aligned Text
+              </div>
+              <div class="col">
+                  Top Aligned Text
+              </div>
+              <div class="col">
+                  Top Aligned Text
+              </div>
+          </div>
+          <div class="row align-items-center" style="height:200px;border:1px #333 solid">
+              <div class="col">
+                  Middle Aligned Text
+              </div>
+              <div class="col">
+                  Middle Aligned Text
+              </div>
+              <div class="col">
+                  Middle Aligned Text
+              </div>
+          </div>
+          <div class="row align-items-end" style="height:200px;border:1px #333 solid">
+              <div class="col">
+                  Bottom Aligned Text
+              </div>
+              <div class="col">
+                  Bottom Aligned Text
+              </div>
+              <div class="col">
+                  Bottom Aligned Text
+              </div>
+          </div>
+      </div>
+
+      <br>
+      <br>
+
+      <!-- VERTICAL ALIGN INDIVIDUAL COLS -->
+      <div class="container">
+          <div class="row" style="height:200px;border:1px #333 solid">
+              <div class="col align-self-start">
+                  Top Aligned
+              </div>
+              <div class="col align-self-center">
+                  Middle Aligned
+              </div>
+              <div class="col align-self-end">
+                  Bottom Aligned
+              </div>
+          </div>
+      </div>
+
+      <br>
+      <br>
+
+      <!-- HORIZONTAL ALIGNED COLS -->
+      <div class="container">
+          <div class="row justify-content-start" style="height:200px;border:1px #333 solid">
+              <div class="col-4">
+                  Left Aligned Text
+              </div>
+              <div class="col-4">
+                  Left Aligned Text
+              </div>
+          </div>
+          <div class="row justify-content-center" style="height:200px;border:1px #333 solid">
+              <div class="col-4">
+                  Center Aligned Text
+              </div>
+              <div class="col-4">
+                  Center Aligned Text
+              </div>
+          </div>
+          <div class="row justify-content-end" style="height:200px;border:1px #333 solid">
+              <div class="col-4">
+                  Right Aligned Text
+              </div>
+              <div class="col-4">
+                  Right Aligned Text
+              </div>
+          </div>
+          <div class="row justify-content-around" style="height:200px;border:1px #333 solid">
+              <div class="col-4">
+                  Content Around
+              </div>
+              <div class="col-4">
+                  Content Around
+              </div>
+          </div>
+          <div class="row justify-content-between" style="height:200px;border:1px #333 solid">
+              <div class="col-4">
+                  Content Between
+              </div>
+              <div class="col-4">
+                  Content Between
+              </div>
+          </div>
+      </div>
+
+      <br>
+      <br>
+
+      <!-- COLUMN WRAPPING & NO GUTTERS-->
+      <div class="row no-gutters">
+          <div class="col-9">
+              <div class="card">
+                  <div class="card-block">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="card">
+                  <div class="card-block">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="card">
+                  <div class="card-block">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <!-- flex-box classes -->
+  <div class="container">
+    <div class="d-flex flex-row row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- FLEX ROW REVERSE -->
+      <div class="d-flex flex-row-reverse row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- JUSTIFY CONTENT - CONTENT START -->
+      <div class="d-flex justify-content-start row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- JUSTIFY CONTENT - CONTENT CENTER -->
+      <div class="d-flex justify-content-center row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- JUSTIFY CONTENT - CONTENT END -->
+      <div class="d-flex justify-content-end row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- JUSTIFY CONTENT - CONTENT AROUND -->
+      <div class="d-flex justify-content-around row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- JUSTIFY CONTENT - CONTENT BETWEEN -->
+      <div class="d-flex justify-content-between row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- FLEX COLUMN -->
+      <div class="d-flex flex-column row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- FLEX COLUMN REVERSE -->
+      <div class="d-flex flex-column-reverse row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- VERTICAL ALIGN ITEMS - START -->
+      <div class="d-flex align-items-start row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- VERTICAL ALIGN ITEMS - CENTER -->
+      <div class="d-flex align-items-center row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- VERTICAL ALIGN ITEMS - END -->
+      <div class="d-flex align-items-end row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- VERTICAL ALIGN ITEMS - BASELINE -->
+      <div class="d-flex align-items-baseline row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- VERTICAL ALIGN ITEMS - STRETCH -->
+      <div class="d-flex align-items-stretch row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <!-- ALIGN SELF -->
+      <div class="d-flex row-hl">
+        <div class="align-self-start p-4 item-hl">Flex Item</div>
+        <div class="align-self-center p-4 item-hl">Flex Item</div>
+        <div class="align-self-end p-4 item-hl">Flex Item</div>
+        <div class="align-self-baseline p-4 item-hl">Flex Item</div>
+        <div class="align-self-stretch p-4 item-hl">Flex Item</div>
+  </div>
+
+</body>
+</html>
