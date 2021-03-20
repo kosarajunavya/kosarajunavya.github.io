@@ -3,254 +3,287 @@
     <head>
         <title>Meteor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
       </head>
-      <body>
-        <header>
-          <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
-            <div class="container">
-              <div class="collapse navbar-collapse" 
-                     id="navbarSupportedContent"> 
-                    <ul class="navbar-nav mr-auto"> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">-5 C</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">New York</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Monday,</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">March 6</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#"> Blog</a>
-                            </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">Forums</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">Contact</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">Buy now!</a>
-                          </li>    
-                    </ul> 
-                </div> 
-                <button class="navbar-toggler" type="button" 
-                        data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" 
-                        aria-label="Toggle navigation"> 
-                    <span class="navbar-toggler-icon"></span> 
-                </button> 
-                <div>
-                  <a class="text-secondary" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                  <a class="text-secondary" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  <a class="text-secondary" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                  <a class="text-secondary" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>  
-                </div>
-                <div class="ml-5">
-                  <a class="text-secondary" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Sign in</a>
-                </div>  
+    <body>
+       <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="main-nav">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">-5c</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">New York</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Monday, March 6</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Buy Now</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-          <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <div class="container">
-                <div class="collapse navbar-collapse" 
-                       id="navbarSupportedContent">
-                      <img src="./img/1.jpg" alt="Meteor logo">
-                      <ul class="navbar-nav mr-auto"> 
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Fashion</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Style Hunter</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Lifestyle</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Celebrity</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#"> Videos</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Interviews</a>
-                          </li>
-                      </ul> 
-                  </div>
-                  <button class="navbar-toggler" type="button" 
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false" 
-                  aria-label="Toggle navigation"> 
-              <span class="navbar-toggler-icon"></span> 
-          </button> 
-              <div>
-                <a class="text-secondary" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-              </div>
+            <div>
+              <a class="text-secondary px-2" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+              <a class="text-secondary px-2" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="text-secondary px-2" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a class="text-secondary px-2" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>  
             </div>
-          </nav>
-        </header>
-        <main>
-          <div class="pre-main d-flex text-light">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light" id="main-nav">
+          <div class="container">
+            <img src="./img/1.jpg" alt="logo">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active color">Fashion</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Style Hunter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Lifestyle</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Celebrity</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Interviews</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a class="text-secondary" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </nav>
+       </header>
+       <main>
+         <div class="col-lg-12 p-0 d-lg-flex d-sm-block pre-main">
             <div class="bg1">
-              <div>
+              <div class="px-5 text-aligin-end">
                 <p>
                   <span><a class="text-light" href="#">StyleHunter</a></span>
                   <span><a class="text-light" href="#"><i class="fa fa-eye" aria-hidden="true"></i>336.4k</a></span>
                 </p>
-                <p>Congress Is About To Hand Over Your Personal Browsing Data</p>
+                <p class="text-light">Congress Is About To Hand Over Your Personal Browsing Data</p>
                 <p>
-                  <span  class="pipe">Jhon</span>
-                  <span class="pl-2">2 hours ago</span>
+                  <span  class="pipe text-light">Jhon</span>
+                  <span class="pl-2 text-light">2 hours ago</span>
                 </p>
               </div>
             </div>
             <div class="bg2">
-              <p>
-                <span><a class="text-light" href="#">Vogue</a></span>
-                <span><a class="text-light" href="#"><i class="fa fa-eye" aria-hidden="true"></i>36.6k</a></span>
-              </p>
-              <p>Congress Is About To Hand Over Your Personal Browsing Data</p>
-              <p>
-                <span  class="pipe">Jhon</span>
-                <span class="pl-2">2 hours ago</span>
-              </p>
+              <div class="px-5">
+                <p>
+                  <span><a class="text-light" href="#">Vogue</a></span>
+                  <span><a class="text-light" href="#"><i class="fa fa-eye" aria-hidden="true"></i>36.6k</a></span>
+                </p>
+                <p class="text-light">Congress Is About To Hand Over Your Personal Browsing Data</p>
+                <p>
+                  <span  class="pipe text-light">Jhon</span>
+                  <span class="pl-2 text-light">2 hours ago</span>
+                </p>
+              </div>
             </div>
             <div class="bg3">
-              <p>
-                <span><a class="text-light" href="#">Fashion</a></span>
-                <span><a class="text-light" href="#"><i class="fa fa-eye" aria-hidden="true"></i>89.6k</a></span>
-              </p>
-              <p>What to Wear: 9+ Cute Work Outfits to Wear This Summer</p>
-              <p>
-                <span  class="pipe">Jhon</span>
-                <span class="pl-2">2 hours ago</span>
-              </p>
+              <div class="px-5">
+                <p>
+                  <span><a class="text-light" href="#">Fashion</a></span>
+                  <span><a class="text-light" href="#"><i class="fa fa-eye" aria-hidden="true"></i>89.6k</a></span>
+                </p>
+                <p class="text-light">What to Wear: 9+ Cute Work Outfits to Wear This Summer</p>
+                <p>
+                  <span  class="pipe text-light">Jhon</span>
+                  <span class="pl-2 text-light">2 hours ago</span>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="main">
-            <div class="container">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <h1>Style Hunter</h1>
-                </div>
-                <div>
-                  <nav>
-                    <ul class="list-group list-group-horizontal">
-                      <li class="list-group-item border-0"><a href="#">World</a></li>
-                      <li class="list-group-item border-0"><a href="#">PEOPLE</a></li>
-                      <li class="list-group-item border-0"><a href="#">FOOD</a></li>
-                      <li class="list-group-item border-0"><a href="#">ANIMALS</a></li>
+         </div>
+        <div class="main">
+          <div class="container">
+            <div class="col-8">
+              <nav class="navbar navbar-expand-sm px-5 navbar-light ">
+                <div class="container">
+                  <a href="#" class="navbar-brand">Style Hunter</a>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">WORLD</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">PEOPLE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">FOOD</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">ANIMAL</a>
+                      </li>
                     </ul>
-                  </nav>
+                  </div>
+                </div>
+              </nav>
+              <div class="pb-5">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="./img/yellow.png" alt="yellow colored background">
+                  <div class="card-body">
+                    <p>
+                      <span><a class="text-dark" href="#">Vogue</a></span>
+                      <span><a class="text-dark" href="#"><i class="fa fa-eye" aria-hidden="true"></i>36.6k</a></span>
+                    </p>
+                      <h2 class="card-title">No, Really: Congress Is About To Hand Over Your Personal</h2>
+                      <p>
+                        <span  class="pipe">Jhon</span>
+                        <span class="pl-2">2 hours ago</span>
+                      </p>
+                      <p class="card-text">News is a direct tool of influence on public consciousness. The goal of the news is to provide to the society objective information about a particular event or action.</p>
+                  </div>
                 </div>
               </div>
-              <div class="card">
-                <img class="card-img-top" src="./img/yellow.png" alt="Card image">
-                <div class="card-body">
-                  <p>
-                    <span><a class="text-dark" href="#">Vogue</a></span>
-                    <span><a class="text-dark" href="#"><i class="fa fa-eye" aria-hidden="true"></i>36.6k</a></span>
-                  </p>
-                  <h2>No, Really: Congress Is About To Hand Over Your Personal</h1>
-                  <p>
-                    <span  class="pipe">Jhon</span>
-                    <span class="pl-2">2 hours ago</span>
-                  </p>
-                  <p>News is a direct tool of influence on public consciousness. The goal of the news is to provide to the society objective information about a particular event or action.
-                  </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 pl-0">
+                    <div class="card">
+                      <img class="card-img-top img-fluid" src="./img/yellow.png" alt="yellow colored background">
+                      <div class="card-body">
+                        <p>
+                          <span><a class="text-dark" href="#">Vogue</a></span>
+                          <span><a class="text-dark" href="#"><i class="fa fa-eye" aria-hidden="true"></i>36.6k</a></span>
+                        </p>
+                          <h2 class="card-title">No, Really: Congress Is About To Hand Over Your Personal</h2>
+                          <p>
+                            <span  class="pipe">Jhon</span>
+                            <span class="pl-2">2 hours ago</span>
+                          </p>
+                          <p class="card-text">News is a direct tool of influence on public consciousness. The goal of the news is to provide to the society objective information about a particular event or action.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 pr-0">
+                    <div class="card">
+                      <img class="card-img-top img-fluid" src="./img/yellow.png" alt="yellow colored background">
+                      <div class="card-body">
+                        <p>
+                          <span><a class="text-dark" href="#">Vogue</a></span>
+                          <span><a class="text-dark" href="#"><i class="fa fa-eye" aria-hidden="true"></i>36.6k</a></span>
+                        </p>
+                          <h2 class="card-title">No, Really: Congress Is About To Hand Over Your Personal</h2>
+                          <p>
+                            <span  class="pipe">Jhon</span>
+                            <span class="pl-2">2 hours ago</span>
+                          </p>
+                          <p class="card-text">News is a direct tool of influence on public consciousness. The goal of the news is to provide to the society objective information about a particular event or action.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="d-flex">
-                <div>
-                  <div class="d-flex">
-                    <div>
-                      <img src="./img/image.jpg" alt="flower-image" width="86px" height="80px">
-                    </div>
-                    <div>
-                      <p>Scarlett’s disappointment at latest accolade</p>
+              <div class="py-5">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="./img/yellow.png" alt="yellow colored background">
+                  <div class="card-body">
+                    <p>
+                      <span><a class="text-dark" href="#">Vogue</a></span>
+                      <span><a class="text-dark" href="#"><i class="fa fa-eye" aria-hidden="true"></i>36.6k</a></span>
+                    </p>
+                      <h2 class="card-title">No, Really: Congress Is About To Hand Over Your Personal</h2>
                       <p>
                         <span  class="pipe">Jhon</span>
                         <span class="pl-2">2 hours ago</span>
                       </p>
-                    </div>
+                      <p class="card-text">News is a direct tool of influence on public consciousness. The goal of the news is to provide to the society objective information about a particular event or action.</p>
                   </div>
-                  <div class="d-flex">
-                    <div>
-                      <img src="./img/image3.jpg" alt="flower-image" width="86px" height="80px">
-                    </div>
-                    <div>
-                      <p>Most Beautiful Things to Do in Sidney with Your BF</p>
-                      <p>
-                        <span  class="pipe">Jhon</span>
-                        <span class="pl-2">2 hours ago</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <div>
-                      <img src="./img/image4.jpeg" alt="flower-image" width="86px" height="80px">
-                    </div>
-                    <div>
-                      <p>Have Fun in The Morning With a Cup of Coffee</p>
-                      <p>
-                        <span  class="pipe">Jhon</span>
-                        <span class="pl-2">2 hours ago</span>
-                      </p>
+                </div>
+              </div>
+            <div class="container pd-5">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="media">
+                    <img class="mr-3 mb-3" src="https://source.unsplash.com/random/90x90">
+                    <div class="media-body">
+                        <h5>Media heading</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="d-flex">
-                    <div>
-                      <img src="./img/images1.jpeg" alt="flower-image" width="86px" height="80px">
-                    </div>
-                    <div>
-                      <p>Accompany Your Trips, in The Blue Sky</p>
-                      <p>
-                        <span  class="pipe">Jhon</span>
-                        <span class="pl-2">2 hours ago</span>
-                      </p>
+                <div class="col-lg-6">
+                  <div class="media">
+                    <img class="mr-3" src="https://source.unsplash.com/random/90x90">
+                    <div class="media-body">
+                        <h5>Media heading</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                   </div>
-                  <div class="d-flex">
-                    <div>
-                      <img src="./img/images2.jpeg" alt="flower-image" width="86px" height="80px">
-                    </div>
-                    <div>
-                      <p>Summer Travel Fashion, Your Holiday Choice</p>
-                      <p>
-                        <span  class="pipe">Jhon</span>
-                        <span class="pl-2">2 hours ago</span>
-                      </p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="media">
+                    <img class="mr-3 mb-3" src="https://source.unsplash.com/random/90x90">
+                    <div class="media-body">
+                        <h5>Media heading</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                   </div>
-                  <div class="d-flex">
-                    <div>
-                      <img src="./img/images5.jpeg" alt="flower-image" width="86px" height="80px">
+                </div>
+                <div class="col-lg-6">
+                  <div class="media">
+                    <img class="mr-3" src="https://source.unsplash.com/random/90x90">
+                    <div class="media-body">
+                        <h5>Media heading</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div>
-                      <p>Life’s challenges force us to harden up</p>
-                      <p>
-                        <span  class="pipe">Jhon</span>
-                        <span class="pl-2">2 hours ago</span>
-                      </p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="media">
+                    <img class="mr-3" src="https://source.unsplash.com/random/90x90">
+                    <div class="media-body">
+                        <h5>Media heading</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="media">
+                    <img class="mr-3" src="https://source.unsplash.com/random/90x90">
+                    <div class="media-body">
+                        <h5>Media heading</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="col-4">
+
+              
+            </div>
           </div>
-        </main>
+        </div>
+       </main>
     </body>
 </html>
                                                                                         
