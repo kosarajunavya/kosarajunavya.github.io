@@ -1,0 +1,16 @@
+.bg1{
+    background-image: url('./img/bg.jpg');
+    width: 33.3%;
+}
+.bg2{
+    background-image: url('./img/bg1.jpg');
+    width: 33.3%;
+}
+.bg3{
+    background-image: url('./img/bg2.jpg');
+    width: 33.4%;
+}
+.pipe::after{
+    content: "|";
+    padding-left: 0.5rem;
+}
