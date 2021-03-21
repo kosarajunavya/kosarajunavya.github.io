@@ -14,6 +14,21 @@
 .bg3{
     background-image: url('./img/bg2.jpg');
 }
+.size{
+    margin-top: 15rem;
+}
 .video{
     height: 1rem;
+}
+#main-footer {
+    background: #000;
+    color: #fff;
+}
+.navf{
+    padding-top: 2rem;
+}
+#coun{
+    margin-top: 2.5rem;
+    background: inherit;
+    color: #fff;
 }
