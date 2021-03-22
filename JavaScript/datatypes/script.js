@@ -54,3 +54,8 @@ console.log(typeof console);
 
 // console.clear(); it clears the console
 
+const myBirthday = '16.07.1998';
+console.log(myBirthday);
+
+
+
