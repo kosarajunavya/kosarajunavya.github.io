@@ -157,3 +157,45 @@ for (let name of array8) {
 
 var str = 'navya';
 console.log( str.split('') );
+
+// array loops
+let fruits1 = ["Apple", "Orange", "Pear"];
+
+for (let i = 0; i < fruits1.length; i++) {
+  console.log(fruits1[i] );
+}
+let fruits2 = ["Apple", "Orange", "Pear",'false', false, 0];
+for(let fruit of fruits2){
+  console.log(fruits2);
+}
+
+let fruits3 = ["Apple", "Orange", "banana", 'true', true, 0];
+for (let key in arr){
+  console.log(fruits3);
+}
+
+let a1 = [1, 2, 3, 4, 5];
+
+a1.length = 2; // truncate to 2 elements
+console.log( a1 ); // [1, 2]
+
+arr.length = 5; // return length back
+console.log( a1[3] );
+
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log( matrix[1][1] );
+console.log( matrix[1][3] );
+
+let b = [1, 2, 3];
+
+console.log( b ); 
+console.log( String(b) === '1,2,3' );
+
+console.log( [] + 1 ); 
+console.log( [1] + 1 ); 
+console.log( [1,2] + 1 );
