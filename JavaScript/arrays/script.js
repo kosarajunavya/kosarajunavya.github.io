@@ -85,4 +85,75 @@ let arrayLike2 = {
   [Symbol.isConcatSpreadable]: true,
   length: 2
 };
-console.log( array4.concat(arrayLike2) )
+console.log( array4.concat(arrayLike2) );
+ 
+var array5 =[0, 'navya',true];
+console.log(array5.indexOf(0));
+console.log(array5.indexOf(true));
+console.log(array5.indexOf(null));
+console.log(arr.includes(1));
+
+let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+
+];
+
+// filter property
+let user = users.find(item => item.id == 2);
+
+console.log(user.name);
+console.log(users);
+console.log(users[1]);
+
+let users1 = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"},
+  {id: 4, name: ""}
+
+];
+
+let user1 = users1.find(item => item.id == 4);
+let someUsers = users.filter(item => item.id < 2);
+
+console.log(someUsers);
+
+console.log(user1.name);
+console.log(users1);
+console.log(users1[1]);
+
+/*transform an array
+here it returns the lenght of the value
+*/
+
+
+let lengths = ["0", "navya", "false"].map(item => item.length);
+console.log(lengths);
+
+let array6 = [ 1, 2, 15 ];
+array6.sort();
+console.log( array6 );
+
+function compare(a, b) {
+  if (a > b) return 1; 
+  if (a == b) return 0; 
+  if (a < b) return -1;
+}
+let array7 = [ 1, 2, 15 ];
+array7.sort(compare);
+console.log(array7);
+array7.reverse();
+console.log( array7 );
+
+let names = 'navya, kosaraju, index, script';
+
+let array8 = names.split(', ');
+
+for (let name of array8) {
+  console.log( `A message to ${name}.` ); 
+}
+
+var str = 'navya';
+console.log( str.split('') );
