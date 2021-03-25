@@ -134,20 +134,20 @@ let user5 = {
     console.log( prop );
 }
 
-// let user2 = {
-//     name: "John",
-//     age: 30,
-//     job: 'trainer'
-// };
+let user2 = {
+    name: "John",
+    age: 30,
+    job: 'trainer'
+};
   
-// let key1 = prompt("What do you want to know about the user?", user2);
-// console.log( user2[key1] );
+let key1 = prompt("What do you want to know about the user?", user2);
+console.log( user2[key1] );
 
-// let fruit = prompt("Which fruit to buy?", "apple");
-//   let bag = {
-//     [fruit]: 10, 
-//   };
-// console.log( bag.apple );
+let fruit = prompt("Which fruit to buy?", "apple");
+  let bag = {
+    [fruit]: 10, 
+  };
+console.log( bag.apple );
 
 
 // dout
@@ -227,3 +227,15 @@ myCar.make = 'Ford';
 myCar.model = 'Mustang';
 myCar.year = 1969;
 console.log(myCar);
+
+function showProps(obj, objName) {
+    var result = ``;
+    for (var i in obj) {
+      if (obj.hasOwnProperty(i)) {
+        result += `${objName}.${i} = ${obj[i]}\n`;
+      }
+    }
+    return result;
+}
+console.log(myCar.hasOwnProperty('make'));
+console.log(myCar.hasOwnProperty('value'));
