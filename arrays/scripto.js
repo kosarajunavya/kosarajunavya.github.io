@@ -239,3 +239,22 @@ function showProps(obj, objName) {
 }
 console.log(myCar.hasOwnProperty('make'));
 console.log(myCar.hasOwnProperty('value'));
+
+var myCar = new Object();
+myCar.make = 'Ford';
+myCar.model = 'Mustang';
+myCar.year = 1969;
+console.log(myCar);
+function listAllProperties(o) {
+	var objectToInspect;
+	var result = [];
+
+	for(objectToInspect = o; objectToInspect !== null;
+           objectToInspect = Object.getPrototypeOf(objectToInspect)) {
+        result = result.concat(
+            Object.getOwnPropertyNames(objectToInspect)
+        );
+    }
+
+return result;
+}
