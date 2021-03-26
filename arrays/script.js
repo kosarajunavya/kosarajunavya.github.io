@@ -194,4 +194,8 @@ let b = [1, 2, 3];
 console.log( b ); 
 console.log( String(b) === '1,2,3' );
 
- 
+let arr = ["Apple", "Orange", "Pear"];
+
+for (let i = arr.length; i >= 0; i--) {
+  alert( arr[i] );
+}
