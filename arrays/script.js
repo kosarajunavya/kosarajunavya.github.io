@@ -242,3 +242,78 @@ let b = [1, 2, 3];
 console.log( b ); 
 console.log( String(b) === '1,2,3' );
 
+let arrm = Array(9.3);
+console.log(arrm); //we cannot store and access the decimal array values
+
+// for this we have the following method
+let wisenArray = Array.of(9.3);
+console.log(wisenArray);  //Array [ 9.3 ]
+
+
+var x1 = [];
+x1['a'] = "banana";
+x1['0'] = "apple";
+x1[0]= "orange";
+console.log(x1); //Array [ "orange" ]
+console.log(x1.length);  //1
+console.log(x1.hasOwnProperty(0)); //true
+console.log(x1.hasOwnProperty('0'));//true
+console.log(x1.hasOwnProperty('a'));//true
+
+let x = new Array();
+x[30]= ['cats'];
+console.log(x);
+console.log(x.length); //31
+x.length = 0;
+console.log(x.length); //changes to empty array
+
+let colorsz = ['red', 'green', 'blue']
+for (i in colorsz){
+        console.log(colorsz[i]);
+}
+// to print reverse of array elements in loop
+let colorsz = ['red', 'green', 'blue']
+for (i in colorsz){
+        console.log(colorsz.reverse([i]));
+}
+//first the declared order is printed and the reverse order is printed
+let colorsz = ['red', 'green', 'blue']
+for (i in colorsz){
+        console.log(colorsz[i]);
+}
+console.log(colorsz.reverse());
+
+let colorsb = ['red', 'green', 'blue']
+colors.forEach(function(colorb) {
+  console.log(colorb)
+})
+
+//short hand function
+let colorsg = ['red', 'green', 'blue']
+colorsg.forEach(color => console.log(color))
+
+
+let myArray = new Array('Wind', 'Rain', 'Fire')
+myArray.sort() //applies for numericals also but when mixed data is there then it follows the priority 
+
+
+// let num = [
+//   [1,2,3],
+// 	[4,5,6],
+// 	[7,8,9]
+// ];
+// for (i=0; i< num.length; i++){
+//   console.log(num[i]);
+//   // console.log(num[i][i]); // to print diagonal elements
+
+// for (i in num){
+//   console.log(num[i]); //values are printed
+// }
+
+// for (i in num){
+//   for(j in num[i]){
+//     console.log(num[i][j]);
+//   }
+// }
+
+

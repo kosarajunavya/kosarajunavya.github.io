@@ -150,15 +150,15 @@ let fruit = prompt("Which fruit to buy?", "apple");
 console.log( bag.apple );
 
 
-// dout
-// let fruit1 = prompt("Which fruit to buy?", "apple");
-// let bag1 = {};
-// console.log(bag1[fruit1] = 5); 
 
-// let fruit2 = 'apple';
-// let bag2 = {
-//   [fruit2 + 'Computers']: 5 
-// };
+let fruit1 = prompt("Which fruit to buy?", "apple");
+let bag1 = {};
+console.log(bag1[fruit1] = 5); 
+
+let fruit2 = 'apple';
+let bag2 = {
+  [fruit2 + 'Computers']: 5 
+};
 
 // copying an object means that only the reference of an object is copied but not the object itself duplicated
 let user6 = { name: "John" };
@@ -239,3 +239,27 @@ function showProps(obj, objName) {
 }
 console.log(myCar.hasOwnProperty('make'));
 console.log(myCar.hasOwnProperty('value'));
+var main = {}
+main['number'] = 4;
+main['name'] = 'john';
+main['is married']= true;
+main['kids'] = ['ben','kevin'];
+console.log(main);
+console.log(main['kids']);
+
+function displayCar1(make, model, year){
+    var result = "A beatuful "+ "make:"+ make + "  model:" + model + "  year:" + year;
+   console.log(result);
+}
+displayCar1("bnm","456","1999");
+
+function displayCar1(make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    
+    var result = `A Beautiful ${this.make} ${this.model} ${this.year}`;
+    console.log(result);
+}
+
+displayCar1("hundai","vernaa",2000);
