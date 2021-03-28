@@ -41,8 +41,9 @@ console.log(y);
 
 // with arrow function
 var x1 =[1,-3,-5,3,9,0,11];
-var y1 = x.filter(n => n >=0);
+var y1 = x1.filter(n => n >=0);
 console.log(y1);
+
 
 
 
@@ -110,9 +111,9 @@ console.log( array1.slice(-2) );
 console.log(array1);
 
 let array2 = [1, 2];
-console.log( arr.concat([3, 4]) ); 
-console.log( arr.concat([3, 4], [5, 6]) ); 
-console.log( arr.concat([3, 4], 5, 6) );
+console.log( array2.concat([3, 4]) ); 
+console.log( array2.concat([3, 4], [5, 6]) ); 
+console.log( array2.concat([3, 4], 5, 6) );
 
 /*concatenation of arrays with objects 
 this will give only the array value and object as out put 
@@ -165,7 +166,7 @@ let users1 = [
 ];
 
 let user1 = users1.find(item => item.id == 4);
-let someUsers = users.filter(item => item.id < 2);
+let someUsers = users1.filter(item => item.id < 2);
 
 console.log(someUsers);
 
@@ -181,9 +182,7 @@ here it returns the lenght of the value
 let lengths = ["0", "navya", "false"].map(item => item.length); //is used to transform each element in to length
 console.log(lengths);
 
-let array6 = [ 1, 2, 15 ];
-array6.sort();
-console.log( array6 );
+
 
 function compare(a, b) {
   if (a > b) return 1; 
@@ -196,8 +195,10 @@ console.log(array7);
 array7.reverse();
 console.log( array7 );
 
+//
+
 let names = 'navya, kosaraju, index, script';
-let array8 = names.split(', ');
+let array8 = names.split(',');
 for (let name of array8) {
   console.log( `A message to ${name}.` ); 
 }
@@ -211,23 +212,28 @@ let fruits1 = ["Apple", "Orange", "Pear"];
 for (let i = 0; i < fruits1.length; i++) {
   console.log(fruits1[i] );
 }
+
 let fruits2 = ["Apple", "Orange", "Pear",'false', false, 0];
-for(let fruit of fruits2){
+for(let i of fruits2){
   console.log(fruits2);
 }
 
 let fruits3 = ["Apple", "Orange", "banana", 'true', true, 0];
-for (let key in arr){
+for (let key in fruits3){
   console.log(fruits3);
+  console.log(key); //we will get keys
+  console.log(fruits3[key]); // we will get values
 }
 
 let a1 = [1, 2, 3, 4, 5];
 
-a1.length = 2; // truncate to 2 elements
-console.log( a1 ); // [1, 2]
-
-arr.length = 5; // return length back
+a1.length = 2; 
+console.log( a1 );
+console.log(a1.length);
+a1.length = 5; 
 console.log( a1[3] );
+console.log(a1);
+console.log(a1.length);
 
 let matrix = [
   [1, 2, 3],
@@ -240,7 +246,7 @@ console.log( matrix[1][3] );
 
 let b = [1, 2, 3];
 console.log( b ); 
-console.log( String(b) === '1,2,3' );
+console.log( String(b) === '1,2,3' ); //converts number in to string
 
 let arrm = Array(9.3);
 console.log(arrm); //we cannot store and access the decimal array values
@@ -260,22 +266,24 @@ console.log(x1.hasOwnProperty(0)); //true
 console.log(x1.hasOwnProperty('0'));//true
 console.log(x1.hasOwnProperty('a'));//true
 
-let x = new Array();
-x[30]= ['cats'];
-console.log(x);
-console.log(x.length); //31
-x.length = 0;
-console.log(x.length); //changes to empty array
+let x9 = new Array();
+x9[30]= ['cats'];
+console.log(x9);
+console.log(x9.length); //31
+x9.length = 0;
+console.log(x9.length); //changes to empty array
 
-let colorsz = ['red', 'green', 'blue']
-for (i in colorsz){
-        console.log(colorsz[i]);
+let colorsza = ['red', 'green', 'blue']
+for (i in colorsza){
+        console.log(colorsza[i]);
 }
+
 // to print reverse of array elements in loop
-let colorsz = ['red', 'green', 'blue']
-for (i in colorsz){
-        console.log(colorsz.reverse([i]));
+let colorszc = ['red', 'green', 'blue']
+for (i in colorszc){
+        console.log(colorszc.reverse([i]));
 }
+
 //first the declared order is printed and the reverse order is printed
 let colorsz = ['red', 'green', 'blue']
 for (i in colorsz){

@@ -105,7 +105,7 @@ let key2 = "kosaraju";
 console.log(name in user4);
 console.log(key2 in user4);
 console.log(key2);
-console.log(name);
+console.log(user4.name);
 
 let codes = {
     "49": "Germany",
@@ -131,8 +131,11 @@ let user5 = {
 };
   user5.age = 25;
     for (let prop in user5) {
-    console.log( prop );
+    console.log( prop ); //gives the property name
 }
+	console.log(user5);
+	console.log(user5.name);
+
 
 let user2 = {
     name: "John",
@@ -159,7 +162,7 @@ let fruit2 = 'apple';
 let bag2 = {
   [fruit2 + 'Computers']: 5 
 };
-
+//********************************************************** */
 // copying an object means that only the reference of an object is copied but not the object itself duplicated
 let user6 = { name: "John" };
 let admin = user6; 
