@@ -43,6 +43,10 @@ console.log(y);
 var x1 =[1,-3,-5,3,9,0,11];
 var y1 = x1.filter(n => n >=0);
 console.log(y1);
+this.y1.forEach((element, index) => {
+  console.log(index); //I want to get this index
+  console.log(element);
+});
 
 
 
@@ -141,7 +145,7 @@ var array5 =[0, 'navya',true];
 console.log(array5.indexOf(0));
 console.log(array5.indexOf(true));
 console.log(array5.indexOf(null));
-console.log(arr.includes(1));
+console.log(array5.includes(1));
 
 let users = [
   {id: 1, name: "John"},
@@ -247,13 +251,6 @@ console.log( matrix[1][3] );
 let b = [1, 2, 3];
 console.log( b ); 
 console.log( String(b) === '1,2,3' ); //converts number in to string
-
-let arrm = Array(9.3);
-console.log(arrm); //we cannot store and access the decimal array values
-
-// for this we have the following method
-let wisenArray = Array.of(9.3);
-console.log(wisenArray);  //Array [ 9.3 ]
 
 
 var x1 = [];
