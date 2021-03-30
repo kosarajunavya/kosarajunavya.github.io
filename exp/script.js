@@ -44,6 +44,15 @@ console.log(x1 &&= 1);
 console.log(y1 &&= 1);
 console.log(y1 &&= 0);
 
+function A(){ console.log('called A'); return false; }
+function B(){ console.log('called B'); return true; }
+
+console.log( A() && B() );
+
+console.log(true || false && false);
+console.log((true || false) && false);
+
+
 let x2 = 2;
 let y2 = 1;
 console.log(x2 ||= 0);
@@ -63,3 +72,7 @@ console.log(x2<=y2);
 console.log('my ' + 'string');
 var mystring = 'alpha';
 console.log(mystring += 'bet');
+
+var age=11;
+var status = (age >= 18) ? 'adult' : 'minor';
+console.log(status);
