@@ -80,13 +80,65 @@ switch (fruittype) {
   }
   console.log("Is there anything else you'd like?");
 
+
+let a4 = 2 + 2;
+
+switch (a4) {
+  case 3:
+    console.log( 'Too small' );
+    break;
+  case 4:
+    console.log( 'Exactly!' );
+    break;
+  case 5:
+    console.log( 'Too big' );
+    break;
+  default:
+    console.log( "I don't know such values" );
+}
+let ax = "1";
+let bx = 0;
+
+switch (+ax) {
+  case bx + 1:
+    console.log("this runs, because +a is 1, exactly equals b+1");
+    break;
+
+  default:
+    console.log("this doesn't run");
+}
+ 
 var m = [1,2,3,4,5,6];
 for(let i=0;i<m.length;i++){
     console.log(i);
     console.log(i,m[i]);
 }
 
+var m1 = [1,2,3,4,5,6];
+for(let i=0;i<m1.length;++i){
+    console.log(i);
+    console.log(i,m1[i]);
+}
 
+let n = [2,3,4,5];
+for(let i=n.length; i>0; i--){
+    console.log(i);
+    console.log(i,n[i]);
+}
 
- 
-  
+for(var i=1; i<=4; i++){
+    console.log(i);
+    console.log("*".repeat(i));
+ }
+
+ let i1 = 0;
+ while (i1 < 3) { // shows 0, then 1, then 2
+   console.log( i1 );
+   i1++;
+ }
+
+ let j = 0;
+do {
+  console.log( j );
+  j++;
+} while (j < 3);
