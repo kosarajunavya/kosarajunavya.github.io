@@ -142,3 +142,41 @@ do {
   console.log( j );
   j++;
 } while (j < 3);
+
+let sum = 0;
+
+while (true) {
+
+  let value = +prompt("Enter a number", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+
+}
+console.log( 'Sum: ' + sum );
+
+for (let i2 = 0; i2 < 10; i2++) {
+
+    // if true, skip the remaining part of the body
+    if (i2 % 2 == 0) continue;
+  
+    console.log(i2); // 1, then 3, 5, 7, 9
+  }
+
+//   (i > 5) ? alert(i) : continue; //break and continue cannot be accepted in ternary operation
+
+outer: for (let i = 0; i < 3; i++) {
+
+    for (let j = 0; j < 3; j++) {
+  
+      let input = prompt(`Value at coords (${i},${j})`, '');
+  
+      // if an empty string or canceled, then break out of both loops
+      if (!input) break outer;{
+         console.log("given input is valid");
+      } 
+  
+    }
+  }
+  console.log('Done!');
