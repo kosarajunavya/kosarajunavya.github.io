@@ -166,17 +166,51 @@ for (let i2 = 0; i2 < 10; i2++) {
 
 //   (i > 5) ? alert(i) : continue; //break and continue cannot be accepted in ternary operation
 
-outer: for (let i = 0; i < 3; i++) {
+// outer: for (let i = 0; i < 3; i++) {
 
-    for (let j = 0; j < 3; j++) {
+//     for (let j = 0; j < 3; j++) {
   
-      let input = prompt(`Value at coords (${i},${j})`, '');
+//       let input = prompt(`Value at coords (${i},${j})`, '');
   
-      // if an empty string or canceled, then break out of both loops
-      if (!input) break outer;{
-         console.log("given input is valid");
-      } 
+//       // if an empty string or canceled, then break out of both loops
+//       if (!input) break outer;{
+//          console.log("given input is valid");
+//       } 
   
+//     }
+//   }
+//   console.log('Done!');
+
+  let studentsData = [['Jack', 24], ['Sara', 23],];
+
+for(let i = 0; i < studentsData.length; i++){
+
+    let innerArrayLength = studentsData[i].length;
+    
+    for(let j = 0; j < innerArrayLength; j++) {
+        console.log(studentsData[i][j]);
     }
-  }
-  console.log('Done!');
+}
+
+let sum9 = 0;
+let number9 = 0;
+
+while (number9 >= 0) {
+
+    // add all positive numbers
+    sum9 += number9;
+
+    // take input from the user
+    number9 = parseInt(prompt('Enter a number: '));
+
+    // continue condition
+    if (isNaN(number9)) {
+        console.log('You entered a string.');
+        number9 = 0; // the value of number is made 0 again
+        continue;
+    }
+
+}
+
+// display the sum
+console.log(`The sum is ${sum9}.`);
