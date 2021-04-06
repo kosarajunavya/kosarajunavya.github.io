@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="calculator">
+       <div class="in1">
+            <input type="text" placeholder="input1" id="num1"/>
+       </div>
+        <div class="radios">
+            <input type="radio" name="group1" id="add" value="add"/>
+            <label for="add">addition(+)</label>
+            <input type="radio" name="group1" id="subtract" value="subtract"/>
+            <label for="add">subtraction(-)</label>
+            <input type="radio" name="group1" id="multiply" value="multiply"/>
+            <label for="add">multiplication(*)</label>
+            <input type="radio" name="group1" id="divide" value="divide"/>
+            <label for="add">division(/)</label>
+        </div>
+    <div class="in2">
+        <input type="text" placeholder="input2" id="num2">
+    </div>
+    <div class="res">
+        <input type="text" placeholder="result" id="answer">
+    </div>
+    <div class="btn">
+        <input type="button" value="Calculate" onClick="operation();"/>
+    </div>
+   </div>
+    <script src="./script.js"></script>
+</body>
+</html>
