@@ -6,6 +6,4 @@ console.log(document.getElementById("demo").innerHTML ="Number of images: " + do
 console.log(document.getElementById("demo").innerHTML ="Number of scripts: " + document.scripts.length);
 console.log(document.getElementById("demo").innerHTML ="The title of this document is: " + document.title);
 console.log(document.getElementById("hi").innerHTML = "is defined here");
-var element = document.getElementById("head");
-element.innerHTML = "New Heading";
-console.log(element);
+

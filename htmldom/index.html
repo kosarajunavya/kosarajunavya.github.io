@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html dom</title>
+    <style>
+      #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+      }
+      #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+      }
+      </style>
 </head>
-<body>
-    <h1>Finding HTML Elements by Id</h1>
+<body onload="checkCookies()">
+  <p id="demox"></p>
+
+  <script>
+  function checkCookies() {
+    var text = "";
+    if (navigator.cookieEnabled == true) {
+      text = "Cookies are enabled.";
+    } else {
+      text = "Cookies are not enabled.";
+    }
+    document.getElementById("demox").innerHTML = text;
+  }
+  </script>
+
+<!--  -->
+  <h1>Finding HTML Elements by Id</h1>
 
 <p id="intro">Hello World!</p>
 <p>This example demonstrates the <b>getElementsById</b> method.</p>
@@ -48,29 +77,45 @@ document.getElementById("demo1").innerHTML =
 </div>
 
 <p id="demo2"></p>
-
 <script>
 var x = document.getElementById("main");
 var y = x.getElementsByTagName("p");
-document.getElementById("demo2").innerHTML = 
-'The first paragraph (index 0) inside "main" is: ' + y[1].innerHTML;
+document.getElementById("demo2").innerHTML = 'The first paragraph (index 0) inside "main" is: ' + y[1].innerHTML;
+</script>
+
+<h2>Finding HTML Elements by Class Name</h2>
+<p>Hello World!</p>
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+<p id="demon"></p>
+<script>
+var x = document.getElementsByClassName("intro");
+document.getElementById("demon").innerHTML = 
+'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+</script>
+
+<!--  -->
+
+<h2>Finding HTML Elements by Query Selector</h2>
+<p>Hello World!</p>
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+<p id="demoa"></p>
+<script>
+var x = document.querySelectorAll("p.intro");
+document.getElementById("demoa").innerHTML = 'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
 </script>
 <!--  -->
 
 <h2>Finding HTML Elements Using document.forms</h2>
-
 <form id="frm1" action="#">
   First name: <input type="text" name="fname"><br>
   Last name: <input type="text" name="lname"><br><br>
   <input type="submit" value="Submit">
 </form> 
-
 <p>Click "Try it" to display the value of each element in the form.</p>
-
 <button onclick="myFunction()">Try it</button>
-
 <p id="demo3"></p>
-
 <script>
 function myFunction() {
   var x = document.forms["frm1"];
@@ -85,9 +130,7 @@ function myFunction() {
 
 <!--  -->
 <h2>JavaScript can Change HTML</h2>
-
 <p id="p1">Hello World!</p>
-
 <script>
 document.getElementById("p1").innerHTML = "New text!";
 </script>
@@ -108,7 +151,285 @@ document.getElementById("p2").style.fontFamily = "Arial";
 document.getElementById("p2").style.fontSize = "larger";
 </script>
 <p>The paragraph above was changed by a script.</p>
+<!--  -->
+
+<p id="p3">Hello World!</p>
+
+<script>
+document.getElementById("p3").innerHTML = "New text!";
+</script>
+<p>The paragraph above was changed by a script.</p>
+
+<!--  -->
+<h1 id="hi">Old Heading</h1>
+<script>
+var element = document.getElementById("hi");
+element.innerHTML = "New Heading";
+</script>
+
+<!--  -->
 
 
+  
+  <p><button onclick="myMove()">Click Me</button></p> 
+  
+  <div id ="container">
+    <div id ="animate"></div>
+  </div>
+  
+  <script>
+  var id = null;
+  function myMove() {
+    var elem = document.getElementById("animate");   
+    var pos = 0;
+    clearInterval(id);
+    id = setInterval(frame, 5);
+    function frame() {
+      if (pos == 350) {
+        clearInterval(id);
+      } else {
+        pos++; 
+        elem.style.top = pos + "px"; 
+        elem.style.left = pos + "px"; 
+      }
+    }
+  }
+  </script>
+
+<h3 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h3>
+<!-- changing the value of text,, onclick using a function -->
+
+<h3 onclick="changeText(this)">Click on this text!</h3>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "hello!";
+}
+</script>
+
+<p>Click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+<script>
+function displayDate() {
+  document.getElementById("demo5").innerHTML = Date();
+}
+</script>
+<p id="demo5"></p>
+
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+<script>
+  function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+  }
+  </script>
+
+<!--  -->
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+</script>
+
+<!--  -->
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+<script>
+function mDown(me) {
+  me.style.backgroundColor = "#1ec5e5";
+  me.innerHTML = "Release Me";
+}
+function mUp(me) {
+  me.style.backgroundColor="#D94A38";
+  me.innerHTML="Thank You";
+}
+</script>
+
+<!-- js event handlers  element.addEventListener(event, function, useCapture); -->
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn">Try it</button>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Hello World!");
+});
+</script>
+<!--  -->
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+
+<button id="myBtn1">Try it</button>
+
+<script>
+document.getElementById("myBtn1").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
+</script>
+<!-- adding two same events to the same element -->
+<p>This example uses the addEventListener() method to add two click events to the same button.</p>
+<button id="myBtn2">Try it</button>
+<script>
+var x = document.getElementById("myBtn2");
+x.addEventListener("click", myFunction);
+x.addEventListener("click", someOtherFunction);
+function myFunction() {
+  alert ("Hello World!");
+}
+function someOtherFunction() {
+  alert ("This function was also executed!");
+}
+</script>
+<!--adding multiple elements to the same element  -->
+<p>This example uses the addEventListener() method to add many events on the same button.</p>
+<button id="myBtn3">Try it</button>
+<p id="demo7"></p>
+<script>
+var x = document.getElementById("myBtn3");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+function myFunction() {
+  document.getElementById("demo7").innerHTML += "Moused over!<br>";
+}
+function mySecondFunction() {
+  document.getElementById("demo7").innerHTML += "Clicked!<br>";
+}
+function myThirdFunction() {
+  document.getElementById("demo7").innerHTML += "Moused out!<br>";
+}
+</script>
+<!--  -->
+<p>This example uses the addEventListener() method on the window object.</p>
+<p>Try resizing this browser window to trigger the "resize" event handler.</p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<script>
+window.addEventListener("resize", function(){
+  document.getElementById("demo8").innerHTML = 'goodmorning';
+  document.getElementById('demo9').innerHTML=Math.random();
+});
+</script>
+
+<style>
+  #myDiv1, #myDiv2 {
+    background-color: coral;
+    padding: 50px;
+  }
+  
+  #myP1, #myP2 {
+    background-color: white; 
+    font-size: 20px;
+    border: 1px solid;
+    padding: 20px;
+  }
+  </style>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+ 
+  
+  <h2>JavaScript addEventListener()</h2>
+  
+  <div id="myDiv1">
+    <h2>Bubbling:</h2>
+    <p id="myP1">Click me!</p>
+  </div><br>
+  
+  <div id="myDiv2">
+    <h2>Capturing:</h2>
+    <p id="myP2">Click me!</p>
+  </div>
+  
+  <script>
+  document.getElementById("myP1").addEventListener("click", function() {
+    alert("You clicked the white element!");
+  }, false);
+  
+  document.getElementById("myDiv1").addEventListener("click", function() {
+    alert("You clicked the orange element!");
+  }, false);
+  
+  document.getElementById("myP2").addEventListener("click", function() {
+    alert("You clicked the white element!");
+  }, true);
+  
+  document.getElementById("myDiv2").addEventListener("click", function() {
+    alert("You clicked the orange element!");
+  }, true);
+  </script>
+
+  <!--  -->
+<h3 id="my">My First Page</h3>
+<p id="me"></p>
+
+<script>
+document.getElementById("me").innerHTML = document.getElementById("my").innerHTML;
+</script>
+
+<!-- getting node values -->
+<h1 id="id01">My First Page</h1>
+<p id="id02"></p>
+<script>
+document.getElementById("id02").innerHTML = document.getElementById("id01").firstChild.nodeValue;
+</script>
+
+<h1 id="id011">My First Page</h1>
+<p id="id021"></p>
+<script>
+  document.getElementById("id021").innerHTML = document.getElementById("id011").childNodes[0].nodeValue;
+</script>
+<!-- nodes -->
+<div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+  </div>
+  
+  <script>
+  var para = document.createElement("p");
+  var node = document.createTextNode("This is new.");
+  para.appendChild(node);
+  var element = document.getElementById("div1");
+  element.appendChild(para);
+  </script>
+<hr>
+
+<hr>
+<div>
+  <p id="p11">This is a paragraph.</p>
+  <p id="p21">This is another paragraph.</p>
+  </div>
+  
+  
+  <button onclick="myFunction()">Remove Element</button>
+  
+  <script>
+  function myFunction() {
+    var elmnt = document.getElementById("p11");
+    elmnt.remove();
+  }
+  </script>
+
+
+  <!--  -->
+  <p>Hello World!</p>
+  <p>Hello Norway!</p>
+  <p id="demoa"></p>
+  <script>
+  var myCollection = document.getElementsByTagName("p");
+  document.getElementById("demoa").innerHTML = "This document contains " + myCollection.length + " paragraphs.";
+  </script>
+<script src="./script.js"></script>
 </body>
 </html>
