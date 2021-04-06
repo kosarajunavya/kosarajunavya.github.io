@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <h2>Calculate your Age in Seconds, Minutes, Hours and Days!</h2>
+        <p class="inputFields">
+        <label>Enter your age:</label> 
+        <!-- <input type="date" id="myDate" value="Click me!" id="submit" onclick="calculateMyAge()"value="1990-03-05"> -->
+        <input type="text" id="age"/> <input type='submit' value="Click me!" id="submit" onclick="calculateMyAge()"></p>
+        <div class="resultBlock">
+          <p>Days<span id="days"></span></p>
+          <p>Hours<span id="hours"></span></p>
+          <p>Minutes<span id="minutes"></span></p>
+          <p>Seconds<span id="seconds"></span></p>
+        </div>
+        <h5 class="error hide" id="error"></h5>
+         <p>Your age: <span id="test">?</span> year(s) old!</p>
+        <h5><span>Note:</span> Considering 364.25 days per Year, its mean 364 days 6 hours. No leaf year consideration.</h5>
+      </div>
+        <script src="./script.js"></script>
+</body>
+</html>

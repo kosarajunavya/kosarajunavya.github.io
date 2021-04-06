@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <textarea name="new" charset="utf-8" id="newInputID" style="height:100px; Width:100%; line-height: 15px;" placeholder="Write something.." onkeyup="countChars()"></textarea>
+    </div>
+    <p id="wordCount">0 Words</p>
+    <p id="charNumWithSpace">0 characters</p>
+    <p id="charNumWithOutSpace">0 characters</p>
+
+ <script>
+
+    function countChars() {
+    var val = document.getElementById("newInputID").value;
+    var withSpace = val.length;
+    var withOutSpace = val.replace(/\s+/g, '').length;
+    var wordsCount = val.match(/\S+/g).length;
+
+    document.getElementById("wordCount").innerHTML = wordsCount + ' words';
+    document.getElementById("charNumWithSpace").innerHTML = 'With space: ' + withSpace + '     characters';
+    document.getElementById("charNumWithOutSpace").innerHTML = 'Without space: ' + withOutSpace + '     characters';
+}
+ </script>  
+</body>
+</html>
+

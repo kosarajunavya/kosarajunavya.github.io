@@ -1,0 +1,9 @@
+.user{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+.user input{
+    width: 100%;
+}
