@@ -10,12 +10,16 @@
 <body>
     <div>
         input: <input type="text" name="value" id="user-input">
-        <input type="button" value="Find" onclick="operation()">
+        <input type="button" value="Find" onclick="finding()">
 
     </div>
-    <div>
-        results: <input type="text" name="value" id="result">
-    </div>
+    <p>Results :</p>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+    <p id="result5"></p>
+    <p id="result6"></p>
    
     <script>
         function finding() {
@@ -29,13 +33,13 @@
             var positiveNumbers = findPos(userInputArray);
             var negativeNumbers = findNeg(userInputArray);
 
-            console.log(biggestNumber);
-            console.log(smallestNumber);
-            console.log(evenNumbers);
-            console.log(oddNumbers);
-            console.log(positiveNumbers);
-            console.log(negativeNumbers);
-
+            document.getElementById('result1').innerHTML = "biggestNumber is : " + biggestNumber;
+            document.getElementById('result2').innerHTML = "smallestNumber is : " + smallestNumber;
+            document.getElementById('result3').innerHTML = "evenNumbers are : " + evenNumbers;
+            document.getElementById('result4').innerHTML = "oddNumbers are: " + oddNumbers;
+            document.getElementById('result5').innerHTML = "positiveNumbers are: " + positiveNumbers;
+            document.getElementById('result6').innerHTML = "negativeNumbers are: " + negativeNumbers;
+            
             function findEvens(a) {
                 var ar = [];
                 for (var i = 0; i < a.length; i++) {
