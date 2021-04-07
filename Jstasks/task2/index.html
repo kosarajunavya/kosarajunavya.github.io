@@ -10,12 +10,13 @@
 <body>
     <div>
         input: <input type="text" name="value" id="user-input">
-        <input type="button" value="Find" onclick="finding()">
+        <input type="button" value="Find" onclick="operation()">
 
     </div>
     <div>
         results: <input type="text" name="value" id="result">
     </div>
+   
     <script>
         function finding() {
             var userInput = document.getElementById('user-input').value;
@@ -28,8 +29,7 @@
             var positiveNumbers = findPos(userInputArray);
             var negativeNumbers = findNeg(userInputArray);
 
-            
-            console.log( biggestNumber );
+            console.log(biggestNumber);
             console.log(smallestNumber);
             console.log(evenNumbers);
             console.log(oddNumbers);
