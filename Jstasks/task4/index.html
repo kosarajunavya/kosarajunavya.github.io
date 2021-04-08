@@ -20,7 +20,7 @@
             var dob = document.getElementById('myDate').value;
             const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
             var age = getAge(dob);
-            var ageMin = age*24*60;
+            var ageMin = age*525600; //(365*24*60)
             var ageSec = ageMin*60;
             document.getElementById('result').innerHTML = "age in minutes :  " + ageMin;
             document.getElementById('result1').innerHTML = "age in seconds : " + ageSec;
