@@ -18,7 +18,7 @@
     <script>
         function calcAge(){
             var dob = document.getElementById('myDate').value;
-            const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
+            const getAge = birthDate => Math.abs((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
             var age = getAge(dob);
             var ageMin = age*525600; //(365*24*60)
             var ageSec = ageMin*60;
