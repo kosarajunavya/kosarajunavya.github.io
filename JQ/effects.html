@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Hi I am first paragraph.</p>
+    <p>Hi I am second paragraph</p>
+    <p>Hi I am third paragraph</p>
+    <p>Hi I am fourth paragraph</p>
+    <script>
+        $(document).ready(function() {  
+        $("p").css("background-color", "cyan");  
+        });  
+
+        $(function() {  
+        $("#red").css("color", "red");  
+        });  
+
+        $(function() {  
+        $("p:first").css("background-color", "orange");  
+        });
+        $(function() {  
+        $("p:last").css("font-size", "2rem");  
+        });
+    </script>
+
+<h2 id="head1">This is a heading</h2>
+<h2 class="head2">This is a heading</h2>
+
+<!-- -->
+<h2 id="red">hello I am red color</h2>
+
+<p>Hi I am first paragraph.</p>
+<p>Hi I am second paragraph</p>
+
+<div class="button">
+    <button style="background-color: white; border: none;">Click me to hide paragraphs</button>
+</div>
+<div class="button">
+    <button1>Click me to hide heading with head1 id</button>
+</div>
+<div class="button">
+    <button2>Click me to hide heading with class</button>
+</div>
+<script>
+    $(document).ready(function(){
+  $("button").click(function(){
+    $("h2").hide();  // element selector
+  });
+});
+$(document).ready(function(){
+  $("button1").click(function(){
+    $("#head1").hide();  // id selector
+  });
+});
+$(document).ready(function(){
+  $("button2").click(function(){
+    $(".head2").hide(); // class selector
+  });
+});
+</script>
+
+
+<script>  
+    $(document).ready(function(){  
+            $("#hide").click(function(){  
+                $(".poem").hide(1000);  
+
+        });  
+        $("#show").click(function(){  
+            $(".poem").show(1500);  
+        });  
+    });  
+    </script>  
+     
+     
+    <p class="poem">  
+    <b>This is a little poem: </b><br/>  
+    Twinkle, twinkle, little star<br/>  
+    How I wonder what you are<br/>  
+    Up above the world so high<br/>  
+    Like a diamond in the sky<br/>  
+    Twinkle, twinkle little star<br/>  
+    How I wonder what you are  
+    </p>  
+    <button id="hide">Hide</button>  
+    <button id="show">Show</button>  
+
+    <hr>
+<!-- toogle effect -->
+    <script>
+        $(document).ready(function(){
+          $(".togle").click(function(){
+            $(".toogle").toggle(1000, function(){
+              prompt("The toggle() method is finished!", "it hides the shown element and shows the hidden element");
+            });
+          });
+        });
+        </script>
+        <body>
+        
+        <p class="toogle">this method toogles between hide and show</p>
+        
+        <button class="togle">Toggle between hide() and show()</button>
+<!-- fading effects  fadeIn -->
+<script>  
+    $(document).ready(function(){  
+        $("button").click(function(){  
+            $("#div1").fadeIn();  
+            $("#div2").fadeIn("slow"); 
+            // $("#div2").delay("slow").fadeIn();   this is by using delay method  
+            $("#div3").fadeIn(3000);  
+        });
+        $(".btn").click(function(){  
+            $("#div1").fadeOut();  
+            $("#div2").fadeOut("slow");  
+            $("#div3").fadeOut(3000);  
+        });   
+    });  
+    </script>  
+     
+     
+    <p>See the fadeIn() method example with different parameters.</p>  
+    <button>Click to fade in boxes</button><br><br>  
+    <button class="btn">Click to fade out boxes</button><br><br> 
+ 
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:cyan;"></div>  
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:lime;"></div>  
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:orange;"></div>  
+<hr>
+   <!-- fade toggle -->
+<script>  
+    $(document).ready(function(){  
+        $(".btn1").click(function(){  
+            $("#diva").fadeToggle();  
+            $("#divb").fadeToggle("slow");  
+            $("#divc").fadeToggle(3000);  
+        });  
+    });  
+    </script>  
+     
+    <p>See the fadeToggle() method example with different parameters.</p>  
+    <button class="btn1">Click to fade Toggle boxes</button><br><br>  
+    <div id="diva" style="width:80px;height:80px;background-color:cyan;"></div><br>  
+    <div id="divb" style="width:80px;height:80px;background-color:lime;"></div><br>  
+    <div id="divc" style="width:80px;height:80px;background-color:pink;"></div> 
+
+<!-- fadeTo -->
+    <script>  
+        $(document).ready(function(){  
+            $(".btn2").click(function(){  
+                $("#divx").fadeTo("slow", 0.9);  
+                $("#divy").fadeTo("slow", 0.4);  
+                $("#divz").fadeTo("slow", 0.5);  
+            });  
+        });  
+    </script>  
+        </head>  
+         
+        <p>See the fadeTo() method example with different parameters.</p>  
+        <button class="btn2">Click to fade boxes</button><br><br>  
+        <div id="divx" style="width:80px;height:80px;background-color:blue"></div><br>  
+        <div id="divy" style="width:80px;height:80px;background-color:purple;"></div><br>  
+        <div id="divz" style="width:100px;height:80px;background-color:black;"></div>  
+    <!-- slide effects -->
+
+    <script>   
+        $(document).ready(function(){  
+            $("#flip").click(function(){  
+                // $("#panel").slideDown("slow"); 
+                // $("#panel").slideUp("slow");
+                $("#panel").slideToggle("slow");
+            });   
+        });  
+    </script> 
+
+    <div id="flip">Click to see a message from navya <span>&#128540</span></div>  
+    <div id="panel">Wishing you all a very Happy Ugadi
+         <p>&#127801 &#127819  &#129321</p>
+    </div>
+    
+
+    
+    
+<p>Hi I am last paragraph</p>
+</body>
+</html>

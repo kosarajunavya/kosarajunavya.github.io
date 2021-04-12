@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 135px; padding: 0.4em; position: relative; background: #fff; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+  </style>
+  <script>
+  $(function() {
+    var state = false;
+    $( "#button" ).click(function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "blue",
+          color: "white",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "white",
+          color: "blue",
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  });
+  </script>
+    
+</head>
+<body> 
+    <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-corner-all">
+          <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis ad possimus ducimus provident sunt.</p>
+        </div>
+      </div>
+       <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+    <!-- <script>   
+        $(document).ready(function(){  
+            $("button").click(function(){  
+                $("div").animate({left: '450px'});  
+            });  
+        });  
+    </script>    -->
+        <!-- <button>Start Animation</button>  
+        <p>A simple animation example:</p>  
+        <div style="background:cyan;height:100px;width:100px;position:absolute;"></div>  -->
+
+
+        <!-- <script>   
+            $(document).ready(function(){  
+                $(".btn1").click(function(){  
+                    $("div").animate({  
+                        left: '250px',  
+                        opacity: '0.5',  
+                        height: '150px',  
+                        width: '150px'  
+                    });  
+                });  
+            });  
+            </script>
+        <button class="btn1">Start Animation</button>  
+        <div style="background:#125f21;height:100px;width:100px;position:absolute;"></div>  -->
+
+        <!-- <script>   
+            $(document).ready(function(){  
+                $("button").click(function(){  
+                    $("div").animate({  
+                        left: '250px',  
+                        height: '+=150px',  
+                        width: '+=150px'  
+                    });  
+                });  
+            });  
+            </script>   
+            </head>  
+            <body>  
+            <button>Start Animation</button>  
+            <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>   -->
+
+            <!-- <script>   
+                $(document).ready(function(){  
+                    $("button").click(function(){  
+                        $("div").animate({  
+                            height: 'toggle'  
+                        });  
+                    });  
+                });  
+                </script>   
+                </head>  
+                <body>  
+                <button>Start Animation</button>  
+                <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div> -->
+               
+                
+</body>
+</html>
