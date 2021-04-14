@@ -29,12 +29,26 @@
         $("p:last").css("font-size", "2rem");  
         });
     </script>
+    <!-- <h1 id="close">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, tenetur.</h1>
+    <button class="close" onclick="hidden()">hitme</button>
+    <script>
+        function hidden(){
+            document.getElementById('close').style.visibility = 'hdden';
+        }
+    </script> -->
 
 <h2 id="head1">This is a heading</h2>
 <h2 class="head2">This is a heading</h2>
 
 <!-- -->
 <h2 id="red">hello I am red color</h2>
+<h3 id="black">hi I am black color</h3>
+<button onclick="color()">clickme</button>
+<script>
+    function color(){
+        document.getElementById('black').style.color='purple';
+    }
+</script>
 
 <p>Hi I am first paragraph.</p>
 <p>Hi I am second paragraph</p>
@@ -89,7 +103,7 @@ $(document).ready(function(){
     Twinkle, twinkle little star<br/>  
     How I wonder what you are  
     </p>  
-    <button id="hide">Hide</button>  
+    <button onclick="hide()" id="hide">Hide</button>  
     <button id="show">Show</button>  
 
     <hr>
