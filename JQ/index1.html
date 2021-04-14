@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <style>  
+        .div{ margin:10px;padding:12px; border:2px solid #666; width:60px;}  
+    </style>
+</head>
+<body>
+    <!-- <p>Hello Guys!</p> 
+    <h3>it removes the specified action and doesnt store the removed value</h3> 
+    <button>Execute remove() method on paragraphs</button>  
+    <script>  
+    $( "button" ).click(function() {  
+    $( "p" ).remove();  
+    });  
+    </script>  -->
+
+    <script>  
+        $(document).ready(function(){  
+            $(".btn1").click(function(){  
+                $("div").empty();  
+            });  
+        });  
+    </script> 
+    <div style="height:150px;background-color:cyan">  
+        Twinkle, twinkle, little star,<br/>  
+        How I wonder what you are!</br>  
+        Up above the world so high,<br/>  
+        Like a diamond in the sky.<br/>  
+        Twinkle, twinkle, little star,<br/>  
+        How I wonder what you are!<br/>  
+        <p><b>This poem is written inside the div.</b></p>  
+        </div>  
+        <p>This paragraph is written outside the div.</p>  
+        <button class="btn1">click me to empty div</button>  
+    <!-- making empty boxes onclick -->
+    <script type="text/javascript" language="javascript">  
+        $(document).ready(function() {  
+           $("div").click(function () {  
+              $(this).empty();  
+           });  
+        });  
+  </script>  
+  <div class="div" style="background-color:cyan;">Click me!</div>  
+  <div class="div" style="background-color:lime;">Click me!</div>  
+  <div class="div" style="background-color: orange;">Click me!</div>  
+
+  <script>  
+    $(document).ready(function(){  
+      $(".btn2").click(function(){  
+        $(".p").detach();  
+      });  
+    });  
+
+    </script>
+    <p class="p">Hello Guys!</p>  
+    <button class="btn2">Click here to detach all p elements</button>  
+    <hr>
+
+    
+    <p class="good">Hello Guys!</p> 
+    <p class="good">hi hello good-morning</p> 
+    <button class="btn3">Click here to Attach/detach all p elements. </button>
+    <hr>  
+    <script>  
+    $( ".good" ).click(function() {  
+    $( this ).toggleClass( "off" );  
+    });  
+    var p;  
+    $( ".btn3" ).click(function() {  
+    if ( p ) {  
+        p.appendTo( "body" );  
+        p = null;  
+    } else {  
+        p = $( "p" ).detach();  
+    }  
+    });  
+    </script>  
+
+<script>  
+    $(document).ready(function(){  
+        $("#btn1").click(function(){  
+            $("body").append($("#p1").detach());  
+        });  
+        $("#btn2").click(function(){  
+            $("body").append($("#p2").remove());  
+        });  
+        $("p").click(function(){  
+            $(this).animate({fontSize: "+=1px"})  
+        });  
+    });  
+</script>
+<p id="p1"><b>This paragraph will keep its click event even after it is moved.</b></p>  
+<p id="p2">This paragraph will not keep its click event after it is moved.</p>  
+<button id="btn1">Detach and append p element</button>  
+<button id="btn2">Remove and append p element</button>  
+
+</body>
+</html>
