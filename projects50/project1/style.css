@@ -37,7 +37,8 @@ body {
     bottom: 20px;
     left: 20px;
     margin: 0;
-    opacity: 0;
+    writing-mode: tb-rl;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 .panel.active{
@@ -45,8 +46,9 @@ body {
 }
 
 .panel.active h3{
+    writing-mode: horizontal-tb;
     opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+    transition: opacity 0.9s ease-in 0.4s;
 }
 
 @media(max-width: 480px){
