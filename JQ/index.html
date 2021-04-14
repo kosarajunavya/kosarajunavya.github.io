@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <link rel="stylesheet" href="./style1.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        $(document).ready(function(){  
+            $(".btn1").click(function(){  
+                $(".p").html("Hello <b>good morning</b>");//it changes only the content of the element that has a class name 'p', instead of class if we accesed an element p then entire all the paragraph content will be changed
+            });  
+        });  
+        </script>
+
+        <button class="btn1">Click here to change the content of all p elements</button>  
+        <p class="p">This is a paragraph.</p>  
+        <p>This is another paragraph.</p> 
+        
+        <script>  
+            $(document).ready(function(){  
+                $(".btn2").click(function(){  
+                    alert($("p").html());   //It returns the content of first paragraph only.
+                });  
+            });  
+        </script> 
+        <button class="btn2">Click here to get the content of p element</button>  
+        <hr>
+
+        <!-- <script>  
+            $( ".change" ).click(function() {  
+              var htmlString = $( this ).html();  
+              $( this ).text( htmlString );  
+            });  
+        </script>
+        <p class="change"><b>Click</b> here to change the <span id="tag">html to text</span></p> -->
+
+        
+        <button class="btn3">Click here to set text content for all p elements</button>  
+        <p class="para ">Hello Guys!</p>  
+        <p class="para">Looking for online training....</p> 
+        <script>  
+            $(document).ready(function(){  
+                $(".btn3").click(function(){  
+                    $(".para").text("hi hello");  
+                });  
+            });  
+        </script> 
+<!-- differences between text() and html() -->
+    <script>
+    $(document).ready(function(){
+        $("#button1").click(function(){
+            alert("Using text()- " + $("#demo").text());
+        });
+        $("#button2").click(function(){
+            alert("Using html()- " + $("#demo").html());
+        });
+    });
+    </script>
+        <p id="demo">This is <b>demo</b> text.</p>
+
+        <button id="button1">Text</button>
+        <button id="button2">HTML</button>
+
+        
+        <p class="demo1"></p>    
+        <select id="single">    
+        <option>Single</option>    
+        <option>Double</option>    
+        <option>Triple</option>    
+        </select>    
+        <script>    
+        function displayVals() {    
+        var singleValues = $( "#single" ).val();    
+        $( ".demo1" ).html( "<b>Value:</b> " + singleValues);    
+        }    
+        $( "select" ).change( displayVals );    
+        displayVals();    
+        </script>
+
+<p class="fine"></p>  
+<select id="single1">  
+  <option>Single</option>  
+  <option>Single2</option> 
+  <option>Single3</option>  
+</select>  
+<select id="multiple" multiple="multiple">  
+  <option selected="selected">Multiple</option>  
+  <option>Multiple2</option>  
+  <option>Multiple3</option>  
+</select>  
+<script>  
+function displayVals() {  
+  var singleValues = $( "#single1" ).val();  
+  var multipleValues = $( "#multiple" ).val() || [];  
+  $( ".fine" ).html( "<b>Single:</b> " + singleValues +  
+    " <b>Multiple:</b> " + multipleValues.join( "shgksj " ) );  
+}  
+$( "select" ).change( displayVals );  
+displayVals();  
+</script>
+
+    <script>  
+    $(document).ready(function(){  
+        $(".btn4").click(function(){  
+            $("input:text").val("hey good morning");  
+        });  
+    });  
+    </script> 
+    <p>Name: <input type="text" name="user"></p>  
+    <button class="btn4">Set the value of the input field</button>  
+    
+
+    <script>  
+        $(document).ready(function(){  
+            $(".btn5").click(function(){  
+                alert("Background color = " + $("p").css("background-color"));  //this gives the background color of first paragraph in the document
+            });  
+        });  
+    </script> 
+    <h2>This is a heading</h2>  
+    <p style="background-color:#ff0000">The background-color of this paragraph is red.</p>  
+    <p class="color" style="background-color:#00ff00">The background-color of this paragraph is green.</p>  
+    <p style="background-color:#0000ff">The background-color of this paragraph is blue.</p>  
+    <button class="btn5">Click here to get the background-color of first matched element.</button> 
+    <hr>
+
+    <script>  
+        $(document).ready(function(){  
+            $(".btn6").click(function(){  
+                $(".color").css({"background-color": "yellow", "font-size": "200%"});  
+            });  
+        });  
+    </script>
+    <button class="btn6">Click here to set multiple styles for all selected elements.</button> 
+    
+    <hr>
+    <script>  
+        $(document).ready(function(){  
+            $(".btn6").click(function(){  
+                // $("p").before("<p><b>Hello javatpoint.com</b></p>");  
+                $(".add").before("<p><b>good to see u</b></p>");  
+            });  
+        });  
+    </script> 
+    <button class="btn6">Insert content before each p element</button>  
+    <p class="add">inserts content before the defined class add</</p>  
+    <p class="prep">hi everyone.</</p>  
+    <script>    
+        $(document).ready(function(){    
+            $("#btn1").click(function(){    
+                $(".prep").prepend("<b>hey you</b>. ");    
+            }); 
+            $("#btn2").click(function(){  
+                $("ol").prepend("<li>Prepended item</li>");  
+                 });     
+            });    
+    </script> 
+    <ol>  
+        <li>Item no.1</li>  
+        <li>Item no.2</li>  
+        <li>Item no.3</li>  
+      </ol> 
+    
+    <button id="btn1">Prepend text</button> 
+    <button id="btn2">Prepend list item</button> 
+    <hr>
+
+    <!-- <script>  
+        $(document).ready(function(){  
+            $("button").click(function(){  
+                $(".afterr").after("<p><b>have a good day</b></p>");  
+            });  
+        });  
+    </script>
+    <button class="btn6">Insert content after each p element</button>  
+    <hr>
+    <p class="afterr">Lorem ipsum dolor, sit amet consectetur</p> -->
+
+    <script>  
+        $(document).ready(function(){  
+            $(".btn7").click(function(){  
+                $("<span><b>Hello everyone</b></span>").insertAfter(".afteri");  
+            });  
+        });  
+    </script> 
+    <button class="btn7">Insert span element after each p element</button>  
+    <p class="afteri">This is a tutorial website.</p>
+    
+    <script>  
+        $(document).ready(function(){  
+            $(".btn8").click(function(){  
+                $("<span><b>Hello</b></span>").appendTo(".apndto");  
+            });  
+        });  
+    </script> 
+    <button class="btn8">Add new content at the end of each p element</button>  
+    <p class="apndto">I am a new reader.</p>
+    
+    <script>  
+        $(document).ready(function(){  
+            $(".btn9").click(function(){  
+                $(".clon").clone().appendTo("body");  
+            });  
+        });  
+    </script>
+    <button class="btn9">Click here, to clone all p elements, and append them to the body element</button>  
+    <p class="clon"><b>hello hi how are you </b></p>
+<hr>
+</body>
+</html>
