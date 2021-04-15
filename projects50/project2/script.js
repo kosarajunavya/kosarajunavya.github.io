@@ -47,17 +47,6 @@ function update() {
     }
 };
 
-// var currentActive = 1
-
-// $(document).ready(function() {
-
-//     $("#next").click(function(circle) {
-
-//         currentActive++;
-//         if (currentActive > circle.length) {
-//             currentActive = circle.length
-//         }
-//     });
-
-
-// });
+$(function (){
+    
+})
