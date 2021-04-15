@@ -47,6 +47,11 @@ function update() {
     }
 };
 
-$(function (){
-    
-})
+// $(function (){
+//     let currentActive = 1;
+//     $("#next").click(function(circle) {
+//         currentActive++;
+        
+//     });
+        
+// })
