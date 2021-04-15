@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <link rel="stylesheet" href="./styleh.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        $(document).ready(function(){  
+            $(".btn1").click(function(){  
+                alert($(".stop").scrollTop() + "px");  
+            });  
+        });  
+    </script>  
+    <div class="stop" style="border:1px solid black;width:150px;height:100px;overflow:auto">  
+        Twinkle, twinkle, little star,How I wonder what you are!  
+        Up above the world so high, Like a diamond in the sky.   
+        Twinkle, twinkle, little star, How I wonder what you are!
+    </div> 
+    <hr>
+        <button class="btn1">Return the vertical position of the scrollbar</button>  
+        <p>Move the scrollbar down and click the button again.</p>  
+        
+        <script>  
+            $(document).ready(function(){  
+                $("button").click(function(){  
+                    $("img").attr("width", "500");  
+                });  
+            });  
+        </script>
+        <img src="./img/vivaldi-emojis-hero.jpg" alt="Good Morning Friends"width="284" height="213"><br>
+        <button>Set the width attribute of the image</button>  
+        <hr>
+        
+        <script>  
+            $(document).ready(function(){  
+                $(".btn2").click(function(){  
+                    var $x = $("div");  
+                    $x.prop("color","#e0eeee");  
+                    $x.append("The value of the color property: " + $x.prop("color"));  
+                    $x.removeProp("color");  
+                    $x.append("<br>Now the value of the color property: " + $x.prop("color"));  
+                });  
+            });  
+        </script>
+        <button class="btn2">Add and remove a property</button><br><br>  
+        <div>hi</div>  
+
+        <input id="check1" type="checkbox" checked="checked">  
+            <label for="check1">Check me</label>  
+            <p class="p1"></p>  
+        <script>  
+            $( "input" ).change(function() {  
+            var $input = $( this );  
+            $( ".p1" ).html(  
+                ".attr( \"checked\" ): <b>" + $input.attr( "checked" ) + "</b><br>" +  
+                ".prop( \"checked\" ): <b>" + $input.prop( "checked" ) + "</b><br>" +  
+                ".is( \":checked\" ): <b>" + $input.is( ":checked" ) ) + "</b>";  
+            }).change();  
+        </script>
+        
+        
+        <script>  
+            $(document).ready(function(){  
+                $(".btn3").click(function(){  
+                    var x = $(".p2").offset();  
+                    alert("Top: " + x.top + " Left: " + x.left);  
+                });  
+            });  
+        </script>
+        <body>  
+            <p class="p2">You are reading this tutorial on javatpoint.com</p>  
+            <button class="btn3">Click here to return the offset coordinates of the p element</button>  
+        <hr>
+    </script> 
+    
+    
+    <script type="text/javascript" language="javascript">  
+    $(document).ready(function() {  
+    $("div").click(function () {  
+    var offset = $(this).offset();  //offset will retrieves the current position relative to the document. where as position will retrive the current position related to its parent
+    
+    // var position = $(this).position();  
+    // $("#lresult").html("left position: <span>" + position.left + "</span>.");  
+    // $("#tresult").html("top position: <span>" + position.top + "</span>.");  
+
+    $("#lresult").html("left offset: <span>" + offset.left + "</span>.");  
+    $("#tresult").html("top offset: <span>" + offset.top + "</span>."); 
+    });  
+    });  
+    </script> 
+    <style>  
+    div { width:60px; height:60px; margin:5px; float:left;}  
+    </style>
+        <p>Click on any square:</p>  
+        <span id="lresult"> </span>  
+        <span id="tresult"> </span>   
+        <div  style="background-color:#7fffd4"></div>  
+        <div  style="background-color:#a52a2a"></div>  
+        <div  style="background-color:#7fff00"></div>  
+        <div  style="background-color:#ff1493"></div>  
+
+        <script>  
+            $(document).ready(function(){  
+                $(".btn4").click(function(){  
+                    $(".p:first").addClass("intro");
+                    alert($(".p").hasClass("intro"));  
+  
+                });  
+            });  
+        </script>  
+        <style>  
+            .intro {  
+                font-size: 200%;  
+                color: red;  
+            }  
+        </style>
+        <h1>This is a heading</h1>  
+        <p class="p">This is a paragraph.</p>  
+        <p>This is another paragraph.</p>  
+        <button class="btn4">Add a class name to the first p element</button>  
+         <hr>
+
+
+        <script>  
+            $(document).ready(function(){  
+                $(".btn5").click(function(){  
+                    alert("Width of div: " + $(".divx").width());  
+                });  
+            });  
+        </script>
+        <div class="divx" style="height:100px;width:200px;padding:10px;margin:3px;border:1px solid blue;background-color:lightpink;"></div><br>  
+        <button class="btn5">Execute the jQuery width() method to return width</button>  
+          <hr>
+
+        <div class="divy">A</div>  
+        <div class="divy">B</div>  
+        <div class="divy">C</div>  
+        <div class="divy">D</div>  
+        <div class="divy">E</div>  
+        <script>  
+        var modWidth = 70;  
+        $( ".divy" ).one( "click", function() {  
+          $( this ).width( modWidth ).addClass( "mod" ); 
+        //   $( this ).height( modWidth ).addClass( "mod" ); to change the height of an object
+          modWidth -= 10;  
+        });  
+        </script>  
+</body>
+</html>

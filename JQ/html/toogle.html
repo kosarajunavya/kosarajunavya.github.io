@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <link rel="stylesheet" href="./toogle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="buttons">  
+        <button>toggle</button>  
+        <button class="a">toggle a</button>  
+        <button class="a b">toggle a b</button>  
+        <button class="a b c">toggle a b c</button>  
+        <a href="#">Reset</a>  
+      </div>  
+      <div class="wrap">  
+        <div></div>  
+        <div class="b"></div>  
+        <div class="a b"></div>  
+        <div class="a c"></div>  
+      </div>  
+      <script>  
+      var cls = [ "", "a", "a b", "a b c" ];  
+      var divs = $( "div.wrap" ).children();  
+      var appendClass = function() {  
+        divs.append(function() {  
+          return "<div>" + ( this.className || "none" ) + "</div>";  
+        });  
+      };  
+      appendClass();  
+      $( "button" ).on( "click", function() {  
+        var tc = this.className || undefined;  
+        divs.toggleClass( tc );  
+        appendClass();  
+      });  
+      $( "a" ).on( "click", function( event ) {  
+        event.preventDefault();  
+        divs.empty().each(function( i ) {  
+          this.className = cls[ i ];  
+        });  
+        appendClass();  
+      });  
+      </script> 
+</body>
+</html>
