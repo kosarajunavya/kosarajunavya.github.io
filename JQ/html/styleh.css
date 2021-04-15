@@ -1,0 +1,12 @@
+div {  
+  width: 100px;  
+  height: 80px;  
+  float: left;  
+  margin: 5px;  
+  background:orange;  
+  cursor: pointer;  
+}  
+.mod {  
+  background: green;  
+  cursor: default;  
+}  
