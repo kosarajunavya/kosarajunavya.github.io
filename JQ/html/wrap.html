@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        $(document).ready(function(){  
+            $("button").click(function(){  
+                $(".p").wrap("<div></div>");  
+            });  
+        });  
+    </script>  
+    <style>  
+        div{background-color: cyan;}  
+    </style> 
+    <p class="p">Hello Guys!</p>  
+    <p class="p">This is javatpoint.com</p>  
+    <button>Wrap a div element around each p element</button>  
+     
+
+    <script type="text/javascript" language="javascript">  
+        $(document).ready(function() {  
+           $("div").click(function () {  
+              var content = '<div class="div"></div>';  
+              $("#destination").wrap( content );  
+           });  
+        });  
+    </script> 
+    <style>  
+        .div{ margin:5px;padding:2px; border:2px solid #666; width:60px;}</style>  
+        </head>  
+        <body>  
+        <p>Click on any square to wrap the text:</p>  
+        <div class="div div1" id="destination">We are going to wrap this text</div>  
+        <div class="div div1" style="background-color:orange;">ONE</div>  
+        <div class="div div1" style="background-color:yellow;">TWO</div>  
+        <div class="div div1" style="background-color:lime;">THREE</div>  
+        
+        <script type="text/javascript" language="javascript">  
+            $(document).ready(function() {  
+               $(".div1").click(function () {  
+                  var content = "<marquee><b></b></marquee>";  
+                  $(this).wrapInner( content );  
+               });  
+            });  
+         </script>
+
+        <script>  
+            $(document).ready(function(){  
+                $(".btn1").click(function(){  
+                    $(".p3").wrapInner("<em><b><marquee></marquee></b></em>");
+                    // $("p").wrapAll("<div></div>");    //to wrap all the p elements into div
+                });  
+            });  
+        </script>
+        <p class="p3">Hello Guys!</p>  
+        <p class="p3">This is javatpoint.com</p>  
+        <button class="btn1">Wrap a emphasized element around the content of each p element</button> 
+        <hr>
+
+        <script>  
+            $(document).ready(function(){  
+                $("#btn1").click(function(){  
+                    $(".p4").wrapAll("<div></div>");  
+                });  
+                $("#btn2").click(function(){  
+                    $(".p4").unwrap();  
+                });  
+            });  
+            </script>  
+            <style>  
+            div{background-color: cyan;}  
+            </style>  
+            </head>  
+            <body>  
+            <p class="p4" >Hello Guys!</p>  
+            <p class="p4">This is javatpoint.com</p>  
+            <button id="btn1">Wrap a div element around all p element</button>  
+            <button id="btn2">Unwrap</button>
+    </script>  
+    </body>
+</html>
