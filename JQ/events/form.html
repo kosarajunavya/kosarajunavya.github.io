@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <p>Type 'javatpoint' to submit this form finally.</p>  
+<form>  
+  <div>  
+    <input type="text">  
+    <input type="submit">  
+  </div>  
+</form>  
+<span></span>  
+<script>  
+$( "form" ).submit(function( event ) {  
+  if ( $( "input:first" ).val() === "javatpoint" ) {  
+    $( "span" ).text( "Submitted Successfully." ).show();  
+    return;  
+  }  
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 2000 );  
+  event.preventDefault();  
+});  
+</script>  
+</body>
+</html>

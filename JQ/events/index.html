@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <link rel="stylesheet" href="./style.css"> 
+    <title>events</title>
+</head>
+<body>
+    <script>  
+        $(document).ready(function(){  
+            $(".p").click(function(){  
+                alert("This paragraph was clicked.");   //adding click event to a paragraph
+            });  
+        });  
+    </script>
+    <p class="p">Click on the statement.</p>  
+    <script>  
+        $(document).ready(function(){  
+            $("head1,head2,head3").click(function(){  
+                $(this).hide();  
+            });  
+        });  
+    </script>
+    <h1 class="head1">This heading will disappear if you click on this.</h1>  
+    <h2 class="head2">It will also disappear.</h2>  
+    <h3 class="head3">Me too.</h3> 
+    
+    <p class="p1">Click or double click on the statement.</p>  
+    <span></span> 
+    
+    <script>  
+        $( ".p1" ).bind( "click", function( event ) {  
+          var str = "( " + event.pageX + ", " + event.pageY + " )";  //The event.pageX property returns the position of the mouse pointer, relative to the left edge of the document.
+          $( "span" ).text( "This is a single click! " + str );  
+        });  
+        $( ".p1" ).bind( "dblclick", function() {  
+          $( "span" ).text( "This is a double click on " + this.nodeName );  
+        });  
+        $( ".p1" ).bind( "mouseenter mouseleave", function( event ) {  
+          $( this ).toggleClass( "hover" );  
+        });  
+    </script>
+    <script>
+        $(document).ready(function(){
+        $(".h3").bind("mouseover",function(){
+            $(this).css({"background-color": "pink", "font-size": "25px"}).text("Hovered");
+           });
+           $("#b3").click(function(){
+              $(".h3").unbind("mouseover");
+           });
+        });
+    </script> 
+    <h2> It is an example of using the jQuery unbind() method. </h2>
+    <p> Move the cursor over the below heading to attach the mouseover event. </p>
+    <h3 class="h3"> Hover me </h3>
+    <button id = "b3"> Remove event </button>
+    <h3> Hover me </h3>
+
+    <script>
+        $(document).ready(function(){
+        var i = 0, j = 1;
+        $(".div").click(function(){
+        $(".div").animate({height: "+=25px", width: "+=25px", fontSize: "+=10px"}).text(j + " times").css({"color": "blue", "background-color": "pink"});
+        i++;
+        j++;
+        if (i >= 3) {
+        $(this).unbind();
+        }
+        });
+        });
+    </script>
+    <h2> It is an example of using the jQuery unbind() method. </h2>
+    <p> The style of the following heading can only be changed thrice. </br> Click the follwing text to see the effect. </p>
+    <div class="div"> Click me </div>
+
+    <script>  
+        $(document).ready(function(){  
+            $(".image").blur(function(){  
+                  
+            });
+            // $("input").blur(function(){  
+            //     alert("This input has lost its focus.");  
+            // });   
+        });  
+    </script>
+    <img class="image" src="./vivaldi-emojis-hero.jpg" alt="emojis">
+    <!-- Enter your name: <input type="text">   -->
+
+    <p><input type="text"> <span class="span">Focus starts.. Write your name.</span></p>  
+    <p><input type="password"> <span class="span">Focus starts.. Write your password.</span></p>  
+ <script>  
+    $( "input" ).focus(function() {  
+    $( this ).next( ".span" ).css( "display", "inline" ).fadeOut( 2000 );  
+    });  
+</script>
+<p><input type="text" value="you can't write"></p>  
+<p><input type="password"> </p>  
+ <script>  
+    $( "input[type=text]" ).focus(function() {  
+    $( this ).blur();  
+    });  
+</script>
+
+<p>Select the text on the box: click and drag the mouse to select text.</p>  
+<input type="text" value="javatpoint.com">  
+<input type="text" value="sssit.org">  
+<div class="div1"></div>  
+<script>  
+    $( ":input" ).select(function() {  
+    $( ".div1" ).text( "Some text was selected" ).show().fadeOut( 2000 );  
+    });  
+</script>
+<hr>
+<select id="se" name="actors" >    
+    <option>Uthappa</option>    
+    <option selected="selected">Kattapa</option>    
+    <option>Veerappa</option>    
+    <option>Bahubali</option>    
+    <option>Bhallal Dev</option>    
+    <option>Awantika</option>    
+  </select>    
+  <div id="loc"></div>  
+  <hr>  
+   <script>    
+  $( "select" ) .change(function () {    
+  document.getElementById("loc").innerHTML="You selected: "+document.getElementById("se").value;  
+  });  
+  </script> 
+
+<select class="select" name="Employees" multiple="multiple">  
+    <option>Uthappa</option>  
+    <option selected="selected">Kattapa</option>  
+    <option>Veerappa</option>  
+    <option selected="selected">Bahubali</option>  
+    <option>Bhallal Dev</option>  
+    <option>Awantika</option>  
+  </select>  
+  <div class="opt"></div>  
+   <script>  
+  $( ".select" )  
+    .change(function () {  
+      var str = "";  
+      $( ".select option:selected" ).each(function() {  
+        str += $( this ).text() + " ";  
+      });  
+      $( ".opt" ).text( str );  
+    })  
+    .change();  
+  </script>
+
+ 
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("input").keydown(function(){  
+        $("input").css("background-color", "coral");  
+    });  
+    $("input").keyup(function(){  
+        $("input").css("background-color", "cyan");  
+    });  
+});  
+</script> 
+Write something: <input type="text"> 
+<hr>
+
+<script>  
+    i = 0;  
+    $(document).ready(function(){  
+        $(".input1").keypress(function(){  
+            $(".value").text (i += 1);  
+        });  
+    });  
+</script>  
+Write something: <input class="input1" type="text">  
+<p>Keypresses: <span class="value">0</span></p>  
+
+
+<script>  
+    $(document).ready(function(){  
+        $(".mouse").mouseenter(function(){  
+            $(".mouse").css("background-color", "lightgreen");  
+        });  
+        $(".mouse").mouseleave(function(){  
+            $(".mouse").css("background-color", "cyan");  
+        });  
+    });  
+</script>
+<p class="mouse">Move your mouse cursor over this statement.</p>  
+
+
+<ul>  
+    <li>Java</li>  
+    <li>SQL</li>  
+    <li class="fade">Android</li>  
+    <li class="fade">php</li>  
+</ul>  
+<script>  
+  $( "li" ).hover(  
+    function() {  
+      $( this ).append( $( "<span> ***</span>" ) );  
+    }, function() {  
+      $( this ).find( "span:last" ).remove();  
+    }  
+  );  
+  $( "li.fade" ).hover(function() {  
+    $( this ).fadeOut( 100 );  
+    $( this ).fadeIn( 500 );  
+  });  
+</script>
+
+<script>  
+    $(document).ready(function(){  
+        $(".mouseup").mousedown(function(){  
+            $(".mouseup").css("background-color", "cyan");  
+        });  
+        $(".mouseup").mouseup(function(){  
+            $(".mouseup").css("background-color", "lime");  
+        });  
+    });  
+</script>
+<p class="mouseup">Press down the mouse left button over this p element</p>  
+
+<script>  
+    $(document).ready(function(){  
+        $("img").load(function(){  
+            alert("Image loaded.");  
+        });  
+    });  
+</script>
+<img src="./nature-wallpapers-38.jpg" width="500" alt="good morning">  
+<p><b>Note:</b> On some browsers, the load event did not trigger if the image is cached.</p>
+
+ 
+    <p class="px">This is a single paragraph. Click me for next.</p>  
+<script>  
+    $( "body" ).delegate( ".px", "click", function() {  
+      $(this ).after( "<p>Click me for another paragraph.</p>" );  
+    });  
+</script>
+</body>
+</html>
