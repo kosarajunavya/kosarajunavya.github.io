@@ -64,7 +64,6 @@ $(document).ready(function() {
         if (currentActive <= 1) {
             currentActive = 1
             $("#prev").attr("disabled", "disabled");
-            console.log(currentActive)
         }
     
         $("#next").removeAttr("disabled", "disabled");
