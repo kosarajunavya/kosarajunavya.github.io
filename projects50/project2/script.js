@@ -48,33 +48,28 @@
 // };
 
 var currentActive = 1;
-
 $(document).ready(function() {
-
     $("#next").click(function() {
         currentActive++;
-       
-
-        if (currentActive > $(".circle").length) {
+        if (currentActive >= $(".circle").length) {
             currentActive = $(".circle").length
             $("#next").attr("disabled", "disabled");
         }
-        $("#prev").removeAttr("disabled");
         update(currentActive)
+        $("#prev").removeAttr("disabled");
     });
-    
+    // 
     $("#prev").click(function() {
         currentActive--;
-        
-        if (currentActive < 1) {
+        if (currentActive <= 1) {
             currentActive = 1
             $("#prev").attr("disabled", "disabled");
-        };
+            console.log(currentActive)
+        }
+    
         $("#next").removeAttr("disabled", "disabled");
         update(currentActive)
     });
-    const actives = $('.active')
-    const circles = $('.circle')
 
 
     function update(currentActive) {
@@ -82,18 +77,13 @@ $(document).ready(function() {
 
             if (parseInt($(this).text()) === currentActive) {
                 $(this).addClass("active");
-
+               
             } else if (parseInt($(this).text()) > currentActive) {
                 $(this).removeClass("active");
-
+              
             }
-            $( function() {
-                var bar = (actives.length - 1) / (circles.length - 1) *  100 + "%";
-                $( '#progress' ).progressbar({
-                  value: bar 
-                });
-                $("bar").css("width", "100px"); 
-              } );
+            $(".progress").width(($('.active').length - 1) / ($(".circle").length - 1) * 100 + '%')
+           
         });
     }
 })
