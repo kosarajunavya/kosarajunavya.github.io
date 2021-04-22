@@ -50,9 +50,9 @@ function update() {
 // var currentActive = 10;
 // $(document).ready(function() {
 //     $("#next").click(function() {
-//         currentActive+=10;
-//         if (currentActive >= $(".circle").length) {
-//             currentActive = $(".circle").length
+//         currentActive = currentActive+10;
+//         if (currentActive === 100) {
+//             currentActive = 100
 //             $("#next").attr("disabled", "disabled");
 //         }
 //         update(currentActive)
@@ -60,9 +60,9 @@ function update() {
 //     });
 //     // 
 //     $("#prev").click(function() {
-//         currentActive-=10;
-//         if (currentActive <= 100) {
-//             currentActive = 100
+//         currentActive = currentActive-10;
+//         if (currentActive <= 10) {
+//             currentActive = 10
 //             $("#prev").attr("disabled", "disabled");
 //         }
     
