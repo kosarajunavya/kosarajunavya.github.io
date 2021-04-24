@@ -29,6 +29,7 @@ function checkBoxes() {
 //                  } else {
 //                     box.removeClass('show');
 //                 }
-//         }
+        
+//            }
     
 // });

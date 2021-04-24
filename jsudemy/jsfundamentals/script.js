@@ -87,3 +87,26 @@ $(document).ready(function(){
         $('.reason').text('since I am declared by using const key word. So that I am a constant value and you canot change my value');
     });
 });
+
+let eachHalf = parseFloat(countryPopulation)/2;
+console.log('total country population is' +countryPopulation );
+console.log('each half of the population is '+eachHalf +'crores');
+
+let ctryPopulation = 136.64;
+ctryPopulation++;
+console.log(ctryPopulation +"crores");
+
+let finlandPopulation = 6;
+if (ctryPopulation>finlandPopulation){
+    console.log("My country has higgest population")
+} else {
+    console.log("Finland has higgest population")
+}
+
+let avg = 33;
+if (ctryPopulation>avg){
+    console.log('No, my country has more people than the average country');
+}
+
+let description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+console.log(description);
