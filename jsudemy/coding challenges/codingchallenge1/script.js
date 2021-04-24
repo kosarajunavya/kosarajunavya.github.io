@@ -1,5 +1,3 @@
-var res1 =  document.getElementById('bmi1').innerHTML; 
-var res2 =  document.getElementById('bmi2').innerHTML; 
 
 
 document.getElementById("btn").onclick = function (){
@@ -30,17 +28,18 @@ function bmi1(c, d) {
 
 
 
-function large(res1,res2){
+
+// function large(result1,result2){
 
     
-    if(res1>res2){
-        return 'First person has the larger BMI';
-    }
-    else{
-        return 'Second person has the larger BMI'
-    }
-}
+//     if(result1>result2){
+//         return 'First person has the larger BMI';
+//     }
+//     else{
+//         return 'Second person has the larger BMI'
+//     }
+// }
 
-document.getElementById('res').innerHTML = ((large(res1,res2)));
+// document.getElementById('res').innerHTML = ((large(result1,result2)));
 
  
