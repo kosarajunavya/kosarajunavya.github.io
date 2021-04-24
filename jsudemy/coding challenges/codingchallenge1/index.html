@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding challenge1</title>
+</head>
+<body>
+    <h1>First coding challenge</h1>
+    <p>Instructions</p>
+    <div>
+        <p>Mark and John are trying to compare their BMI (Body Mass Index), which is
+            calculated using the formula:
+            BMI = mass / height ** 2 = mass / (height * height) (mass in kg
+            and height in meter).
+        </p>
+        <h2>Your tasks:</h2>
+        <p> 1. Store Mark's and John's mass and height in variables</p>
+        <p>2. Calculate both their BMIs using the formula (you can even implement both versions)</p>
+        <p>3. Create a Boolean variable 'markHigherBMI' containing information about
+            whether Mark has a higher BMI than John.</p>
+        <h2>Test data:</h2>
+         <p>Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
+            tall.</p>
+         <p>Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
+            tall.</p>
+    </div>
+    <div>
+        <p>Values of first person</p>
+        <input type="number" placeholder="enter mass of your body" id="userInputm">
+        <input type="number" placeholder="enter height of your body" id="userInputh">
+        <button id="btn" onclick="bmi()"> find</button>
+        <p id="bmi1">BMI of first user is</p>
+    </div>
+    <div>
+        <p>Values of second person</p>
+        <input type="number" placeholder="enter mass of your body" id="userInput1m">
+        <input type="number" placeholder="enter height of your body" id="userInput1h">
+        <button id="btn1" onclick="bmi1()"> find</button>
+        <p id="bmi2">BMI of second user is</p>
+    </div>
+
+    <p>click the below button to get the person with higger BMI</p>
+
+    <button id="btn2" onclick="large()" >Results</button>
+    <p id="res"></p>
+    <script src="./script.js"></script>
+</body>
+</html>
