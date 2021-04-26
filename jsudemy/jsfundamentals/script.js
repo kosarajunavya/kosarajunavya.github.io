@@ -108,5 +108,50 @@ if (ctryPopulation>avg){
     console.log('No, my country has more people than the average country');
 }
 
-let description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+let description = country +' is in '+continent + ' and its' + countryPopulation + ' people speak Hindi';
 console.log(description);
+
+let description1 = `${country} is in ${continent} and its ${countryPopulation} people speak Hindi`;
+console.log(description1);
+
+// let populationm = 1366.4;
+let populationn = 13;
+let avgy = 130 - populationn;
+// let avgx = 33 - populationm;
+if (avgy > 130){
+    console.log("Indian population is above average");
+}else {
+    console.log('Indian population is below average')
+}
+
+var c = '9' - '5';
+var d = '19' - '13' + '17';
+var e = '19' - '13' + 17;
+var f = '123' < 57;
+var g =5 + 6 + '4' + 9 - 4 - 2;
+
+console.log(c,d,e,f,g);
+
+//truthy and falsy values
+
+console.log(Boolean(0));
+console.log(Boolean(''));
+console.log(Boolean({}));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean('navya'));
+
+let money = 100;
+if(money){
+    console.log('Save it and It will save you');
+}else {
+    console.log('Get a job to earn money')
+}
+
+let hight;
+ if (hight){
+     console.log('you are 5inch shorter');
+ }else{
+     console.log('please define your height');
+ }
