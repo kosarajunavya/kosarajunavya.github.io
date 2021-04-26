@@ -28,6 +28,7 @@ function bmi1(c, d) {
 
 
 
+// logic for coding challenge2
 
  function large(){
     var result1 = document.getElementById("bmi1").innerHTML;
