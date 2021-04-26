@@ -155,3 +155,31 @@ let hight;
  }else{
      console.log('please define your height');
  }
+
+//  let numNeighbours = prompt('How many neighbour countries does your country have?');
+//  if (numNeighbours == 1){
+//      console.log('Only 1 border!');
+//  } else if (numNeighbours>1){
+//     console.log('we have ' + numNeighbours +' borders')
+//  } else {
+//      console.log('No borders');
+//  }
+
+//  let numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+//  if (numNeighbours === 1){
+//      console.log('Only 1 border!');
+//  } else if (numNeighbours>1){
+//     console.log('we have ' + numNeighbours +' borders')
+//  } else {
+//      console.log('No borders');
+//  }
+
+let languagex = 'english';
+let people = '50 million';
+let isIslandx = false;
+ if(languagex === 'english' && people === '50 million' || isIslandx === true){
+     console.log('You should live in Portugal :)');
+ }else {
+     console.log('Portugal does not meet your criteria :(');
+ }
+
