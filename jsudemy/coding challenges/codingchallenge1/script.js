@@ -8,7 +8,7 @@ document.getElementById("btn").onclick = function (){
 }
 function bmi(a, b) {
     // force the input as numbers *1
-    var result1 = ((a*1/ (b*1)**(b*1)));
+    var result1 = ((a*1/ (b*1)*(b*1)));
     return parseInt(result1); 
 
 }
@@ -22,7 +22,7 @@ document.getElementById("btn1").onclick = function (){
 
 function bmi1(c, d) {
     // force the input as numbers *1
-    var result2 = ((c*1/ (d*1)**(d*1)));
+    var result2 = ((c*1/ (d*1)*(d*1)));
     return parseInt(result2);
 }
 
