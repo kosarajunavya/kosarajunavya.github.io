@@ -183,3 +183,10 @@ let isIslandx = false;
      console.log('Portugal does not meet your criteria :(');
  }
 
+//ternary operator(conditional operator)
+ const age = 23;
+ age >= 18 ? console.log('you are allowed to take a covid-vaccine'): console.log('Take the preacautions to avoid covid');
+
+ //since ternary opetator is an expression that returns a value so that we are allowed to use in template literal
+ age1 = 15;
+ console.log(`I like to drink ${age1 >= 18 ? 'wine': 'water'}`);
