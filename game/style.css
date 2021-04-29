@@ -8,9 +8,10 @@ body{
     color: black;
 }
 .game{
-    display: flex;
-    justify-content: space-evenly;
+    display: block;
     margin-top: 3rem;
+}
+.flip, .flop{
     margin-bottom: 3rem;
 }
 .wraper a{
@@ -21,6 +22,7 @@ body{
     border: 1px solid black;
     border-radius: 0.2rem;
 }
+
 @media (min-width: 768px){
     p{
         font-size: 1.6rem;
@@ -28,20 +30,29 @@ body{
     h1{
         font-size: 2rem;
     }
-    .wraper{
-        width: 60%;
+    header{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 2rem;
+        color: #fff;
+    }
+    footer{
+        width: 50%;
         display: block;
         margin: 0 auto;
         color: #fff;
-        padding-top:5rem ;
     }
-    .wraper h1, p {
-        padding: 0 15rem;
+    .wraper{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        color: #fff;
     }
+    
     .game{
         display: flex;
-        justify-content: space-evenly;
-        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
     .wraper a{
         text-decoration: none;
@@ -50,15 +61,12 @@ body{
         padding: 1.5rem;
         border: 1px solid #fff;
         border-radius: 0.2rem;
+        margin-right: 2rem;
     }
     .wraper a:hover {
         color: black;
         background-color: white;
     }
-    .flip{
-        padding : 2rem;
-    }
-    .flop{
-        padding: 2rem;
-    }
+    
 }
+
