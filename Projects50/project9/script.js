@@ -25,16 +25,23 @@ function stopSongs() {
 }
 
 
-// $(function(){
-//     $('.sounds').forEach(sound =>{
-//         const btn = $("<div></div>");
-//         $(".btn").append(btn);
+// $(function() {
+//     $(sounds).each(function(index, sound) {
+//         const btn = document.createElement('button');
+//         $(btn).addClass('btn');
+//         btn.innerText = sound;
+//         $(btn).click(function() {
+//             stopSounds();
+//             document.getElementById(sound).play();
+//         });
+//         document.getElementById('buttons').appendChild(btn);
+//     });
 
-//         $('.btn').addClass('.btn')
-        
-//         $('.btn').text= sound
-        
-//         $('.btn').click(stopSongs)
-    
-//     })
-// })
+//     function stopSounds() {
+//         $(sounds).each(function(index, sound) {
+//             const song = document.getElementById(sound);
+//             song.pause();
+//             song.currentTime = 0;
+//         });
+//     };
+// });
