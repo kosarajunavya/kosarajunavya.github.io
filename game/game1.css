@@ -22,7 +22,8 @@ body{
     height: 114px;
     position: absolute;
     bottom:0;
-    left: 0;
+    left: 100px;
+    
 }
 
 .obstacle{
@@ -33,6 +34,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 44vw;
+
 }
 
 .animateDino{
@@ -78,9 +80,9 @@ body{
 
 @keyframes obstacleAni{
     0%{
-        left: 100vw;
+        left: 90vw;
     }
     100%{
-        left: -10vw;
+        left: -20vw;
     }
 }
