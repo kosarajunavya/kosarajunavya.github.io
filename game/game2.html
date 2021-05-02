@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
-<head>
-    <meta charset="UTF-8">
-    <title>Flappy Bird</title>
-    <link rel="stylesheet" href="game2.css">
-</head>
-<body>
-    <h1>click on any place in the window to move the ball in between the walls</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="./game2.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- game Start Button -->
+      <button id="start">Start</button>
 
-    <div id="game">
-        <div id="block"></div>
-        <div id="hole"></div>
-        <div id="character">
-            <img src="./img/fad225214130494f40d2c8f22166aab4.gif" alt="">
+      <!-- game start screen -->
+      <div id="game">
+        <div id="block">
+          <div id="gap"></div>
         </div>
+        <div id="bird"></div>
+      </div>
+
+      <!-- Game Over -->
+      <div id="gameOver">
+        <div id="loss">Game Over</div>
+        <div id="score">07</div>
+        <button id="playAgain">Play Again</button>
+      </div>
     </div>
-    <h2>try to fly the bird only on white gaps to reach larger distance</h2>
-</body>
-<script src="script2.js"></script>
+    <script src="./script2.js"></script>
+  </body>
 </html>
