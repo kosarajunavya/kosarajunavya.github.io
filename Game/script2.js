@@ -66,7 +66,7 @@ block.addEventListener("webkitAnimationIteration", () => {
   scoreCount++;
 });
 
-// fly bird when space button clicked
+// fly bird when uparrow button clicked
 window.addEventListener("keyup", (e) => {
   if ((e.keyCode = 38)) {
     let jumpInterval = setInterval(() => {
