@@ -7,7 +7,9 @@ toggles.forEach((toggle) => {
 });
 
 // $(function () {
-//   $(".faq-toggle").click(function () {
-//     $(".faq-toggle").toggleClass("active");
+//   $(".faq-toggle").each(function () {
+//     $(this).click(function () {
+//       $(this).parent().toggleClass("active");
+//     });
 //   });
 // });
