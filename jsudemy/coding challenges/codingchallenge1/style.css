@@ -7,7 +7,6 @@ body {
   background-image: url("./img/bmi-background-2048px.png");
   background-repeat: no-repeat;
   color: #fff;
-  background-size: 100% 100%;
 }
 
 .wrapper {
@@ -70,7 +69,6 @@ footer {
     display: block;
     width: 70%;
     margin: 0 auto;
-    background-size: 100% 100%;
   }
 }
 @media (min-width: 2560px) {

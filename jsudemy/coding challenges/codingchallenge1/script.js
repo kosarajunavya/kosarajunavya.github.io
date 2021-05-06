@@ -33,8 +33,10 @@ function large() {
   var data = "";
   if (parseInt(result1) > parseInt(result2)) {
     data = "First person has the larger BMI";
-  } else {
+  } else if (parseInt(result2) > parseInt(result1)) {
     data = "Second person has the larger BMI";
+  } else {
+    data = "Please enter the values";
   }
   document.getElementById("res").innerHTML = data;
 }
