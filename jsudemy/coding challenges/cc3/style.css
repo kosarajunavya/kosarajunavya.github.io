@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.wraper {
   background-image: url("./img/pngtree-winning-lottery-announcement-image_240082.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 header,
 .main,
@@ -28,12 +28,7 @@ header {
   font-size: 1.5rem;
   color: black;
 }
-footer {
-  text-align: center;
-  align-items: center;
-  padding: 2rem 0 0 0;
-  font-size: 2rem;
-}
+
 .main input {
   padding: 0.5rem;
   margin: 0.2rem;
@@ -45,4 +40,14 @@ footer {
   max-width: 100%;
   width: 12rem;
   background: aqua;
+}
+footer {
+  text-align: center;
+  align-items: center;
+  padding: 2rem 0 0 0;
+  font-size: 2rem;
+  height: 45vh;
+}
+footer p {
+  padding: 0 0 1rem;
 }

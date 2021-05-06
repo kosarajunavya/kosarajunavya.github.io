@@ -48,12 +48,12 @@ function winner() {
   // console.log(parseInt(result1));
   // console.log(parseInt(result2));
   var data = "";
-  if (parseFloat(result1) && parseFloat(result2) === parseInt(0)) {
-    data = "Please enter the scores";
-  } else if (parseFloat(result1) > parseFloat(result2)) {
+  if (parseFloat(result1) > parseFloat(result2)) {
     data = "First Team Wins the game";
-  } else {
+  } else if (parseFloat(result1) < parseFloat(result2)) {
     data = "Second Team wins the game";
+  } else {
+    data = "Please enter the values";
   }
   document.getElementById("winnerteam").innerHTML = data;
 }

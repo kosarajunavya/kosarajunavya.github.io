@@ -29,55 +29,55 @@
     <p>Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110</p>
     <p>Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123</p>
     <p>Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106</p> -->
-    <header>
-      <h1>Finding a Winner betwen two teams in any game</h1>
-      <p>
-        Please enter the three average values of each team to find the winner
-      </p>
-    </header>
-    <main>
-      <section class="main">
-        <div>
-          <p>Give the three scores of First team</p>
-          <div class="score1">
-            <input type="number" id="game1" placeholder="score" />
-          </div>
-          <div class="score2">
-            <input type="number" id="game2" placeholder="score" />
-          </div>
-          <div class="score3">
-            <input type="number" id="game3" placeholder="score" />
+    <div class="wraper">
+      <header>
+        <h1>Finding a Winner betwen two teams in any game</h1>
+        <p>
+          Please enter the three average values of each team to find the winner
+        </p>
+      </header>
+      <main>
+        <section class="main">
+          <div>
+            <p>Give the three scores of First team</p>
+            <div class="score1">
+              <input type="number" id="game1" placeholder="score" />
+            </div>
+            <div class="score2">
+              <input type="number" id="game2" placeholder="score" />
+            </div>
+            <div class="score3">
+              <input type="number" id="game3" placeholder="score" />
+            </div>
+            <div>
+              <button class="button" id="btn">Click</button>
+            </div>
+            <p id="result1">Average score of first team:</p>
           </div>
           <div>
-            <button class="button" id="btn">Click</button>
+            <p>Give the three scores of Second team</p>
+            <div class="scorex">
+              <input type="number" id="gamex" placeholder="score" />
+            </div>
+            <div class="scorey">
+              <input type="number" id="gamey" placeholder="score" />
+            </div>
+            <div class="scorez">
+              <input type="number" id="gamez" placeholder="score" />
+            </div>
+            <div>
+              <button class="button" id="btnx">Click</button>
+            </div>
+            <p id="result2">Average score of second team:</p>
           </div>
-          <p>Average score of first team:</p>
-          <p id="result1"></p>
-        </div>
-        <div>
-          <p>Give the three scores of Second team</p>
-          <div class="scorex">
-            <input type="number" id="gamex" placeholder="score" />
-          </div>
-          <div class="scorey">
-            <input type="number" id="gamey" placeholder="score" />
-          </div>
-          <div class="scorez">
-            <input type="number" id="gamez" placeholder="score" />
-          </div>
-          <div>
-            <button class="button" id="btnx">Click</button>
-          </div>
-          <p>Average score of second team:</p>
-          <p id="result2"></p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>Click the below, to get the winner team</p>
-      <button onclick="winner()" class="winner button">Click</button>
-      <p id="winnerteam"></p>
-    </footer>
+        </section>
+      </main>
+      <footer>
+        <p>Click the below, to get the winner team</p>
+        <button onclick="winner()" class="winner button">Click</button>
+        <p id="winnerteam"></p>
+      </footer>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
