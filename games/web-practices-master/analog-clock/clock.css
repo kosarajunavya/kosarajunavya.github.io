@@ -19,10 +19,14 @@ body {
   left: 6.2rem;
 }
 #quote {
-  text-align: center;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
   align-items: center;
+  text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
+  padding: 1.5rem;
 }
 .stick {
   position: absolute;
