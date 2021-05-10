@@ -30,7 +30,7 @@ $(document).ready(function () {
         countNum: target,
       },
       {
-        increment: target / 10,
+        duration: 2000,
         step: function () {
           $this.text(Math.ceil(this.countNum));
         },
