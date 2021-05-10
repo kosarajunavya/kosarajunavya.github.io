@@ -18,6 +18,12 @@ body {
   top: 5.5rem;
   left: 6.2rem;
 }
+#quote {
+  text-align: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 .stick {
   position: absolute;
   left: 0;
