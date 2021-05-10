@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Math For Kids</title>
+  </head>
+  <body>
+    <audio id="myAudio">
+      <source src="wrong.mp3" type="audio/mpeg" />
+    </audio>
+
+    <header>
+      <div class="container">
+        <div class="nav">
+          <h1>
+            <span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH 4
+            KIDS
+          </h1>
+          <nav>
+            <ul>
+              <li class="current"><a href="index.html">Add</a></li>
+              <li><a href="subtract.html">Subtract</a></li>
+              <li><a href="multiply.html">Multiply</a></li>
+              <li><a href="divide.html">Divide</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="equation">
+          <h2 id="num1" style="color: #49f2fe"></h2>
+          <h2 style="color: #2ab7ca">+</h2>
+          <h2 id="num2" style="color: #fed766">1</h2>
+          <h2 style="color: #f86624">=</h2>
+          <h2 style="color: gray">?</h2>
+        </div>
+        <div class="answer-options">
+          <div class="options" style="background-color: #49d4fe">
+            <h2 id="option1">1</h2>
+          </div>
+          <div class="options" style="background-color: #2aca52">
+            <h2 id="option2">2</h2>
+          </div>
+          <div class="options" style="background-color: #fed766">
+            <h2 id="option3">3</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="fun">Have fun 😆</p>
+      <audio id="myAudios">
+        <source src="./applause8.mp3" type="audio/mpeg" />
+      </audio>
+      <p id="correct">Wow correct answer! 🙌 Keep doing dear chaild</p>
+      <p id="wrong">Sorry Dear 🙁 try one more time</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

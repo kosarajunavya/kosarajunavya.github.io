@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Subtract</title>
+  </head>
+
+  <body>
+    <audio id="myAudio">
+      <source src="wrong.mp3" type="audio/mpeg" />
+    </audio>
+
+    <header>
+      <div class="container">
+        <div class="nav">
+          <h1>
+            <span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH 4
+            KIDS
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Add</a></li>
+              <li class="current"><a href="subtract.html">Subtract</a></li>
+              <li><a href="multiply.html">Multiply</a></li>
+              <li><a href="divide.html">Divide</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="equation">
+        <h2 id="num1" style="color: #fe4a49"></h2>
+        <h2 style="color: #2ab7ca">-</h2>
+        <h2 id="num2" style="color: #fed766">1</h2>
+        <h2 style="color: #f86624">=</h2>
+        <h2 style="color: gray">?</h2>
+      </div>
+      <div class="answer-options">
+        <div class="options" style="background-color: #fe4a49">
+          <h2 id="option1">1</h2>
+        </div>
+        <div class="options" style="background-color: #2ab7ca">
+          <h2 id="option2">2</h2>
+        </div>
+        <div class="options" style="background-color: #fed766">
+          <h2 id="option3">3</h2>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="fun">Have fun 😆</p>
+      <audio id="myAudios">
+        <source src="" type="audio/mpeg" />
+      </audio>
+      <p id="correct">Wow correct answer! 🙌 Keep doing dear chaild</p>
+      <p id="wrong">Sorry Dear 🙁 try one more time</p>
+    </footer>
+    <script src="subtract.js"></script>
+  </body>
+</html>
