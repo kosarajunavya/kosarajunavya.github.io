@@ -1,4 +1,5 @@
 "use strict";
+//1.get all the input values from dom
 const startNew = document.getElementById("start"),
   coinSpin = document.getElementById("coin-spin"),
   spinBtn = document.getElementById("spin"),
@@ -7,7 +8,8 @@ const startNew = document.getElementById("start"),
   selectOption = document.getElementById("select"),
   btnAdd = document.getElementById("add"),
   listAdd = document.querySelector(".list-add");
-
+// 2. local storage part
+// 2.a. first initialise the default values
 var currentBet = 0;
 var currentBet1 = 0;
 var betMoneyV = Number(betMoney.value);
@@ -15,36 +17,34 @@ var totalMoney = 0;
 var wonMoney = 0;
 var spining = true;
 
-//
+// getting head or tail
 spinBtn.addEventListener("click", () => {
-  // creating a random number
-
-  const coinSpinEl = Math.trunc(Math.random() * 2) + 1;
+  document.querySelector(".time").innerHTML =
+    "Spinning in progress...Wait for 3 seconds";
+  document.getElementById("contest").innerHTML = "Game is in progress";
+  let chooseOption = ["H", "T"];
+  let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
   setTimeout(() => {
-    if (coinSpinEl === 1) {
+    if (element === "H") {
       coinSpin.textContent = "H";
     } else {
       coinSpin.textContent = "T";
     }
-  }, 3000),
-    (document.querySelector(".time").innerHTML =
-      "Spinning in progress...Wait for 3 seconds");
-  winner();
+  }, 3000);
 });
-
+// storing the elements in local storage
 btnAdd.addEventListener("click", () => {
   addItem();
 });
-
+//finding the sum of calculated values
 function select() {
-  if (document.getElementById("val1").selected) {
+  if (document.getElementById("head").selected) {
     currentBet += Number(betMoney.value);
-    console.log(currentBet);
-  } else if (document.getElementById("val2").selected) {
+  } else if (document.getElementById("tail").selected) {
     currentBet1 += Number(betMoney.value);
   }
 }
-
+// listing the elements
 var items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
 
 function addItem() {
@@ -88,17 +88,3 @@ function listItems() {
     ".tails-total"
   ).innerHTML = `Total bets in tails ${currentBet1}`;
 }
-
-function winner() {
-  const coinSpinEl = Math.trunc(Math.random() * 2) + 1;
-  setTimeout(() => {
-    if (coinSpinEl === 1) {
-      document.getElementById("contest").innerHTML = "";
-    } else {
-    }
-  }, 3000);
-}
-
-startNew.addEventListener("click", () => {
-  location.reload();
-});
