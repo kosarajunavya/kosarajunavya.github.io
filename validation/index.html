@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heads or Tails Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <button onClick="window.location.reload()" class="start">
+        Start-New
+      </button>
+    </header>
+    <main>
+      <div class="gameBoard">
+        <div class="coinBlock">
+          <h1 id="result">Heads or Tails</h1>
+          <div><button onclick="flip()" class="spin">Spin</button></div>
+          <p id="time"></p>
+        </div>
+        <div>
+          <h2>Winners</h2>
+          <p id="contest">Contest not yet started</p>
+          <p id="winner"></p>
+        </div>
+      </div>
+      <div>
+        <form id="playerList">
+          <label>Player Name</label>
+          <input id="playerName" name="playerName" type="text" />
+          <label>Bet Money</label>
+          <input id="betMoney" name="betMoney" type="number" />
+          <label>Choice</label>
+          <select name="coin" id="coin">
+            <option value="Heads">H</option>
+            <option value="Tails">T</option>
+          </select>
+          <button onclick="addElements()" id="add">Add</button>
+        </form>
+      </div>
+      <div id="output"></div>
+
+      <div class="playersData">
+        <h2>Current Bets</h2>
+        <p>No bets added yet</p>
+      </div>
+      <div id="output"></div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
