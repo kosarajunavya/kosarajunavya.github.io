@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
   padding: 3rem 0 1rem 0;
 }
-#time {
+.time {
   padding: 0.5rem 0;
   color: #000;
 }
@@ -49,19 +49,21 @@ header {
   padding: 2rem 1rem 0;
 }
 .spin {
-  padding: 0.4rem 0;
   background-color: #ff5959;
   border: 0;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 4rem 0 0 0;
 }
 #listOfPlayers {
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 #playerList label {
   position: absolute;
 }
 #playerList input,
-#coin,
-.add {
+.coin,
+#add {
   position: relative;
   top: 1.5rem;
   margin: 0 0.3rem 0 0;
@@ -76,7 +78,7 @@ header {
   top: 1.4rem;
 }
 .playersData {
-  margin: 3rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
 }
 #contest {
   padding: 1rem 0;

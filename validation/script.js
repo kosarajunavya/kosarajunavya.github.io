@@ -1,68 +1,104 @@
-//1.get the form values from dom
-const playerName = document.getElementById("playerName").value,
-  betMoney = document.getElementById("betMoney").value,
-  coin = document.getElementById("coin").value,
-  add = document.getElementById("add"),
-  output = document.getElementById("output"),
-  newbtn = document.querySelector(".start");
+"use strict";
+const startNew = document.getElementById("start"),
+  coinSpin = document.getElementById("coin-spin"),
+  spinBtn = document.getElementById("spin"),
+  playerName = document.getElementById("player-name"),
+  betMoney = document.getElementById("bet-money"),
+  selectOption = document.getElementById("select"),
+  btnAdd = document.getElementById("add"),
+  listAdd = document.querySelector(".list-add");
 
-//2. print the stored values using local storage
-// function SetPlayerData() {
-//   window.localStorage.setItem(playerName);
-//   window.localStorage.setItem(betMoney);
-//   window.localStorage.setItem(coin);
-// }
+var currentBet = 0;
+var currentBet1 = 0;
+var betMoneyV = Number(betMoney.value);
+var totalMoney = 0;
+var wonMoney = 0;
+var spining = true;
 
-// // To get Student Data
-// function GetStudentData() {
-//   var name = window.localStorage.getItem(playerName);
-//   var money = window.localStorage.getItem(betMoney);
-//   var coin = window.localStorage.getItem(coin);
+//
+spinBtn.addEventListener("click", () => {
+  // creating a random number
 
-//   console.log(name, money, coin);
-
-//   output = output.innerHTML(`${name} : ${money} :${coin}`);
-// }
-/* calculate the total bet amount
-heads = add the amount of every individual who bet on heads from local storage
-tails = add the amount of every individual who bet on tails from local storage
-totalbet = heads+tails
-*/
-
-// 3.flip the coin to get a random side either head or tail
-
-function flip() {
-  document.getElementById("time").innerHTML =
-    "Spinning is in progress...wait for 3 seconds";
-
-  document.getElementById("contest").innerHTML = "Game is in progress";
-  setTimeout(function () {
-    var toss = Math.random() * 2;
-    var floor = Math.floor(toss);
-    if (floor === 0) {
-      document.querySelector("#result").innerHTML = "H";
-      // sum all the person's bet money who opted the choice as heads
-      // declare the win people names and their bet amount
-      // and winner's get the double amount of what they bet(bet amount*2)
-      //winnerPay = heads*2
-    } else if (floor === 1) {
-      document.querySelector("#result").innerHTML = "T";
-      // sum all the person's bet money who opted the choice as tails
-      // declare the win people names and their bet amount
-      // and winner's get the double amount of what they bet(bet amount*2)
-      //winnerPay = tails*2
+  const coinSpinEl = Math.trunc(Math.random() * 2) + 1;
+  setTimeout(() => {
+    if (coinSpinEl === 1) {
+      coinSpin.textContent = "H";
     } else {
-      document.querySelector("#result").innerHTML = "Draw";
+      coinSpin.textContent = "T";
     }
-  }, 3000); //1000 ms = 1 second.
+  }, 3000),
+    (document.querySelector(".time").innerHTML =
+      "Spinning in progress...Wait for 3 seconds");
+  winner();
+});
+
+btnAdd.addEventListener("click", () => {
+  addItem();
+});
+
+function select() {
+  if (document.getElementById("val1").selected) {
+    currentBet += Number(betMoney.value);
+    console.log(currentBet);
+  } else if (document.getElementById("val2").selected) {
+    currentBet1 += Number(betMoney.value);
+  }
 }
 
-// 4.calculate gain or loss for company
-let difference = totalbet - winnerPay;
-if (totalbet > winnerPay) {
-  document.querySelector(".winner").innerHTML = `${difference} is company gain`;
-} else {
-  document.querySelector(".winner").innerHTML = `${difference} is company loos`;
+var items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
+
+function addItem() {
+  var inputBox = document.getElementById("player-name");
+  var item = inputBox.value;
+  var item1 = betMoney.value;
+  var item2 = selectOption.value;
+
+  if (item === "") {
+    return (document.getElementById("list").innerHTML =
+      "you need to add name and bet");
+  }
+  items.push({
+    playerName: item,
+    betMoney: item1,
+    selectOption: item2,
+  });
+  localStorage.setItem("head-or-tails", JSON.stringify(items));
+  listItems();
+  inputBox.value = "";
+  betMoney.value = "";
+  selectOption.value = "";
 }
 
-// 5.Reset the game
+function listItems() {
+  var list = "";
+
+  for (var i = 0; i < items.length; i++) {
+    list += "<li>";
+    list += items[i].value + " ";
+  }
+  document.getElementById("list").innerHTML = "";
+  const add = document.createElement("li");
+  add.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
+  listAdd.appendChild(add);
+  select();
+  document.querySelector(
+    ".heads-total"
+  ).innerHTML = `Total bets in heads ${currentBet}`;
+  document.querySelector(
+    ".tails-total"
+  ).innerHTML = `Total bets in tails ${currentBet1}`;
+}
+
+function winner() {
+  const coinSpinEl = Math.trunc(Math.random() * 2) + 1;
+  setTimeout(() => {
+    if (coinSpinEl === 1) {
+      document.getElementById("contest").innerHTML = "";
+    } else {
+    }
+  }, 3000);
+}
+
+startNew.addEventListener("click", () => {
+  location.reload();
+});

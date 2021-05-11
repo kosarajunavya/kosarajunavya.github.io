@@ -4,50 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heads or Tails Game</title>
     <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
   </head>
+
   <body>
     <header>
-      <button onClick="window.location.reload()" class="start">
-        Start-New
-      </button>
+      <div class="start-btn">
+        <button href="#" id="start--new" class="start">Start New</button>
+      </div>
     </header>
     <main>
       <div class="gameBoard">
         <div class="coinBlock">
-          <h1 id="result">Heads or Tails</h1>
-          <div><button onclick="flip()" class="spin">Spin</button></div>
-          <p id="time"></p>
+          <h1 id="coin-spin">Heads or Tails</h1>
+          <button id="spin" class="spin">Spin</button>
+          <p class="time"></p>
         </div>
-        <div>
-          <h2>Winners</h2>
-          <p id="contest">Contest not yet started</p>
-          <p id="winner"></p>
-        </div>
-      </div>
-      <div>
-        <form id="playerList">
-          <label>Player Name</label>
-          <input id="playerName" name="playerName" type="text" />
-          <label>Bet Money</label>
-          <input id="betMoney" name="betMoney" type="number" />
-          <label>Choice</label>
-          <select name="coin" id="coin">
-            <option value="Heads">H</option>
-            <option value="Tails">T</option>
-          </select>
-          <button onclick="addElements()" id="add">Add</button>
-        </form>
-      </div>
-      <div id="output"></div>
 
-      <div class="playersData">
-        <h2>Current Bets</h2>
-        <p>No bets added yet</p>
+        <div class="winner" id="winner">
+          <h3>Winners</h3>
+          <div class="content-box">
+            <div class="contest-body" id="contest-body">
+              <p id="contest">Contest not started yet</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="output"></div>
+
+      <form id="playerList">
+        <label> Player-Name</label>
+        <input type="text" id="player-name" required />
+        <label>Bet-Money </label>
+        <input type="number" id="bet-money" required />
+        <label>Choice</label>
+        <select id="select" class="coin">
+          <option value=""></option>
+          <option id="val1" value="H">H</option>
+          <option id="val2" value="T">T</option>
+        </select>
+        <button id="add">Add</button>
+      </form>
+      <div class="playersData">
+        <h3>Current Bets</h3>
+        <div class="list-add">
+          <p id="list" class="list">No bets added yet</p>
+        </div>
+        <div class="total-bet">
+          <p class="heads-total"></p>
+          <p class="tails-total"></p>
+        </div>
+      </div>
     </main>
+
     <script src="./script.js"></script>
   </body>
 </html>
