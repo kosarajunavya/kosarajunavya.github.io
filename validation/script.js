@@ -8,6 +8,7 @@ const startNew = document.getElementById("start"),
   selectOption = document.getElementById("select"),
   btnAdd = document.getElementById("add"),
   listAdd = document.querySelector(".list-add"),
+  winnerAdd = document.getElementById("winnerAdd"),
   items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
 
 // 2. local storage part
@@ -32,7 +33,15 @@ function spin() {
   let payTail = betOnTail * 2;
   setTimeout(() => {
     if (element === "H") {
-      coinSpin.textContent = "H";
+      // var listw = "";
+      // for (var i = 0; i < items.length; i++) {
+      //   listw += "<li>";
+      //   listw += items[i].value + " ";
+      //   console.log(listw, listw[i]);
+      // }
+      // let winnerList = document.createElement("li");
+      // winnerList.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
+      // winnerAdd.appendChild(winnerList);
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in heads ${betOnHead}`;
@@ -40,24 +49,33 @@ function spin() {
         "Total paid to winners" + Number(payHead);
       if (payHead < total) {
         document.getElementById("gainOrLoss").textContent =
-          payHead - total + "is company gain";
+          total - payHead + "is company gain";
       } else {
         document.getElementById("gainOrLoss").textContent =
-          -(payHead - total) + "is company loss";
+          total - payHead + "is company loss";
       }
     } else {
       coinSpin.textContent = "T";
+      // var listw = "";
+      // for (var i = 0; i < items.length; i++) {
+      //   listw += "<li>";
+      //   listw += items[i].value + " ";
+      //   console.log(listw, listw[i]);
+      // }
+      // let winnerList = document.createElement("li");
+      // winnerList.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
+      // winnerAdd.appendChild(winnerList);
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in tails ${betOnTail}`;
       document.getElementById("pay").textContent =
         "Total paid to winners" + Number(payTail);
-      if (payTail > total) {
+      if (payTail < total) {
         document.getElementById("gainOrLoss").textContent =
-          payTail - total + "is company gain";
+          total - payTail + "is company gain";
       } else {
         document.getElementById("gainOrLoss").textContent =
-          -(payTail - total) + "is company loss";
+          total - payTail + "is company loss";
       }
     }
   }, 3000);
@@ -77,8 +95,7 @@ function select() {
 // listing the elements
 
 function addItem() {
-  var inputBox = document.getElementById("player-name");
-  var item = inputBox.value;
+  var item = playerName.value;
   var item1 = betMoney.value;
   var item2 = selectOption.value;
 
@@ -93,7 +110,7 @@ function addItem() {
   });
   localStorage.setItem("head-or-tails", JSON.stringify(items));
   listItems();
-  inputBox.value = "";
+  playerName.value = "";
   betMoney.value = "";
   selectOption.value = "";
 }
