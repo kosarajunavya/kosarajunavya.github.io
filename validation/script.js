@@ -30,13 +30,14 @@ function spin() {
   document.getElementById("contest").innerHTML = "Game is in progress";
   let chooseOption = ["H", "T"];
   let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
-  document.getElementById("coin-spin").innerHTML = element;
   let total = betOnHead + betOnTail;
   // document.getElementById("totalAmount").textContent =
   //   "bet amount of all the players" + Number(total);
   let payHead = betOnHead * 2;
   let payTail = betOnTail * 2;
   setTimeout(() => {
+    document.getElementById("coin-spin").innerHTML = element;
+
     if (element === "H") {
       var listw = "";
       for (var i = 0; i < items.length; i++) {
