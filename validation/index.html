@@ -18,7 +18,7 @@
       <div class="gameBoard">
         <div class="coinBlock">
           <h1 id="coin-spin">Heads or Tails</h1>
-          <button id="spin" class="spin">Spin</button>
+          <button onclick="spin()" id="spin" class="spin">Spin</button>
           <p class="time"></p>
         </div>
 
@@ -27,6 +27,11 @@
           <div class="content-box">
             <div class="contest-body" id="contest-body">
               <p id="contest">Contest not started yet</p>
+            </div>
+            <div>
+              <p id="winners"></p>
+              <p id="pay"></p>
+              <p id="gainOrLoss"></p>
             </div>
           </div>
         </div>
@@ -53,9 +58,7 @@
         <div class="total-bet">
           <p class="heads-total"></p>
           <p class="tails-total"></p>
-        </div>
-        <div>
-          <p id="winners"></p>
+          <p class="totalAmount"></p>
         </div>
       </div>
     </main>

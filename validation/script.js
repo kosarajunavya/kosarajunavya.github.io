@@ -7,18 +7,20 @@ const startNew = document.getElementById("start"),
   betMoney = document.getElementById("bet-money"),
   selectOption = document.getElementById("select"),
   btnAdd = document.getElementById("add"),
-  listAdd = document.querySelector(".list-add");
+  listAdd = document.querySelector(".list-add"),
+  items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
+
 // 2. local storage part
 // 2.a. first initialise the default values
-var currentBet = 0;
-var currentBet1 = 0;
+var betOnHead = 0;
+var betOnTail = 0;
 var betMoneyV = Number(betMoney.value);
 var totalMoney = 0;
 var wonMoney = 0;
 var spining = true;
 
 // getting head or tail
-spinBtn.addEventListener("click", () => {
+function spin() {
   document.querySelector(".time").innerHTML =
     "Spinning in progress...Wait for 3 seconds";
   document.getElementById("contest").innerHTML = "Game is in progress";
@@ -27,11 +29,21 @@ spinBtn.addEventListener("click", () => {
   setTimeout(() => {
     if (element === "H") {
       coinSpin.textContent = "H";
+      document.getElementById(
+        "winners"
+      ).innerHTML = `Total bets in heads ${betOnHead}`;
+      // let payHead = `${betOnHead}*2`;
+      // document.getElementById("pay").innerHTML = Number(payHead);
     } else {
       coinSpin.textContent = "T";
+      document.getElementById(
+        "winners"
+      ).innerHTML = `Total bets in tails ${betOnTail}`;
+      // let payTail = `${betOnTail}*2`;
+      // document.getElementById("pay").innerHTML = Number(payTail);
     }
   }, 3000);
-});
+}
 // storing the elements in local storage
 btnAdd.addEventListener("click", () => {
   addItem();
@@ -39,13 +51,12 @@ btnAdd.addEventListener("click", () => {
 //finding the sum of calculated values
 function select() {
   if (document.getElementById("head").selected) {
-    currentBet += Number(betMoney.value);
+    betOnHead += Number(betMoney.value);
   } else if (document.getElementById("tail").selected) {
-    currentBet1 += Number(betMoney.value);
+    betOnTail += Number(betMoney.value);
   }
 }
 // listing the elements
-var items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
 
 function addItem() {
   var inputBox = document.getElementById("player-name");
@@ -83,8 +94,29 @@ function listItems() {
   select();
   document.querySelector(
     ".heads-total"
-  ).innerHTML = `Total bets in heads ${currentBet}`;
+  ).innerHTML = `Total bets in heads ${betOnHead}`;
   document.querySelector(
     ".tails-total"
-  ).innerHTML = `Total bets in tails ${currentBet1}`;
+  ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
+// let total = `${betOnHead} + ${betOnTail}`;
+// document.getElementById("totalAmount").innerHTML = total;
+// if (payHead > total) {
+//   document.getElementById(
+//     "gainOrLoss"
+//   ).innerHTML = `${payHead}-${total} to the company`;
+// } else {
+//   document.getElementById(
+//     "gainOrLoss"
+//   ).innerHTML = `${payHead}-${total} to the company`;
+// }
+
+// if (payTail > total) {
+//   document.getElementById(
+//     "gainOrLoss"
+//   ).innerHTML = `${payTail}-${total} to the company`;
+// } else {
+//   document.getElementById(
+//     "gainOrLoss"
+//   ).innerHTML = `${payTail}-${total} to the company`;
+// }
