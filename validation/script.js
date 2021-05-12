@@ -149,4 +149,5 @@ function listItems() {
 function deleteItems() {
   // Clear local storage items.
   localStorage.clear();
+  location.reload();
 }
