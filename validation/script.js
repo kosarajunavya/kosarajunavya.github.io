@@ -30,6 +30,7 @@ function spin() {
   document.getElementById("contest").innerHTML = "Game is in progress";
   let chooseOption = ["H", "T"];
   let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
+  document.getElementById("coin-spin").innerHTML = element;
   let total = betOnHead + betOnTail;
   // document.getElementById("totalAmount").textContent =
   //   "bet amount of all the players" + Number(total);
