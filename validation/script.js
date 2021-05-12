@@ -32,15 +32,15 @@ function spin() {
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in heads ${betOnHead}`;
-      // let payHead = `${betOnHead}*2`;
-      // document.getElementById("pay").innerHTML = Number(payHead);
+      let payHead = `${betOnHead}*2`;
+      document.getElementById("pay").innerHTML = Number(payHead);
     } else {
       coinSpin.textContent = "T";
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in tails ${betOnTail}`;
-      // let payTail = `${betOnTail}*2`;
-      // document.getElementById("pay").innerHTML = Number(payTail);
+      let payTail = `${betOnTail}*2`;
+      document.getElementById("pay").innerHTML = Number(payTail);
     }
   }, 3000);
 }
@@ -99,24 +99,24 @@ function listItems() {
     ".tails-total"
   ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
-// let total = `${betOnHead} + ${betOnTail}`;
-// document.getElementById("totalAmount").innerHTML = total;
-// if (payHead > total) {
-//   document.getElementById(
-//     "gainOrLoss"
-//   ).innerHTML = `${payHead}-${total} to the company`;
-// } else {
-//   document.getElementById(
-//     "gainOrLoss"
-//   ).innerHTML = `${payHead}-${total} to the company`;
-// }
+let total = `${betOnHead} + ${betOnTail}`;
+document.getElementById("totalAmount").innerHTML = total;
+if (payHead > total) {
+  document.getElementById(
+    "gainOrLoss"
+  ).innerHTML = `${payHead}-${total} to the company`;
+} else {
+  document.getElementById(
+    "gainOrLoss"
+  ).innerHTML = `${payHead}-${total} to the company`;
+}
 
-// if (payTail > total) {
-//   document.getElementById(
-//     "gainOrLoss"
-//   ).innerHTML = `${payTail}-${total} to the company`;
-// } else {
-//   document.getElementById(
-//     "gainOrLoss"
-//   ).innerHTML = `${payTail}-${total} to the company`;
-// }
+if (payTail > total) {
+  document.getElementById(
+    "gainOrLoss"
+  ).innerHTML = `${payTail}-${total} to the company`;
+} else {
+  document.getElementById(
+    "gainOrLoss"
+  ).innerHTML = `${payTail}-${total} to the company`;
+}
