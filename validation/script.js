@@ -27,30 +27,38 @@ function spin() {
   document.getElementById("contest").innerHTML = "Game is in progress";
   let chooseOption = ["H", "T"];
   let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
+  let total = betOnHead + betOnTail;
+  let payHead = betOnHead * 2;
+  let payTail = betOnTail * 2;
   setTimeout(() => {
-    let total = betOnHead + betOnTail;
     if (element === "H") {
       coinSpin.textContent = "H";
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in heads ${betOnHead}`;
-      let payHead = betOnHead * 2;
-      if (payHead > total) {
-        let gain = payHead - total;
-        console.log(gain);
-        document.getElementById("payOrLoss").innerHTML = gain;
-      }
       document.getElementById("pay").textContent =
         "Total paid to winners" + Number(payHead);
+      if (payHead < total) {
+        document.getElementById("gainOrLoss").textContent =
+          payHead - total + "is company gain";
+      } else {
+        document.getElementById("gainOrLoss").textContent =
+          -(payHead - total) + "is company loss";
+      }
     } else {
       coinSpin.textContent = "T";
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in tails ${betOnTail}`;
-      let payTail = betOnTail * 2;
-
       document.getElementById("pay").textContent =
         "Total paid to winners" + Number(payTail);
+      if (payTail > total) {
+        document.getElementById("gainOrLoss").textContent =
+          payTail - total + "is company gain";
+      } else {
+        document.getElementById("gainOrLoss").textContent =
+          -(payTail - total) + "is company loss";
+      }
     }
   }, 3000);
 }
