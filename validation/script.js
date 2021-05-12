@@ -18,6 +18,7 @@ var betMoneyV = Number(betMoney.value);
 var totalMoney = 0;
 var wonMoney = 0;
 var spining = true;
+var total = 0;
 
 // getting head or tail
 function spin() {
@@ -27,20 +28,29 @@ function spin() {
   let chooseOption = ["H", "T"];
   let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
   setTimeout(() => {
+    let total = betOnHead + betOnTail;
     if (element === "H") {
       coinSpin.textContent = "H";
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in heads ${betOnHead}`;
-      let payHead = `${betOnHead}*2`;
-      document.getElementById("pay").innerHTML = Number(payHead);
+      let payHead = betOnHead * 2;
+      if (payHead > total) {
+        let gain = payHead - total;
+        console.log(gain);
+        document.getElementById("payOrLoss").innerHTML = gain;
+      }
+      document.getElementById("pay").textContent =
+        "Total paid to winners" + Number(payHead);
     } else {
       coinSpin.textContent = "T";
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in tails ${betOnTail}`;
-      let payTail = `${betOnTail}*2`;
-      document.getElementById("pay").innerHTML = Number(payTail);
+      let payTail = betOnTail * 2;
+
+      document.getElementById("pay").textContent =
+        "Total paid to winners" + Number(payTail);
     }
   }, 3000);
 }
@@ -79,6 +89,7 @@ function addItem() {
   betMoney.value = "";
   selectOption.value = "";
 }
+localStorage.clear();
 
 function listItems() {
   var list = "";
@@ -99,24 +110,4 @@ function listItems() {
     ".tails-total"
   ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
-let total = `${betOnHead} + ${betOnTail}`;
-document.getElementById("totalAmount").innerHTML = total;
-if (payHead > total) {
-  document.getElementById(
-    "gainOrLoss"
-  ).innerHTML = `${payHead}-${total} to the company`;
-} else {
-  document.getElementById(
-    "gainOrLoss"
-  ).innerHTML = `${payHead}-${total} to the company`;
-}
-
-if (payTail > total) {
-  document.getElementById(
-    "gainOrLoss"
-  ).innerHTML = `${payTail}-${total} to the company`;
-} else {
-  document.getElementById(
-    "gainOrLoss"
-  ).innerHTML = `${payTail}-${total} to the company`;
-}
+// document.getElementById("totalAmount").textContent = total;
