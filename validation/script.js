@@ -24,12 +24,13 @@ var spining = true;
 var total = 0;
 
 // getting head or tail
+let chooseOption = ["H", "T"];
+let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
+
 function spin() {
   document.querySelector(".time").innerHTML =
     "Spinning in progress...Wait for 3 seconds";
   document.getElementById("contest").innerHTML = "Game is in progress";
-  let chooseOption = ["H", "T"];
-  let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
   let total = betOnHead + betOnTail;
   let payHead = betOnHead * 2;
   let payTail = betOnTail * 2;
@@ -72,10 +73,14 @@ function spin() {
           total - payTail + "is company loss";
       }
     }
-    element = items.filter((bet) => bet.selectOption === "H");
+    element = items.filter(
+      (bet) =>
+        bet.selectOption ===
+        chooseOption[Math.floor(Math.random() * chooseOption.length)]
+    );
     if (element) {
       var sum = 0;
-      var resDiv = "<div class='li-style'><ul>";
+      var resDiv = "<div><ul>";
       element.forEach(ResVal);
       function ResVal(item, index) {
         sum = sum + Number(item.betMoney);
