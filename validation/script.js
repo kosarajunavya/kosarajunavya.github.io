@@ -31,23 +31,11 @@ function spin() {
   let chooseOption = ["H", "T"];
   let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
   let total = betOnHead + betOnTail;
-  // document.getElementById("totalAmount").textContent =
-  //   "bet amount of all the players" + Number(total);
   let payHead = betOnHead * 2;
   let payTail = betOnTail * 2;
   setTimeout(() => {
     document.getElementById("coin-spin").innerHTML = element;
-
     if (element === "H") {
-      var listw = "";
-      for (var i = 0; i < items.length; i++) {
-        listw += "<li>";
-        listw += items[i].value + " ";
-        console.log(listw, listw[i]);
-      }
-      let winnerList = document.createElement("li");
-      winnerList.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
-      winnerAdd.appendChild(winnerList);
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in heads ${betOnHead}`;
@@ -84,8 +72,27 @@ function spin() {
           total - payTail + "is company loss";
       }
     }
+    element = items.filter((bet) => bet.selectOption === "H");
+    if (element) {
+      var sum = 0;
+      var resDiv = "<div class='li-style'><ul>";
+      element.forEach(ResVal);
+      function ResVal(item, index) {
+        sum = sum + Number(item.betMoney);
+        resDiv +=
+          "<li>" +
+          item.playerName +
+          " " +
+          Number(item.betMoney) * 2 +
+          `(won ${item.betMoney})` +
+          "</li>";
+      }
+      resDiv += "</ul></div>";
+      document.getElementById("contest").innerHTML = resDiv;
+    }
   }, 3000);
 }
+
 // storing the elements in local storage
 
 //finding the sum of calculated values
@@ -138,4 +145,8 @@ function listItems() {
   document.querySelector(
     ".tails-total"
   ).innerHTML = `Total bets in tails ${betOnTail}`;
+}
+function deleteItems() {
+  // Clear local storage items.
+  localStorage.clear();
 }
