@@ -1,6 +1,6 @@
 "use strict";
 //1.get all the input values from dom
-const startNew = document.getElementById("start"),
+const startNew = document.getElementById("startNew"),
   coinSpin = document.getElementById("coin-spin"),
   spinBtn = document.getElementById("spin"),
   playerName = document.getElementById("player-name"),
@@ -8,11 +8,13 @@ const startNew = document.getElementById("start"),
   selectOption = document.getElementById("select"),
   btnAdd = document.getElementById("add"),
   listAdd = document.querySelector(".list-add"),
-  winnerAdd = document.getElementById("winnerAdd"),
-  items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
+  winnerAdd = document.getElementById("winnerAdd");
+
+var items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
 
 // 2. local storage part
 // 2.a. first initialise the default values
+
 var betOnHead = 0;
 var betOnTail = 0;
 var betMoneyV = Number(betMoney.value);
@@ -29,19 +31,21 @@ function spin() {
   let chooseOption = ["H", "T"];
   let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
   let total = betOnHead + betOnTail;
+  // document.getElementById("totalAmount").textContent =
+  //   "bet amount of all the players" + Number(total);
   let payHead = betOnHead * 2;
   let payTail = betOnTail * 2;
   setTimeout(() => {
     if (element === "H") {
-      // var listw = "";
-      // for (var i = 0; i < items.length; i++) {
-      //   listw += "<li>";
-      //   listw += items[i].value + " ";
-      //   console.log(listw, listw[i]);
-      // }
-      // let winnerList = document.createElement("li");
-      // winnerList.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
-      // winnerAdd.appendChild(winnerList);
+      var listw = "";
+      for (var i = 0; i < items.length; i++) {
+        listw += "<li>";
+        listw += items[i].value + " ";
+        console.log(listw, listw[i]);
+      }
+      let winnerList = document.createElement("li");
+      winnerList.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
+      winnerAdd.appendChild(winnerList);
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in heads ${betOnHead}`;
@@ -56,15 +60,15 @@ function spin() {
       }
     } else {
       coinSpin.textContent = "T";
-      // var listw = "";
-      // for (var i = 0; i < items.length; i++) {
-      //   listw += "<li>";
-      //   listw += items[i].value + " ";
-      //   console.log(listw, listw[i]);
-      // }
-      // let winnerList = document.createElement("li");
-      // winnerList.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
-      // winnerAdd.appendChild(winnerList);
+      var listw = "";
+      for (var i = 0; i < items.length; i++) {
+        listw += "<li>";
+        listw += items[i].value + " ";
+        console.log(listw, listw[i]);
+      }
+      let winnerList = document.createElement("li");
+      winnerList.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
+      winnerAdd.appendChild(winnerList);
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in tails ${betOnTail}`;
@@ -81,9 +85,7 @@ function spin() {
   }, 3000);
 }
 // storing the elements in local storage
-btnAdd.addEventListener("click", () => {
-  addItem();
-});
+
 //finding the sum of calculated values
 function select() {
   if (document.getElementById("head").selected) {
@@ -135,4 +137,3 @@ function listItems() {
     ".tails-total"
   ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
-// document.getElementById("totalAmount").textContent = total;

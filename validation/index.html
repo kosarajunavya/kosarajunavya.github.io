@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Heads or tails game</title>
   </head>
 
   <body>
     <header>
       <div class="start-btn">
-        <button href="#" id="start--new" class="start">Start New</button>
+        <button type="reset" id="startNew" class="start">Start New</button>
       </div>
     </header>
     <main>
@@ -50,7 +50,7 @@
           <option id="head" value="H">H</option>
           <option id="tail" value="T">T</option>
         </select>
-        <button id="add">Add</button>
+        <button onclick="addItem()" id="add">Add</button>
       </form>
       <div class="playersData">
         <h3>Current Bets</h3>
