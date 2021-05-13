@@ -34,6 +34,7 @@ function spin() {
   let payHead = betOnHead * 2;
   let payTail = betOnTail * 2;
   setTimeout(() => {
+    document.querySelector(".time").innerHTML = "";
     document.getElementById("coin-spin").innerHTML = element;
     if (element === "H") {
       document.getElementById(
@@ -146,7 +147,5 @@ function listItems() {
   ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
 function deleteItems() {
-  // Clear local storage items.
   localStorage.clear();
-  location.reload();
 }
