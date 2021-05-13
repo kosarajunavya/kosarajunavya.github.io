@@ -33,7 +33,6 @@
 //   }
 //   return result;
 // }
-
 // var firstNumber = document.getElementById("firstNumber"),
 //   secondNumber = document.getElementById("secondNumber"),
 //   addition = document.getElementById("add"),
@@ -71,15 +70,43 @@
 // }
 
 $(document).ready(function () {
-  $("#calc").on("click", function () {
-    if ($('input[name="name_of_your_radiobutton"]:checked').val()) {
+  $(".calc").on("click", function () {
+    if ($("#add").is(":checked")) {
       sum();
     }
+    if ($("#sub").is(":checked")) {
+      diff();
+    }
+    if ($("#mul").is(":checked")) {
+      multiply();
+    }
+    if ($("#div").is(":checked")) {
+      divide();
+    }
   });
+
   function sum() {
     var a = parseInt($("#firstNumber").val());
     var b = parseInt($("#secondNumber").val());
     var sum = a + b;
-    $("#ans").val(sum);
+    $("#ans").html("sum is " + sum);
+  }
+  function diff() {
+    var a = parseInt($("#firstNumber").val());
+    var b = parseInt($("#secondNumber").val());
+    var diff = a - b;
+    $("#ans").html("Difference is " + diff);
+  }
+  function multiply() {
+    var a = parseInt($("#firstNumber").val());
+    var b = parseInt($("#secondNumber").val());
+    var multiply = a * b;
+    $("#ans").html("product is " + multiply);
+  }
+  function divide() {
+    var a = parseInt($("#firstNumber").val());
+    var b = parseInt($("#secondNumber").val());
+    var divide = a / b;
+    $("#ans").html("result is " + divide);
   }
 });
