@@ -138,5 +138,5 @@ function listItems() {
   ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
 function deleteItems() {
-  localStorage.clear();
+  localStorage.removeItem("head-or-tails");
 }
