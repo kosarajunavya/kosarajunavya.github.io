@@ -50,15 +50,6 @@ function spin() {
           total - payHead + "is company loss";
       }
     } else {
-      coinSpin.textContent = "T";
-      var listw = "";
-      for (var i = 0; i < items.length; i++) {
-        listw += "<li>";
-        listw += items[i].value + " ";
-      }
-      let winnerList = document.createElement("li");
-      winnerList.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
-      winnerAdd.appendChild(winnerList);
       document.getElementById(
         "winners"
       ).innerHTML = `Total bets in tails ${betOnTail}`;
@@ -72,8 +63,8 @@ function spin() {
           total - payTail + "is company loss";
       }
     }
-    element = items.filter((bet) => bet.selectOption === "H");
-    if (element != "H") {
+    element = items.filter((bet) => bet.selectOption === element);
+    if (element) {
       var sum = 0;
       var resDiv = "<div class='li-style'><ul>";
       element.forEach(ResVal);
