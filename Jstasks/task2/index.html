@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>properties of a number</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div>
-        input: <input type="text" name="value" id="user-input">
-        <input type="button" value="Find" onclick="finding()">
-
+      input: <input type="text" name="value" id="user-input" />
+      <input type="button" value="Find" onclick="finding()" />
     </div>
     <p>Results :</p>
     <p id="result1"></p>
@@ -20,68 +19,7 @@
     <p id="result4"></p>
     <p id="result5"></p>
     <p id="result6"></p>
-   
-    <script>
-        function finding() {
-            var userInput = document.getElementById('user-input').value;
-            var userInputArray = userInput.split(',');
-            
-            var biggestNumber = Math.max(...userInputArray);
-            var smallestNumber = Math.min(...userInputArray);
-            var evenNumbers = findEvens(userInputArray);
-            var oddNumbers = findOdd(userInputArray);
-            var positiveNumbers = findPos(userInputArray);
-            var negativeNumbers = findNeg(userInputArray);
 
-            document.getElementById('result1').innerHTML = "biggestNumber is : " + biggestNumber;
-            document.getElementById('result2').innerHTML = "smallestNumber is : " + smallestNumber;
-            document.getElementById('result3').innerHTML = "evenNumbers are : " + evenNumbers;
-            document.getElementById('result4').innerHTML = "oddNumbers are: " + oddNumbers;
-            document.getElementById('result5').innerHTML = "positiveNumbers are: " + positiveNumbers;
-            document.getElementById('result6').innerHTML = "negativeNumbers are: " + negativeNumbers;
-            
-            function findEvens(a) {
-                var ar = [];
-                for (var i = 0; i < a.length; i++) {
-                    if (a[i] % 2 === 0) { // index is even
-                        ar.push(a[i]);
-                    }
-                }
-
-                return ar;
-            }
-
-            function findOdd(a) {
-                var ar = [];
-                for (var i = 0; i < a.length; i++) {
-                    if (a[i] % 2 !== 0) { // index is even
-                        ar.push(a[i]);
-                    }
-                }
-
-                return ar;
-            }
-            function findPos(a){
-                var ar = [];
-                for (var i = 0; i < a.length; i++) {
-                    if (a[i] > 0) { 
-                        ar.push(a[i]);
-                    }
-                }
-
-                return ar;
-            }
-            function findNeg(a){
-                var ar = [];
-                for (var i = 0; i < a.length; i++) {
-                    if (a[i] < 0) { 
-                        ar.push(a[i]);
-                    }
-                }
-
-                return ar;
-            }
-        }
-    </script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
