@@ -86,3 +86,20 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 setTime();
 
 setInterval(setTime, 1000);
+
+const url = "https://api.quotable.io/random";
+function generateQuote() {
+  fetch(url)
+    .then(function (data) {
+      return data.json();
+    })
+    .then(function (data) {
+      document.getElementById("quote").innerHTML = data.content;
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+}
+// Repeat generateQuote() every 10 seconds
+setInterval(generateQuote(), 10000);
+//Note - 10000 milliseconds = 10
