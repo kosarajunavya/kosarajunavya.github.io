@@ -1,31 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div>Birthday: <input type="date" id="myDate" /></div>
     <div>
-        Birthday: <input type="date" id="myDate">    </div>
-    <div>
-        <input type="button" value="Find" onclick="calcAge()">
+      <input type="button" value="Find" onclick="calcAge()" />
     </div>
     <p>Results :</p>
-    <p id="result"></p>
-    <p id="result1"></p>
-    <script>
-        function calcAge(){
-            var dob = document.getElementById('myDate').value;
-            const getAge = birthDate => Math.abs((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
-            var age = getAge(dob);
-            var ageMin = age*525600; //(365*24*60)
-            var ageSec = ageMin*60;
-            document.getElementById('result').innerHTML = "age in minutes :  " + ageMin;
-            document.getElementById('result1').innerHTML = "age in seconds : " + ageSec;
-        }
-    
-    </script>
-</body>
+    <p id="ageInMinutes"></p>
+    <p id="ageInSeconds"></p>
+    <script src="./script.js"></script>
+  </body>
 </html>
