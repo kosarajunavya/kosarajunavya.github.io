@@ -1,4 +1,4 @@
-function finding() {
+function propertiesOfNumber() {
   var userInput = document.getElementById("user-input").value,
     userInputArray = userInput.split(","),
     biggestNumber = Math.max(...userInputArray),
@@ -7,19 +7,6 @@ function finding() {
     oddNumbers = findOdd(userInputArray),
     positiveNumbers = findPos(userInputArray),
     negativeNumbers = findNeg(userInputArray);
-
-  document.getElementById("result1").innerHTML =
-    "biggestNumber is : " + biggestNumber;
-  document.getElementById("result2").innerHTML =
-    "smallestNumber is : " + smallestNumber;
-  document.getElementById("result3").innerHTML =
-    "evenNumbers are : " + evenNumbers;
-  document.getElementById("result4").innerHTML =
-    "oddNumbers are: " + oddNumbers;
-  document.getElementById("result5").innerHTML =
-    "positiveNumbers are: " + positiveNumbers;
-  document.getElementById("result6").innerHTML =
-    "negativeNumbers are: " + negativeNumbers;
 
   function findEvens(a) {
     var ar = [];
@@ -64,4 +51,16 @@ function finding() {
 
     return ar;
   }
+  document.getElementById("biggestNumber").innerHTML =
+    "biggestNumber is : " + biggestNumber;
+  document.getElementById("smallestNumber").innerHTML =
+    "smallestNumber is : " + smallestNumber;
+  document.getElementById("evenNumbers").innerHTML =
+    "evenNumbers are : " + evenNumbers;
+  document.getElementById("oddNumbers").innerHTML =
+    "oddNumbers are: " + oddNumbers;
+  document.getElementById("positiveNumbers").innerHTML =
+    "positiveNumbers are: " + positiveNumbers;
+  document.getElementById("negativeNumbers").innerHTML =
+    "negativeNumbers are: " + negativeNumbers;
 }
