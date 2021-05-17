@@ -116,7 +116,7 @@ function addItem() {
   betMoney.value = "";
   selectOption.value = "";
 }
-localStorage.clear();
+// localStorage.clear();
 
 function listItems() {
   var list = "";
@@ -137,6 +137,7 @@ function listItems() {
     ".tails-total"
   ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
+
 function deleteItems() {
   localStorage.removeItem("head-or-tails");
   document.querySelector(".time").innerHTML = "";
@@ -151,6 +152,7 @@ function deleteItems() {
   document.getElementById("winners").innerHTML = "Contest not yet started";
   document.getElementById("coin-spin").innerHTML = "Heads or Tails";
   document.getElementById("list").innerHTML = "No bets added";
+  Location.reload();
 }
 document.onkeydown = function () {
   switch (event.keyCode) {
