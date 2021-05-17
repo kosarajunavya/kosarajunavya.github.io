@@ -140,7 +140,6 @@ function listItems() {
 function deleteItems() {
   localStorage.removeItem("head-or-tails");
   document.querySelector(".time").innerHTML = "";
-  document.getElementById("contest").innerHTML = "Contest not yet started";
   const add = document.createElement("li");
   add.innerHTML = ``;
   document.querySelector(".heads-total").innerHTML = "";
@@ -149,8 +148,9 @@ function deleteItems() {
   document.getElementById("gainOrLoss").textContent = "";
   document.querySelector(".list-add").textContent = "";
   document.getElementById("pay").textContent = "";
-  document.getElementById("winners").innerHTML = "";
+  document.getElementById("winners").innerHTML = "Contest not yet started";
   document.getElementById("coin-spin").innerHTML = "Heads or Tails";
+  document.getElementById("list").innerHTML = "No bets added";
 }
 document.onkeydown = function () {
   switch (event.keyCode) {
