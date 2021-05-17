@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-  
-   <div>
-    <textarea type="text" name="value" placeholder="enter the text" id="user-input" cols="100" rows="5"></textarea>
-   </div>
+  </head>
+  <body>
+    <div>
+      <textarea
+        type="text"
+        name="value"
+        placeholder="enter the text"
+        id="user-input"
+        cols="100"
+        rows="5"
+      ></textarea>
+    </div>
 
-   <div>
-    <input type="button" value="Find" onclick="count()">
-   </div>
+    <div>
+      <button onclick="count()">find</button>
+    </div>
 
     <p>Results :</p>
-    <p id="result"></p>
-    <p id="result1"></p>
-    <p id="result2"></p>
-    <script>
-        function count() {
-            var userInput = document.getElementById('user-input').value;
-            var noWords = countWords(userInput);
-            var noChars = userInput.length;
-            var spaceCount = (userInput.split(" ").length - 1);
-            document.getElementById('result').innerHTML = "No of words: " + noWords;
-            document.getElementById('result1').innerHTML = "No of Chars: " + noChars;
-            document.getElementById('result2').innerHTML = "No of Spaces: " + spaceCount;
-        }
-        function countWords(str) {
-            str = str.replace(/(^\s*)|(\s*$)/gi, "");
-            str = str.replace(/[ ]{2,}/gi, " ");
-            str = str.replace(/\n /, "\n");
-            return str.split(' ').length;
-        }
-    </script>
-</body>
+    <p id="numberOfWords"></p>
+    <p id="numberOfChars"></p>
+    <p id="spaceCount"></p>
+    <script src="./script.js"></script>
+  </body>
 </html>
