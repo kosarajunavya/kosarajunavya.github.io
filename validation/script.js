@@ -152,3 +152,17 @@ function deleteItems() {
   document.getElementById("winners").innerHTML = "";
   document.getElementById("coin-spin").innerHTML = "Heads or Tails";
 }
+document.onkeydown = function () {
+  switch (event.keyCode) {
+    case 116: //F5 button
+      event.returnValue = false;
+      event.keyCode = 0;
+      return false;
+    case 82: //R button
+      if (event.ctrlKey) {
+        event.returnValue = false;
+        event.keyCode = 0;
+        return false;
+      }
+  }
+};
