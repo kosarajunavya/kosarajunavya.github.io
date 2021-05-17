@@ -11,6 +11,8 @@ const startNew = document.getElementById("startNew"),
   winnerAdd = document.getElementById("winnerAdd");
 
 var items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
+let chooseOption = ["H", "T"];
+let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
 
 // 2. local storage part
 // 2.a. first initialise the default values
@@ -28,8 +30,6 @@ function spin() {
   document.querySelector(".time").innerHTML =
     "Spinning in progress...Wait for 3 seconds";
   document.getElementById("contest").innerHTML = "Game is in progress";
-  let chooseOption = ["H", "T"];
-  let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
   let total = betOnHead + betOnTail;
   let payHead = betOnHead * 2;
   let payTail = betOnTail * 2;
@@ -139,4 +139,16 @@ function listItems() {
 }
 function deleteItems() {
   localStorage.removeItem("head-or-tails");
+  document.querySelector(".time").innerHTML = "";
+  document.getElementById("contest").innerHTML = "Contest not yet started";
+  const add = document.createElement("li");
+  add.innerHTML = ``;
+  document.querySelector(".heads-total").innerHTML = "";
+  document.querySelector(".tails-total").innerHTML = ``;
+  document.getElementById("contest").innerHTML = "";
+  document.getElementById("gainOrLoss").textContent = "";
+  document.querySelector(".list-add").textContent = "";
+  document.getElementById("pay").textContent = "";
+  document.getElementById("winners").innerHTML = "";
+  document.getElementById("coin-spin").innerHTML = "Heads or Tails";
 }
