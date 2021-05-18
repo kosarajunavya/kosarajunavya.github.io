@@ -12,31 +12,14 @@
       <h1>Todo</h1>
 
       <form class="todo-form">
-        <input type="text" id="todoList" placeholder="Add a Todo..." />
+        <input type="text" id="todo-input" placeholder="Add a Todo..." />
         <button type="submit" onclick="addTodo()" id="addButton">Add</button>
       </form>
 
-      <ul id="listOfItems">
+      <ul id="todo-list">
         <p id="list"></p>
       </ul>
     </div>
-    <!-- <script>
-      // Check browser support
-      if (typeof Storage !== "undefined") {
-        // Store
-        let list = [];
-        list.push("<h1>John<h1>");
-        list.push("<h2>David<h2>");
-        localStorage.setItem("list", JSON.stringify(list));
-
-        // Retrieve
-        document.getElementById("result").innerHTML = JSON.parse(
-          localStorage.getItem("list")
-        );
-      } else {
-        document.getElementById("result").innerHTML =
-          "Sorry, your browser does not support Web Storage...";
-      }
-    </script> -->
+    <script src="./script.js"></script>
   </body>
 </html>

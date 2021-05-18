@@ -93,35 +93,50 @@
 //     deleteTodo(event.target.parentElement.getAttribute("data-key"));
 //   }
 // });
-// var toDoList = document.getElementById("todoList"),
-//   addButton = document.getElementById("addButton"),
-//   listOfItems = document.getElementById("listOfItems"),
-//   listOfItems = JSON.parse(localStorage.getItem("head-or-tails")) || [];
+// 1
+var items = JSON.parse(localStorage.getItem("todo-list")) || [];
+function addTodo() {
+  var inputBox = document.querySelector("#todo-input");
+  var item = inputBox.value;
+  if (item === "")
+    return (document.getElementById("list").innerHTML =
+      "You need to put in a number");
+  items.push({
+    value: item,
+  });
 
-// function addList() {
-//   let list = toDoList.value;
-//   if (list === "") {
-//     return (document.getElementById("list").innerHTML =
-//       "you need to add todo list");
-//   }
-//   listOfItems.push({
-//     todoList: list,
-//   });
-//   localStorage.setItem("todoList", JSON.stringify(list));
-//   getList();
-// }
-// function getList() {
-//   var list = "";
-//   for (var i = 0; i < listOfItems.length; i++) {
-//     list += "<li>";
-//     list += listOfItems[i].value + " ";
-//   }
-//   document.getElementById("list").innerHTML = "";
-//   const add = document.createElement("li");
-//   add.innerHTML = `ToDoList: document.createElement("BUTTON")`;
-//   listAdd.appendChild(add);
-// }
-// var detail = { name: "Annanomys", email: "annanomys@gmail.com", age: 20 };
-// localStorage.setItem("Detail", JSON.stringify(detail));
-// var storage = JSON.parse(localStorage.getItem("Detail") || defaultValue);
-// console.log(detail);
+  localStorage.setItem("todo-list", JSON.stringify(items));
+
+  listItems();
+
+  inputBox.value = "";
+}
+
+function deleteItem(index) {
+  items.splice(index, 1);
+  localStorage.setItem("todo-list", JSON.stringify(items));
+  listItems();
+}
+
+function markAsDone(index) {
+  items[index].done = !items[index].done;
+  localStorage.setItem("todo-list", JSON.stringify(items));
+  listItems();
+}
+
+function listItems() {
+  var list = "";
+  for (var i = 0; i < items.length; i++) {
+    list += "<li>";
+    list += items[i].value + " ";
+    list +=
+      "<span onclick='deleteItem(" +
+      i +
+      ")'><button>Remove</button></span></li>";
+  }
+  document.querySelector("#todo-list").innerHTML = list;
+}
+
+(function () {
+  listItems();
+})();
