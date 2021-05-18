@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div>Birthday: <input type="date" id="myDate" /></div>
     <div>
-      <input type="button" value="Find" onclick="calcAge()" />
+      <input type="button" id="calcAge" onclick="calcAge()" value="Find" />
+      <!-- onclick="calcAge()"  -->
     </div>
     <p>Results :</p>
     <p id="ageInMinutes"></p>
