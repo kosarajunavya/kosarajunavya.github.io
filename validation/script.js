@@ -116,6 +116,10 @@ function addItem() {
   betMoney.value = "";
   selectOption.value = "";
 }
+startNew.onclick = function () {
+  localStorage.removeItem("head-or-tails");
+  location.reload();
+};
 // localStorage.clear();
 
 function listItems() {
@@ -137,34 +141,3 @@ function listItems() {
     ".tails-total"
   ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
-
-function deleteItems() {
-  localStorage.removeItem("head-or-tails");
-  document.querySelector(".time").innerHTML = "";
-  const add = document.createElement("li");
-  add.innerHTML = ``;
-  document.querySelector(".heads-total").innerHTML = "";
-  document.querySelector(".tails-total").innerHTML = ``;
-  document.getElementById("contest").innerHTML = "";
-  document.getElementById("gainOrLoss").textContent = "";
-  document.querySelector(".list-add").textContent = "";
-  document.getElementById("pay").textContent = "";
-  document.getElementById("winners").innerHTML = "Contest not yet started";
-  document.getElementById("coin-spin").innerHTML = "Heads or Tails";
-  document.getElementById("list").innerHTML = "No bets added";
-  Location.reload();
-}
-document.onkeydown = function () {
-  switch (event.keyCode) {
-    case 116: //F5 button
-      event.returnValue = false;
-      event.keyCode = 0;
-      return false;
-    case 82: //R button
-      if (event.ctrlKey) {
-        event.returnValue = false;
-        event.keyCode = 0;
-        return false;
-      }
-  }
-};
