@@ -28,7 +28,7 @@ function winners() {
   element = items.filter((bet) => bet.selectOption === element);
   if (element) {
     var sum = 0;
-    var resDiv = "<div class='li-style'><ul>";
+    var resDiv = "<div><ul>";
     element.forEach(ResVal);
     function ResVal(item, index) {
       sum = sum + Number(item.betMoney);
@@ -121,18 +121,18 @@ function listItems() {
   for (var i = 0; i < items.length; i++) {
     list += "<li>";
     list += items[i].value + " ";
-    document.getElementById("list").innerHTML = "";
-    const add = document.createElement("li");
-    add.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
-    listAdd.appendChild(add);
-    select();
-    document.querySelector(
-      ".heads-total"
-    ).innerHTML = `Total bets in heads ${betOnHead}`;
-    document.querySelector(
-      ".tails-total"
-    ).innerHTML = `Total bets in tails ${betOnTail}`;
   }
+  document.getElementById("list").innerHTML = "";
+  const add = document.createElement("li");
+  add.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
+  listAdd.appendChild(add);
+  select();
+  document.querySelector(
+    ".heads-total"
+  ).innerHTML = `Total bets in heads ${betOnHead}`;
+  document.querySelector(
+    ".tails-total"
+  ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
 
 //resetting the game board for next game
@@ -141,5 +141,10 @@ startNew.onclick = function () {
   location.reload();
 };
 (function () {
-  listItems();
+  for (let i = 0; i < items.length; i++) {
+    // console.log(items[i]);
+    var data = items[i];
+    console.log(data);
+    // listItems();
+  }
 })();
