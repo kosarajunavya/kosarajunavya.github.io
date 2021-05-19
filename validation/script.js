@@ -8,6 +8,7 @@ const startNew = document.getElementById("startNew"),
   selectOption = document.getElementById("select"),
   btnAdd = document.getElementById("add"),
   listAdd = document.querySelector(".list-add"),
+  playersData = document.getElementById("playersData"),
   winnerAdd = document.getElementById("winnerAdd");
 
 var items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
@@ -142,9 +143,7 @@ startNew.onclick = function () {
 };
 (function () {
   for (let i = 0; i < items.length; i++) {
-    // console.log(items[i]);
-    var data = items[i];
-    console.log(data);
-    // listItems();
+    playersData.innerHTML = items.values();
+    console.log(items);
   }
 })();
