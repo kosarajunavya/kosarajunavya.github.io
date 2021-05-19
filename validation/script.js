@@ -122,6 +122,7 @@ function listItems() {
   for (var i = 0; i < items.length; i++) {
     list += "<li>";
     list += items[i].value + " ";
+    list += "</li>";
   }
   document.getElementById("list").innerHTML = "";
   const add = document.createElement("li");
