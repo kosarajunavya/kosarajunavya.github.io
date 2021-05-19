@@ -14,8 +14,7 @@ var items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
 let chooseOption = ["H", "T"];
 let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
 
-// 2. local storage part
-// 2.a. first initialise the default values
+// initialising all the input values
 
 var betOnHead = 0;
 var betOnTail = 0;
@@ -24,8 +23,28 @@ var totalMoney = 0;
 var wonMoney = 0;
 var spining = true;
 var total = 0;
-
-// getting head or tail
+//choosing winners and printing
+function winners() {
+  element = items.filter((bet) => bet.selectOption === element);
+  if (element) {
+    var sum = 0;
+    var resDiv = "<div class='li-style'><ul>";
+    element.forEach(ResVal);
+    function ResVal(item, index) {
+      sum = sum + Number(item.betMoney);
+      resDiv +=
+        "<li>" +
+        item.playerName +
+        " " +
+        Number(item.betMoney) * 2 +
+        `(won ${item.betMoney})` +
+        "</li>";
+    }
+    resDiv += "</ul></div>";
+    document.getElementById("contest").innerHTML = resDiv;
+  }
+}
+// getting head or tail after3 seconds and printing winners
 function spin() {
   document.querySelector(".time").innerHTML =
     "Spinning in progress...Wait for 3 seconds";
@@ -63,30 +82,10 @@ function spin() {
           total - payTail + "is company loss";
       }
     }
-    element = items.filter((bet) => bet.selectOption === element);
-    if (element) {
-      var sum = 0;
-      var resDiv = "<div class='li-style'><ul>";
-      element.forEach(ResVal);
-      function ResVal(item, index) {
-        sum = sum + Number(item.betMoney);
-        resDiv +=
-          "<li>" +
-          item.playerName +
-          " " +
-          Number(item.betMoney) * 2 +
-          `(won ${item.betMoney})` +
-          "</li>";
-      }
-      resDiv += "</ul></div>";
-      document.getElementById("contest").innerHTML = resDiv;
-    }
+    winners();
   }, 3000);
 }
-
-// storing the elements in local storage
-
-//finding the sum of calculated values
+// choosing the player based on which side they bet
 function select() {
   if (document.getElementById("head").selected) {
     betOnHead += Number(betMoney.value);
@@ -94,8 +93,7 @@ function select() {
     betOnTail += Number(betMoney.value);
   }
 }
-// listing the elements
-
+// adding the user input to local storage
 function addItem() {
   var item = playerName.value;
   var item1 = betMoney.value;
@@ -116,12 +114,8 @@ function addItem() {
   betMoney.value = "";
   selectOption.value = "";
 }
-startNew.onclick = function () {
-  localStorage.removeItem("head-or-tails");
-  location.reload();
-};
-// localStorage.clear();
 
+//listing the local storage data to the user
 function listItems() {
   var list = "";
 
@@ -141,3 +135,9 @@ function listItems() {
     ".tails-total"
   ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
+//resetting the game board for next game
+startNew.onclick = function () {
+  localStorage.removeItem("head-or-tails");
+  location.reload();
+};
+(function () {})();
