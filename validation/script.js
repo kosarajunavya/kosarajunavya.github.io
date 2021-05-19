@@ -118,26 +118,28 @@ function addItem() {
 //listing the local storage data to the user
 function listItems() {
   var list = "";
-
   for (var i = 0; i < items.length; i++) {
     list += "<li>";
     list += items[i].value + " ";
+    document.getElementById("list").innerHTML = "";
+    const add = document.createElement("li");
+    add.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
+    listAdd.appendChild(add);
+    select();
+    document.querySelector(
+      ".heads-total"
+    ).innerHTML = `Total bets in heads ${betOnHead}`;
+    document.querySelector(
+      ".tails-total"
+    ).innerHTML = `Total bets in tails ${betOnTail}`;
   }
-  document.getElementById("list").innerHTML = "";
-  const add = document.createElement("li");
-  add.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
-  listAdd.appendChild(add);
-  select();
-  document.querySelector(
-    ".heads-total"
-  ).innerHTML = `Total bets in heads ${betOnHead}`;
-  document.querySelector(
-    ".tails-total"
-  ).innerHTML = `Total bets in tails ${betOnTail}`;
 }
+
 //resetting the game board for next game
 startNew.onclick = function () {
-  localStorage.removeItem("head-or-tails");
+  localStorage.clear("head-or-tails");
   location.reload();
 };
-(function () {})();
+(function () {
+  listItems();
+})();
