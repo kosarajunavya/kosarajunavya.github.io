@@ -1,5 +1,5 @@
 "use strict";
-//1.get all the input values from dom
+
 const startNew = document.getElementById("startNew"),
   coinSpin = document.getElementById("coin-spin"),
   spinBtn = document.getElementById("spin"),
@@ -7,144 +7,163 @@ const startNew = document.getElementById("startNew"),
   betMoney = document.getElementById("bet-money"),
   selectOption = document.getElementById("select"),
   btnAdd = document.getElementById("add"),
-  listAdd = document.querySelector(".list-add"),
-  playersData = document.getElementById("playersData"),
-  winnerAdd = document.getElementById("winnerAdd");
+  listAdd = document.querySelector(".list-add");
 
-var items = JSON.parse(localStorage.getItem("head-or-tails")) || [];
-let chooseOption = ["H", "T"];
-let element = chooseOption[Math.floor(Math.random() * chooseOption.length)];
+var coinArray = ["H", "T"],
+  items = JSON.parse(localStorage.getItem("head-or-tails")) || [],
+  headOrTails = JSON.parse(localStorage.getItem("selectOption")) || [],
+  currentBet = 0,
+  currentBet1 = 0,
+  betMoneyV = Number(betMoney.value);
 
-// initialising all the input values
+spinBtn.addEventListener("click", () => {
+  winnerList();
+  spinCoin();
+  document.querySelector(".progress").innerHTML =
+    "Spinning in progress... Wait for 3 seconds";
+  document.querySelector(".contest-1").innerHTML = "Game is in Progess....";
+});
 
-var betOnHead = 0;
-var betOnTail = 0;
-var betMoneyV = Number(betMoney.value);
-var totalMoney = 0;
-var wonMoney = 0;
-var spining = true;
-var total = 0;
-//choosing winners and printing
-function winners() {
-  element = items.filter((bet) => bet.selectOption === element);
-  if (element) {
-    var sum = 0;
-    var resDiv = "<div><ul>";
-    element.forEach(ResVal);
-    function ResVal(item, index) {
-      sum = sum + Number(item.betMoney);
-      resDiv +=
-        "<li>" +
-        item.playerName +
-        " " +
-        Number(item.betMoney) * 2 +
-        `(won ${item.betMoney})` +
-        "</li>";
-    }
-    resDiv += "</ul></div>";
-    document.getElementById("contest").innerHTML = resDiv;
-  }
-}
-// getting head or tail after3 seconds and printing winners
-function spin() {
-  document.querySelector(".time").innerHTML =
-    "Spinning in progress...Wait for 3 seconds";
-  document.getElementById("contest").innerHTML = "Game is in progress";
-  let total = betOnHead + betOnTail;
-  let payHead = betOnHead * 2;
-  let payTail = betOnTail * 2;
+btnAdd.addEventListener("click", () => {
+  addBet();
+});
+
+function spinCoin() {
   setTimeout(() => {
-    document.querySelector(".time").innerHTML = "";
-    document.getElementById("coin-spin").innerHTML = element;
-    if (element === "H") {
-      document.getElementById(
-        "winners"
-      ).innerHTML = `Total bets in heads ${betOnHead}`;
-      document.getElementById("pay").textContent =
-        "Total paid to winners" + Number(payHead);
-      if (payHead < total) {
-        document.getElementById("gainOrLoss").textContent =
-          total - payHead + "is company gain";
-      } else {
-        document.getElementById("gainOrLoss").textContent =
-          total - payHead + "is company loss";
-      }
-    } else {
-      document.getElementById(
-        "winners"
-      ).innerHTML = `Total bets in tails ${betOnTail}`;
-      document.getElementById("pay").textContent =
-        "Total paid to winners" + Number(payTail);
-      if (payTail < total) {
-        document.getElementById("gainOrLoss").textContent =
-          total - payTail + "is company gain";
-      } else {
-        document.getElementById("gainOrLoss").textContent =
-          total - payTail + "is company loss";
-      }
-    }
-    winners();
+    let spinRes = coinArray[Math.floor(Math.random() * coinArray.length)];
+    localStorage.setItem("spinRes", spinRes);
+    document.getElementById("coin-spin").innerHTML = spinRes;
+    winnerList();
+    distibute();
+    document.querySelector(".progress").innerHTML = "";
+    document.querySelector(".contest-1").innerHTML = "";
   }, 3000);
 }
-// choosing the player based on which side they bet
-function select() {
-  if (document.getElementById("head").selected) {
-    betOnHead += Number(betMoney.value);
-  } else if (document.getElementById("tail").selected) {
-    betOnTail += Number(betMoney.value);
-  }
-}
-// adding the user input to local storage
-function addItem() {
-  var item = playerName.value;
-  var item1 = betMoney.value;
-  var item2 = selectOption.value;
 
-  if (item === "") {
+// Local Storage function
+function addBet() {
+  let items = getBets(),
+    inputBox = document.getElementById("player-name"),
+    item = inputBox.value,
+    item1 = betMoney.value,
+    item2 = selectOption.value;
+
+  if (item === "" && item1 === "" && item2 === "") {
     return (document.getElementById("list").innerHTML =
-      "you need to add name and bet");
+      "you need to add name , bet and choice");
   }
   items.push({
     playerName: item,
     betMoney: item1,
     selectOption: item2,
   });
-  localStorage.setItem("head-or-tails", JSON.stringify(items));
+  localStorage.setItem("bets", JSON.stringify(items));
   listItems();
-  playerName.value = "";
+
+  inputBox.value = "";
   betMoney.value = "";
   selectOption.value = "";
 }
 
-//listing the local storage data to the user
-function listItems() {
-  var list = "";
-  for (var i = 0; i < items.length; i++) {
-    list += "<li>";
-    list += items[i].value + " ";
-    list += "</li>";
-  }
-  document.getElementById("list").innerHTML = "";
-  const add = document.createElement("li");
-  add.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`;
-  listAdd.appendChild(add);
-  select();
-  document.querySelector(
-    ".heads-total"
-  ).innerHTML = `Total bets in heads ${betOnHead}`;
-  document.querySelector(
-    ".tails-total"
-  ).innerHTML = `Total bets in tails ${betOnTail}`;
+function getBets() {
+  return JSON.parse(localStorage.getItem("bets")) || [];
 }
 
-//resetting the game board for next game
-startNew.onclick = function () {
-  localStorage.clear("head-or-tails");
-  location.reload();
-};
-(function () {
-  for (let i = 0; i < items.length; i++) {
-    playersData.innerHTML = items.values();
-    console.log(items);
+function getSpinResult() {
+  return localStorage.getItem("spinRes") || "";
+}
+
+function listItems() {
+  let items = getBets();
+  let resBetUl = "<ul>";
+  items.forEach((item) => {
+    resBetUl +=
+      "<li>" +
+      item.playerName +
+      "," +
+      item.betMoney +
+      ":" +
+      item.selectOption +
+      "</li>";
+  });
+  resBetUl += "</ul>";
+  document.getElementById("list").innerHTML = resBetUl;
+  selectChoice();
+  document.querySelector(
+    ".heads-total"
+  ).innerHTML = `Total bets in heads ${currentBet}`;
+  document.querySelector(
+    ".tails-total"
+  ).innerHTML = `Total bets in tails ${currentBet1}`;
+}
+
+function winnerList() {
+  let bets = getBets();
+  let spinRes = getSpinResult();
+  const result = bets.filter((bet) => bet.selectOption === spinRes);
+
+  var sum = 0;
+  var resDiv = "<div class='li-style'><ul>";
+  result.forEach(ResVal);
+
+  function ResVal(item, index) {
+    sum = sum + Number(item.betMoney);
+    resDiv +=
+      "<li>" +
+      item.playerName +
+      " : " +
+      Number(item.betMoney) * 2 +
+      " Won ( " +
+      Number(item.betMoney) +
+      " )" +
+      "</li>";
   }
+  resDiv += "</ul></div>";
+  document.getElementById("contest").innerHTML = resDiv;
+}
+
+// Dropdown select head or tails function
+function selectChoice() {
+  if (document.getElementById("head").selected) {
+    currentBet += Number(betMoney.value);
+  } else if (document.getElementById("tail").selected) {
+    currentBet1 += Number(betMoney.value);
+  }
+}
+let total0 = 0;
+let total1 = 0;
+let total2 = 0;
+
+function distibute() {
+  document.querySelector(
+    ".heads-total-1"
+  ).innerHTML = `Total Paid to Winners ${(total0 = currentBet * 2)}`;
+  document.querySelector(
+    ".tails-total-2"
+  ).innerHTML = `Total amount recived ${(total1 += currentBet1 + currentBet)}`;
+
+  document.querySelector(".tails-total-3").innerHTML = ` ${(total2 =
+    total1 - total0)} is Company gain`;
+}
+
+startNew.addEventListener("click", () => {
+  // refreshThePage()
+  localStorage.clear("bets");
+  document.querySelector(".heads-total").innerHTML = "";
+  document.querySelector(".tails-total").innerHTML = "";
+  document.querySelector(".heads-total-1").innerHTML = "";
+  document.querySelector(".tails-total-2").innerHTML = "";
+  document.querySelector(".tails-total-3").innerHTML = "";
+  document.getElementById("list").innerHTML = "No bets addes yet";
+  document.getElementById("contest").innerHTML = "Contest not started yet";
+  document.getElementById("coin-spin").innerHTML = "Heads or Tails";
+});
+
+function refreshThePage() {
+  location.reload();
+}
+
+(function () {
+  listItems();
+  winnerList();
 })();
