@@ -12,8 +12,8 @@ const startNew = document.getElementById("startNew"),
 var coinArray = ["H", "T"],
   items = JSON.parse(localStorage.getItem("head-or-tails")) || [],
   headOrTails = JSON.parse(localStorage.getItem("selectOption")) || [],
-  currentBet = 0,
-  currentBet1 = 0,
+  betsOnHeads = 0,
+  betsOnTails = 0,
   betMoneyV = Number(betMoney.value);
 
 spinBtn.addEventListener("click", () => {
@@ -91,10 +91,10 @@ function listItems() {
   selectChoice();
   document.querySelector(
     ".heads-total"
-  ).innerHTML = `Total bets in heads ${currentBet}`;
+  ).innerHTML = `Total bets in heads ${betsOnHeads}`;
   document.querySelector(
     ".tails-total"
-  ).innerHTML = `Total bets in tails ${currentBet1}`;
+  ).innerHTML = `Total bets in tails ${betsOnTails}`;
 }
 
 function winnerList() {
@@ -125,25 +125,26 @@ function winnerList() {
 // Dropdown select head or tails function
 function selectChoice() {
   if (document.getElementById("head").selected) {
-    currentBet += Number(betMoney.value);
+    betsOnHeads += Number(betMoney.value);
   } else if (document.getElementById("tail").selected) {
-    currentBet1 += Number(betMoney.value);
+    betsOnTails += Number(betMoney.value);
   }
 }
-let total0 = 0;
-let total1 = 0;
-let total2 = 0;
+let headsTotal = 0;
+let tailsTotal = 0;
+let totalPaidToWinners = 0;
 
 function distibute() {
   document.querySelector(
     ".heads-total-1"
-  ).innerHTML = `Total Paid to Winners ${(total0 = currentBet * 2)}`;
+  ).innerHTML = `Total Paid to Winners ${(headsTotal = betsOnHeads * 2)}`;
   document.querySelector(
     ".tails-total-2"
-  ).innerHTML = `Total amount recived ${(total1 += currentBet1 + currentBet)}`;
+  ).innerHTML = `Total amount recived ${(tailsTotal +=
+    betsOnTails + betsOnHeads)}`;
 
-  document.querySelector(".tails-total-3").innerHTML = ` ${(total2 =
-    total1 - total0)} is Company gain`;
+  document.querySelector(".tails-total-3").innerHTML = ` ${(totalPaidToWinners =
+    headsTotal - tailsTotal)} is Company gain`;
 }
 
 startNew.addEventListener("click", () => {
