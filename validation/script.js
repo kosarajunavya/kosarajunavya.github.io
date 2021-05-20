@@ -136,15 +136,15 @@ let totalPaidToWinners = 0;
 
 function distibute() {
   document.querySelector(
-    ".heads-total-1"
+    ".headsWinners"
   ).innerHTML = `Total Paid to Winners ${(headsTotal = betsOnHeads * 2)}`;
   document.querySelector(
-    ".tails-total-2"
+    ".tailsWinners"
   ).innerHTML = `Total amount recived ${(tailsTotal +=
     betsOnTails + betsOnHeads)}`;
 
-  document.querySelector(".tails-total-3").innerHTML = ` ${(totalPaidToWinners =
-    headsTotal - tailsTotal)} is Company gain`;
+  document.querySelector(".companyGain").innerHTML = ` ${(totalPaidToWinners =
+    headsTotal - tailsTotal)} is Company gain/loss`;
 }
 
 startNew.addEventListener("click", () => {
