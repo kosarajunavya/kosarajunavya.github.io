@@ -118,12 +118,6 @@ function deleteItem(index) {
   listItems();
 }
 
-function markAsDone(index) {
-  items[index].done = !items[index].done;
-  localStorage.setItem("todo-list", JSON.stringify(items));
-  listItems();
-}
-
 function listItems() {
   var list = "";
   for (var i = 0; i < items.length; i++) {
