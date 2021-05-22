@@ -34,7 +34,9 @@ body {
   font-weight: bold;
   padding: 2rem;
   display: block;
-  width: 100%;
+  width: 90%;
+  align-items: center;
+  text-align: center;
   margin: 0 auto;
 }
 
