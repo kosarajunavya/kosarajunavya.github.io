@@ -39,9 +39,19 @@ function setTime() {
     minutes = time.getMinutes(),
     seconds = time.getSeconds(),
     ampm = hours >= 12 ? "PM" : "AM";
-  // wish.innerHTML = "Good Morning Navya, What you are looking for today";
 
+  var wishTime = ["Good Morning", "Good Afternoon", "Good Evening"];
+  if (ampm == "AM") {
+    wish.innerHTML = `${wishTime[0]} Navya, What you are looking for today`;
+  } else if (ampm > 12 && ampm < 4) {
+    wish.innerHTML = `${wishTime[1]} Navya, What you are looking for today`;
+  } else {
+    wish.innerHTML = `${wishTime[2]} Navya, What you are looking for today`;
+  }
 
+  setInterval(() => {
+    wish.innerHTML = "";
+  }, 60 * 60 * 1000);
   hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     hoursForClock,
     0,
