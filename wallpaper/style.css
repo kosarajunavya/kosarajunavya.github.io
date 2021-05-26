@@ -9,16 +9,14 @@ html {
 }
 
 body {
-  background: url("./img/Gorgeous\ evening\ landscape\ at\ Kallidaikurichi\ village\,\ Tirunelveli\,\ Tamil\ Nadu.jpg")
-    no-repeat;
+  background: url("./img/photo-1585302769412-25f133f2b967.jpeg") no-repeat;
   background-size: cover;
   font-family: "Heebo", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 52rem;
   overflow: hidden;
-  margin: 0;
 }
 
 .clock-container {
@@ -43,10 +41,12 @@ body {
 .time {
   color: #000;
   font-size: 5rem;
+  margin-top: -4rem;
 }
 
 .date {
-  color: #fff;
+  color: #000;
+  font-weight: bolder;
   font-size: 1.5rem;
   letter-spacing: 0.3px;
   text-transform: uppercase;
@@ -54,5 +54,6 @@ body {
 #wish {
   color: #fff;
   font-size: 1.2rem;
-  margin: 0;
+  margin: 0 7rem;
+  font-weight: bold;
 }
