@@ -61,7 +61,7 @@ body {
 }
 
 .box {
-  background-image: url("https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif");
+  background-image: url("./gif/tenor.gif");
   background-repeat: no-repeat;
   background-size: 500px 500px;
   position: relative;
@@ -72,7 +72,7 @@ body {
 
 .box::after {
   content: "";
-  background-color: #f6e58d;
+  background-color: rgb(19, 243, 243);
   position: absolute;
   top: 8px;
   right: -15px;
@@ -83,7 +83,7 @@ body {
 
 .box::before {
   content: "";
-  background-color: #f9ca24;
+  background-color: rgb(5, 235, 252);
   position: absolute;
   bottom: -15px;
   left: 8px;
