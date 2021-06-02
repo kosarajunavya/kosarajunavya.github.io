@@ -11,17 +11,18 @@ const finalMessageRevealWord = document.getElementById(
 const figureParts = document.querySelectorAll(".figure-part");
 
 let words = [];
-async function getWord() {
-  const res = await fetch("words.json");
 
-  const results = await res.json();
-  //   console.log(results);
-  for (let i = 0; i < results.length; i++) {
-    words = `${results.word}`;
-    console.log(words[1]);
-  }
-}
-getWord();
+// async function getWord() {
+//   const res = await fetch("words/words.json");
+//   // https://random-words-api.vercel.app/
+//   const results = await res.json();
+//   console.log(results);
+//   for (let i = 0; i < results.length; i++) {
+//     words = `${results.word}`;
+//     console.log(words);
+//   }
+// }
+// getWord();
 // let selectedWord = words[Math.floor(Math.random() * words.length)];
 
 // let playable = true;
