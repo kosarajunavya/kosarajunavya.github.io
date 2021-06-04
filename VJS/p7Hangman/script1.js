@@ -10,132 +10,131 @@ const finalMessageRevealWord = document.getElementById(
 
 const figureParts = document.querySelectorAll(".figure-part");
 
-let words = [];
+async function getWord() {
+  let wordsArray = [];
 
-// async function getWord() {
-//   const res = await fetch("words/words.json");
-//   // https://random-words-api.vercel.app/
-//   const results = await res.json();
-//   console.log(results);
-//   for (let i = 0; i < results.length; i++) {
-//     words = `${results.word}`;
-//     console.log(words);
-//   }
-// }
-// getWord();
-// let selectedWord = words[Math.floor(Math.random() * words.length)];
+  const res = await fetch("words/words.json");
+  const words = await res.json();
+  words.forEach((words) => wordsArray.push(words.word));
 
-// let playable = true;
+  let randomWord = words[Math.floor(Math.random() * wordsArray.length)];
+  let selectedWord = randomWord.word;
 
-// const correctLetters = [];
-// const wrongLetters = [];
+  console.log(selectedWord);
+}
+getWord();
 
-// // Show hidden word
-// function displayWord() {
-//   wordEl.innerHTML = `
-//     ${selectedWord
-//       .split("")
-//       .map(
-//         (letter) => `
-//           <span class="letter">
-//             ${correctLetters.includes(letter) ? letter : ""}
-//           </span>
-//         `
-//       )
-//       .join("")}
-//   `;
+let playable = true;
 
-//   const innerWord = wordEl.innerText.replace(/[ \n]/g, "");
+const correctLetters = [];
+const wrongLetters = [];
 
-//   if (innerWord === selectedWord) {
-//     finalMessage.innerText = "Congratulations! You won! 😃";
-//     finalMessageRevealWord.innerText = "";
-//     popup.style.display = "flex";
+// Show hidden word
+function displayWord() {
+  wordEl.innerHTML = `
+    ${selectedWord
+      .split("")
+      .map(
+        (letter) => `
+          <span class="letter">
+            ${correctLetters.includes(letter) ? letter : ""}
+          </span>
+        `
+      )
+      .join("")}
+  `;
 
-//     playable = false;
-//   }
-// }
+  const innerWord = wordEl.innerText.replace(/[ \n]/g, "");
 
-// // Update the wrong letters
-// function updateWrongLettersEl() {
-//   // Display wrong letters
-//   wrongLettersEl.innerHTML = `
-//     ${wrongLetters.length > 0 ? "<p>Wrong</p>" : ""}
-//     ${wrongLetters.map((letter) => `<span>${letter}</span>`)}
-//   `;
+  if (innerWord === selectedWord) {
+    finalMessage.innerText = "Congratulations! You won! 😃";
+    finalMessageRevealWord.innerText = "";
+    popup.style.display = "flex";
 
-//   // Display parts
-//   figureParts.forEach((part, index) => {
-//     const errors = wrongLetters.length;
+    playable = false;
+  }
+}
 
-//     if (index < errors) {
-//       part.style.display = "block";
-//     } else {
-//       part.style.display = "none";
-//     }
-//   });
+// Update the wrong letters
+function updateWrongLettersEl() {
+  // Display wrong letters
+  wrongLettersEl.innerHTML = `
+    ${wrongLetters.length > 0 ? "<p>Wrong</p>" : ""}
+    ${wrongLetters.map((letter) => `<span>${letter}</span>`)}
+  `;
 
-//   // Check if lost
-//   if (wrongLetters.length === figureParts.length) {
-//     finalMessage.innerText = "Unfortunately you lost. 😕";
-//     finalMessageRevealWord.innerText = `...the word was: ${selectedWord}`;
-//     popup.style.display = "flex";
+  // Display parts
+  figureParts.forEach((part, index) => {
+    const errors = wrongLetters.length;
 
-//     playable = false;
-//   }
-// }
+    if (index < errors) {
+      part.style.display = "block";
+    } else {
+      part.style.display = "none";
+    }
+  });
 
-// // Show notification
-// function showNotification() {
-//   notification.classList.add("show");
+  // Check if lost
+  if (wrongLetters.length === figureParts.length) {
+    finalMessage.innerText = "Unfortunately you lost. 😕";
+    finalMessageRevealWord.innerText = `...the word was: ${selectedWord}`;
+    popup.style.display = "flex";
 
-//   setTimeout(() => {
-//     notification.classList.remove("show");
-//   }, 2000);
-// }
+    playable = false;
+  }
+}
 
-// // Keydown letter press
-// window.addEventListener("keydown", (e) => {
-//   if (playable) {
-//     if (e.keyCode >= 65 && e.keyCode <= 90) {
-//       const letter = e.key.toLowerCase();
+// Show notification
+function showNotification() {
+  notification.classList.add("show");
 
-//       if (selectedWord.includes(letter)) {
-//         if (!correctLetters.includes(letter)) {
-//           correctLetters.push(letter);
+  setTimeout(() => {
+    notification.classList.remove("show");
+  }, 2000);
+}
 
-//           displayWord();
-//         } else {
-//           showNotification();
-//         }
-//       } else {
-//         if (!wrongLetters.includes(letter)) {
-//           wrongLetters.push(letter);
+// Keydown letter press
+window.addEventListener("keydown", (e) => {
+  if (playable) {
+    if (e.keyCode >= 65 && e.keyCode <= 90) {
+      const letter = e.key.toLowerCase();
 
-//           updateWrongLettersEl();
-//         } else {
-//           showNotification();
-//         }
-//       }
-//     }
-//   }
-// });
+      if (selectedWord.includes(letter)) {
+        if (!correctLetters.includes(letter)) {
+          correctLetters.push(letter);
 
-// // Restart game and play again
-// playAgainBtn.addEventListener("click", () => {
-//   playable = true;
+          displayWord();
+        } else {
+          showNotification();
+        }
+      } else {
+        if (!wrongLetters.includes(letter)) {
+          wrongLetters.push(letter);
 
-//   //  Empty arrays
-//   correctLetters.splice(0);
-//   wrongLetters.splice(0);
+          updateWrongLettersEl();
+        } else {
+          showNotification();
+        }
+      }
+    }
+  }
+});
 
-//   selectedWord = words[Math.floor(Math.random() * words.length)];
+// Restart game and play again
+playAgainBtn.addEventListener("click", () => {
+  playable = true;
 
-//   displayWord();
+  //  Empty arrays
+  correctLetters.splice(0);
+  wrongLetters.splice(0);
 
-//   updateWrongLettersEl();
+  selectedWord = words[Math.floor(Math.random() * words.length)];
 
-//   popup.style.display = "none";
-// });
+  displayWord();
 
-// displayWord();
+  updateWrongLettersEl();
+
+  popup.style.display = "none";
+});
+
+displayWord();
