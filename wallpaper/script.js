@@ -43,7 +43,7 @@ function setTime() {
   var wishTime = ["Good Morning", "Good Afternoon", "Good Evening"];
   if (ampm == "AM") {
     wish.innerHTML = `${wishTime[0]} Navya, what's your main focus today`;
-  } else if (hours >= 12 || hours <= 5 + "PM") {
+  } else if (hours >= 12 && hours <= 5 + "PM") {
     wish.innerHTML = `${wishTime[1]} Navya, what's your main focus today`;
   } else {
     wish.innerHTML = `${wishTime[2]} Navya, what's your main focus today`;
