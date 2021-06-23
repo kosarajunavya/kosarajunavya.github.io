@@ -9,46 +9,35 @@ html {
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/1600x900/?nature");
+  background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #fff;
 }
 
 .clock-container {
   text-align: center;
-  padding-top: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 50rem;
+  max-width: 100%;
+  padding-top: 15%;
+  height: 97.8vh;
+  overflow: hidden;
+  justify-content: center;
   align-items: center;
 }
-
-#quote {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 2rem;
-  display: block;
-  width: 90%;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .time {
-  font-size: 5rem;
-  margin-top: -4rem;
+  font-size: 7rem;
 }
-
 .date {
-  font-weight: bolder;
-  font-size: 1.5rem;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 1rem;
 }
-#wish {
-  font-size: 1.2rem;
-  margin: 0 7rem;
-  font-weight: bold;
+#quote {
+  font-size: 1.8rem;
 }
-/* https://source.unsplash.com/user/erondu/daily */
