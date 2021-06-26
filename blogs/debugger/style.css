@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #fffafa;
+}
 
 .head,
 .wraper,
@@ -11,6 +14,12 @@ footer {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px #888888;
+}
+.wraper,
+footer {
+  padding: 0 3rem;
 }
 body p {
   padding: 1rem 0;
@@ -33,7 +42,7 @@ body h3 {
 }
 
 .heading {
-  padding: 0 0 2rem;
+  padding: 2rem;
 }
 
 .heading h1 {
@@ -72,4 +81,31 @@ ol {
   padding: 1rem 2.5rem;
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+.wraper img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.list {
+  padding: 0 2.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+footer a {
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1.3rem;
+}
+
+.message {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.feedback {
+  padding: 1rem;
 }

@@ -23,21 +23,22 @@
     <main>
       <section class="wraper">
         <p>
-          Hello dear friends, debugging is one of the most important basic skill
+          Hello dear friends! debugging is one of the most important basic skill
           that every developer should learn. Majorly the quality of code depends
           on the count of your bugs, so here are few simple methods to find bugs
-          without much time consumption.
+          without much time consumption. If you want to get all the methods of
+          debugger read till the end of the post without missing.
         </p>
         <p>
-          Firstly we have to aware of what type of debugging methods and tools
-          that are available for all of us.
+          Firstly we have to be aware of what type of debugging methods and
+          tools that are available for all of us.
         </p>
         <h2>Pre-requisites:</h2>
         <h3>Tools:</h3>
         <p>
           Most of the developers can use different browsers to connect with the
           world. The major tools are listed here, and now we are going to look
-          at how to handle debugging with these tools.
+          at how to handle debugging with one of these tools.
         </p>
         <ul class="tools">
           <li>
@@ -74,8 +75,9 @@
           </li>
         </ul>
         <p>
-          Basically we have 4 methods of debugging our code, before going to
-          these methods you should follow these steps to save your time.
+          Basically we have 3 methods of debugging our code, before going to
+          these methods you should follow these steps to save your time with the
+          dealing of bugs.
         </p>
         <ol type="1">
           <li>Firstly analyse the entire code that you have written</li>
@@ -83,26 +85,177 @@
           <li>
             Again read your code step by step and try to find the scope of bug
           </li>
-          <li>
-            Then follow the debugging methods to find your bug and correct it
-          </li>
+          <li>Then follow the debugging methods to find your bug and fix it</li>
         </ol>
         <h2>Method 1: Using console.log()</h2>
-        <p></p>
+        <p>
+          Debugging is a process of finding bugs and fixing them. The initial
+          method of finding bugs and to understand the reason for an issue and
+          fix it is using the console.log method. This method is simple for less
+          lines of code, but when it comes to bigger applications it has become
+          a head banger for the developper.
+        </p>
+        <p>
+          Let us see a simple calculator application and analyse the debugging
+          process in every method.
+        </p>
+        <img
+          src="./img/bugFound.png"
+          alt="screenshot of bug in an example code"
+        />
+        <p>
+          In the above results we got 1+2 = 12, instead of 3. So here is the
+          bug, that we are not getting the required outcome. Let us go to our
+          code and read the entire code again and write console.log on few
+          places to know the scope of a bug.
+        </p>
+
+        <img src="./img/console.png" alt="code" />
+        <p>See the results in console</p>
+        <img src="./img/consoleb.png" alt="browser console image" />
+        <p>
+          Try to find out the bug here, and the problem is, in javascript if you
+          want to add numericals then you have to parse them otherwise the js
+          considers the numbers as strings. So the operator that we have used
+          here is +. This operator adds the numericals and concatenates the
+          string. So, to perform addition operation we have to parse them or use
+          the number function to compute the actual numericals.
+        </p>
+        <img src="./img/consolem.png" alt="code modifications image" />
+        <p>Now verify the results in your application</p>
+        <img src="./img/result.png" alt="final result screenshot" />
+        <p>
+          Now the bug is fixed and we got expected results. The disadvantage of
+          this method is that we have to read each and every line of the code
+          and have to include a huge number of console.log(), to find the value
+          and to analyse the scope of the bug. This could definitely beat the
+          clock. Here is a solution for this, look down for next interesting
+          method
+        </p>
         <h2>Method 2: Using Breakpoints</h2>
-        <p></p>
+        <ul class="list">
+          <li>
+            One of the effective and comfortable ways of debugging is using the
+            breakpoints in the respective browser. Here are the steps to handle
+            with the breakpoints in Chrome.
+          </li>
+          <li>
+            Firstly analyse the scope of the bug, In this case the bug that we
+            found is, in our calculator application instead of summing the
+            numericals they are getting concatenated.
+          </li>
+          <li>
+            So the issue raised on the computation part of the code so set a
+            breakpoint near the function and run your code there you find the
+            bug that you missed to parse the numericals.
+          </li>
+          <li>So go to your code and update that part</li>
+        </ul>
+        <h3>Step 1:</h3>
+        <p>
+          Go to your browser and open your console by hitting f12 in
+          windows/linux, cmd J in mac.
+        </p>
+        <img src="./img/browser.png" alt="console screenshot image" />
+        <h3>Step 2:</h3>
+        <p>Go to sources</p>
+        <img src="./img/source.png" alt="selecting source screenshot" />
+        <h3>Step 3:</h3>
+        <p>Select script file</p>
+        <img src="./img/script.png" alt="selecting script file screenshot" />
+        <h3>Step 4:</h3>
+        <p>
+          Firstly know your breakpoint for the respective source code that you
+          want to debug, in this source code we have an issue on computaion
+          part. So enable a breakpoint where actually the computaion part is
+          happening. As per the requirement you can give as many as breakpoints
+          to understand the flow of our source code.
+        </p>
+        <img src="./img/breakpoint.png" alt="enabling breakpoint screenshot" />
+        <h3>Step 5:</h3>
+        <p>
+          Now this breakpoint is gonna hit when the calculate button is fireoff,
+          so give the two inputs and click the calculate button. Now see what
+          happens.
+        </p>
+        <img src="./img/run.png" alt="debugger paused screenshot" />
+        <h3>Step 6:</h3>
+        <p>
+          Now the debugger pause the code at a given breakpoint now observe the
+          flow of code by hitting f10(which helps us to goto next line of the
+          code).
+        </p>
+        <img src="./img/res.png" alt="debugging results" />
+        <h3>Step 7:</h3>
+        <p>
+          Now observe the results, here we can see the results clearly where the
+          functionality is going wrong in the scope section, like the results of
+          the variables.
+        </p>
+        <h3>Step 8:</h3>
+        <p>Now goto your code and and correct the bug.</p>
+        <img src="./img/updatec.png" alt="updated code screenshot" />
+        <p>
+          Finally go to your console again and enable the breakpoint of your
+          modified code, then again give the inputs and check the results.
+        </p>
+        <img src="./img/resf.png" alt="final result screenshot" />
+        <p>
+          Perfect! you got the expected results. So, with flexible steps we can
+          resolve our issues with the help of breakpoints.
+        </p>
         <h2>Method 3: Using Debugger keyword</h2>
-        <p></p>
-        <h2>Method 4: Debugging with VS code</h2>
-        <p></p>
+        <small>Great! you came till here, Good to see you.</small>
+        <p>
+          Here is another cool method of debugging. So in this method you need
+          to do only one step. Just write the debugger key word in your source
+          code, that's all! very simple right.
+        </p>
+        <img
+          src="./img/keyword.png"
+          alt="using debugger keyword in code screenshot"
+        />
+        <p>
+          Now go to browser, open console, give the inputs, hit the calculate
+          button. Now you can see the debugger is enabled and paused the code
+          along with results.
+        </p>
+        <img src="./img/keywordc.png" alt="results screenshot" />
+        <p>
+          So you will get the scope of bug the go to your code editor, fix the
+          bug. Again cross check your results.
+        </p>
       </section>
     </main>
     <footer>
       <h3>Conclusion:</h3>
       <p>
-        Thank you so much for reading! Hope you learned something from this
-        article, feel free to post your comments. Happy learning!
+        Thats all guys! With this info, you're good to go. Go on and start
+        experimenting all your code 😄 with debugger in different areas to get
+        to know of your code functionality.
       </p>
+      <p>
+        Thank you so much for reading🤗! Hope you learned something from this
+        article, feel free to post your comments. Happy learning🙌!
+      </p>
+      <p>References</p>
+      <p>
+        <a href="https://www.w3schools.com/js/js_debugging.asp" target="_blank">
+          w3schools</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger"
+          >MDN Web Docs</a
+        >
+      </p>
+      <a href="https://javascript.info/debugging-chrome"> Javascript info</a>
+      <div class="feedback">
+        <p>comments</p>
+        <textarea class="message" name="message" rows="10" cols="50">
+        </textarea>
+      </div>
     </footer>
   </body>
 </html>
