@@ -17,6 +17,9 @@ footer {
   background-color: #fff;
   box-shadow: 0px 10px 10px #888888;
 }
+.head a {
+  color: #000;
+}
 .wraper,
 footer {
   padding: 0 3rem;
@@ -74,7 +77,6 @@ body h3 {
   text-decoration: none;
   line-height: 2rem;
   font-size: 1.2rem;
-  color: #000;
 }
 
 ol {
@@ -96,7 +98,6 @@ ol {
 }
 
 footer a {
-  color: #000;
   font-size: 1.4rem;
   line-height: 1.3rem;
 }
@@ -119,4 +120,10 @@ pre {
   color: #fff;
   max-width: 650px;
   width: 100%;
+}
+
+a {
+  color: #4983bd;
+  font-weight: bolder;
+  text-decoration: none;
 }
