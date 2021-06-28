@@ -109,3 +109,14 @@ footer a {
 .feedback {
   padding: 1rem;
 }
+
+pre {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin-bottom: 10px;
+  width: auto;
+  background-color: #000;
+  color: #fff;
+  max-width: 650px;
+  width: 100%;
+}

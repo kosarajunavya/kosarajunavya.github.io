@@ -46,7 +46,7 @@
           at how to <b>handle debugging with Chrome</b> in this blog.
         </p>
         <p>
-          Check my next blog on <a href="#" target="_blank">My code.blog</a> to
+          Check my next blog on <a href="#" target="_blank">myCode.blog</a> to
           get more info on how to <b>handle with rest of the tools.</b>
         </p>
         <ul class="tools">
@@ -131,7 +131,20 @@
             >https://kosarajunavya.github.io/Jstasks/task1/index.html</a
           >
         </p>
-        <img src="./img/console.png" alt="code" />
+        <pre>
+          <code>
+              function sum() {
+                var a =$("#firstNumber").val();
+                console.log(a);
+                var b =$("#secondNumber").val();
+                console.log(b);
+                var sum = a + b;
+                console.log(sum);
+                $("#ans").html("sum is " + sum);
+              }
+          </code>
+        </pre>
+
         <p>See the results in console</p>
         <img src="./img/consoleb.png" alt="browser console image" />
         <p>
@@ -143,7 +156,19 @@
           have to <b>parse them</b> or use the <b>number function</b> to compute
           the actual numericals.
         </p>
-        <img src="./img/consolem.png" alt="code modifications image" />
+        <pre>
+          <code>
+              function sum() {
+                var a =parseInt($("#firstNumber").val());
+                console.log(a);
+                var b =parseInt($("#secondNumber").val());
+                console.log(b);
+                var sum = a + b;
+                console.log(sum);
+                $("#ans").html("sum is " + sum);
+              }
+          </code>
+        </pre>
         <p>Now verify the results in your application</p>
         <img src="./img/result.png" alt="final result screenshot" />
         <p>
@@ -216,7 +241,19 @@
         </p>
         <h3>Step 8:</h3>
         <p>Now goto your code and and correct the bug.</p>
-        <img src="./img/updatec.png" alt="updated code screenshot" />
+        <pre>
+          <code>
+              function sum() {
+                var a =parseInt($("#firstNumber").val());
+                console.log(a);
+                var b =parseInt($("#secondNumber").val());
+                console.log(b);
+                var sum = a + b;
+                console.log(sum);
+                $("#ans").html("sum is " + sum);
+              }
+          </code>
+        </pre>
         <p>
           Finally go to your console again and enable the breakpoint of your
           modified code, then again give the inputs and check the results.
@@ -233,10 +270,17 @@
           to do only one step. Just <b>write the debugger</b> key word in your
           <b>source code</b>, that's all! very simple right.
         </p>
-        <img
-          src="./img/keyword.png"
-          alt="using debugger keyword in code screenshot"
-        />
+        <pre>
+          <code>
+              function sum() {
+                var a =$("#firstNumber").val();
+                var b =$("#secondNumber").val();
+                var sum = a + b;
+                debugger;
+                $("#ans").html("sum is " + sum);
+              }
+          </code>
+        </pre>
         <p>
           Now go to browser, open console, give the inputs, hit the calculate
           button. Now you can see the debugger is enabled and paused the code
