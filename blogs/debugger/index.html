@@ -47,7 +47,11 @@
         <p>
           Most of the developers can use different browsers to connect with the
           world. The major tools are listed here, and now we are going to look
-          at how to handle debugging with one of these tools.
+          at how to <b>handle debugging with Chrome</b> in this blog.
+        </p>
+        <p>
+          See you guys in my next blog about debugger
+          <b>handling with rest of the tools.</b>
         </p>
         <ul class="tools">
           <li>
@@ -84,17 +88,22 @@
           </li>
         </ul>
         <p>
-          Basically we have 3 methods of debugging our code, before going to
-          these methods you should follow these steps to save your time with the
-          dealing of bugs.
+          Basically we have <b>3 methods</b> of debugging our code, before going
+          to these methods you should follow these steps to save your time with
+          the dealing of bugs.
         </p>
         <ol type="1">
-          <li>Firstly analyse the entire code that you have written</li>
-          <li>Then try to split your major issues into small sections</li>
+          <li>Firstly <b>analyse the entire code</b> that you have written</li>
           <li>
-            Again read your code step by step and try to find the scope of bug
+            Then try to <b>split your major issues</b> into small sections
           </li>
-          <li>Then follow the debugging methods to find your bug and fix it</li>
+          <li>
+            Again <b>read your code</b> step by step and try to find the scope
+            of bug
+          </li>
+          <li>
+            Then follow the <b>debugging methods</b> to find your bug and fix it
+          </li>
         </ol>
         <h2>Method 1: Using console.log()</h2>
         <p>
@@ -115,8 +124,8 @@
         <p>
           In the above results we got 1+2 = 12, instead of 3. So here is the
           bug, that we are not getting the required outcome. Let us go to our
-          code and read the entire code again and write console.log on few
-          places to know the scope of a bug.
+          code and read the entire code again and <b>write console.log</b> on
+          few places to know the scope of a bug.
         </p>
         <p>
           Here is my source code for calculator application
@@ -133,32 +142,33 @@
           Try to find out the bug here, and the problem is, in javascript if you
           want to add numericals then you have to parse them otherwise the js
           considers the numbers as strings. So the operator that we have used
-          here is +. This operator adds the numericals and concatenates the
-          string. So, to perform addition operation we have to parse them or use
-          the number function to compute the actual numericals.
+          here is <b>+</b>. This operator <b>adds the numericals</b> and
+          <b>concatenates the string</b>. So, to perform addition operation we
+          have to <b>parse them</b> or use the <b>number function</b> to compute
+          the actual numericals.
         </p>
         <img src="./img/consolem.png" alt="code modifications image" />
         <p>Now verify the results in your application</p>
         <img src="./img/result.png" alt="final result screenshot" />
         <p>
-          And the bug is fixed and we got expected results. The disadvantage of
-          this method is that we have to read each and every line of the code
-          and have to include a huge number of console.log(), to find the value
-          and to analyse the scope of the bug. This could definitely beat the
-          clock. Here is a solution for this, look down for next interesting
-          method
+          And the bug is fixed and we got expected results. The
+          <b>disadvantage</b> of this method is that we have to read each and
+          every line of the code and have to include a
+          <b>huge number of console.log()</b>, to find the value and to analyse
+          the scope of the bug. This could definitely beat the clock. Here is a
+          solution for this, look down for next interesting method.
         </p>
         <h2>Method 2: Using Breakpoints</h2>
         <ul class="list">
           <li>
             One of the effective and comfortable ways of debugging is using the
-            breakpoints in the respective browser. Here are the steps to handle
-            with the breakpoints in Chrome.
+            <b>breakpoints</b> in the respective browser. Here are the steps to
+            handle with the breakpoints in Chrome.
           </li>
           <li>
-            Firstly analyse the scope of the bug, In this case the bug that we
-            found is, in our calculator application instead of summing the
-            numericals they are getting concatenated.
+            <b>Know your breakpoints</b> by analysing the scope of the bug, In
+            this case the bug that we found is, in our calculator application
+            instead of summing the numericals they are getting concatenated.
           </li>
           <li>
             So the issue raised on the computation part of the code so set a
@@ -224,8 +234,8 @@
         <small>Great! you came till here, Good to see you.</small>
         <p>
           Here is another cool method of debugging. So in this method you need
-          to do only one step. Just write the debugger key word in your source
-          code, that's all! very simple right.
+          to do only one step. Just <b>write the debugger</b> key word in your
+          <b>source code</b>, that's all! very simple right.
         </p>
         <img
           src="./img/keyword.png"
