@@ -41,14 +41,12 @@ function setTime() {
     ampm = hours >= 12 ? "PM" : "AM";
 
   var wishTime = ["Good Morning", "Good Afternoon", "Good Evening"];
-  if (ampm == "AM") {
+  if (hours < 12) {
     wish.innerHTML = `${wishTime[0]} Navya, what's your main focus today`;
-  } else if (hours >= 12 || hours <= 5 + "PM") {
+  } else if (hours < 17) {
     wish.innerHTML = `${wishTime[1]} Navya, what's your main focus today`;
-  } else if (hours >= 5 || hours <= 12 + "AM") {
-    wish.innerHTML = `${wishTime[2]} Navya, what's your main focus today`;
   } else {
-    wish.innerHTML = ` clock is not working properly`;
+    wish.innerHTML = `${wishTime[2]} Navya, what's your main focus today`;
   }
 
   setInterval(() => {
