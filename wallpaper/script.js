@@ -28,13 +28,13 @@ const timeEl = document.querySelector(".time"),
 
 function setTime() {
   const time = new Date(),
+    year = time.getFullYear(),
     month = time.getMonth(),
     day = time.getDay(),
     date = time.getDate(),
     hours = time.getHours(),
     hoursForClock = hours >= 13 ? hours % 12 : hours,
     minutes = time.getMinutes(),
-    seconds = time.getSeconds(),
     ampm = hours >= 12 ? "PM" : "AM";
 
   var wishTime = ["Good Morning", "Good Afternoon", "Good Evening"];
@@ -53,7 +53,7 @@ function setTime() {
   timeEl.innerHTML = `${hoursForClock}:${
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
-  dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
+  dateEl.innerHTML = `${days[day]} ${months[month]} <span>${date}</span> ${year}`;
 }
 
 setTime();
