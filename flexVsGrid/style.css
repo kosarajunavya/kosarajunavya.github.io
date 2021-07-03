@@ -3,6 +3,11 @@ div {
   border: 1px solid rgb(156, 153, 153);
   margin: 1rem;
 }
+/* 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+} */
 
 .container {
   display: grid;
