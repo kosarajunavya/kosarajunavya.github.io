@@ -11,6 +11,7 @@ html {
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/1600x900/?nature");
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -19,6 +20,7 @@ body {
   align-items: center;
   text-align: center;
   color: #fff;
+  overflow: hidden;
 }
 
 .clock-container {
@@ -26,7 +28,7 @@ body {
   width: 50rem;
   max-width: 100%;
   padding-top: 15%;
-  padding-bottom: 16%;
+  padding-bottom: 20%;
   overflow: hidden;
   justify-content: center;
   align-items: center;
