@@ -22,28 +22,28 @@ body {
   color: #fff;
   overflow: hidden;
 }
-nav ul{
+nav ul {
   display: flex;
   flex-direction: row;
   align-items: stretch;
 }
-nav ul li{
+nav ul li {
   list-style-type: none;
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: #fff;
   padding: 2rem;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 .clock-container {
   text-align: center;
-  width: 50rem;
+  width: 70rem;
   max-width: 100%;
-  padding-top: 20%;
-  padding-bottom: 27%;
+  padding-top: 10%;
+  padding-bottom: 37%;
   overflow: hidden;
   justify-content: center;
   align-items: center;
