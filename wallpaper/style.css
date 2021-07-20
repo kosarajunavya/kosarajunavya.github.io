@@ -58,7 +58,7 @@ a:hover {
 #quote {
   font-size: 1.8rem;
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1800px) {
   body {
     font-size: 1.6rem;
   }
