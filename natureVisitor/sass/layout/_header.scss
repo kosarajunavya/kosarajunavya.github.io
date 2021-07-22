@@ -17,7 +17,8 @@
   }
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    /* dpi defines dots per inch in mac,
+    and this resolution applys in that screen measure -webkit-min-device-pixel-ratio: 2 this is for safari browser and the dpi dont work in safari*/ only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     only screen and (min-width: 125em) {
     background-image: linear-gradient(
         to right bottom,
