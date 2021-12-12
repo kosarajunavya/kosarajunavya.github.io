@@ -1,10 +1,40 @@
-//example-1
 $(document).ready(function () {
-  $("#btn1").click(function () {
-    $("#chain").css("background-color", "Aqua").slideUp(1000).slideDown(1000);
+  var isOpen = false;
+  $(".searchbox-icon").click(function () {
+    if (isOpen == false) {
+      $(".searchbox").addClass("searchbox-open");
+      $(".searchbox-input").focus();
+      isOpen = true;
+    } else {
+      $(".searchbox").removeClass("searchbox-open");
+      $(".searchbox-input").focusout();
+      isOpen = false;
+    }
   });
-  // example-2
-  $("#hide").click(function () {
-    $("p").css("font-size", "5rem").hide(2000);
+  $(".searchbox-icon").mouseup(function () {
+    return false;
+  });
+  $(".searchbox").mouseup(function () {
+    return false;
+  });
+  $(document).mouseup(function () {
+    if (isOpen == true) {
+      $(".searchbox-icon").css("display", "block");
+      $(".searchbox-icon").click();
+    }
+  });
+
+  function buttonUp() {
+    var inputVal = $(".searchbox-input").val();
+    inputVal = $.trim(inputVal).length;
+    if (inputVal !== 0) {
+      $(".searchbox-icon").css("display", "none");
+    } else {
+      $(".searchbox-input").val("");
+      $(".searchbox-icon").css("display", "block");
+    }
+  }
+  $("input").keyup(function () {
+    buttonUp();
   });
 });

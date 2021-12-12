@@ -1,0 +1,43 @@
+<div class="latest-publications">
+  <div class="publications-header">
+    <div class="publications-title">{{ "Latest Publications"|t }}</div>
+    <div class="publications-view">
+      <span class="grid hidden">Grid</span>
+      <span class="list">List</span>
+    </div>
+  </div>
+  <div class="publications-grid">
+    {% for publication in data %}
+      <div class="publications-grid-data">
+        <div class="publications-manuscript">
+          <a href="{{ publication.alias }}">{{ publication.publication_type }}</a>
+        </div>
+        <div class="publications-date">{{ publication.datePublished }}</div>
+        <div class="publications-description">{{ publication.description|raw }}</div>
+        {% if publication.journal %}
+          <div class="publication-journal">{{ publication.journal|t }}</div>
+        {% endif %}
+        {% if publication.indication %}
+          <div class="publication-indication">{{ publication.indication|t }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="publications-list hidden">
+    {% for publication in data %}
+      <div class="publications-list-data">
+        <div class="publications-manuscript">
+          <a href="{{ publication.alias }}">{{ publication.publication_type }}</a>
+        </div>
+        <div class="publications-date">{{ publication.datePublished }}</div>
+        <div class="publications-description">{{ publication.description|raw }}</div>
+        {% if publication.journal %}
+          <div class="publication-journal">{{ publication.journal|t }}</div>
+        {% endif %}
+        {% if publication.indication %}
+          <div class="publication-indication">{{ publication.indication|t }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

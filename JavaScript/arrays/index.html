@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arrays</title>
-    <script src="./script.js"></script>
-</head>
-<body>
-    <h1>ARRAYS</h1>
-    <p>array concepts</p>
-</body>
+  <head>
+    <title>for each</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      let text = "";
+      const color = ["skyblue", "orange", "pink"];
+      color.forEach(colors);
+
+      document.getElementById("output").innerHTML = text;
+
+      function colors(item, index) {
+        text += index + " ** " + item + "<br>";
+      }
+    </script>
+  </body>
 </html>

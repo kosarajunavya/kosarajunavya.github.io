@@ -54,3 +54,17 @@ console.log(typeof console);
 
 const myBirthday = "16.07.1998";
 console.log(myBirthday);
+
+function checkAge(age) {
+  if (age >= 18 && age <= 70) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var age = prompt("How Old Are You?", 18);
+if (checkAge(age)) {
+  console.log("Access Granted");
+} else {
+  console.log("Access Denied");
+}

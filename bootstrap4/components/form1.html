@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search toogle</title>
+    <style>
+      .container {
+  width: 600px;
+  margin: 50px auto;
+}
+
+.searchbox {
+  position: relative;
+  min-width: 40px;
+  width: 0%;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 24px;
+
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.searchbox-input {
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  background: var( --color-white);
+  width: 200px;
+  height: 40px;
+  margin: 0;
+  padding: 0px 55px 0px 20px;
+  font-size: var(--body-3-fontsize);
+  color: #293033a6;
+}
+.searchbox-input::-webkit-input-placeholder {
+  color: #293033a6;
+}
+.searchbox-input:-moz-placeholder {
+  color: #293033a6;
+}
+.searchbox-input::-moz-placeholder {
+  color: #293033a6;
+}
+.searchbox-input:-ms-input-placeholder {
+  color: #293033a6;
+}
+.searchbox-icon,
+.searchbox-submit {
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  line-height: 50px;
+  text-align: center;
+  color: #293033A6;
+  background: var( --color-white);
+  border-radius: 50%;
+}
+.searchbox-open {
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+}
+    </style>
+  </head>
+  <body>
+      <form class="icon-2 searchbox">
+        <input
+          class="searchbox-input"
+          name="search"
+          placeholder="Search"
+          type="search"
+        />
+        <input class="searchbox-submit" type="submit" />
+        <span class="searchbox-icon"
+          ><a href="#"
+            >🔍</span>
+      </form>
+      <script src="./toogle.js"></script>
+  </body>
+</html>

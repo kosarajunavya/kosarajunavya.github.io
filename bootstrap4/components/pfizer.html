@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navigation tools</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- card section start-->
+    <section class="latest-publicatations">
+      <div class="title">
+        <h3>
+          <span>{{ "Latest Publications"|t }}</span>
+          <span class="float-right"><img src="" alt="" /></span>
+          <span class="float-right">list-icon</span>
+        </h3>
+      </div>
+      <!-- grid-view -->
+      <div class="row">
+        <div class="col">
+          <div class="publications-grid">
+            <div>
+              <span class="bookmark"
+                ><a href="{{ publication.alias }}"
+                  >{{ publication.publication_type }}</a
+                ></span
+              >
+              <span class="float-right">icon</span>
+            </div>
+            <div>
+              <div class="time">
+                <span class="latest">svg</span>published 2hr 32 min ago
+              </div>
+              <p class="grid-text">
+                Health-related quality of life in hormone receptor-positive
+                early breast cancer: Analyses from the Surveillance,
+                Epidemiology, and End Results Medicare Health Outcomes Survey
+                Lorem Ipsum…
+              </p>
+            </div>
+            <div class="clearfix footer-border pt-3">
+              <div class="float-left">
+                <div class="grid-journal">{{ publication.journal|t }}</div>
+                <div class="grid-portfolio">Oncology Cross-Portfolio</div>
+              </div>
+              <div class="float-right">
+                <div class="grid-indication">
+                  {{ publication.indication|t }}
+                </div>
+                <div class="grid-secondary">Secondary Indication</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="publications-grid">
+            <div>
+              <span class="bookmark">manuscript</span>
+              <span class="float-right">icon</span>
+            </div>
+            <div>
+              <div class="time">
+                <span class="latest">svg</span>published 2hr 32 min ago
+              </div>
+              <p class="grid-text">
+                Health-related quality of life in hormone receptor-positive
+                early breast cancer: Analyses from the Surveillance,
+                Epidemiology, and End Results Medicare Health Outcomes Survey
+                Lorem Ipsum…
+              </p>
+            </div>
+            <div class="clearfix footer-border pt-3">
+              <div class="float-left">
+                <div class="grid-journal">Journal</div>
+                <div class="grid-portfolio">Oncology Cross-Portfolio</div>
+              </div>
+              <div class="float-right">
+                <div class="grid-indication">Indication</div>
+                <div class="grid-secondary">Secondary Indication</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="publications-grid">
+            <div>
+              <span class="bookmark">manuscript</span>
+              <span class="float-right">icon</span>
+            </div>
+            <div>
+              <div class="time">
+                <span class="latest">svg</span>published 2hr 32 min ago
+              </div>
+              <p class="grid-text">
+                Health-related quality of life in hormone receptor-positive
+                early breast cancer: Analyses from the Surveillance,
+                Epidemiology, and End Results Medicare Health Outcomes Survey
+                Lorem Ipsum…
+              </p>
+            </div>
+            <div class="clearfix footer-border pt-3">
+              <div class="float-left">
+                <div class="grid-journal">Journal</div>
+                <div class="grid-portfolio">Oncology Cross-Portfolio</div>
+              </div>
+              <div class="float-right">
+                <div class="grid-indication">Indication</div>
+                <div class="grid-secondary">Secondary Indication</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <!-- latest publicatations list -->
+      <div class="row publications-list">
+        <div class="col-lg-2">
+          <span class="bookmark">manuscript</span>
+          <div class="time">
+            <span class="latest">svg</span>published 2hr 32 min ago
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <span class="list-title">title</span>
+          <div class="publications-description-list">
+            {{ publication.description|raw }}
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="list-journal">Journal</div>
+              <div class="list-portfolio">Oncology Cross-Portfolio</div>
+            </div>
+            <div class="col-lg-6">
+              <div class="list-indication">Indication</div>
+              <div class="list-secondary">Secondary Indication</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">icon</div>
+      </div>
+    </section>
+
+    <section class="metrics-dashboard"></section>
+
+    <div class="main-menu">
+      <nav>
+        <ul>
+          <li>
+            <a href="#"> Disease area</a>
+          </li>
+          <li>
+            <a href="#">Congresses</a>
+          </li>
+          <li>
+            <a href="#"> Data Dissemination</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- card section end-->
+    <!-- <footer class="footer-wrapper">
+      <div class="footer-container">
+        <div class="footer-1 col-lg-3 col-md-6 col-sm-12">
+          <h5 class="text-left text-uppercase">DISEASE AREAS</h5>
+          <nav>
+            <ul class="list-unstyled text-left">
+              <li><a href="#">Prostate Cancer</a></li>
+              <li><a href="#">Breast Cancer</a></li>
+              <li><a href="#">Coloresctal Cancer</a></li>
+              <li><a href="#">RCC/UC</a></li>
+              <li><a href="#">Hematology</a></li>
+              <li><a href="#">Immuno-oncology</a></li>
+              <li><a href="#">Lung Cancer</a></li>
+              <li><a href="#">Other Indications</a></li>
+              <li><a href="#">Melanoma</a></li>
+              <li><a href="#">Biosimilars</a></li>
+              <li><a href="#">Early Development</a></li>
+              <li><a href="#">Oncology Cross-Portfolio</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-2 col-lg-3 col-md-6 col-sm-12">
+          <h5 class="text-left text-uppercase">CONGRESSES</h5>
+          <nav>
+            <ul class="list-unstyled text-left">
+              <li><a href="#">AACR</a></li>
+              <li><a href="#">ASCO</a></li>
+              <li><a href="#">ASTRO</a></li>
+              <li><a href="#">BIO International Convention</a></li>
+              <li><a href="#">Congress ABC</a></li>
+              <li><a href="#">EHA</a></li>
+              <li><a href="#">ESMO</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-3 col-lg-3 col-md-6 col-sm-12">
+          <h5 class="text-left text-uppercase">DATA DISSEMINATION</h5>
+          <nav>
+            <ul class="list-unstyled text-left">
+              <li><a href="#">Closed Platforms</a></li>
+              <li><a href="#">Open Platforms/Social Media</a></li>
+              <li><a href="#">AI and Data Visualization</a></li>
+              <li><a href="#">Patient Centricity Initiatives</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-4 col-lg-3 col-md-6 col-sm-12">
+          <h5 class="text-left text-uppercase">Comments or questions?</h5>
+          <ul class="list-unstyled text-left">
+            <li><a href="#">Contact us &gt;</a></li>
+          </ul>
+          <div class="copyright">
+            <img alt="logo" src="#" />
+            <p>
+              © 2002-2021 Pfizer Inc. All rights reserved. This information,
+              including product information, is intended only for residents of
+              the United States. The products discussed herein may have
+              different labeling in different countries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+  </body>
+</html>

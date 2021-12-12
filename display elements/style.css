@@ -1,0 +1,86 @@
+/* .one,
+.two,
+.three,
+.four {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  background-color: deepskyblue;
+  color: black;
+  font-weight: bolder;
+  padding: 25px;
+  font-size: 20px;
+}
+.wrapper {
+  background: black;
+  width: 1440px;
+  max-width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 100px 0;
+} */
+/* .one,
+.two,
+.three,
+.four {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  background-color: deepskyblue;
+  color: black;
+  font-weight: bolder;
+  padding: 25px;
+  font-size: 20px;
+}
+.wrapper {
+  background: black;
+  width: 1440px;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+} */
+
+/* .one,
+.two,
+.three,
+.four {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  background-color: deepskyblue;
+  color: black;
+  font-weight: bolder;
+  padding: 25px;
+  font-size: 20px;
+  display: inline-block;
+}
+.wrapper {
+  background: black;
+  width: 1440px;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 100px;
+} */
+/* .one,
+.two,
+.three,
+.four {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  background-color: deepskyblue;
+  color: black;
+  font-weight: bolder;
+  float: left;
+  padding: 25px;
+  font-size: 20px;
+}
+.wrapper {
+  background: black;
+  width: 1440px;
+  padding: 100px;
+  float: right;
+} */

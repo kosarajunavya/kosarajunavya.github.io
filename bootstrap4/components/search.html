@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./search.css" />
+  </head>
+  <body>
+    <form class="search">
+      <input type="checkbox" id="toggleSearch" class="search__toggle" hidden />
+      <div class="search__field">
+        <label for="toggleSearch" class="search__label"> </label>
+        <input
+          type="text"
+          class="search__input"
+          placeholder="What are you looking for?"
+        />
+        <label for="toggleSearch" class="search__label">
+          <div class="search__button">
+            <div class="search__icon search__button--toggle"></div>
+          </div>
+          <button class="search__button search__button--submit">
+            <div class="search__icon">
+              <a href="#">
+                <img
+                  src="/profiles/pfeconconnectpfcom_profile/themes/onconnect/images/icons/search.svg"
+                  alt="search-icon"
+              /></a>
+            </div>
+          </button>
+        </label>
+      </div>
+    </form>
+  </body>
+</html>

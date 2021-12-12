@@ -1,0 +1,42 @@
+/* .parent {
+  background-color: #091173;
+  padding: 100px;
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.child {
+  background-color: #fff;
+  color: #091173;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 18px;
+} */
+.parent {
+  background-color: #091173;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 400px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.child {
+  background-color: #fff;
+  color: #091173;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  position: relative;
+  font-weight: bolder;
+  font-size: 18px;
+  margin: 10px 0;
+}

@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datatypes</title>
     <script src="./script.js"></script>
+    <style>
+      .cross-stand-alone {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: none;
+        position: relative;
+        width: 40px;
+        height: 40px;
+      }
+      .cross-stand-alone:before,
+      .cross-stand-alone:after {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: #000;
+        border-radius: 4px;
+      }
+      .cross-stand-alone:before {
+        transform: rotate(45deg);
+      }
+      .cross-stand-alone:after {
+        transform: rotate(-45deg);
+      }
+      .cross-stand-alone span {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <h1>JavaScript</h1>
     <p>Basic structure and related examples for Data-types</p>
+    <span class="cross-stand-alone"> hi</span>
   </body>
 </html>
