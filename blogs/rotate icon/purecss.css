@@ -1,0 +1,13 @@
+.container-wrapper {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+}
+h1 a {
+  text-decoration: none;
+  color: #000;
+}
+.accordion-body-wrapper {
+  display: none;
+}

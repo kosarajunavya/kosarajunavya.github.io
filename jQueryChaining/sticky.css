@@ -1,0 +1,51 @@
+body {
+  padding: 100px 50px;
+  background: skyblue;
+  max-width: 50%;
+  margin: 0 auto;
+}
+header,
+footer,
+.main {
+  padding: 50px;
+  background: #fff;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  display: block;
+}
+main {
+  background: #fff;
+  margin: 30px 0;
+  padding: 50px 0;
+}
+z .non-sticky-container {
+  flex: 0 0 45%;
+  padding: 0 50px;
+}
+.sticky-container a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sticky-container {
+  width: 300px;
+  max-width: 30%;
+  padding: 30px;
+  position: absolute;
+  top: 0px;
+  right: 38px;
+  z-index: 11;
+  background: #050d57;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.scroll {
+  transition: all 0.5s ease-in-out;
+}

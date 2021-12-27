@@ -8,121 +8,34 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <title>accordion functionality with bootstrap</title>
+    <style>
+      .collapsed img {
+        transform: rotate(180deg);
+      }
+    </style>
     <title>collapsable cards</title>
   </head>
   <body>
-    <div class="container">
-      <button
-        class="btn btn-primary d-block mb-4"
-        data-toggle="collapse"
-        data-target="#collapse-btn-1"
-      >
-        Read More
-      </button>
-
-      <div class="collapse mb-5" id="collapse-btn-1">
-        <div class="card">
-          <div class="card-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius
-            libero quisquam nobis explicabo vel non necessitatibus ipsum
-            doloribus cupiditate voluptate recusandae quo autem error debitis,
-            sed, minima repellendus commodi.
-          </div>
-        </div>
-      </div>
-
+    <div class="container p-xl-5">
       <!-- ACCORDION -->
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header">
-            <h5>
-              <a
-                href="#collapse1"
-                data-parent="#accordion"
-                data-toggle="collapse"
-              >
-                Collapse One
-              </a>
-            </h5>
-          </div>
-
-          <div id="collapse1" class="collapse show">
-            <div class="card-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
-              architecto aut, recusandae totam ullam aperiam. Nesciunt expedita
-              officiis animi quam corporis optio inventore facilis sint et nulla
-              in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi
-              nostrum officia, illo.
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <h5>
-              <a
-                href="#collapse2"
-                data-parent="#accordion"
-                data-toggle="collapse"
-              >
-                Collapse Two
-              </a>
-            </h5>
-          </div>
-
-          <div id="collapse2" class="collapse">
-            <div class="card-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
-              architecto aut, recusandae totam ullam aperiam. Nesciunt expedita
-              officiis animi quam corporis optio inventore facilis sint et nulla
-              in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi
-              nostrum officia, illo.
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <h5>
-              <a
-                href="#collapse3"
-                data-parent="#accordion"
-                data-toggle="collapse"
-              >
-                Collapse Three
-              </a>
-            </h5>
-          </div>
-
-          <div id="collapse3" class="collapse">
-            <div class="card-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum
-              architecto aut, recusandae totam ullam aperiam. Nesciunt expedita
-              officiis animi quam corporis optio inventore facilis sint et nulla
-              in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi
-              nostrum officia, illo.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="accordion" id="accordionExample">
       <div class="card">
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
-            <button
-              class="btn btn-link"
+            <a
+              class="btn d-flex justify-content-between btn-link"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseOne"
+              href="#collapseOne"
               aria-expanded="false"
               aria-controls="collapseOne"
             >
-              Collapsible Group Item #1
-            </button>
+            
+        Collapsible Group Item #1
+        <img src="./down-arrow.svg" alt="icon">
+            </a>
+            
           </h2>
         </div>
 
@@ -149,16 +62,19 @@
       <div class="card">
         <div class="card-header" id="headingTwo">
           <h2 class="mb-0">
-            <button
-              class="btn btn-link collapsed"
+            <a
+              class="btn btn-link d-flex justify-content-between collapsed"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseTwo"
+              href="#collapseTwo"
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              Collapsible Group Item #2
-            </button>
+            
+        Collapsible Group Item #2
+        <img src="./down-arrow.svg" alt="icon">
+            </a>
+            
           </h2>
         </div>
         <div
@@ -184,16 +100,19 @@
       <div class="card">
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
-            <button
-              class="btn btn-link collapsed"
+            <a
+              class="btn btn-link d-flex justify-content-between collapsed"
               type="button"
               data-toggle="collapse"
-              data-target="#collapseThree"
+              href="#collapseThree"
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Collapsible Group Item #3
-            </button>
+            
+        Collapsible Group Item #3
+        <img src="./down-arrow.svg" alt="icon">
+            </a>
+            
           </h2>
         </div>
         <div

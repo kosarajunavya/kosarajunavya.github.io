@@ -33,7 +33,7 @@ html.dark {
   margin: 0;
 } */
 
-.toggle {
+/* .toggle {
   cursor: pointer;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -45,10 +45,43 @@ html.dark {
   margin: 0 auto;
   position: absolute;
   top: 100px;
+} */
+body {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  width: 50%;
+  margin: 60px auto;
+  display: block;
+  padding: 20px;
 }
 
 .toggle:focus {
   outline: none;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  width: 200px;
+  display: block;
+  margin: 25px auto;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
 /* .clock-container {
