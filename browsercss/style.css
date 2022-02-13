@@ -2,7 +2,7 @@ body {
   background-color: skyblue;
 }
 .main-container {
-  padding: 50px;
+  padding: 50px 112px;
   align-items: center;
   display: -webkit-box;
   display: -moz-box;
@@ -20,6 +20,10 @@ body {
   padding: 23px 0;
   margin: 0 0 32px 0;
   flex: 0 0 32%;
+  -webkit-flex: 0 0 32%;
+  -moz-flex: 0 0 32%;
+  -ms-flex: 0 0 32%;
+  -o-flex: 0 0 32%;
   text-align: center;
 }
 .child-container:nth-child(3n + 2) {
