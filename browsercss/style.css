@@ -1,0 +1,28 @@
+body {
+  background-color: skyblue;
+}
+.main-container {
+  padding: 50px;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.child-container {
+  background-color: #fff;
+  padding: 23px 0;
+  margin: 0 0 32px 0;
+  flex: 0 0 32%;
+  text-align: center;
+}
+.child-container:nth-child(3n + 2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
