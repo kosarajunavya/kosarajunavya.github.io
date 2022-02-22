@@ -42,10 +42,6 @@
   border-image-slice: 1;
 }
 /* radio buttons */
-/* .form__radio-group {
-  width: 49%;
-  display: inline-block;
-} */
 .form__radio-group {
   margin-bottom: 15px;
 }
