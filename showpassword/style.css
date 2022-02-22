@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: skyblue;
+}
+.userName {
+  padding: 30px;
+}
+.password {
+  padding: 0 30px 30px;
+}
+.wrapper form {
+  border: 1px solid #00000024;
+  background: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 50px 0;
+}
+.wrapper h1 {
+  text-align: center;
+}
+.userName label,
+.password label {
+  display: block;
+  padding-bottom: 10px;
+}
+.userName input,
+.password input {
+  padding: 5px 10px;
+}
+.form-wrapper {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.toggle-hide-show {
+  position: relative;
+  right: 30px;
+}
+input:invalid {
+  border-color: red;
+}

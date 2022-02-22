@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jQuery toogle search-bar</title>
+    <title>jQuery show/hide password functionality</title>
     <!-- this is the jQuery cdn link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="searchbox">
+    <form action="#">
+      <label for="password">Password</label>
       <input
-        type="search"
-        placeholder="Search......"
-        name="search"
-        class="searchbox-input"
-        required
+        type="password"
+        id="password"
+        class="form-control"
+        value="password"
       />
-      <input type="submit" class="searchbox-submit" />
-      <span class="searchbox-icon">🔍</span>
-    </div>
-    {#
-    <div>
-      <h1 id="sticky" style="background-color: black">sticky</h1>
-    </div>
-    #}
-
-    <!-- <div class="container">
-      <div class="header">This is header</div>
-      <div class="sidebar sticky">This is side bar</div>
-      <div class="content">This is main content</div>
-      <div class="footer">
-        <div class="sticky-stopper"></div>
-        This is my footer
-      </div>
-    </div> -->
+      <i class="toggle-hide-show fa fa-fw fa-eye-slash"></i>
+    </form>
 
     <script src="./script.js"></script>
   </body>

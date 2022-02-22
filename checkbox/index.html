@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Design your own custom checkboxes and radio buttons</h1>
+      <form action="#">
+        <div class="intro">
+          <div>
+            <label for="firstname"> First Name</label>
+            <input type="text" placeholder="enter your first name" />
+          </div>
+          <div>
+            <label for="lastname"> Last Name</label>
+            <input type="text" placeholder="enter your last name" />
+          </div>
+        </div>
+        <div class="custom-styles">
+          <div>
+            <div class="check-box-group">
+              <div>Intrested in</div>
+              <div>
+                <input
+                  class="custom-checkbox"
+                  id="painting"
+                  type="checkbox"
+                  value="painting"
+                />
+                <label for="painting">painting</label>
+              </div>
+              <div>
+                <input
+                  class="custom-checkbox"
+                  id="drawing"
+                  type="checkbox"
+                  value="drawing"
+                />
+                <label for="drawing">drawing</label>
+              </div>
+              <div>
+                <input
+                  class="custom-checkbox"
+                  id="crafting"
+                  type="checkbox"
+                  value="crafting"
+                />
+                <label for="crafting">crafting</label>
+              </div>
+              <div>
+                <input
+                  class="custom-checkbox"
+                  id="travelling"
+                  type="checkbox"
+                  value="travelling"
+                />
+                <label for="travelling">travelling</label>
+              </div>
+            </div>
+          </div>
+          <div class="form__group">
+            <div class="form__radio-group">Select trip option</div>
+            <div class="form__radio-group">
+              <input
+                type="radio"
+                class="form__radio-input"
+                id="small"
+                name="size"
+              />
+              <label for="small" class="form__radio-label">
+                <span class="form__radio-button"></span>
+                Single trip
+              </label>
+            </div>
+
+            <div class="form__radio-group">
+              <input
+                type="radio"
+                class="form__radio-input"
+                id="large"
+                name="size"
+              />
+              <label for="large" class="form__radio-label">
+                <span class="form__radio-button"></span>
+                Trip with gang
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

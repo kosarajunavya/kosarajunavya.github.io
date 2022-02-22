@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jQuery show/hide password functionality</title>
+    <!-- this is the jQuery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="#" id="Login-form">
+        <h1>User Login Form</h1>
+        <div class="form-wrapper">
+          <div class="userName">
+            <label for="name">User Name</label>
+            <input
+              type="text"
+              pattern="[A-Za-z]{3}"
+              placeholder="userName / email"
+            />
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" /><i
+              class="toggle-hide-show fa fa-fw fa-eye-slash"
+            ></i>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

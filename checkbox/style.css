@@ -1,0 +1,118 @@
+/* check-box design */
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.custom-checkbox:hover + label:before {
+  background: #29c4f3 !important;
+}
+.custom-checkbox:checked + label:before {
+  background: #29c4f3;
+}
+.custom-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 rgb(255, 255, 255), 4px 0 0 rgb(255, 255, 255),
+    4px -2px 0 rgb(250, 242, 242), 4px -4px 0 white,
+    4px -6px 0 rgb(247, 243, 243), 4px -8px 0 rgb(253, 246, 246);
+  transform: rotate(45deg);
+  border: 0;
+}
+.custom-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 15px;
+  height: 15px;
+  border: 2.5px solid #29c4f3;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, #29c4f3, #0043ff);
+  border-image-slice: 1;
+}
+/* radio buttons */
+/* .form__radio-group {
+  width: 49%;
+  display: inline-block;
+} */
+.form__radio-group {
+  margin-bottom: 15px;
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-label {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+}
+.form__radio-button {
+  height: 15px;
+  width: 15px;
+  border: 3px solid #29c4f3;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.form__radio-button::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #29c4f3;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
+}
+/* this part is only for the background look and feel pupose */
+.wrapper {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  background: aliceblue;
+}
+.custom-styles {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.intro {
+  text-align: center;
+}
+.intro div {
+  padding-bottom: 15px;
+}
+.check-box-group div {
+  padding-bottom: 15px;
+}
+.intro input {
+  padding: 7px;
+  border: 1px solid #29c4f3;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+.wrapper h1 {
+  text-align: center;
+}
