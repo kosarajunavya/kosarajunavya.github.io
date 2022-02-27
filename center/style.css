@@ -1,0 +1,64 @@
+/* with margin hack */
+/* .wrapper {
+  padding: 30px;
+  background-color: skyblue;
+}
+.container {
+  max-width: 50%;
+  background: white;
+  padding: 30px;
+  margin: 0 auto;
+} */
+
+/* with grid */
+/* .wrapper {
+  padding: 30px;
+  background-color: skyblue;
+  display: grid;
+}
+.container {
+  max-width: 50%;
+  background: white;
+  padding: 30px;
+  align-self: center;
+  justify-self: center;
+} */
+
+/* with flex */
+
+/* .wrapper {
+  padding: 30px;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 50%;
+  background: white;
+  padding: 30px;
+} */
+
+/* with transitions */
+/* .wrapper {
+  padding: 30px;
+  background-color: skyblue;
+}
+.container {
+  max-width: 50%;
+  background: white;
+  padding: 30px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+} */
+
+/* with padding hack */
+.wrapper {
+  padding: 30px 25%;
+  background-color: skyblue;
+}
+.container {
+  background: white;
+  padding: 30px;
+}
