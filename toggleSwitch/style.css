@@ -1,0 +1,102 @@
+.switch {
+  display: inline-flex;
+  align-items: center;
+}
+.switch_box {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 10px 0 25px;
+}
+.effect-on {
+  font-size: 50px;
+}
+input[type="checkbox"].switch {
+  font-size: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 3.5em;
+  height: 1.5em;
+  background: #ddd;
+  border-radius: 3em;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgb(3 115 9);
+}
+.form-container {
+  max-width: 45%;
+  margin: 50px auto;
+  text-align: center;
+  background: skyblue;
+  padding: 7% 0;
+  color: white;
+}
+.off {
+  display: none;
+}
+.effect {
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.on {
+  position: relative;
+  left: -50px;
+  color: rgb(3 115 9);
+  font-weight: bolder;
+  font-size: 17px;
+}
+input[type="checkbox"].switch:checked {
+  background: rgb(4, 172, 13, 0.6);
+  border: none;
+}
+input[type="checkbox"].switch:checked ~ .on {
+  display: none;
+}
+input[type="checkbox"].switch:checked ~ .off {
+  display: inline;
+  position: relative;
+  left: -88px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 17px;
+}
+input[type="checkbox"].switch:checked .effect-on {
+  font-size: initial;
+}
+input[type="checkbox"].switch:checked .effect-off {
+  transition: color 0.92s, font-size 0.9s;
+}
+input[type="checkbox"].switch:after {
+  position: absolute;
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"].switch:checked:after {
+  left: calc(100% - 1.5em);
+}

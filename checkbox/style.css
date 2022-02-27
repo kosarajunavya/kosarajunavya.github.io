@@ -38,7 +38,7 @@
   border: 2.5px solid #29c4f3;
   border-radius: 4px;
   border: 3px solid transparent;
-  border-image: linear-gradient(45deg, #29c4f3, #0043ff);
+  border-image: linear-gradient(45deg, rgb(80, 191, 224), rgb(0, 67, 255));
   border-image-slice: 1;
 }
 /* radio buttons */

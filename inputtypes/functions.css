@@ -1,0 +1,37 @@
+body {
+  font-size: var(); /* for maintaing dynamic values */
+  background: url(); /* takes image input and rendered as background-image */
+  background-color: attr(); /* gets the value of an attribute */
+  padding: calc(); /* it will give the calculated value */
+  color: rgb(); /**/
+  color: rgba(); /**/
+  color: hls(); /**/
+  color: hlsa() /**/ cubic-beizer(); /**/
+  offset-path: path(""); /**/
+}
+p {
+  /* filter functions */
+  filter: blur(); /**/
+  filter: brightness(); /**/
+  filter: contrast(); /**/
+  filter: grayscale(); /**/
+  filter: hue-rotate(); /**/
+  filter: invert(); /**/
+  filter: opacity(); /**/
+  filter: saturate(); /**/
+  filter: sepia(); /**/
+  filter: url(); /**/
+  filter: calc(); /**/
+}
+
+/* psudo functions */
+:lang(en) > q {
+  /* will define the language of the element */
+  quotes: "";
+}
+/* :not()
+:nth-child()
+:nth-last-child()
+:last-child()
+:nth-of-type()
+:nth-last-of-type() */
