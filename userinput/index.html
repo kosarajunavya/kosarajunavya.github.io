@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Notifies user, when given input range limit exceeds</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Alerts user when exceeds the input range</h1>
+      <p>
+        User will be notified when he gives more than the limit of given input
+        and the input type may be either text, number or the text with in the
+        text area
+      </p>
+      <form action="#">
+        <div class="input">
+          <label for="name">First Name</label>
+          <input
+            type="text"
+            onKeyDown="textLimit(this,10);"
+            onKeyUp="textLimit(this,10);"
+          />
+        </div>
+        <small>Please provide your input less than 10 characters</small>
+
+        <div>
+          <label for="age">Experience</label>
+          <input type="number" id="quantity" name="quantity" min="2" max="4" />
+          <input class="submit" type="submit" />
+        </div>
+        <small>We need only 2 to 4 years of experienced people</small>
+
+        <textarea
+          name="comments"
+          onKeyDown="textLimit(this,30);"
+          onKeyUp="textLimit(this,30);"
+        ></textarea>
+        <input class="submit" type="submit" />
+        <small>Allowed number of characters for this comments is only 30</small>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

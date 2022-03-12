@@ -1,0 +1,38 @@
+body {
+  background: #8cdafae0;
+}
+.wrapper {
+  max-width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 7px;
+}
+#textLimit {
+  padding: 5px;
+  border: 1px solid #bab9b9;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.input {
+  margin: 8px 0 0;
+}
+#textLimit:focus {
+  outline: none;
+}
+
+/* for number type range */
+.submit {
+  background: #419dec;
+  border: 0;
+  color: #fff;
+  font-weight: bolder;
+  padding: 8px 46px;
+  display: block;
+  margin: 15px 0 4px;
+  letter-spacing: 1px;
+  border-radius: 7px;
+}
+#quantity {
+  padding: 1px 5px 0 16px;
+}
