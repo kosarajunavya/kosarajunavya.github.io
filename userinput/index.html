@@ -23,23 +23,22 @@
             onKeyDown="textLimit(this,10);"
             onKeyUp="textLimit(this,10);"
           />
+          <small>Please provide your input less than 10 characters</small>
         </div>
-        <small>Please provide your input less than 10 characters</small>
 
         <div>
           <label for="age">Experience</label>
           <input type="number" id="quantity" name="quantity" min="2" max="4" />
-          <input class="submit" type="submit" />
+          <small>We need only 2 to 4 years of experienced people</small>
         </div>
-        <small>We need only 2 to 4 years of experienced people</small>
 
         <textarea
           name="comments"
           onKeyDown="textLimit(this,30);"
           onKeyUp="textLimit(this,30);"
         ></textarea>
-        <input class="submit" type="submit" />
         <small>Allowed number of characters for this comments is only 30</small>
+        <input class="submit" type="submit" />
       </form>
     </div>
     <script src="./script.js"></script>

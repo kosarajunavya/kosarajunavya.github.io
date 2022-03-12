@@ -20,7 +20,10 @@ body {
 #textLimit:focus {
   outline: none;
 }
-
+small {
+  display: block;
+  margin-bottom: 10px;
+}
 /* for number type range */
 .submit {
   background: #419dec;
