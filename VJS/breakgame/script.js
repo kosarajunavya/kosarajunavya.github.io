@@ -2,8 +2,8 @@ const rulesBtn = document.getElementById("rules-btn");
 const closeBtn = document.getElementById("close-btn");
 const rules = document.getElementById("rules");
 const canvas = document.getElementById("canvas");
+const pause = document.getElementById("pause");
 const ctx = canvas.getContext("2d");
-
 let score = 0;
 
 const brickRowCount = 9;
@@ -20,6 +20,12 @@ const ball = {
   dy: -4,
   visible: true,
 };
+
+pause.addEventListener("click", () => {
+  ball[x] = 0;
+  ball[y] = 0;
+  console.log(ball);
+});
 
 // Create paddle props
 const paddle = {
@@ -103,7 +109,6 @@ function movePaddle() {
     paddle.x = 0;
   }
 }
-
 // Move ball on canvas
 function moveBall() {
   ball.x += ball.dx;
@@ -207,7 +212,7 @@ function update() {
   requestAnimationFrame(update);
 }
 
-update();
+// update();
 
 // Keydown event
 function keyDown(e) {
@@ -237,3 +242,4 @@ document.addEventListener("keyup", keyUp);
 // Rules and close event handlers
 rulesBtn.addEventListener("click", () => rules.classList.add("show"));
 closeBtn.addEventListener("click", () => rules.classList.remove("show"));
+// start.addEventListener("click", () => update);
