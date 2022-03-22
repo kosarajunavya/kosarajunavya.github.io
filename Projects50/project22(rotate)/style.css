@@ -12,32 +12,33 @@ body {
   margin: 0;
 }
 
-.kinetic {
+.spinner {
   position: relative;
   height: 80px;
   width: 80px;
 }
 
-.kinetic::after,
-.kinetic::before {
+.spinner::after,
+.spinner::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 0;
+  /* the border value is the actual logic behind the spinner */
   border: 30px solid transparent;
   border-radius: 50%;
   border-bottom-color: #fff;
-  animation: rotateA 2s linear infinite 0.5s;
+  animation: rotatex 2s linear infinite 0.5s;
 }
 
-.kinetic::before {
+.spinner::before {
   transform: rotate(90deg);
-  animation: rotateB 2s linear infinite;
+  animation: rotatey 2s linear infinite;
 }
 
-@keyframes rotateA {
+@keyframes rotatex {
   0%,
   25% {
     transform: rotate(0deg);
@@ -53,7 +54,7 @@ body {
   }
 }
 
-@keyframes rotateB {
+@keyframes rotatey {
   0%,
   25% {
     transform: rotate(90deg);
