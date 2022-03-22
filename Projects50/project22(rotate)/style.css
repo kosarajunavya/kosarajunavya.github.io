@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #2c3e50;
+  background-color: #050d57;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@ body {
   left: 0;
   width: 0;
   height: 0;
-  border: 50px solid transparent;
+  border: 30px solid transparent;
   border-radius: 50%;
   border-bottom-color: #fff;
   animation: rotateA 2s linear infinite 0.5s;
