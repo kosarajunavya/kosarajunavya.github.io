@@ -72,6 +72,15 @@ body {
     transform-origin: bottom left;
     transition: .3s;
     cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .click span{
+    display: block;
+    padding-right: 10px;
+    font-size: 17px;
+    font-weight: bold;
   }
 
   .click:before {
