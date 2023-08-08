@@ -1,10 +1,8 @@
 body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    position: absolute;
     top: 50%;
-    right: 28%;
-    transform: translate(50%,-18%);
+    right: 64%;
+    transform: translate(50%,-50%);
     background-color: white;
     overflow: hidden;
 }
